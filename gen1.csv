@@ -1,0 +1,224 @@
+#;Name;Red;Green;Blue;Yellow;Gold;Silver;Crystal;Ruby;Sapphire;FireRed;LeafGreen;Emerald;Colosseum;JapBonusDisc;XD;Diamond;Pearl;Platinum;HeartGold;SoulSilver;Ranch;BattleRev;Black;White;Black2;White2;X;Y;OmegaRuby;AlphaSapphire;Sun;Moon;UltraSun;UltraMoon;LetsGoPikachu;LetsGoEevee;Sword;Shield;BrilliantDiamond;ShiningPearl;LegendsArceus;Scarlet;Violet
+1;Bulbasaur;R;R;R;R;Ev;Ev;Ev;Ev;Ev;R;R;Ev;T;—;T;T;T;T;R;R;—;—;Ev;Ev;Ev;Ev;R;R;Ev;Ev;T;T;S;S;C;C;RD;RD;C;C;—;CD;CD
+2;Ivysaur;E;E;E;E;EvE;EvE;EvE;EvE;EvE;E;E;EvE;T;—;T;T;T;T;E;E;—;—;EvE;EvE;EvE;EvE;E;E;EvE;EvE;T;T;E;E;E;E;DA;DA;E;E;—;ED;ED
+3;Venusaur;E;E;E;E;Ev;Ev;Ev;EvE;EvE;E;E;EvE;T;—;T;T;T;T;E;E;—;—;EvE;EvE;EvE;EvE;E;E;Ev;Ev;T;T;E;E;E;E;DD;DD;E;E;—;ED;ED
+4;Charmander;R;R;R;R;Ev;Ev;Ev;Ev;Ev;R;R;Ev;T;—;T;Ev;Ev;Ev;R;R;—;—;Ev;Ev;Ev;Ev;R;R;Ev;Ev;EvB;EvB;S;S;C;C;R;R;C;C;—;CD;CD
+5;Charmeleon;E;E;E;E;EvE;EvE;EvE;EvE;EvE;E;E;EvE;T;—;T;EvE;EvE;EvE;E;E;—;—;EvE;EvE;EvE;EvE;E;E;EvE;EvE;EvB;EvB;E;E;E;E;D;D;E;E;—;ED;ED
+6;Charizard;E;E;E;E;Ev;Ev;Ev;Ev;Ev;E;E;Ev;T;—;T;EvE;EvE;EvE;E;E;—;—;EvE;EvE;EvE;EvE;E;E;Ev;Ev;Ev;Ev;E;E;C;C;D;D;E;E;—;ED;ED
+7;Squirtle;R;R;R;R;Ev;Ev;Ev;Ev;Ev;R;R;Ev;T;—;T;T;T;T;R;R;—;—;Ev;Ev;Ev;Ev;R;R;Ev;Ev;T;T;S;S;C;C;RD;RD;C;C;—;CD;CD
+8;Wartortle;E;E;E;E;EvE;EvE;EvE;EvE;EvE;E;E;EvE;T;—;T;T;T;T;E;E;—;—;EvE;EvE;EvE;EvE;E;E;EvE;EvE;T;T;E;E;E;E;DA;DA;E;E;—;ED;ED
+9;Blastoise;E;E;E;E;Ev;Ev;Ev;Ev;Ev;E;E;Ev;T;—;T;T;T;T;E;E;—;—;EvE;EvE;EvE;EvE;E;E;Ev;Ev;T;T;E;E;E;E;DD;DD;E;E;—;ED;ED
+10;Caterpie;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;D;D;D;C;C;—;—;DWB;B;T;B;C;C;T;T;C;C;C;C;C;C;C;C;C;T;—;—;—
+11;Metapod;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;D;D;D;C;C;—;—;DWB;C;T;B;E;C;T;T;C;C;C;C;C;C;C;C;E;T;—;—;—
+12;Butterfree;E;E;E;E;C;C;C;T;T;E;E;T;T;—;S;DE;DE;DE;C;C;—;—;DW;C;T;C;E;E;T;T;C;C;C;C;C;E;C;C;E;T;—;—;—
+13;Weedle;C;C;C;T;C;C;C;T;T;C;C;T;T;—;T;D;D;D;C;C;—;—;B;DWB;B;T;C;C;B;B;T;T;B;B;C;C;—;—;T;C;—;—;—
+14;Kakuna;C;C;C;T;C;C;C;T;T;C;C;T;T;—;T;D;D;D;C;C;—;—;C;DWB;B;T;C;E;C;C;T;T;B;B;C;C;—;—;T;E;—;—;—
+15;Beedrill;E;E;E;T;C;C;C;T;T;E;E;T;T;—;S;DE;DE;DE;C;C;—;—;C;DW;C;T;E;E;E;E;T;T;S;S;E;C;—;—;T;E;—;—;—
+16;Pidgey;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;S;S;C;C;C;—;—;DW;C;DW;DW;C;C;B;B;T;T;B;B;C;C;—;—;S;S;—;—;—
+17;Pidgeotto;C;C;C;C;C;C;C;T;T;C;C;T;T;—;S;E;E;E;C;C;—;—;DWE;E;DWE;DWE;E;E;C;C;T;T;B;B;C;C;—;—;E;E;—;—;—
+18;Pidgeot;E;E;E;E;E;E;E;T;T;E;E;T;T;—;E;E;E;E;E;E;—;—;DWE;E;DWE;DWE;E;E;E;E;T;T;S;S;C;C;—;—;E;E;—;—;—
+19;Rattata;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;B;B;C;C;T;T;C;C;T;T;T;T;C;C;—;—;C;C;—;—;—
+19;"Rattata
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;C;C;R;R;—;—;—;—;—;—;—
+20;Raticate;C;C;C;C;C;C;C;T;T;C;C;T;T;—;S;C;C;C;C;C;—;—;C;C;C;C;T;T;C;C;T;T;T;T;C;C;—;—;C;C;—;—;—
+20;"Raticate
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;C;C;E;E;—;—;—;—;—;—;—
+21;Spearow;C;C;C;C;C;C;C;T;T;C;C;T;T;—;S;C;C;C;C;C;—;—;B;B;B;B;B;B;T;T;C;C;C;C;C;C;—;—;C;C;—;—;—
+22;Fearow;C;C;C;C;C;C;C;T;T;C;C;T;T;—;E;C;C;C;C;C;—;—;C;C;S;S;C;C;T;T;C;C;C;C;C;C;—;—;C;C;—;—;—
+23;Ekans;C;T;T;T;R;C;C;Ev;Ev;C;Ev;Ev;T;—;T;D;D;D;C;C;—;—;DW;DW;DW;DW;C;C;T;T;T;T;C;C;T;C;—;—;C;T;—;CD;CD
+24;Arbok;C;T;T;T;E;C;C;EvE;EvE;C;EvE;EvE;T;—;S;D;D;D;C;C;—;—;DWE;DWE;DWE;DWE;C;C;T;T;T;T;R;R;T;C;—;—;E;T;—;CD;CD
+25;Pikachu;C;C;C;R;C;C;C;C;C;C;C;C;T;C;T;C;C;C;C;C;C;C;Ev;Ev;Ev;Ev;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C
+26;Raichu;C;C;C;EvE;E;E;E;E;E;E;E;E;T;—;T;E;E;E;E;E;—;—;EvE;EvE;EvE;EvE;E;E;E;E;T;T;E;E;E;E;D;D;E;E;C;C;C
+26;"Raichu
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;E;E;E;E;R;R;RD;RD;—;—;—;EVD;EVD
+27;Sandshrew;T;C;C;C;C;R;C;C;C;Ev;C;C;T;—;C;D;D;D;C;C;—;—;B;B;C;C;B;B;C;C;T;T;T;T;C;T;CD;CD;T;C;—;CD;CD
+27;"Sandshrew
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;T;C;T;C;R;T;RD;RD;—;—;—;CCD;CD
+28;Sandslash;T;C;C;C;C;E;C;E;E;EvE;C;E;T;—;E;D;D;D;C;C;—;—;C;C;C;C;C;C;E;E;T;T;T;T;E;T;CD;CD;T;C;—;CD;CD
+28;"Sandslash
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;T;E;T;E;E;T;ED;ED;—;—;—;CCD;CD
+29;Nidoran♀;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;DW;C;C;C;C;C;T;T;T;T;EvB;EvB;C;C;CD;CD;C;C;—;—;—
+30;Nidorina;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;DWE;E;E;E;C;C;T;T;T;T;EvB;EvB;C;C;CD;CD;C;C;—;—;—
+31;Nidoqueen;E;E;E;E;E;E;E;T;T;E;E;T;T;—;T;E;E;E;E;E;—;—;DWE;E;E;E;E;E;T;T;T;T;EvB;EvB;C;C;CD;CD;E;E;—;—;—
+32;Nidoran♂;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;DW;C;C;C;C;C;T;T;T;T;EvB;EvB;C;C;CD;CD;C;C;—;—;—
+33;Nidorino;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;DWE;E;E;E;C;C;T;T;T;T;EvB;EvB;C;C;CD;CD;C;C;—;—;—
+34;Nidoking;E;E;E;E;E;E;E;T;T;E;E;T;T;—;T;E;E;E;E;E;—;—;DWE;E;E;E;E;E;T;T;T;T;Ev;Ev;C;C;CD;CD;E;E;—;—;—
+35;Clefairy;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;C;C;C;C;FS;FS;C;C;C;C;C;C;C;C;C;C;C;C;C;CD;CD
+36;Clefable;E;E;E;E;E;E;E;T;T;E;E;T;T;—;T;E;E;E;E;E;—;—;C;C;C;C;FSE;FSE;E;E;E;E;E;E;C;C;C;C;E;E;C;CD;CD
+37;Vulpix;T;C;C;R;T;C;T;C;C;Ev;C;C;T;—;S;D;D;D;T;C;—;—;C;C;C;C;FSB;FSB;C;C;T;T;T;T;T;C;C;C;T;C;C;CD;CD
+37;"Vulpix
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;—;—;—;—;—;—;—;—;—;C;Ev;C;T;T;R;RD;RD;—;—;R;CD;CCD
+38;Ninetales;T;E;E;E;T;E;T;E;E;EvE;E;E;T;—;E;DE;DE;DE;T;E;—;—;C;C;C;C;FS;FS;E;E;T;T;T;T;T;C;C;D;T;E;C;CD;CD
+38;"Ninetales
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;E;EvE;E;T;T;E;ED;ED;—;—;E;CD;CCD
+39;Jigglypuff;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;S;S;S;C;C;—;—;C;C;C;C;C;C;C;C;C;C;C;C;C;C;CD;CD;S;S;—;C;C
+40;Wigglytuff;C;C;C;R;E;E;E;E;E;E;E;E;T;—;T;E;E;E;E;E;—;—;C;C;C;C;E;E;E;E;E;E;E;E;E;E;CD;CD;E;E;—;C;C
+41;Zubat;C;C;C;C;C;C;C;C;C;C;C;C;T;—;C;C;C;C;C;C;—;—;B;B;C;C;C;C;C;C;C;C;C;C;C;C;CD;CD;C;C;C;—;—
+42;Golbat;C;C;C;C;C;C;C;C;C;C;C;C;T;—;E;C;C;C;C;C;—;—;C;C;C;C;E;E;C;C;C;C;C;C;C;C;CD;CD;C;C;C;—;—
+43;Oddish;C;T;T;C;C;C;C;C;C;C;Ev;C;T;—;T;C;C;C;C;C;—;—;DW;C;DW;DW;C;C;C;C;T;T;T;T;C;T;C;C;C;C;—;CD;CD
+44;Gloom;C;T;T;C;C;C;C;C;C;C;EvE;C;T;—;T;C;C;C;C;C;—;—;DWE;E;DWE;DWE;E;E;C;C;T;T;T;T;C;T;C;C;C;C;—;CD;CD
+45;Vileplume;E;T;T;E;E;E;E;E;E;E;EvE;E;T;—;T;E;E;E;E;E;—;—;DWE;E;DWE;DWE;E;E;E;E;T;T;T;T;C;T;C;C;E;E;—;CD;CD
+46;Paras;C;C;C;C;C;C;C;T;T;C;C;T;T;—;S;S;S;S;C;C;—;—;DW;S;DW;DW;FS;FS;C;C;C;C;C;C;C;C;—;—;S;S;C;—;—
+47;Parasect;C;C;C;C;E;E;C;T;T;C;C;T;T;—;E;E;E;E;C;C;—;—;DWE;E;DWE;DWE;FSE;FSE;E;E;E;E;C;C;E;E;—;—;E;E;C;—;—
+48;Venonat;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;B;B;C;C;FSB;FSB;B;B;T;T;T;T;C;C;—;—;C;C;—;C;C
+49;Venomoth;C;C;C;C;C;C;C;T;T;C;C;T;T;—;S;C;C;C;C;C;—;—;C;C;E;E;FS;FS;C;C;T;T;T;T;C;C;—;—;C;C;—;C;C
+50;Diglett;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;DW;DW;DW;DW;B;B;C;C;T;T;T;T;C;C;C;C;C;C;—;C;C
+50;"Diglett
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;C;C;R;R;RD;RD;—;—;—;CD;CD
+51;Dugtrio;C;C;C;C;C;C;C;T;T;C;C;T;T;—;S;C;C;C;C;C;—;—;DWE;DWE;DWE;DWE;C;C;E;E;T;T;T;T;C;C;C;C;C;C;—;C;C
+51;"Dugtrio
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;C;C;E;E;ED;ED;—;—;—;CD;CD
+52;Meowth;T;C;C;T;T;C;C;Ev;Ev;C;C;R;T;—;S;S;S;S;T;C;—;—;DW;DW;R;R;T;T;B;B;T;T;T;T;T;C;R;R;S;S;—;C;C
+52;"Meowth
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;C;C;T;R;RD;RD;—;—;—;T;T
+52;"Meowth
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;—;—;—;R;R
+53;Persian;T;E;E;T;T;C;C;EvE;EvE;C;C;E;T;—;E;E;E;E;T;C;—;—;DWE;DWE;E;E;T;T;C;C;T;T;T;T;R;E;E;E;E;E;—;C;C
+53;"Persian
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;E;E;C;C;T;E;ED;ED;—;—;—;T;T
+54;Psyduck;C;C;C;C;C;C;C;C;C;C;Ev;C;T;—;T;C;C;C;C;C;—;—;B;B;C;C;C;C;C;C;C;C;C;C;C;C;CD;CD;C;C;C;C;C
+55;Golduck;C;C;C;C;C;C;C;C;C;C;EvE;C;T;—;S;C;C;C;C;C;—;—;C;C;C;C;E;E;E;E;C;C;C;C;C;C;CD;CD;E;E;C;C;C
+56;Mankey;C;T;T;C;C;T;T;T;T;C;C;T;T;—;T;C;C;C;C;T;—;—;S;S;R;R;FS;FS;C;C;C;C;C;C;C;T;—;—;C;C;—;C;C
+57;Primeape;E;T;T;C;C;T;T;T;T;C;C;T;T;—;S;C;C;C;C;T;—;—;E;E;E;E;FSE;FSE;E;E;C;C;C;C;E;T;—;—;C;C;—;C;C
+58;Growlithe;C;T;T;C;C;T;C;Ev;Ev;C;Ev;Ev;T;—;S;D;D;D;C;T;—;—;DW;DW;C;C;FS;FS;C;C;C;C;C;C;C;T;C;C;C;T;—;C;C
+58;"Growlithe
+(Hisuian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;RD;RD
+59;Arcanine;E;T;T;E;E;T;E;EvE;EvE;E;EvE;EvE;T;—;E;DE;DE;DE;E;T;—;—;DWE;DWE;E;E;FSE;FSE;E;E;E;E;E;E;C;R;D;C;E;T;—;C;C
+59;"Arcanine
+(Hisuian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;ED;ED
+60;Poliwag;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;C;C;C;C;C;C;T;T;C;C;C;C;C;C;CD;CD;C;C;—;CD;CD
+61;Poliwhirl;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;C;C;C;C;C;C;T;T;R;R;C;C;C;C;CD;CD;C;C;—;CD;CD
+62;Poliwrath;E;E;E;E;E;E;E;T;T;E;E;T;T;—;S;E;E;E;E;E;—;—;C;C;C;C;C;C;T;T;C;C;C;C;C;C;CD;CD;E;E;—;CD;CD
+63;Abra;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;DW;C;B;B;C;C;C;C;C;C;C;C;C;C;CD;CD;C;C;C;—;—
+64;Kadabra;C;C;C;C;C;C;C;E;E;C;C;E;T;—;T;C;C;C;C;C;—;—;DWE;E;B;B;E;E;E;E;C;C;E;E;C;C;CD;CD;C;C;C;—;—
+65;Alakazam;ET;ET;ET;ET;ET;ET;ET;ET;ET;ET;ET;ET;T;—;T;ET;ET;ET;ET;ET;—;—;DWET;ET;R;R;ET;ET;ET;ET;ET;ET;ET;ET;ET;ET;CD;CD;ET;ET;C;—;—
+66;Machop;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;DW;C;DW;DW;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;—;—
+67;Machoke;C;C;C;C;C;C;C;E;E;C;C;E;T;—;T;C;C;C;C;C;—;—;DWE;E;DWE;DWE;E;E;E;E;C;C;C;C;C;C;C;C;C;C;C;—;—
+68;Machamp;ET;ET;ET;R;ET;ET;ET;ET;ET;ET;ET;ET;T;—;T;ET;ET;ET;ET;ET;—;—;DWET;ET;DWET;DWET;ET;ET;ET;ET;ET;ET;ET;ET;ET;ET;C;C;ET;ET;C;—;—
+69;Bellsprout;T;C;C;C;C;C;C;Ev;Ev;Ev;C;Ev;T;—;T;C;C;C;C;C;—;—;DW;C;DW;DW;C;C;T;T;S;S;T;T;T;C;—;—;C;C;—;CD;CD
+70;Weepinbell;T;C;C;C;C;C;C;EvE;EvE;EvE;C;EvE;T;—;S;C;C;C;C;C;—;—;DWE;E;DWE;DWE;C;C;T;T;E;E;T;T;T;C;—;—;C;C;—;CD;CD
+71;Victreebel;T;E;E;E;E;E;E;EvE;EvE;EvE;E;EvE;T;—;E;E;E;E;E;E;—;—;DWE;E;DWE;DWE;E;E;T;T;E;E;T;T;T;C;—;—;E;E;—;CD;CD
+72;Tentacool;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;DW;DW;DW;DW;C;C;C;C;C;C;C;C;C;C;CD;CD;C;C;C;CD;CD
+73;Tentacruel;E;E;E;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;DWE;DWE;DWE;DWE;E;E;C;C;C;C;C;C;C;C;CD;CD;C;C;C;CD;CD
+74;Geodude;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;B;B;DW;DW;C;C;C;C;T;T;T;T;C;C;—;—;C;C;C;CD;CD
+74;"Geodude
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;B;B;R;R;—;—;—;—;—;CD;CD
+75;Graveler;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;C;C;DWE;DWE;C;C;C;C;T;T;T;T;C;C;—;—;C;C;C;CD;CD
+75;"Graveler
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;C;C;E;E;—;—;—;—;—;CD;CD
+76;Golem;ET;ET;ET;ET;ET;ET;ET;ET;ET;ET;ET;ET;T;—;T;ET;ET;ET;ET;ET;—;—;ET;ET;DWET;DWET;ET;ET;ET;ET;T;T;T;T;ET;ET;—;—;ET;ET;C;CD;CD
+76;"Golem
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;R;R;ET;ET;ET;ET;—;—;—;—;—;CD;CD
+77;Ponyta;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;C;—;B;B;DW;DW;FS;FS;C;C;T;T;T;T;C;C;T;RD;C;C;C;—;—
+77;"Ponyta
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;T;C;—;—;—;—;—
+78;Rapidash;E;E;E;E;C;C;C;T;T;C;C;T;T;—;S;E;E;E;C;C;—;—;C;C;DWE;DWE;FSE;FSE;E;E;T;T;T;T;C;C;T;ED;E;E;C;—;—
+78;"Rapidash
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;T;D;—;—;—;—;—
+79;Slowpoke;C;C;C;C;C;C;C;Ev;Ev;Ev;C;Ev;T;—;T;T;C;C;C;C;—;—;C;C;S;S;C;C;C;C;C;C;C;C;C;C;RD;RD;T;C;—;C;C
+79;"Slowpoke
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;—;—;—;CD;CD
+80;Slowbro;C;C;C;C;C;C;C;EvE;EvE;EvE;C;EvE;T;—;T;T;E;E;C;C;—;—;C;C;E;E;E;E;E;E;C;C;C;C;C;C;DA;DA;T;E;—;C;C
+80;"Slowbro
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;ED;ED;—;—;—;CD;CD
+81;Magnemite;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;S;S;C;C;C;—;—;DW;C;C;C;B;B;C;C;C;C;C;C;C;C;CD;CD;C;C;C;C;C
+82;Magneton;C;C;C;C;E;E;R;C;C;C;C;C;T;—;S;E;E;C;C;C;—;—;DWE;E;C;C;C;C;E;E;E;E;E;E;C;C;CD;CD;E;E;C;C;C
+83;Farfetch'd;R;R;R;C;C;C;C;T;T;R;R;T;T;—;S;S;S;S;C;C;—;—;S;S;S;S;C;C;T;T;T;T;T;T;C;C;RD;T;C;C;—;—;—
+83;"Farfetch'd
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;T;—;—;—;—;—
+84;Doduo;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;S;S;S;C;C;—;—;S;S;S;S;C;C;C;C;T;T;T;T;C;C;—;—;C;C;—;CD;CD
+85;Dodrio;C;C;C;C;C;C;C;C;C;E;E;C;T;—;S;E;E;E;C;C;—;—;E;E;E;E;E;E;E;E;T;T;T;T;C;C;—;—;E;E;—;CD;CD
+86;Seel;C;C;C;C;C;C;C;T;T;C;C;T;T;—;S;C;T;B;C;C;—;—;C;C;C;C;FSB;FSB;C;C;T;T;C;C;C;C;—;—;C;T;—;CD;CD
+87;Dewgong;C;C;C;C;E;E;E;T;T;C;C;T;T;—;E;C;T;C;C;C;—;—;C;C;C;C;FS;FS;C;C;T;T;E;E;C;C;—;—;C;T;—;CD;CD
+88;Grimer;C;C;C;C;C;C;C;C;C;C;C;C;T;—;S;C;C;C;C;C;—;—;DW;DW;C;C;FSB;FSB;C;C;T;T;T;T;C;T;—;—;C;C;—;C;C
+88;"Grimer
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;C;C;R;T;—;—;—;—;—;CD;CD
+89;Muk;C;C;C;C;C;C;C;E;E;E;C;E;T;—;E;E;E;E;C;C;—;—;DWE;DWE;C;C;FS;FS;E;E;T;T;T;T;C;T;—;—;E;E;—;C;C
+89;"Muk
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;E;E;E;E;E;T;—;—;—;—;—;CD;CD
+90;Shellder;C;C;C;C;C;C;C;Ev;Ev;C;Ev;Ev;T;—;S;C;C;C;C;C;—;—;C;C;C;C;FSB;C;T;T;C;C;C;C;C;C;C;C;C;C;—;C;C
+91;Cloyster;E;E;E;E;E;E;E;EvE;EvE;E;EvE;EvE;T;—;E;E;E;E;E;E;—;—;C;C;C;C;FS;C;T;T;E;E;E;E;C;C;C;C;E;E;—;C;C
+92;Gastly;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;DW;C;DW;DW;B;B;EvB;EvB;C;C;C;C;C;C;C;C;C;C;C;C;C
+93;Haunter;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;DWE;E;DWE;DWE;C;C;EvB;EvB;C;C;C;C;C;C;C;C;E;E;C;C;C
+94;Gengar;ET;ET;ET;ET;ET;ET;ET;T;T;ET;ET;T;T;—;T;D;D;D;ET;ET;—;—;DWET;ET;DWET;DWET;ET;ET;Ev;Ev;C;C;C;C;ET;ET;C;C;ET;ET;C;C;C
+95;Onix;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;C;C;C;C;C;—;—;C;C;C;C;C;C;C;C;T;T;S;S;C;C;C;C;C;C;C;—;—
+96;Drowzee;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;S;S;S;C;C;—;—;DW;DW;B;B;FS;FS;B;B;C;C;C;C;C;C;—;—;C;C;—;C;C
+97;Hypno;C;C;C;E;C;C;C;T;T;C;C;T;T;—;S;E;E;E;C;C;—;—;DWE;DWE;S;S;FSE;FSE;C;C;C;C;C;C;E;E;—;—;E;E;—;C;C
+98;Krabby;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;S;S;S;C;C;—;—;C;C;C;C;FS;FS;C;C;T;T;T;T;C;C;C;C;C;C;—;—;—
+99;Kingler;C;C;C;C;C;C;C;T;T;E;C;T;T;—;T;E;E;E;C;C;—;—;C;C;C;C;FSE;FSE;E;E;T;T;T;T;C;C;C;C;E;E;—;—;—
+100;Voltorb;C;C;C;C;C;C;C;C;C;C;C;C;T;—;S;S;S;S;C;C;—;—;DW;DW;DW;DW;B;B;C;C;T;T;B;B;C;C;—;—;C;C;—;C;C
+100;"Voltorb
+(Hisuian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;EV;EV
+101;Electrode;C;C;C;C;C;C;C;C;C;C;C;C;T;—;E;E;E;E;C;C;—;—;DWE;DWE;DWE;DWE;C;C;C;C;T;T;C;C;C;C;—;—;E;E;—;C;C
+101;"Electrode
+(Hisuian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;EVE;EVE
+102;Exeggcute;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;S;S;S;C;C;—;—;S;S;DW;DW;C;C;T;T;C;C;C;C;C;C;CD;CD;S;S;—;CD;CD
+103;Exeggutor;E;E;E;E;E;E;E;T;T;E;E;T;T;—;S;E;E;E;E;E;—;—;E;E;DWE;DWE;E;E;T;T;T;T;E;E;C;C;CD;CD;E;E;—;CD;CD
+103;"Exeggutor
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;C;C;R;R;RD;RD;—;—;—;CD;CD
+104;Cubone;C;C;C;C;C;C;C;T;T;C;C;T;T;—;T;S;S;S;C;C;—;—;B;B;DW;DW;C;C;T;T;C;C;C;C;C;C;CD;CD;C;C;—;—;—
+105;Marowak;C;C;C;C;C;C;C;T;T;C;C;T;T;—;S;E;E;E;C;C;—;—;C;C;DWE;DWE;E;E;T;T;T;T;E;E;E;E;CD;CD;E;E;—;—;—
+105;"Marowak
+(Alolan Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;E;E;R;E;R;R;RD;RD;—;—;—;—;—
+106;Hitmonlee;R;R;R;R;E;E;E;T;T;R;R;T;T;—;S;E;E;E;E;E;—;—;E;E;DWE;DWE;FSE;FSE;E;E;T;T;T;T;C;C;C;D;E;E;—;CD;CD
+107;Hitmonchan;R;R;R;R;E;E;E;T;T;R;R;T;T;—;S;E;E;E;E;E;—;—;E;E;DWE;DWE;FSE;FSE;E;E;T;T;T;T;C;C;D;C;E;E;—;CD;CD
+108;Lickitung;R;R;R;C;C;C;C;T;T;R;R;T;T;—;S;S;S;C;C;C;C;—;C;C;C;C;C;C;T;T;T;T;C;C;C;C;CD;CD;C;C;C;—;—
+109;Koffing;C;C;C;T;C;C;C;C;C;C;C;C;T;—;T;B;B;C;C;C;—;—;DW;DW;C;C;T;T;C;C;T;T;T;T;T;C;C;C;B;B;—;CD;CD
+110;Weezing;C;C;C;T;E;E;C;E;E;C;E;E;T;—;T;C;C;C;C;C;—;—;DWE;DWE;C;C;T;T;E;E;T;T;T;T;T;C;RD;RD;C;C;—;CD;CD
+110;"Weezing
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;—;—;—;TED;TED
+111;Rhyhorn;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;DW;C;R;R;C;C;C;C;S;S;S;S;C;C;C;C;C;C;C;CD;CD
+112;Rhydon;C;C;C;C;R;R;C;E;E;E;E;E;T;—;S;C;C;C;C;C;—;—;DWE;E;E;E;E;E;E;E;E;E;E;E;C;C;C;C;C;C;C;CD;CD
+113;Chansey;C;C;C;C;C;C;C;Ev;Ev;C;C;Ev;T;—;S;C;C;C;C;C;—;—;DW;E;E;E;FS;FS;E;E;C;C;C;C;C;C;CD;CD;C;C;C;C;C
+114;Tangela;C;C;C;C;C;C;C;T;T;C;C;T;T;—;S;Ev;Ev;C;C;C;C;—;C;C;C;C;FS;FS;C;C;T;T;T;T;C;C;CD;CD;C;C;C;—;—
+115;Kangaskhan;C;C;C;C;C;C;C;Ev;Ev;C;C;Ev;T;—;S;S;S;S;C;C;—;—;C;C;DW;DW;C;C;Ev;Ev;C;C;C;C;C;C;CD;CD;S;S;—;—;—
+116;Horsea;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;C;C;C;C;C;C;C;C;S;S;S;S;C;C;CD;CD;C;C;—;CD;CD
+117;Seadra;C;C;C;C;C;C;C;E;E;C;E;E;T;—;T;C;C;C;C;C;—;—;C;C;C;C;C;C;C;C;E;E;E;E;C;C;CD;CD;C;C;—;CD;CD
+118;Goldeen;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;—;—;—
+119;Seaking;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;—;—;—
+120;Staryu;C;C;C;C;C;C;C;C;C;Ev;C;C;T;—;T;C;C;C;C;C;—;—;C;C;C;C;C;T;C;C;C;C;C;C;C;C;CD;CD;C;C;—;—;—
+121;Starmie;E;E;E;E;E;E;E;E;E;EvE;E;E;T;—;S;E;E;E;E;E;—;—;C;C;C;C;C;T;E;E;C;C;C;C;C;C;CD;CD;E;E;—;—;—
+122;Mr. Mime;R;R;R;R;C;C;C;T;T;R;R;T;T;—;S;C;E;C;C;C;—;—;DW;DW;DW;S;C;C;T;T;T;T;C;C;C;C;R;R;C;C;C;—;—
+122;"Mr. Mime
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C;—;—;—;—;—
+123;Scyther;C;T;T;C;C;C;C;Ev;Ev;C;Ev;Ev;T;—;S;C;EvB;C;C;C;—;—;DW;DW;DW;DW;C;C;T;T;C;C;C;C;C;T;CD;CD;C;T;C;C;C
+124;Jynx;R;R;R;T;C;C;C;T;T;R;R;T;T;—;T;E;E;C;C;C;—;—;C;C;DRE;DRE;C;C;T;T;T;T;C;C;C;C;CD;CD;E;E;—;—;—
+125;Electabuzz;C;T;T;T;C;C;C;Ev;Ev;C;Ev;Ev;T;—;S;DE;DE;C;C;C;—;—;DWE;E;DWE;E;FS;FS;E;E;C;C;C;C;C;C;CD;CD;E;T;C;CD;CD
+126;Magmar;T;C;C;T;C;C;C;Ev;Ev;Ev;C;Ev;T;—;S;DE;DE;C;C;C;—;—;DWE;E;E;DWE;FS;FS;E;E;C;C;C;C;C;C;CD;CD;T;E;C;CD;CD
+127;Pinsir;T;C;C;C;C;C;C;C;C;T;C;C;T;—;S;T;C;S;C;C;—;—;C;C;C;C;C;FS;C;C;C;C;C;C;T;C;CD;T;T;C;—;—;—
+128;Tauros;C;C;C;C;C;C;C;Ev;Ev;C;C;Ev;T;—;S;C;C;C;C;C;—;—;DW;DW;DW;DW;C;C;T;T;C;C;C;C;C;C;CD;CD;C;C;—;CD;CD
+128;"Tauros
+(Paldean Combat Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;C
+128;"Tauros
+(Paldean Blaze Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;C;CC
+128;"Tauros
+(Paldean Aqua Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;CC;C
+129;Magikarp;C;C;C;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;R;R;R;R;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C
+130;Gyarados;E;E;E;C;C;C;C;C;C;C;C;C;T;—;T;C;C;C;C;C;—;—;E;E;E;E;C;C;C;C;C;C;E;E;C;C;C;C;C;C;C;C;C
+131;Lapras;R;R;R;R;C;C;C;T;T;C;C;T;T;—;S;C;C;C;C;C;—;—;C;C;C;C;C;C;T;T;C;C;C;C;C;C;C;C;C;C;—;CD;CD
+132;Ditto;C;C;C;C;C;C;C;T;T;C;C;C;T;—;T;C;C;S;C;C;—;—;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;—;C;C
+133;Eevee;R;R;R;R;R;R;R;T;T;R;R;T;T;—;R;C;C;C;R;R;C;—;DW;DW;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C;C
+134;Vaporeon;E;E;E;E;E;E;E;T;T;E;E;T;T;—;E;E;E;E;E;E;—;—;DWE;DWE;E;E;E;E;E;E;E;E;E;E;E;E;C;C;E;E;C;C;C
+135;Jolteon;E;E;E;E;E;E;E;T;T;E;E;T;T;—;E;E;E;E;E;E;—;—;DWE;DWE;E;E;E;E;E;E;E;E;E;E;E;E;C;C;E;E;C;C;C
+136;Flareon;E;E;E;E;E;E;E;T;T;E;E;T;T;—;E;E;E;E;E;E;—;—;DWE;DWE;E;E;E;E;E;E;E;E;E;E;E;E;C;C;E;E;C;C;C
+137;Porygon;R;R;R;R;R;R;R;T;T;R;R;T;T;—;T;S;S;R;R;R;—;—;Ev;C;DR;DR;T;T;C;C;R;R;R;R;C;C;RD;RD;S;S;C;CD;CD
+138;Omanyte;R;R;R;R;Ev;Ev;Ev;T;T;R;R;T;T;—;T;R;R;R;R;T;—;—;R;R;R;R;T;R;T;R;T;T;R;R;R;R;CD;T;R;R;—;—;—
+139;Omastar;E;E;E;E;EvE;EvE;EvE;T;T;E;E;T;T;—;T;E;E;E;E;T;—;—;E;E;E;E;T;E;T;E;T;T;E;E;E;E;CD;T;E;E;—;—;—
+140;Kabuto;R;R;R;R;Ev;Ev;Ev;T;T;R;R;T;T;—;T;R;R;R;T;R;—;—;R;R;R;R;T;R;R;T;T;T;R;R;R;R;T;CD;R;R;—;—;—
+141;Kabutops;E;E;E;E;EvE;EvE;EvE;T;T;E;E;T;T;—;T;E;E;E;T;E;—;—;E;E;E;E;T;E;E;T;T;T;E;E;E;E;T;CD;E;E;—;—;—
+142;Aerodactyl;R;R;R;R;R;R;R;T;T;R;R;T;T;—;T;R;R;R;R;R;C;—;R;R;R;R;R;R;R;R;R;R;R;R;R;R;CD;CD;R;R;—;—;—
+143;Snorlax;C;C;C;C;C;C;C;T;T;C;C;T;T;—;S;E;E;E;C;C;—;—;E;E;R;R;C;C;T;T;C;C;C;C;C;C;C;C;E;E;C;CD;CD
+144;Articuno;C;C;C;C;Ev;Ev;Ev;Ev;Ev;C;C;Ev;T;—;S;T;T;C;C;C;—;—;T;T;T;T;C;C;Ev;Ev;T;T;C;C;C;C;DA;DA;T;C;—;CD;CD
+144;"Articuno
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;CD;CD;—;—;—;T;T
+145;Zapdos;C;C;C;C;Ev;Ev;Ev;Ev;Ev;C;C;Ev;T;—;S;T;T;C;C;C;—;—;T;T;T;T;C;C;Ev;Ev;T;T;C;C;C;C;DA;DA;T;C;—;CD;CD
+145;"Zapdos
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;CD;CD;—;—;—;T;T
+146;Moltres;C;C;C;C;Ev;Ev;Ev;Ev;Ev;C;C;Ev;T;—;S;T;T;C;C;C;—;—;T;T;T;T;C;C;Ev;Ev;T;T;C;C;C;C;DA;DA;T;C;—;CD;CD
+146;"Moltres
+(Galarian Form)";—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;—;CD;CD;—;—;—;T;T
+147;Dratini;C;C;C;C;C;C;C;EvB;EvB;C;C;EvB;T;—;T;C;C;C;C;C;—;—;C;C;C;C;C;C;EvB;EvB;C;C;C;C;C;C;CD;CD;C;C;—;C;C
+148;Dragonair;E;E;E;C;C;C;C;EvB;EvB;C;C;EvB;T;—;T;C;C;C;C;C;—;—;C;C;C;C;C;C;EvB;EvB;C;C;C;C;C;C;CD;CD;E;E;—;C;C
+149;Dragonite;E;E;E;E;E;E;E;Ev;Ev;E;E;Ev;T;—;S;E;E;E;E;E;—;—;C;C;C;C;E;E;Ev;Ev;C;C;C;C;C;C;CD;CD;E;E;—;C;C
+150;Mewtwo;C;C;C;C;Ev;Ev;Ev;T;T;C;C;T;T;—;T;T;T;T;C;C;—;—;Ev;Ev;Ev;Ev;C;C;Ev;Ev;T;T;C;C;C;C;DA;DA;C;C;—;EV;EV
+151;Mew;Ev;Ev;Ev;Ev;Ev;Ev;Ev;Ev;Ev;Ev;Ev;EV;T;—;T;Ev;Ev;Ev;Ev;Ev;C;—;T;T;T;T;Ev;Ev;Ev;Ev;Ev;Ev;T;T;Ev;Ev;Ev;Ev;CCR;CCR;—;Ev;Ev
