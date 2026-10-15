@@ -35,7 +35,9 @@ export interface Owned {
   copies: Record<string, number>;   // copies per game
   dlc: Record<string, number>;      // copies with DLC per game
   gba: number; ds: number; dsGbaSlot: number; n3ds: number; sw: number;
+  phone: number;                    // Phase 2: smartphones (HOME mobile, Pokémon GO)
   has: {
+    home: boolean; go: boolean;     // Phase 2: Pokémon HOME (any plan), Pokémon GO account
     pokewalker: boolean; dreamRadar: boolean; transporter: boolean; bank: boolean;
     ranchWestern: boolean; ranchJapanese: boolean; battleRevWestern: boolean; battleRevJapanese: boolean;
     ranger: boolean; bonusDiscUS: boolean; bonusDiscJP: boolean; palChannel: boolean;
@@ -74,7 +76,9 @@ export function fromOldInputs(i: Record<string, any>): Owned {
   return {
     copies, dlc,
     gba: n(i.gba_number), ds: n(i.ds_number), dsGbaSlot: i.og_ds ? 1 : 0, n3ds: n(i.three_ds_number), sw: n(i.switch_number),
+    phone: 0,
     has: {
+      home: false, go: false,
       pokewalker: !!i.pokewalker, dreamRadar: !!i.dream_radar, transporter: !!i.transporter, bank: !!i.bank,
       ranchWestern: lang(i.ranch, i.ranch_language, "Western"), ranchJapanese: lang(i.ranch, i.ranch_language, "Japanese"),
       battleRevWestern: lang(i.battle_rev, i.battle_rev_language, "Western"), battleRevJapanese: lang(i.battle_rev, i.battle_rev_language, "Japanese"),
