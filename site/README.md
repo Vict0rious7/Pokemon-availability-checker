@@ -1,0 +1,29 @@
+# Site (Phase 3)
+
+Static site: Vite + Preact + TypeScript. The engine (`../engine/src`) runs in the browser, in a Web Worker; the data files (`../data`) are bundled at build time.
+
+    cd site
+    npm ci
+    npm run dev       # local server
+    npm run build     # Finder table + type check + production build in dist/
+
+`npm run build` first runs `scripts/finder.ts`, which computes the Finder table with everything owned (about 3 s) into `src/generated/` (not committed).
+
+## How it works
+
+- `src/state.ts`: the user's selections (`Profile`), their conversion to the engine's `Owned`, and the URL hash (`#g=…&hw=…&s=…&to=…&gen=…`), so a profile can be bookmarked and shared.
+- `src/worker.ts`: runs the fixed point once per set of owned games and hardware (cached), then answers destination and scope from it. Changing only the destination or the generations takes milliseconds.
+- `src/main.tsx`: inputs, results (grouped by generation; "move before 25 Feb 2027", missing, can reach, can't live there), credits. `src/finder.tsx`: the Finder. `src/path.ts`: turns a path's route ids into places.
+- `src/labels.ts`: game names and URL codes, hardware, services, flags, HOME rewards and gifts.
+
+## Speed (measured 15 Oct 2026)
+
+The fixed point dominates. Chromium, cloud machine about 2× slower than an M-series Mac: 7 games ≈ 0.45 s, every game once ≈ 4.8 s (Node), everything ×2 ≈ 5.4 s; with 4× CPU throttling (a mid-range phone) 1 s and 24 s. Hence the worker, the cache, and the bottom bar on phones. Engine speed-ups are a Phase 5 option if real users find it slow.
+
+## Deploy
+
+`.github/workflows/site.yml`: on every push to `rebuild`, the Phase 1 and Phase 2 checks run, then the site is built; a failing check stops the chain. The `deploy` job publishes from `rebuild` only. Before the first push: in the repo settings, Pages → Source: GitHub Actions, and allow the `rebuild` branch in the `github-pages` environment's deployment branches.
+
+## Tool versions (pinned)
+
+vite 8.3.1, preact 10.29.8, @preact/preset-vite 2.10.6, typescript 5.9.3, tsx 4.23.15, Node 22 in CI.
