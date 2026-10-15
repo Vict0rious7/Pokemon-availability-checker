@@ -1,20 +1,14 @@
-import { readFileSync, existsSync } from "node:fs";
-import { join } from "node:path";
-import { loadForms } from "./data.js";
+import { readFileSync } from "node:fs";
 import { CORE_GAMES, Owned } from "./games.js";
-import { buildSeeds, run, reachableAt, Unhandled } from "./engine.js";
-import { loadDexes, rewardSeeds, emeraldHoenn, loadOncePerSave, homeGiftSeeds } from "./rewards.js";
+import { run, reachableAt } from "./engine.js";
+import { prepare } from "./prepare.js";
+import { dirReader } from "./node.js";
 
 // usage: tsx src/destinations.ts <csv dir> <destinations.json>
 // Phase 2 tests (reference/destinations.json). Checks reachable, only_before and the path expectations;
 // and HOME rewards offered or not (data/regional_dexes.json).
 const [dataDir, casesFile] = process.argv.slice(2);
-const forms = loadForms(dataDir);
-const unhandled = new Map<string, Unhandled>();
-const dexes = loadDexes(dataDir);
-const seeds = [...buildSeeds(forms, unhandled, dexes ? emeraldHoenn(dexes) : undefined, loadOncePerSave(dataDir)), ...(dexes ? rewardSeeds(forms, dexes) : []), ...homeGiftSeeds(forms, dataDir)];
-const evoPath = join(dataDir, "evolution.json");
-const evo = existsSync(evoPath) ? JSON.parse(readFileSync(evoPath, "utf8")) : undefined;
+const { forms, seeds, evo, unhandled } = prepare(dirReader(dataDir));
 const { cases } = JSON.parse(readFileSync(casesFile, "utf8"));
 const byId = new Map(cases.map((c: any) => [c.id, c]));
 

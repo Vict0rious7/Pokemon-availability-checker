@@ -610,7 +610,7 @@ export function run(forms: Form[], o: Owned, seeds: Seed[], evo?: EvoData): Resu
               if (!fresh(sup)) continue;
               const once = r.legendsOnce?.(from) && legends.has(fact.form.number) ? ["ONCE_PER_SAVE"] : [];
               const s: Support = { flags: [...new Set([...sup.flags, ...(r.flags ?? []), ...once])].sort(), until: minUntil(sup.until, r.until),
-                                   origin: sup.origin, via: [...sup.via, r.id] };
+                                   origin: sup.origin, from: sup.from, via: [...sup.via, r.id] };   // `from`: a bred Pokémon keeps its parent's origin when it moves on
               if (store.add(fact.form, to, tags, false, s)) changed = true;
             }
           }

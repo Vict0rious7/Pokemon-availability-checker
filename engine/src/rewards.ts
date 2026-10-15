@@ -1,6 +1,4 @@
-import { readFileSync, existsSync } from "node:fs";
-import { join } from "node:path";
-import { Form } from "./data.js";
+import { Form, Reader } from "./data.js";
 import { Seed } from "./engine.js";
 
 /** HOME dex-completion rewards (U12) as seeds at HOME. Requirements come from data/regional_dexes.json. */
@@ -8,9 +6,9 @@ export interface RewardSpec { reward: number; dexes: string[]; origin_games: str
   /** species whose regional forms caught in the origin game do not count: only the plain CSV row does (HR1) */ base_form_only?: number[]; }
 export interface DexFile { dexes: Record<string, { species: number[] }>; rewards: Record<string, RewardSpec>; }
 
-export function loadDexes(dir: string): DexFile | null {
-  const p = join(dir, "regional_dexes.json");
-  return existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : null;
+export function loadDexes(read: Reader): DexFile | null {
+  const t = read("regional_dexes.json");
+  return t === undefined ? null : JSON.parse(t);
 }
 
 /** Species a dex needs, after the reward's exclusions. */
@@ -41,17 +39,17 @@ export function rewardSeeds(forms: Form[], dex: DexFile): Seed[] {
 export const emeraldHoenn = (dex: DexFile) => dex.dexes.hoenn_rse.species.filter((n) => n !== 385 && n !== 386);
 
 /** ONCE_PER_SAVE (U9): mutually exclusive groups (data/once_per_save.csv) and one-time Pokémon that can evolve (data/one_time_evolving.csv); for each game, the Pokémon (full CSV names) whose own source in that game is once per save. */
-export function loadOncePerSave(dir: string): Map<string, Set<string>> | undefined {
-  const p = join(dir, "once_per_save.csv");
-  if (!existsSync(p)) return undefined;
-  const [head, ...rows] = readFileSync(p, "utf8").trim().split(/\r?\n/).map((l) => l.split(";"));
+export function loadOncePerSave(read: Reader): Map<string, Set<string>> | undefined {
+  const t = read("once_per_save.csv");
+  if (t === undefined) return undefined;
+  const [head, ...rows] = t.trim().split(/\r?\n/).map((l) => l.split(";"));
   const gi = head.indexOf("games"), mi = head.indexOf("members"), out = new Map<string, Set<string>>();
   for (const r of rows) for (const g of r[gi].split("|")) for (const m of r[mi].split("|"))
     (out.get(g) ?? out.set(g, new Set()).get(g)!).add(m);
   // second half (Victor, 15 Oct): one-time Pokémon that can evolve, derived by data/tools/build_one_time.py
-  const p2 = join(dir, "one_time_evolving.csv");
-  if (existsSync(p2)) {
-    const [h2, ...r2] = readFileSync(p2, "utf8").trim().split(/\r?\n/).map((l) => l.split(";"));
+  const t2 = read("one_time_evolving.csv");
+  if (t2 !== undefined) {
+    const [h2, ...r2] = t2.trim().split(/\r?\n/).map((l) => l.split(";"));
     const g2 = h2.indexOf("game"), m2 = h2.indexOf("members");
     for (const r of r2) for (const m of r[m2].split("|")) (out.get(r[g2]) ?? out.set(r[g2], new Set()).get(r[g2])!).add(m);
   }
@@ -59,10 +57,10 @@ export function loadOncePerSave(dir: string): Map<string, Set<string>> | undefin
 }
 
 /** Gifts HOME gives without a Pokédex condition (U12 rest, data/home_gifts.csv), as seeds at HOME. The gift id is the path origin. */
-export function homeGiftSeeds(forms: Form[], dir: string): Seed[] {
-  const p = join(dir, "home_gifts.csv");
-  if (!existsSync(p)) return [];
-  const [head, ...rows] = readFileSync(p, "utf8").trim().split(/\r?\n/).map((l) => l.split(";"));
+export function homeGiftSeeds(forms: Form[], read: Reader): Seed[] {
+  const t = read("home_gifts.csv");
+  if (t === undefined) return [];
+  const [head, ...rows] = t.trim().split(/\r?\n/).map((l) => l.split(";"));
   const col = (r: string[], c: string) => r[head.indexOf(c)];
   const seeds: Seed[] = [];
   for (const r of rows) {

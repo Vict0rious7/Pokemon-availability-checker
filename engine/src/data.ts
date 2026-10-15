@@ -1,5 +1,5 @@
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
+/** Reads a data file by name (e.g. "gen1.csv"); undefined when it does not exist. Node: node.ts dirReader; browser: bundled files. */
+export type Reader = (file: string) => string | undefined;
 
 /** One species or form row, with its availability code per game column. */
 export interface Form {
@@ -34,10 +34,10 @@ function parseCsv(text: string): string[][] {
   return rows;
 }
 
-export function loadForms(dir: string): Form[] {
+export function loadForms(read: Reader): Form[] {
   const forms: Form[] = [];
   for (let gen = 1; gen <= 9; gen++) {
-    const [header, ...rows] = parseCsv(readFileSync(join(dir, `gen${gen}.csv`), "utf8"));
+    const [header, ...rows] = parseCsv(must(read, `gen${gen}.csv`));
     for (const r of rows) {
       const name = r[1].split(/\s+/).join(" ");
       const m = name.match(/\((.*?)\)/);
@@ -55,4 +55,10 @@ export function loadForms(dir: string): Form[] {
 export function canHold(f: Form, game: string): boolean {
   const c = f.cells[game];
   return c !== undefined && c !== "" && c !== "—";
+}
+
+export function must(read: Reader, file: string): string {
+  const t = read(file);
+  if (t === undefined) throw new Error(`missing data file ${file}`);
+  return t;
 }

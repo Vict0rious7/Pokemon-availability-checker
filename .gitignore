@@ -7,3 +7,7 @@ poke_venv/
 *.DS_Store
 engine/node_modules/
 engine/out*/
+site/node_modules/
+site/dist/
+site/src/generated/
+Claude outputs/

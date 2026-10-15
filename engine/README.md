@@ -25,7 +25,9 @@ If `tsx` complains about the esbuild platform (node_modules installed on macOS, 
 
 ## Files
 
-- `src/data.ts`: CSV loading; `canHold`
+- `src/data.ts`: CSV parsing from a `Reader` (file name → text, no Node APIs, so the browser can use it); `canHold`
+- `src/prepare.ts`: forms, seeds (code rules, HOME rewards and gifts, ONCE_PER_SAVE) and evolution data from a `Reader`; used by the destination tests and the site
+- `src/node.ts`: Node only, `dirReader(dir)` reads the data folder
 - `src/games.ts`: families, the user's input (`Owned`), adapter from the old engine's inputs
 - `src/engine.ts`: seeds (code rules and special sources), routes (RT1–RT31, HOME and GO since Phase 2), origin tags and locks, fixed point, Phase 1 answer, `reachableAt` (Phase 2 answer, minimal)
 - `src/cli.ts`: runs every reference profile and lists any code it cannot interpret

@@ -4,14 +4,15 @@ import { loadForms } from "./data.js";
 import { fromOldInputs } from "./games.js";
 import { buildSeeds, run, nativeGames, Unhandled } from "./engine.js";
 import { loadDexes, emeraldHoenn, loadOncePerSave } from "./rewards.js";
+import { dirReader } from "./node.js";
 
 // usage: tsx src/cli.ts <csv dir> <reference results dir> <out dir> [dex dir]
 // With a dex dir (holding regional_dexes.json), Emerald's Johto prize uses the real Hoenn dex (Q1) instead of the Phase 1 shortcut.
 const [dataDir, refDir, outDir, dexDir] = process.argv.slice(2);
-const forms = loadForms(dataDir);
+const forms = loadForms(dirReader(dataDir));
 const unhandled = new Map<string, Unhandled>();
-const dexes = dexDir ? loadDexes(dexDir) : null;
-const seeds = buildSeeds(forms, unhandled, dexes ? emeraldHoenn(dexes) : undefined, loadOncePerSave(dexDir ?? dataDir));
+const dexes = dexDir ? loadDexes(dirReader(dexDir)) : null;
+const seeds = buildSeeds(forms, unhandled, dexes ? emeraldHoenn(dexes) : undefined, loadOncePerSave(dirReader(dexDir ?? dataDir)));
 mkdirSync(outDir, { recursive: true });
 
 for (const file of readdirSync(refDir).filter((f) => f.endsWith(".json")).sort()) {
