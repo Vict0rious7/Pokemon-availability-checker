@@ -1,0 +1,6488 @@
+{
+ "engine": {
+  "repo": "Vict0rious7/Pokemon-availability-checker",
+  "commit": "4f93c6a97cd356a8e19dbdca301985791d843bf9"
+ },
+ "profile": {
+  "id": "P19",
+  "kind": "edge",
+  "description": "Omega Ruby + White, one DS + one 3DS, Transporter and Bank",
+  "exercises": [
+   "R44 Landorus via White",
+   "R48 Kyurem via White",
+   "R40 negative"
+  ],
+  "probes": [
+   "Landorus",
+   "Kyurem",
+   "Giratina"
+  ],
+  "known_wrong": [],
+  "inputs": {
+   "red": false,
+   "green": false,
+   "blue": false,
+   "yellow": false,
+   "gold": false,
+   "silver": false,
+   "crystal": false,
+   "ruby": false,
+   "sapphire": false,
+   "firered": false,
+   "leafgreen": false,
+   "emerald": false,
+   "colo": false,
+   "bonus_disc": false,
+   "bonus_disc_language": null,
+   "xd": false,
+   "channel": false,
+   "diamond": false,
+   "pearl": false,
+   "platinum": false,
+   "heartgold": false,
+   "soulsilver": false,
+   "pokewalker": false,
+   "ranch": false,
+   "ranch_language": null,
+   "ranger": false,
+   "battle_rev": false,
+   "battle_rev_language": null,
+   "black": false,
+   "white": true,
+   "black2": false,
+   "white2": false,
+   "dream_radar": false,
+   "x": false,
+   "y": false,
+   "omega_ruby": true,
+   "aplha_sapphire": false,
+   "sun": false,
+   "moon": false,
+   "ultrasun": false,
+   "ultramoon": false,
+   "lg_pikachu": false,
+   "lg_eevee": false,
+   "sword": false,
+   "sword_dlc": false,
+   "shield": false,
+   "shield_dlc": false,
+   "brilliant_diamond": false,
+   "shining_pearl": false,
+   "legends_arceus": false,
+   "scarlet": false,
+   "scarlet_dlc": false,
+   "violet": false,
+   "violet_dlc": false,
+   "legends_za": false,
+   "legends_za_dlc": false,
+   "og_ds": false,
+   "transporter": true,
+   "bank": true,
+   "home": false,
+   "gb_gbc_number": "0",
+   "gba_number": "0",
+   "ds_number": "1",
+   "three_ds_number": "1",
+   "switch_number": "0"
+  }
+ },
+ "counts": {
+  "available": 586,
+  "unavailable": 501
+ },
+ "available": [
+  {
+   "number": "10",
+   "name": "Caterpie",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "11",
+   "name": "Metapod",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "12",
+   "name": "Butterfree",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "13",
+   "name": "Weedle",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "14",
+   "name": "Kakuna",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "15",
+   "name": "Beedrill",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "16",
+   "name": "Pidgey",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "17",
+   "name": "Pidgeotto",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "18",
+   "name": "Pidgeot",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "19",
+   "name": "Rattata",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "20",
+   "name": "Raticate",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "21",
+   "name": "Spearow",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "22",
+   "name": "Fearow",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "25",
+   "name": "Pikachu",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "26",
+   "name": "Raichu",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "27",
+   "name": "Sandshrew",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "28",
+   "name": "Sandslash",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "29",
+   "name": "Nidoran♀",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "30",
+   "name": "Nidorina",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "31",
+   "name": "Nidoqueen",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "32",
+   "name": "Nidoran♂",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "33",
+   "name": "Nidorino",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "34",
+   "name": "Nidoking",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "35",
+   "name": "Clefairy",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "36",
+   "name": "Clefable",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "37",
+   "name": "Vulpix",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "38",
+   "name": "Ninetales",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "39",
+   "name": "Jigglypuff",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "40",
+   "name": "Wigglytuff",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "41",
+   "name": "Zubat",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "42",
+   "name": "Golbat",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "43",
+   "name": "Oddish",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "44",
+   "name": "Gloom",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "45",
+   "name": "Vileplume",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "46",
+   "name": "Paras",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "47",
+   "name": "Parasect",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "48",
+   "name": "Venonat",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "49",
+   "name": "Venomoth",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "50",
+   "name": "Diglett",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "51",
+   "name": "Dugtrio",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "52",
+   "name": "Meowth",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "53",
+   "name": "Persian",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "54",
+   "name": "Psyduck",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "55",
+   "name": "Golduck",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "56",
+   "name": "Mankey",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "57",
+   "name": "Primeape",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "58",
+   "name": "Growlithe",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "59",
+   "name": "Arcanine",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "60",
+   "name": "Poliwag",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "61",
+   "name": "Poliwhirl",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "62",
+   "name": "Poliwrath",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "63",
+   "name": "Abra",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "64",
+   "name": "Kadabra",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "66",
+   "name": "Machop",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "67",
+   "name": "Machoke",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "69",
+   "name": "Bellsprout",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "70",
+   "name": "Weepinbell",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "71",
+   "name": "Victreebel",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "72",
+   "name": "Tentacool",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "73",
+   "name": "Tentacruel",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "74",
+   "name": "Geodude",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "75",
+   "name": "Graveler",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "77",
+   "name": "Ponyta",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "78",
+   "name": "Rapidash",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "79",
+   "name": "Slowpoke",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "80",
+   "name": "Slowbro",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "81",
+   "name": "Magnemite",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "82",
+   "name": "Magneton",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "83",
+   "name": "Farfetch'd",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "84",
+   "name": "Doduo",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "85",
+   "name": "Dodrio",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "86",
+   "name": "Seel",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "87",
+   "name": "Dewgong",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "88",
+   "name": "Grimer",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "89",
+   "name": "Muk",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "90",
+   "name": "Shellder",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "91",
+   "name": "Cloyster",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "92",
+   "name": "Gastly",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "93",
+   "name": "Haunter",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "95",
+   "name": "Onix",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "96",
+   "name": "Drowzee",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "97",
+   "name": "Hypno",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "98",
+   "name": "Krabby",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "99",
+   "name": "Kingler",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "100",
+   "name": "Voltorb",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "101",
+   "name": "Electrode",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "102",
+   "name": "Exeggcute",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "103",
+   "name": "Exeggutor",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "104",
+   "name": "Cubone",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "105",
+   "name": "Marowak",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "106",
+   "name": "Hitmonlee",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "107",
+   "name": "Hitmonchan",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "108",
+   "name": "Lickitung",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "109",
+   "name": "Koffing",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "110",
+   "name": "Weezing",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "111",
+   "name": "Rhyhorn",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "112",
+   "name": "Rhydon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "113",
+   "name": "Chansey",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "114",
+   "name": "Tangela",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "115",
+   "name": "Kangaskhan",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "116",
+   "name": "Horsea",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "117",
+   "name": "Seadra",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "118",
+   "name": "Goldeen",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "119",
+   "name": "Seaking",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "120",
+   "name": "Staryu",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "121",
+   "name": "Starmie",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "124",
+   "name": "Jynx",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "125",
+   "name": "Electabuzz",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "126",
+   "name": "Magmar",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "127",
+   "name": "Pinsir",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "129",
+   "name": "Magikarp",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "130",
+   "name": "Gyarados",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "131",
+   "name": "Lapras",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "132",
+   "name": "Ditto",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "133",
+   "name": "Eevee",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "134",
+   "name": "Vaporeon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "135",
+   "name": "Jolteon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "136",
+   "name": "Flareon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "137",
+   "name": "Porygon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "138",
+   "name": "Omanyte",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "139",
+   "name": "Omastar",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "140",
+   "name": "Kabuto",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "141",
+   "name": "Kabutops",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "142",
+   "name": "Aerodactyl",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "143",
+   "name": "Snorlax",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "147",
+   "name": "Dratini",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "148",
+   "name": "Dragonair",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "149",
+   "name": "Dragonite",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "152",
+   "name": "Chikorita",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "153",
+   "name": "Bayleef",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "154",
+   "name": "Meganium",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "155",
+   "name": "Cyndaquil",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "156",
+   "name": "Quilava",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "157",
+   "name": "Typhlosion",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "158",
+   "name": "Totodile",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "159",
+   "name": "Croconaw",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "160",
+   "name": "Feraligatr",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "161",
+   "name": "Sentret",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "162",
+   "name": "Furret",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "163",
+   "name": "Hoothoot",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "164",
+   "name": "Noctowl",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "165",
+   "name": "Ledyba",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "166",
+   "name": "Ledian",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "167",
+   "name": "Spinarak",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "168",
+   "name": "Ariados",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "169",
+   "name": "Crobat",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "170",
+   "name": "Chinchou",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "171",
+   "name": "Lanturn",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "172",
+   "name": "Pichu",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "173",
+   "name": "Cleffa",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "174",
+   "name": "Igglybuff",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "175",
+   "name": "Togepi",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "176",
+   "name": "Togetic",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "177",
+   "name": "Natu",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "178",
+   "name": "Xatu",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "179",
+   "name": "Mareep",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "180",
+   "name": "Flaaffy",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "181",
+   "name": "Ampharos",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "182",
+   "name": "Bellossom",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "183",
+   "name": "Marill",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "184",
+   "name": "Azumarill",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "186",
+   "name": "Politoed",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "187",
+   "name": "Hoppip",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "188",
+   "name": "Skiploom",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "189",
+   "name": "Jumpluff",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "190",
+   "name": "Aipom",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "191",
+   "name": "Sunkern",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "192",
+   "name": "Sunflora",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "193",
+   "name": "Yanma",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "194",
+   "name": "Wooper",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "195",
+   "name": "Quagsire",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "196",
+   "name": "Espeon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "197",
+   "name": "Umbreon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "198",
+   "name": "Murkrow",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "199",
+   "name": "Slowking",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "200",
+   "name": "Misdreavus",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "201",
+   "name": "Unown",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "202",
+   "name": "Wobbuffet",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "203",
+   "name": "Girafarig",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "204",
+   "name": "Pineco",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "205",
+   "name": "Forretress",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "206",
+   "name": "Dunsparce",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "207",
+   "name": "Gligar",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "211",
+   "name": "Qwilfish",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "213",
+   "name": "Shuckle",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "214",
+   "name": "Heracross",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "215",
+   "name": "Sneasel",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "218",
+   "name": "Slugma",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "219",
+   "name": "Magcargo",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "220",
+   "name": "Swinub",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "221",
+   "name": "Piloswine",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "222",
+   "name": "Corsola",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "223",
+   "name": "Remoraid",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "224",
+   "name": "Octillery",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "225",
+   "name": "Delibird",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "226",
+   "name": "Mantine",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "227",
+   "name": "Skarmory",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "230",
+   "name": "Kingdra",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "231",
+   "name": "Phanpy",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "232",
+   "name": "Donphan",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "234",
+   "name": "Stantler",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "235",
+   "name": "Smeargle",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "236",
+   "name": "Tyrogue",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "237",
+   "name": "Hitmontop",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "238",
+   "name": "Smoochum",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "239",
+   "name": "Elekid",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "240",
+   "name": "Magby",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "242",
+   "name": "Blissey",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "243",
+   "name": "Raikou",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "244",
+   "name": "Entei",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "245",
+   "name": "Suicune",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "246",
+   "name": "Larvitar",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "247",
+   "name": "Pupitar",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "248",
+   "name": "Tyranitar",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "250",
+   "name": "Ho-Oh",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "252",
+   "name": "Treecko",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "253",
+   "name": "Grovyle",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "254",
+   "name": "Sceptile",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "255",
+   "name": "Torchic",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "256",
+   "name": "Combusken",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "257",
+   "name": "Blaziken",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "258",
+   "name": "Mudkip",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "259",
+   "name": "Marshtomp",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "260",
+   "name": "Swampert",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "261",
+   "name": "Poochyena",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "262",
+   "name": "Mightyena",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "263",
+   "name": "Zigzagoon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "264",
+   "name": "Linoone",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "265",
+   "name": "Wurmple",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "266",
+   "name": "Silcoon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "267",
+   "name": "Beautifly",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "268",
+   "name": "Cascoon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "269",
+   "name": "Dustox",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "270",
+   "name": "Lotad",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "271",
+   "name": "Lombre",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "272",
+   "name": "Ludicolo",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "273",
+   "name": "Seedot",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "274",
+   "name": "Nuzleaf",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "275",
+   "name": "Shiftry",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "276",
+   "name": "Taillow",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "277",
+   "name": "Swellow",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "278",
+   "name": "Wingull",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "279",
+   "name": "Pelipper",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "280",
+   "name": "Ralts",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "281",
+   "name": "Kirlia",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "282",
+   "name": "Gardevoir",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "283",
+   "name": "Surskit",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "284",
+   "name": "Masquerain",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "285",
+   "name": "Shroomish",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "286",
+   "name": "Breloom",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "287",
+   "name": "Slakoth",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "288",
+   "name": "Vigoroth",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "289",
+   "name": "Slaking",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "290",
+   "name": "Nincada",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "291",
+   "name": "Ninjask",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "292",
+   "name": "Shedinja",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "293",
+   "name": "Whismur",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "294",
+   "name": "Loudred",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "295",
+   "name": "Exploud",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "296",
+   "name": "Makuhita",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "297",
+   "name": "Hariyama",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "298",
+   "name": "Azurill",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "299",
+   "name": "Nosepass",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "300",
+   "name": "Skitty",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "301",
+   "name": "Delcatty",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "302",
+   "name": "Sableye",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "303",
+   "name": "Mawile",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "304",
+   "name": "Aron",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "305",
+   "name": "Lairon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "306",
+   "name": "Aggron",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "307",
+   "name": "Meditite",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "308",
+   "name": "Medicham",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "309",
+   "name": "Electrike",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "310",
+   "name": "Manectric",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "311",
+   "name": "Plusle",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "312",
+   "name": "Minun",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "313",
+   "name": "Volbeat",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "314",
+   "name": "Illumise",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "315",
+   "name": "Roselia",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "316",
+   "name": "Gulpin",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "317",
+   "name": "Swalot",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "318",
+   "name": "Carvanha",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "319",
+   "name": "Sharpedo",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "320",
+   "name": "Wailmer",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "321",
+   "name": "Wailord",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "322",
+   "name": "Numel",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "323",
+   "name": "Camerupt",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "324",
+   "name": "Torkoal",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "325",
+   "name": "Spoink",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "326",
+   "name": "Grumpig",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "327",
+   "name": "Spinda",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "328",
+   "name": "Trapinch",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "329",
+   "name": "Vibrava",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "330",
+   "name": "Flygon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "331",
+   "name": "Cacnea",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "332",
+   "name": "Cacturne",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "333",
+   "name": "Swablu",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "334",
+   "name": "Altaria",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "335",
+   "name": "Zangoose",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "336",
+   "name": "Seviper",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "337",
+   "name": "Lunatone",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "338",
+   "name": "Solrock",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "339",
+   "name": "Barboach",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "340",
+   "name": "Whiscash",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "341",
+   "name": "Corphish",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "342",
+   "name": "Crawdaunt",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "343",
+   "name": "Baltoy",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "344",
+   "name": "Claydol",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "345",
+   "name": "Lileep",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "346",
+   "name": "Cradily",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "347",
+   "name": "Anorith",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "348",
+   "name": "Armaldo",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "349",
+   "name": "Feebas",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "350",
+   "name": "Milotic",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "351",
+   "name": "Castform",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "352",
+   "name": "Kecleon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "353",
+   "name": "Shuppet",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "354",
+   "name": "Banette",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "355",
+   "name": "Duskull",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "356",
+   "name": "Dusclops",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "357",
+   "name": "Tropius",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "358",
+   "name": "Chimecho",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "359",
+   "name": "Absol",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "360",
+   "name": "Wynaut",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "361",
+   "name": "Snorunt",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "362",
+   "name": "Glalie",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "363",
+   "name": "Spheal",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "364",
+   "name": "Sealeo",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "365",
+   "name": "Walrein",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "366",
+   "name": "Clamperl",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "368",
+   "name": "Gorebyss",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "369",
+   "name": "Relicanth",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "370",
+   "name": "Luvdisc",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "371",
+   "name": "Bagon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "372",
+   "name": "Shelgon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "373",
+   "name": "Salamence",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "374",
+   "name": "Beldum",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "375",
+   "name": "Metang",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "376",
+   "name": "Metagross",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "377",
+   "name": "Regirock",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "378",
+   "name": "Regice",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "379",
+   "name": "Registeel",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "381",
+   "name": "Latios",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "383",
+   "name": "Groudon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "384",
+   "name": "Rayquaza",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "386",
+   "name": "Deoxys",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "387",
+   "name": "Turtwig",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "388",
+   "name": "Grotle",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "389",
+   "name": "Torterra",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "390",
+   "name": "Chimchar",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "391",
+   "name": "Monferno",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "392",
+   "name": "Infernape",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "393",
+   "name": "Piplup",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "394",
+   "name": "Prinplup",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "395",
+   "name": "Empoleon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "396",
+   "name": "Starly",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "397",
+   "name": "Staravia",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "398",
+   "name": "Staraptor",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "399",
+   "name": "Bidoof",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "400",
+   "name": "Bibarel",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "401",
+   "name": "Kricketot",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "402",
+   "name": "Kricketune",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "403",
+   "name": "Shinx",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "404",
+   "name": "Luxio",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "405",
+   "name": "Luxray",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "406",
+   "name": "Budew",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "407",
+   "name": "Roserade",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "408",
+   "name": "Cranidos",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "409",
+   "name": "Rampardos",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "410",
+   "name": "Shieldon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "411",
+   "name": "Bastiodon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "415",
+   "name": "Combee",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "416",
+   "name": "Vespiquen",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "418",
+   "name": "Buizel",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "419",
+   "name": "Floatzel",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "420",
+   "name": "Cherubi",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "421",
+   "name": "Cherrim",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "422",
+   "name": "Shellos (West)",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "423",
+   "name": "Gastrodon (West)",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "424",
+   "name": "Ambipom",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "425",
+   "name": "Drifloon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "426",
+   "name": "Drifblim",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "427",
+   "name": "Buneary",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "428",
+   "name": "Lopunny",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "429",
+   "name": "Mismagius",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "430",
+   "name": "Honchkrow",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "431",
+   "name": "Glameow",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "432",
+   "name": "Purugly",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "433",
+   "name": "Chingling",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "436",
+   "name": "Bronzor",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "437",
+   "name": "Bronzong",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "440",
+   "name": "Happiny",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "441",
+   "name": "Chatot",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "442",
+   "name": "Spiritomb",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "443",
+   "name": "Gible",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "444",
+   "name": "Gabite",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "445",
+   "name": "Garchomp",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "446",
+   "name": "Munchlax",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "447",
+   "name": "Riolu",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "448",
+   "name": "Lucario",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "449",
+   "name": "Hippopotas",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "450",
+   "name": "Hippowdon",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "451",
+   "name": "Skorupi",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "452",
+   "name": "Drapion",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "453",
+   "name": "Croagunk",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "454",
+   "name": "Toxicroak",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "456",
+   "name": "Finneon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "457",
+   "name": "Lumineon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "458",
+   "name": "Mantyke",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "461",
+   "name": "Weavile",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "462",
+   "name": "Magnezone",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "463",
+   "name": "Lickilicky",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "465",
+   "name": "Tangrowth",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "468",
+   "name": "Togekiss",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "469",
+   "name": "Yanmega",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "470",
+   "name": "Leafeon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "471",
+   "name": "Glaceon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "472",
+   "name": "Gliscor",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "473",
+   "name": "Mamoswine",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "475",
+   "name": "Gallade",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "476",
+   "name": "Probopass",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "478",
+   "name": "Froslass",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "479",
+   "name": "Rotom",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "480",
+   "name": "Uxie",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "481",
+   "name": "Mesprit",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "482",
+   "name": "Azelf",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "484",
+   "name": "Palkia",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "485",
+   "name": "Heatran",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "486",
+   "name": "Regigigas",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "488",
+   "name": "Cresselia",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "495",
+   "name": "Snivy",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "496",
+   "name": "Servine",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "497",
+   "name": "Serperior",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "498",
+   "name": "Tepig",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "499",
+   "name": "Pignite",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "500",
+   "name": "Emboar",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "501",
+   "name": "Oshawott",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "502",
+   "name": "Dewott",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "503",
+   "name": "Samurott",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "504",
+   "name": "Patrat",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "505",
+   "name": "Watchog",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "506",
+   "name": "Lillipup",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "507",
+   "name": "Herdier",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "508",
+   "name": "Stoutland",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "509",
+   "name": "Purrloin",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "510",
+   "name": "Liepard",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "511",
+   "name": "Pansage",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "512",
+   "name": "Simisage",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "513",
+   "name": "Pansear",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "514",
+   "name": "Simisear",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "515",
+   "name": "Panpour",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "516",
+   "name": "Simipour",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "517",
+   "name": "Munna",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "518",
+   "name": "Musharna",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "519",
+   "name": "Pidove",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "520",
+   "name": "Tranquill",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "521",
+   "name": "Unfezant",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "522",
+   "name": "Blitzle",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "523",
+   "name": "Zebstrika",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "524",
+   "name": "Roggenrola",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "525",
+   "name": "Boldore",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "527",
+   "name": "Woobat",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "528",
+   "name": "Swoobat",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "529",
+   "name": "Drilbur",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "530",
+   "name": "Excadrill",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "531",
+   "name": "Audino",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "532",
+   "name": "Timburr",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "533",
+   "name": "Gurdurr",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "535",
+   "name": "Tympole",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "536",
+   "name": "Palpitoad",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "537",
+   "name": "Seismitoad",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "538",
+   "name": "Throh",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "539",
+   "name": "Sawk",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "540",
+   "name": "Sewaddle",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "541",
+   "name": "Swadloon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "542",
+   "name": "Leavanny",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "543",
+   "name": "Venipede",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "544",
+   "name": "Whirlipede",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "545",
+   "name": "Scolipede",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "546",
+   "name": "Cottonee",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "547",
+   "name": "Whimsicott",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "548",
+   "name": "Petilil",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "549",
+   "name": "Lilligant",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "550",
+   "name": "Basculin (Red)",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "550",
+   "name": "Basculin (Blue)",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "551",
+   "name": "Sandile",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "552",
+   "name": "Krokorok",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "553",
+   "name": "Krookodile",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "554",
+   "name": "Darumaka",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "555",
+   "name": "Darmanitan",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "556",
+   "name": "Maractus",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "557",
+   "name": "Dwebble",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "558",
+   "name": "Crustle",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "559",
+   "name": "Scraggy",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "560",
+   "name": "Scrafty",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "561",
+   "name": "Sigilyph",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "562",
+   "name": "Yamask",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "563",
+   "name": "Cofagrigus",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "564",
+   "name": "Tirtouga",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "565",
+   "name": "Carracosta",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "566",
+   "name": "Archen",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "567",
+   "name": "Archeops",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "568",
+   "name": "Trubbish",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "569",
+   "name": "Garbodor",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "570",
+   "name": "Zorua",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "571",
+   "name": "Zoroark",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "572",
+   "name": "Minccino",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "573",
+   "name": "Cinccino",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "574",
+   "name": "Gothita",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "575",
+   "name": "Gothorita",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "576",
+   "name": "Gothitelle",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "577",
+   "name": "Solosis",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "578",
+   "name": "Duosion",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "579",
+   "name": "Reuniclus",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "580",
+   "name": "Ducklett",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "581",
+   "name": "Swanna",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "582",
+   "name": "Vanillite",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "583",
+   "name": "Vanillish",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "584",
+   "name": "Vanilluxe",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "585",
+   "name": "Deerling",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "586",
+   "name": "Sawsbuck",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "587",
+   "name": "Emolga",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "588",
+   "name": "Karrablast",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "590",
+   "name": "Foongus",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "591",
+   "name": "Amoonguss",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "592",
+   "name": "Frillish",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "593",
+   "name": "Jellicent",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "594",
+   "name": "Alomomola",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "595",
+   "name": "Joltik",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "596",
+   "name": "Galvantula",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "597",
+   "name": "Ferroseed",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "598",
+   "name": "Ferrothorn",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "599",
+   "name": "Klink",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "600",
+   "name": "Klang",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "601",
+   "name": "Klinklang",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "602",
+   "name": "Tynamo",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "603",
+   "name": "Eelektrik",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "604",
+   "name": "Eelektross",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "605",
+   "name": "Elgyem",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "606",
+   "name": "Beheeyem",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "607",
+   "name": "Litwick",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "608",
+   "name": "Lampent",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "609",
+   "name": "Chandelure",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "610",
+   "name": "Axew",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "611",
+   "name": "Fraxure",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "612",
+   "name": "Haxorus",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "613",
+   "name": "Cubchoo",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "614",
+   "name": "Beartic",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "615",
+   "name": "Cryogonal",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "616",
+   "name": "Shelmet",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "618",
+   "name": "Stunfisk",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "619",
+   "name": "Mienfoo",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "620",
+   "name": "Mienshao",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "621",
+   "name": "Druddigon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "622",
+   "name": "Golett",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "623",
+   "name": "Golurk",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "624",
+   "name": "Pawniard",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "625",
+   "name": "Bisharp",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "626",
+   "name": "Bouffalant",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "627",
+   "name": "Rufflet",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "628",
+   "name": "Braviary",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "629",
+   "name": "Vullaby",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "630",
+   "name": "Mandibuzz",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "631",
+   "name": "Heatmor",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "632",
+   "name": "Durant",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "633",
+   "name": "Deino",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "634",
+   "name": "Zweilous",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "635",
+   "name": "Hydreigon",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "636",
+   "name": "Larvesta",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "637",
+   "name": "Volcarona",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "638",
+   "name": "Cobalion",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "639",
+   "name": "Terrakion",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "640",
+   "name": "Virizion",
+   "games": [
+    "White",
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "641",
+   "name": "Tornadus",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "642",
+   "name": "Thundurus",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "643",
+   "name": "Reshiram",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "644",
+   "name": "Zekrom",
+   "games": [
+    "White"
+   ]
+  },
+  {
+   "number": "645",
+   "name": "Landorus",
+   "games": [
+    "OmegaRuby⤹"
+   ]
+  },
+  {
+   "number": "646",
+   "name": "Kyurem",
+   "games": [
+    "White",
+    "OmegaRuby⤹"
+   ]
+  },
+  {
+   "number": "688",
+   "name": "Binacle",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "689",
+   "name": "Barbaracle",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "690",
+   "name": "Skrelp",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "691",
+   "name": "Dragalge",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "700",
+   "name": "Sylveon",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "707",
+   "name": "Klefki",
+   "games": [
+    "OmegaRuby"
+   ]
+  },
+  {
+   "number": "708",
+   "name": "Phantump",
+   "games": [
+    "OmegaRuby"
+   ]
+  }
+ ],
+ "unavailable": [
+  {
+   "number": "1",
+   "name": "Bulbasaur"
+  },
+  {
+   "number": "2",
+   "name": "Ivysaur"
+  },
+  {
+   "number": "3",
+   "name": "Venusaur"
+  },
+  {
+   "number": "4",
+   "name": "Charmander"
+  },
+  {
+   "number": "5",
+   "name": "Charmeleon"
+  },
+  {
+   "number": "6",
+   "name": "Charizard"
+  },
+  {
+   "number": "7",
+   "name": "Squirtle"
+  },
+  {
+   "number": "8",
+   "name": "Wartortle"
+  },
+  {
+   "number": "9",
+   "name": "Blastoise"
+  },
+  {
+   "number": "19",
+   "name": "Rattata (Alolan Form)"
+  },
+  {
+   "number": "20",
+   "name": "Raticate (Alolan Form)"
+  },
+  {
+   "number": "23",
+   "name": "Ekans"
+  },
+  {
+   "number": "24",
+   "name": "Arbok"
+  },
+  {
+   "number": "26",
+   "name": "Raichu (Alolan Form)"
+  },
+  {
+   "number": "27",
+   "name": "Sandshrew (Alolan Form)"
+  },
+  {
+   "number": "28",
+   "name": "Sandslash (Alolan Form)"
+  },
+  {
+   "number": "37",
+   "name": "Vulpix (Alolan Form)"
+  },
+  {
+   "number": "38",
+   "name": "Ninetales (Alolan Form)"
+  },
+  {
+   "number": "50",
+   "name": "Diglett (Alolan Form)"
+  },
+  {
+   "number": "51",
+   "name": "Dugtrio (Alolan Form)"
+  },
+  {
+   "number": "52",
+   "name": "Meowth (Alolan Form)"
+  },
+  {
+   "number": "52",
+   "name": "Meowth (Galarian Form)"
+  },
+  {
+   "number": "53",
+   "name": "Persian (Alolan Form)"
+  },
+  {
+   "number": "58",
+   "name": "Growlithe (Hisuian Form)"
+  },
+  {
+   "number": "59",
+   "name": "Arcanine (Hisuian Form)"
+  },
+  {
+   "number": "65",
+   "name": "Alakazam"
+  },
+  {
+   "number": "68",
+   "name": "Machamp"
+  },
+  {
+   "number": "74",
+   "name": "Geodude (Alolan Form)"
+  },
+  {
+   "number": "75",
+   "name": "Graveler (Alolan Form)"
+  },
+  {
+   "number": "76",
+   "name": "Golem"
+  },
+  {
+   "number": "76",
+   "name": "Golem (Alolan Form)"
+  },
+  {
+   "number": "77",
+   "name": "Ponyta (Galarian Form)"
+  },
+  {
+   "number": "78",
+   "name": "Rapidash (Galarian Form)"
+  },
+  {
+   "number": "79",
+   "name": "Slowpoke (Galarian Form)"
+  },
+  {
+   "number": "80",
+   "name": "Slowbro (Galarian Form)"
+  },
+  {
+   "number": "83",
+   "name": "Farfetch'd (Galarian Form)"
+  },
+  {
+   "number": "88",
+   "name": "Grimer (Alolan Form)"
+  },
+  {
+   "number": "89",
+   "name": "Muk (Alolan Form)"
+  },
+  {
+   "number": "94",
+   "name": "Gengar"
+  },
+  {
+   "number": "100",
+   "name": "Voltorb (Hisuian Form)"
+  },
+  {
+   "number": "101",
+   "name": "Electrode (Hisuian Form)"
+  },
+  {
+   "number": "103",
+   "name": "Exeggutor (Alolan Form)"
+  },
+  {
+   "number": "105",
+   "name": "Marowak (Alolan Form)"
+  },
+  {
+   "number": "110",
+   "name": "Weezing (Galarian Form)"
+  },
+  {
+   "number": "122",
+   "name": "Mr. Mime"
+  },
+  {
+   "number": "122",
+   "name": "Mr. Mime (Galarian Form)"
+  },
+  {
+   "number": "123",
+   "name": "Scyther"
+  },
+  {
+   "number": "128",
+   "name": "Tauros"
+  },
+  {
+   "number": "128",
+   "name": "Tauros (Paldean Combat Form)"
+  },
+  {
+   "number": "128",
+   "name": "Tauros (Paldean Blaze Form)"
+  },
+  {
+   "number": "128",
+   "name": "Tauros (Paldean Aqua Form)"
+  },
+  {
+   "number": "144",
+   "name": "Articuno"
+  },
+  {
+   "number": "144",
+   "name": "Articuno (Galarian Form)"
+  },
+  {
+   "number": "145",
+   "name": "Zapdos"
+  },
+  {
+   "number": "145",
+   "name": "Zapdos (Galarian Form)"
+  },
+  {
+   "number": "146",
+   "name": "Moltres"
+  },
+  {
+   "number": "146",
+   "name": "Moltres (Galarian Form)"
+  },
+  {
+   "number": "150",
+   "name": "Mewtwo"
+  },
+  {
+   "number": "151",
+   "name": "Mew"
+  },
+  {
+   "number": "157",
+   "name": "Typhlosion (Hisuian Form)"
+  },
+  {
+   "number": "185",
+   "name": "Sudowoodo"
+  },
+  {
+   "number": "194",
+   "name": "Wooper (Paldean Form)"
+  },
+  {
+   "number": "199",
+   "name": "Slowking (Galarian Form)"
+  },
+  {
+   "number": "208",
+   "name": "Steelix"
+  },
+  {
+   "number": "209",
+   "name": "Snubbull"
+  },
+  {
+   "number": "210",
+   "name": "Granbull"
+  },
+  {
+   "number": "211",
+   "name": "Qwilfish (Hisuian Form)"
+  },
+  {
+   "number": "212",
+   "name": "Scizor"
+  },
+  {
+   "number": "215",
+   "name": "Sneasel (Hisuian Form)"
+  },
+  {
+   "number": "216",
+   "name": "Teddiursa"
+  },
+  {
+   "number": "217",
+   "name": "Ursaring"
+  },
+  {
+   "number": "222",
+   "name": "Corsola (Galarian Form)"
+  },
+  {
+   "number": "228",
+   "name": "Houndour"
+  },
+  {
+   "number": "229",
+   "name": "Houndoom"
+  },
+  {
+   "number": "233",
+   "name": "Porygon2"
+  },
+  {
+   "number": "241",
+   "name": "Miltank"
+  },
+  {
+   "number": "249",
+   "name": "Lugia"
+  },
+  {
+   "number": "251",
+   "name": "Celebi"
+  },
+  {
+   "number": "263",
+   "name": "Zigzagoon (Galarian Form)"
+  },
+  {
+   "number": "264",
+   "name": "Linoone (Galarian Form)"
+  },
+  {
+   "number": "367",
+   "name": "Huntail"
+  },
+  {
+   "number": "380",
+   "name": "Latias"
+  },
+  {
+   "number": "382",
+   "name": "Kyogre"
+  },
+  {
+   "number": "385",
+   "name": "Jirachi"
+  },
+  {
+   "number": "412",
+   "name": "Burmy"
+  },
+  {
+   "number": "413",
+   "name": "Wormadam"
+  },
+  {
+   "number": "414",
+   "name": "Mothim"
+  },
+  {
+   "number": "417",
+   "name": "Pachirisu"
+  },
+  {
+   "number": "422",
+   "name": "Shellos (East)"
+  },
+  {
+   "number": "423",
+   "name": "Gastrodon (East)"
+  },
+  {
+   "number": "434",
+   "name": "Stunky"
+  },
+  {
+   "number": "435",
+   "name": "Skuntank"
+  },
+  {
+   "number": "438",
+   "name": "Bonsly"
+  },
+  {
+   "number": "439",
+   "name": "Mime Jr."
+  },
+  {
+   "number": "455",
+   "name": "Carnivine"
+  },
+  {
+   "number": "459",
+   "name": "Snover"
+  },
+  {
+   "number": "460",
+   "name": "Abomasnow"
+  },
+  {
+   "number": "464",
+   "name": "Rhyperior"
+  },
+  {
+   "number": "466",
+   "name": "Electivire"
+  },
+  {
+   "number": "467",
+   "name": "Magmortar"
+  },
+  {
+   "number": "474",
+   "name": "Porygon-Z"
+  },
+  {
+   "number": "477",
+   "name": "Dusknoir"
+  },
+  {
+   "number": "483",
+   "name": "Dialga"
+  },
+  {
+   "number": "487",
+   "name": "Giratina"
+  },
+  {
+   "number": "489",
+   "name": "Phione"
+  },
+  {
+   "number": "490",
+   "name": "Manaphy"
+  },
+  {
+   "number": "491",
+   "name": "Darkrai"
+  },
+  {
+   "number": "492",
+   "name": "Shaymin"
+  },
+  {
+   "number": "493",
+   "name": "Arceus"
+  },
+  {
+   "number": "494",
+   "name": "Victini"
+  },
+  {
+   "number": "503",
+   "name": "Samurott (Hisuian Form)"
+  },
+  {
+   "number": "526",
+   "name": "Gigalith"
+  },
+  {
+   "number": "534",
+   "name": "Conkeldurr"
+  },
+  {
+   "number": "549",
+   "name": "Lilligant (Hisuian Form)"
+  },
+  {
+   "number": "550",
+   "name": "Basculin (White)"
+  },
+  {
+   "number": "554",
+   "name": "Darumaka (Galarian Form)"
+  },
+  {
+   "number": "555",
+   "name": "Darmanitan (Galarian Form)"
+  },
+  {
+   "number": "562",
+   "name": "Yamask (Galarian Form)"
+  },
+  {
+   "number": "570",
+   "name": "Zorua (Hisuian Form)"
+  },
+  {
+   "number": "571",
+   "name": "Zoroark (Hisuian Form)"
+  },
+  {
+   "number": "589",
+   "name": "Escavalier"
+  },
+  {
+   "number": "617",
+   "name": "Accelgor"
+  },
+  {
+   "number": "618",
+   "name": "Stunfisk (Galarian Form)"
+  },
+  {
+   "number": "628",
+   "name": "Braviary (Hisuian Form)"
+  },
+  {
+   "number": "647",
+   "name": "Keldeo"
+  },
+  {
+   "number": "648",
+   "name": "Meloetta"
+  },
+  {
+   "number": "649",
+   "name": "Genesect"
+  },
+  {
+   "number": "650",
+   "name": "Chespin"
+  },
+  {
+   "number": "651",
+   "name": "Quilladin"
+  },
+  {
+   "number": "652",
+   "name": "Chesnaught"
+  },
+  {
+   "number": "653",
+   "name": "Fennekin"
+  },
+  {
+   "number": "654",
+   "name": "Braixen"
+  },
+  {
+   "number": "655",
+   "name": "Delphox"
+  },
+  {
+   "number": "656",
+   "name": "Froakie"
+  },
+  {
+   "number": "657",
+   "name": "Frogadier"
+  },
+  {
+   "number": "658",
+   "name": "Greninja"
+  },
+  {
+   "number": "659",
+   "name": "Bunnelby"
+  },
+  {
+   "number": "660",
+   "name": "Diggersby"
+  },
+  {
+   "number": "661",
+   "name": "Fletchling"
+  },
+  {
+   "number": "662",
+   "name": "Fletchinder"
+  },
+  {
+   "number": "663",
+   "name": "Talonflame"
+  },
+  {
+   "number": "664",
+   "name": "Scatterbug"
+  },
+  {
+   "number": "665",
+   "name": "Spewpa"
+  },
+  {
+   "number": "666",
+   "name": "Vivillon"
+  },
+  {
+   "number": "667",
+   "name": "Litleo"
+  },
+  {
+   "number": "668",
+   "name": "Pyroar"
+  },
+  {
+   "number": "669",
+   "name": "Flabébé"
+  },
+  {
+   "number": "670",
+   "name": "Floette"
+  },
+  {
+   "number": "671",
+   "name": "Florges"
+  },
+  {
+   "number": "672",
+   "name": "Skiddo"
+  },
+  {
+   "number": "673",
+   "name": "Gogoat"
+  },
+  {
+   "number": "674",
+   "name": "Pancham"
+  },
+  {
+   "number": "675",
+   "name": "Pangoro"
+  },
+  {
+   "number": "676",
+   "name": "Furfrou"
+  },
+  {
+   "number": "677",
+   "name": "Espurr"
+  },
+  {
+   "number": "678",
+   "name": "Meowstic"
+  },
+  {
+   "number": "679",
+   "name": "Honedge"
+  },
+  {
+   "number": "680",
+   "name": "Doublade"
+  },
+  {
+   "number": "681",
+   "name": "Aegislash"
+  },
+  {
+   "number": "682",
+   "name": "Spritzee"
+  },
+  {
+   "number": "683",
+   "name": "Aromatisse"
+  },
+  {
+   "number": "684",
+   "name": "Swirlix"
+  },
+  {
+   "number": "685",
+   "name": "Slurpuff"
+  },
+  {
+   "number": "686",
+   "name": "Inkay"
+  },
+  {
+   "number": "687",
+   "name": "Malamar"
+  },
+  {
+   "number": "692",
+   "name": "Clauncher"
+  },
+  {
+   "number": "693",
+   "name": "Clawitzer"
+  },
+  {
+   "number": "694",
+   "name": "Helioptile"
+  },
+  {
+   "number": "695",
+   "name": "Heliolisk"
+  },
+  {
+   "number": "696",
+   "name": "Tyrunt"
+  },
+  {
+   "number": "697",
+   "name": "Tyrantrum"
+  },
+  {
+   "number": "698",
+   "name": "Amaura"
+  },
+  {
+   "number": "699",
+   "name": "Aurorus"
+  },
+  {
+   "number": "701",
+   "name": "Hawlucha"
+  },
+  {
+   "number": "702",
+   "name": "Dedenne"
+  },
+  {
+   "number": "703",
+   "name": "Carbink"
+  },
+  {
+   "number": "704",
+   "name": "Goomy"
+  },
+  {
+   "number": "705",
+   "name": "Sliggoo"
+  },
+  {
+   "number": "705",
+   "name": "Sliggoo (Hisuian Form)"
+  },
+  {
+   "number": "706",
+   "name": "Goodra"
+  },
+  {
+   "number": "706",
+   "name": "Goodra (Hisuian Form)"
+  },
+  {
+   "number": "709",
+   "name": "Trevenant"
+  },
+  {
+   "number": "710",
+   "name": "Pumpkaboo"
+  },
+  {
+   "number": "711",
+   "name": "Gourgeist"
+  },
+  {
+   "number": "712",
+   "name": "Bergmite"
+  },
+  {
+   "number": "713",
+   "name": "Avalugg"
+  },
+  {
+   "number": "713",
+   "name": "Avalugg (Hisuian Form)"
+  },
+  {
+   "number": "714",
+   "name": "Noibat"
+  },
+  {
+   "number": "715",
+   "name": "Noivern"
+  },
+  {
+   "number": "716",
+   "name": "Xerneas"
+  },
+  {
+   "number": "717",
+   "name": "Yveltal"
+  },
+  {
+   "number": "718",
+   "name": "Zygarde"
+  },
+  {
+   "number": "719",
+   "name": "Diancie"
+  },
+  {
+   "number": "720",
+   "name": "Hoopa"
+  },
+  {
+   "number": "721",
+   "name": "Volcanion"
+  },
+  {
+   "number": "722",
+   "name": "Rowlet"
+  },
+  {
+   "number": "723",
+   "name": "Dartrix"
+  },
+  {
+   "number": "724",
+   "name": "Decidueye"
+  },
+  {
+   "number": "724",
+   "name": "Decidueye (Hisuian Form)"
+  },
+  {
+   "number": "725",
+   "name": "Litten"
+  },
+  {
+   "number": "726",
+   "name": "Torracat"
+  },
+  {
+   "number": "727",
+   "name": "Incineroar"
+  },
+  {
+   "number": "728",
+   "name": "Popplio"
+  },
+  {
+   "number": "729",
+   "name": "Brionne"
+  },
+  {
+   "number": "730",
+   "name": "Primarina"
+  },
+  {
+   "number": "731",
+   "name": "Pikipek"
+  },
+  {
+   "number": "732",
+   "name": "Trumbeak"
+  },
+  {
+   "number": "733",
+   "name": "Toucannon"
+  },
+  {
+   "number": "734",
+   "name": "Yungoos"
+  },
+  {
+   "number": "735",
+   "name": "Gumshoos"
+  },
+  {
+   "number": "736",
+   "name": "Grubbin"
+  },
+  {
+   "number": "737",
+   "name": "Charjabug"
+  },
+  {
+   "number": "738",
+   "name": "Vikavolt"
+  },
+  {
+   "number": "739",
+   "name": "Crabrawler"
+  },
+  {
+   "number": "740",
+   "name": "Crabominable"
+  },
+  {
+   "number": "741",
+   "name": "Oricorio"
+  },
+  {
+   "number": "742",
+   "name": "Cutiefly"
+  },
+  {
+   "number": "743",
+   "name": "Ribombee"
+  },
+  {
+   "number": "744",
+   "name": "Rockruff"
+  },
+  {
+   "number": "745",
+   "name": "Lycanroc"
+  },
+  {
+   "number": "746",
+   "name": "Wishiwashi"
+  },
+  {
+   "number": "747",
+   "name": "Mareanie"
+  },
+  {
+   "number": "748",
+   "name": "Toxapex"
+  },
+  {
+   "number": "749",
+   "name": "Mudbray"
+  },
+  {
+   "number": "750",
+   "name": "Mudsdale"
+  },
+  {
+   "number": "751",
+   "name": "Dewpider"
+  },
+  {
+   "number": "752",
+   "name": "Araquanid"
+  },
+  {
+   "number": "753",
+   "name": "Fomantis"
+  },
+  {
+   "number": "754",
+   "name": "Lurantis"
+  },
+  {
+   "number": "755",
+   "name": "Morelull"
+  },
+  {
+   "number": "756",
+   "name": "Shiinotic"
+  },
+  {
+   "number": "757",
+   "name": "Salandit"
+  },
+  {
+   "number": "758",
+   "name": "Salazzle"
+  },
+  {
+   "number": "759",
+   "name": "Stufful"
+  },
+  {
+   "number": "760",
+   "name": "Bewear"
+  },
+  {
+   "number": "761",
+   "name": "Bounsweet"
+  },
+  {
+   "number": "762",
+   "name": "Steenee"
+  },
+  {
+   "number": "763",
+   "name": "Tsareena"
+  },
+  {
+   "number": "764",
+   "name": "Comfey"
+  },
+  {
+   "number": "765",
+   "name": "Oranguru"
+  },
+  {
+   "number": "766",
+   "name": "Passimian"
+  },
+  {
+   "number": "767",
+   "name": "Wimpod"
+  },
+  {
+   "number": "768",
+   "name": "Golisopod"
+  },
+  {
+   "number": "769",
+   "name": "Sandygast"
+  },
+  {
+   "number": "770",
+   "name": "Palossand"
+  },
+  {
+   "number": "771",
+   "name": "Pyukumuku"
+  },
+  {
+   "number": "772",
+   "name": "Type: Null"
+  },
+  {
+   "number": "773",
+   "name": "Silvally"
+  },
+  {
+   "number": "774",
+   "name": "Minior"
+  },
+  {
+   "number": "775",
+   "name": "Komala"
+  },
+  {
+   "number": "776",
+   "name": "Turtonator"
+  },
+  {
+   "number": "777",
+   "name": "Togedemaru"
+  },
+  {
+   "number": "778",
+   "name": "Mimikyu"
+  },
+  {
+   "number": "779",
+   "name": "Bruxish"
+  },
+  {
+   "number": "780",
+   "name": "Drampa"
+  },
+  {
+   "number": "781",
+   "name": "Dhelmise"
+  },
+  {
+   "number": "782",
+   "name": "Jangmo-o"
+  },
+  {
+   "number": "783",
+   "name": "Hakamo-o"
+  },
+  {
+   "number": "784",
+   "name": "Kommo-o"
+  },
+  {
+   "number": "785",
+   "name": "Tapu Koko"
+  },
+  {
+   "number": "786",
+   "name": "Tapu Lele"
+  },
+  {
+   "number": "787",
+   "name": "Tapu Bulu"
+  },
+  {
+   "number": "788",
+   "name": "Tapu Fini"
+  },
+  {
+   "number": "789",
+   "name": "Cosmog"
+  },
+  {
+   "number": "790",
+   "name": "Cosmoem"
+  },
+  {
+   "number": "791",
+   "name": "Solgaleo"
+  },
+  {
+   "number": "792",
+   "name": "Lunala"
+  },
+  {
+   "number": "793",
+   "name": "Nihilego"
+  },
+  {
+   "number": "794",
+   "name": "Buzzwole"
+  },
+  {
+   "number": "795",
+   "name": "Pheromosa"
+  },
+  {
+   "number": "796",
+   "name": "Xurkitree"
+  },
+  {
+   "number": "797",
+   "name": "Celesteela"
+  },
+  {
+   "number": "798",
+   "name": "Kartana"
+  },
+  {
+   "number": "799",
+   "name": "Guzzlord"
+  },
+  {
+   "number": "800",
+   "name": "Necrozma"
+  },
+  {
+   "number": "801",
+   "name": "Magearna"
+  },
+  {
+   "number": "802",
+   "name": "Marshadow"
+  },
+  {
+   "number": "803",
+   "name": "Poipole"
+  },
+  {
+   "number": "804",
+   "name": "Naganadel"
+  },
+  {
+   "number": "805",
+   "name": "Stakataka"
+  },
+  {
+   "number": "806",
+   "name": "Blacephalon"
+  },
+  {
+   "number": "807",
+   "name": "Zeraora"
+  },
+  {
+   "number": "808",
+   "name": "Meltan"
+  },
+  {
+   "number": "809",
+   "name": "Melmetal"
+  },
+  {
+   "number": "810",
+   "name": "Grookey"
+  },
+  {
+   "number": "811",
+   "name": "Thwackey"
+  },
+  {
+   "number": "812",
+   "name": "Rillaboom"
+  },
+  {
+   "number": "813",
+   "name": "Scorbunny"
+  },
+  {
+   "number": "814",
+   "name": "Raboot"
+  },
+  {
+   "number": "815",
+   "name": "Cinderace"
+  },
+  {
+   "number": "816",
+   "name": "Sobble"
+  },
+  {
+   "number": "817",
+   "name": "Drizzile"
+  },
+  {
+   "number": "818",
+   "name": "Inteleon"
+  },
+  {
+   "number": "819",
+   "name": "Skwovet"
+  },
+  {
+   "number": "820",
+   "name": "Greedent"
+  },
+  {
+   "number": "821",
+   "name": "Rookidee"
+  },
+  {
+   "number": "822",
+   "name": "Corvisquire"
+  },
+  {
+   "number": "823",
+   "name": "Corviknight"
+  },
+  {
+   "number": "824",
+   "name": "Blipbug"
+  },
+  {
+   "number": "825",
+   "name": "Dottler"
+  },
+  {
+   "number": "826",
+   "name": "Orbeetle"
+  },
+  {
+   "number": "827",
+   "name": "Nickit"
+  },
+  {
+   "number": "828",
+   "name": "Thievul"
+  },
+  {
+   "number": "829",
+   "name": "Gossifleur"
+  },
+  {
+   "number": "830",
+   "name": "Eldegoss"
+  },
+  {
+   "number": "831",
+   "name": "Wooloo"
+  },
+  {
+   "number": "832",
+   "name": "Dubwool"
+  },
+  {
+   "number": "833",
+   "name": "Chewtle"
+  },
+  {
+   "number": "834",
+   "name": "Drednaw"
+  },
+  {
+   "number": "835",
+   "name": "Yamper"
+  },
+  {
+   "number": "836",
+   "name": "Boltund"
+  },
+  {
+   "number": "837",
+   "name": "Rolycoly"
+  },
+  {
+   "number": "838",
+   "name": "Carkol"
+  },
+  {
+   "number": "839",
+   "name": "Coalossal"
+  },
+  {
+   "number": "840",
+   "name": "Applin"
+  },
+  {
+   "number": "841",
+   "name": "Flapple"
+  },
+  {
+   "number": "842",
+   "name": "Appletun"
+  },
+  {
+   "number": "843",
+   "name": "Silicobra"
+  },
+  {
+   "number": "844",
+   "name": "Sandaconda"
+  },
+  {
+   "number": "845",
+   "name": "Cramorant"
+  },
+  {
+   "number": "846",
+   "name": "Arrokuda"
+  },
+  {
+   "number": "847",
+   "name": "Barraskewda"
+  },
+  {
+   "number": "848",
+   "name": "Toxel"
+  },
+  {
+   "number": "849",
+   "name": "Toxtricity"
+  },
+  {
+   "number": "850",
+   "name": "Sizzlipede"
+  },
+  {
+   "number": "851",
+   "name": "Centiskorch"
+  },
+  {
+   "number": "852",
+   "name": "Clobbopus"
+  },
+  {
+   "number": "853",
+   "name": "Grapploct"
+  },
+  {
+   "number": "854",
+   "name": "Sinistea"
+  },
+  {
+   "number": "855",
+   "name": "Polteageist"
+  },
+  {
+   "number": "856",
+   "name": "Hatenna"
+  },
+  {
+   "number": "857",
+   "name": "Hattrem"
+  },
+  {
+   "number": "858",
+   "name": "Hatterene"
+  },
+  {
+   "number": "859",
+   "name": "Impidimp"
+  },
+  {
+   "number": "860",
+   "name": "Morgrem"
+  },
+  {
+   "number": "861",
+   "name": "Grimmsnarl"
+  },
+  {
+   "number": "862",
+   "name": "Obstagoon"
+  },
+  {
+   "number": "863",
+   "name": "Perrserker"
+  },
+  {
+   "number": "864",
+   "name": "Cursola"
+  },
+  {
+   "number": "865",
+   "name": "Sirfetch'd"
+  },
+  {
+   "number": "866",
+   "name": "Mr. Rime"
+  },
+  {
+   "number": "867",
+   "name": "Runerigus"
+  },
+  {
+   "number": "868",
+   "name": "Milcery"
+  },
+  {
+   "number": "869",
+   "name": "Alcremie"
+  },
+  {
+   "number": "870",
+   "name": "Falinks"
+  },
+  {
+   "number": "871",
+   "name": "Pincurchin"
+  },
+  {
+   "number": "872",
+   "name": "Snom"
+  },
+  {
+   "number": "873",
+   "name": "Frosmoth"
+  },
+  {
+   "number": "874",
+   "name": "Stonjourner"
+  },
+  {
+   "number": "875",
+   "name": "Eiscue"
+  },
+  {
+   "number": "876",
+   "name": "Indeedee"
+  },
+  {
+   "number": "877",
+   "name": "Morpeko"
+  },
+  {
+   "number": "878",
+   "name": "Cufant"
+  },
+  {
+   "number": "879",
+   "name": "Copperajah"
+  },
+  {
+   "number": "880",
+   "name": "Dracozolt"
+  },
+  {
+   "number": "881",
+   "name": "Arctozolt"
+  },
+  {
+   "number": "882",
+   "name": "Dracovish"
+  },
+  {
+   "number": "883",
+   "name": "Arctovish"
+  },
+  {
+   "number": "884",
+   "name": "Duraludon"
+  },
+  {
+   "number": "885",
+   "name": "Dreepy"
+  },
+  {
+   "number": "886",
+   "name": "Drakloak"
+  },
+  {
+   "number": "887",
+   "name": "Dragapult"
+  },
+  {
+   "number": "888",
+   "name": "Zacian"
+  },
+  {
+   "number": "889",
+   "name": "Zamazenta"
+  },
+  {
+   "number": "890",
+   "name": "Eternatus"
+  },
+  {
+   "number": "891",
+   "name": "Kubfu"
+  },
+  {
+   "number": "892",
+   "name": "Urshifu"
+  },
+  {
+   "number": "893",
+   "name": "Zarude"
+  },
+  {
+   "number": "894",
+   "name": "Regieleki"
+  },
+  {
+   "number": "895",
+   "name": "Regidrago"
+  },
+  {
+   "number": "896",
+   "name": "Glastrier"
+  },
+  {
+   "number": "897",
+   "name": "Spectrier"
+  },
+  {
+   "number": "898",
+   "name": "Calyrex"
+  },
+  {
+   "number": "899",
+   "name": "Wyrdeer"
+  },
+  {
+   "number": "900",
+   "name": "Kleavor"
+  },
+  {
+   "number": "901",
+   "name": "Ursaluna"
+  },
+  {
+   "number": "901",
+   "name": "Ursaluna (Bloodmoon)"
+  },
+  {
+   "number": "902",
+   "name": "Basculegion"
+  },
+  {
+   "number": "903",
+   "name": "Sneasler"
+  },
+  {
+   "number": "904",
+   "name": "Overqwil"
+  },
+  {
+   "number": "905",
+   "name": "Enamorus"
+  },
+  {
+   "number": "906",
+   "name": "Sprigatito"
+  },
+  {
+   "number": "907",
+   "name": "Floragato"
+  },
+  {
+   "number": "908",
+   "name": "Meowscarada"
+  },
+  {
+   "number": "909",
+   "name": "Fuecoco"
+  },
+  {
+   "number": "910",
+   "name": "Crocalor"
+  },
+  {
+   "number": "911",
+   "name": "Skeledirge"
+  },
+  {
+   "number": "912",
+   "name": "Quaxly"
+  },
+  {
+   "number": "913",
+   "name": "Quaxwell"
+  },
+  {
+   "number": "914",
+   "name": "Quaquaval"
+  },
+  {
+   "number": "915",
+   "name": "Lechonk"
+  },
+  {
+   "number": "916",
+   "name": "Oinkologne"
+  },
+  {
+   "number": "917",
+   "name": "Tarountula"
+  },
+  {
+   "number": "918",
+   "name": "Spidops"
+  },
+  {
+   "number": "919",
+   "name": "Nymble"
+  },
+  {
+   "number": "920",
+   "name": "Lokix"
+  },
+  {
+   "number": "921",
+   "name": "Pawmi"
+  },
+  {
+   "number": "922",
+   "name": "Pawmo"
+  },
+  {
+   "number": "923",
+   "name": "Pawmot"
+  },
+  {
+   "number": "924",
+   "name": "Tandemaus"
+  },
+  {
+   "number": "925",
+   "name": "Maushold"
+  },
+  {
+   "number": "926",
+   "name": "Fidough"
+  },
+  {
+   "number": "927",
+   "name": "Dachsbun"
+  },
+  {
+   "number": "928",
+   "name": "Smoliv"
+  },
+  {
+   "number": "929",
+   "name": "Dolliv"
+  },
+  {
+   "number": "930",
+   "name": "Arboliva"
+  },
+  {
+   "number": "931",
+   "name": "Squawkabilly"
+  },
+  {
+   "number": "932",
+   "name": "Nacli"
+  },
+  {
+   "number": "933",
+   "name": "Naclstack"
+  },
+  {
+   "number": "934",
+   "name": "Garganacl"
+  },
+  {
+   "number": "935",
+   "name": "Charcadet"
+  },
+  {
+   "number": "936",
+   "name": "Armarouge"
+  },
+  {
+   "number": "937",
+   "name": "Ceruledge"
+  },
+  {
+   "number": "938",
+   "name": "Tadbulb"
+  },
+  {
+   "number": "939",
+   "name": "Bellibolt"
+  },
+  {
+   "number": "940",
+   "name": "Wattrel"
+  },
+  {
+   "number": "941",
+   "name": "Kilowattrel"
+  },
+  {
+   "number": "942",
+   "name": "Maschiff"
+  },
+  {
+   "number": "943",
+   "name": "Mabosstiff"
+  },
+  {
+   "number": "944",
+   "name": "Shroodle"
+  },
+  {
+   "number": "945",
+   "name": "Grafaiai"
+  },
+  {
+   "number": "946",
+   "name": "Bramblin"
+  },
+  {
+   "number": "947",
+   "name": "Brambleghast"
+  },
+  {
+   "number": "948",
+   "name": "Toedscool"
+  },
+  {
+   "number": "949",
+   "name": "Toedscruel"
+  },
+  {
+   "number": "950",
+   "name": "Klawf"
+  },
+  {
+   "number": "951",
+   "name": "Capsakid"
+  },
+  {
+   "number": "952",
+   "name": "Scovillain"
+  },
+  {
+   "number": "953",
+   "name": "Rellor"
+  },
+  {
+   "number": "954",
+   "name": "Rabsca"
+  },
+  {
+   "number": "955",
+   "name": "Flittle"
+  },
+  {
+   "number": "956",
+   "name": "Espathra"
+  },
+  {
+   "number": "957",
+   "name": "Tinkatink"
+  },
+  {
+   "number": "958",
+   "name": "Tinkatuff"
+  },
+  {
+   "number": "959",
+   "name": "Tinkaton"
+  },
+  {
+   "number": "960",
+   "name": "Wiglett"
+  },
+  {
+   "number": "961",
+   "name": "Wugtrio"
+  },
+  {
+   "number": "962",
+   "name": "Bombirdier"
+  },
+  {
+   "number": "963",
+   "name": "Finizen"
+  },
+  {
+   "number": "964",
+   "name": "Palafin"
+  },
+  {
+   "number": "965",
+   "name": "Varoom"
+  },
+  {
+   "number": "966",
+   "name": "Revavroom"
+  },
+  {
+   "number": "967",
+   "name": "Cyclizar"
+  },
+  {
+   "number": "968",
+   "name": "Orthworm"
+  },
+  {
+   "number": "969",
+   "name": "Glimmet"
+  },
+  {
+   "number": "970",
+   "name": "Glimmora"
+  },
+  {
+   "number": "971",
+   "name": "Greavard"
+  },
+  {
+   "number": "972",
+   "name": "Houndstone"
+  },
+  {
+   "number": "973",
+   "name": "Flamigo"
+  },
+  {
+   "number": "974",
+   "name": "Cetoddle"
+  },
+  {
+   "number": "975",
+   "name": "Cetitan"
+  },
+  {
+   "number": "976",
+   "name": "Veluza"
+  },
+  {
+   "number": "977",
+   "name": "Dondozo"
+  },
+  {
+   "number": "978",
+   "name": "Tatsugiri"
+  },
+  {
+   "number": "979",
+   "name": "Annihilape"
+  },
+  {
+   "number": "980",
+   "name": "Clodsire"
+  },
+  {
+   "number": "981",
+   "name": "Farigiraf"
+  },
+  {
+   "number": "982",
+   "name": "Dudunsparce"
+  },
+  {
+   "number": "983",
+   "name": "Kingambit"
+  },
+  {
+   "number": "984",
+   "name": "Great Tusk"
+  },
+  {
+   "number": "985",
+   "name": "Scream Tail"
+  },
+  {
+   "number": "986",
+   "name": "Brute Bonnet"
+  },
+  {
+   "number": "987",
+   "name": "Flutter Mane"
+  },
+  {
+   "number": "988",
+   "name": "Slither Wing"
+  },
+  {
+   "number": "989",
+   "name": "Sandy Shocks"
+  },
+  {
+   "number": "990",
+   "name": "Iron Treads"
+  },
+  {
+   "number": "991",
+   "name": "Iron Bundle"
+  },
+  {
+   "number": "992",
+   "name": "Iron Hands"
+  },
+  {
+   "number": "993",
+   "name": "Iron Jugulis"
+  },
+  {
+   "number": "994",
+   "name": "Iron Moth"
+  },
+  {
+   "number": "995",
+   "name": "Iron Thorns"
+  },
+  {
+   "number": "996",
+   "name": "Frigibax"
+  },
+  {
+   "number": "997",
+   "name": "Arctibax"
+  },
+  {
+   "number": "998",
+   "name": "Baxcalibur"
+  },
+  {
+   "number": "999",
+   "name": "Gimmighoul"
+  },
+  {
+   "number": "1000",
+   "name": "Gholdengo"
+  },
+  {
+   "number": "1001",
+   "name": "Wo-Chien"
+  },
+  {
+   "number": "1002",
+   "name": "Chien-Pao"
+  },
+  {
+   "number": "1003",
+   "name": "Ting-Lu"
+  },
+  {
+   "number": "1004",
+   "name": "Chi-Yu"
+  },
+  {
+   "number": "1005",
+   "name": "Roaring Moon"
+  },
+  {
+   "number": "1006",
+   "name": "Iron Valiant"
+  },
+  {
+   "number": "1007",
+   "name": "Koraidon"
+  },
+  {
+   "number": "1008",
+   "name": "Miraidon"
+  },
+  {
+   "number": "1009",
+   "name": "Walking Wake"
+  },
+  {
+   "number": "1010",
+   "name": "Iron Leaves"
+  },
+  {
+   "number": "1011",
+   "name": "Dipplin"
+  },
+  {
+   "number": "1012",
+   "name": "Poltchageist"
+  },
+  {
+   "number": "1013",
+   "name": "Sinistcha"
+  },
+  {
+   "number": "1014",
+   "name": "Okidogi"
+  },
+  {
+   "number": "1015",
+   "name": "Munkidori"
+  },
+  {
+   "number": "1016",
+   "name": "Fezandipiti"
+  },
+  {
+   "number": "1017",
+   "name": "Ogerpon"
+  },
+  {
+   "number": "1018",
+   "name": "Archaludon"
+  },
+  {
+   "number": "1019",
+   "name": "Hydrapple"
+  },
+  {
+   "number": "1020",
+   "name": "Gouging Fire"
+  },
+  {
+   "number": "1021",
+   "name": "Raging Bolt"
+  },
+  {
+   "number": "1022",
+   "name": "Iron Boulder"
+  },
+  {
+   "number": "1023",
+   "name": "Iron Crown"
+  },
+  {
+   "number": "1024",
+   "name": "Terapagos"
+  },
+  {
+   "number": "1025",
+   "name": "Pecharunt"
+  }
+ ]
+}

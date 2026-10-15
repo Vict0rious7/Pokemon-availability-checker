@@ -1,0 +1,420 @@
+P01: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P02: 27 difference(s)
+  ~ 52 Meowth (Alolan Form): reference ['Lets Go Eevee', 'Moon', 'Shield DLC', 'Sun', 'Sword DLC', 'UltraMoon', 'UltraSun'] | other ['Lets Go Eevee', 'Moon', 'Scarlet DLC', 'Shield DLC', 'Sun', 'Sword DLC', 'UltraMoon', 'UltraSun', 'Violet DLC']
+  ~ 53 Persian (Alolan Form): reference ['Lets Go Eevee', 'Moon', 'Shield DLC', 'Sun', 'Sword DLC', 'UltraMoon', 'UltraSun'] | other ['Lets Go Eevee', 'Moon', 'Scarlet DLC', 'Shield DLC', 'Sun', 'Sword DLC', 'UltraMoon', 'UltraSun', 'Violet DLC']
+  ~ 157 Typhlosion (Hisuian Form): reference ['Legends: Arceus'] | other ['Legends: Arceus', 'Scarlet DLC', 'Violet DLC']
+  ~ 316 Gulpin: reference ['AlphaSapphire', 'Black2', 'Brilliant Diamond', 'Diamond', 'Emerald', 'OmegaRuby', 'Pearl', 'Platinum', 'Ruby', 'Sapphire', 'Scarlet⇄', 'Shining Pearl', 'SoulSilver', 'Violet', 'White2', 'X', 'XD', 'Y'] | other ['AlphaSapphire', 'Black2', 'Brilliant Diamond', 'Diamond', 'Emerald', 'OmegaRuby', 'Pearl', 'Platinum', 'Ruby', 'Sapphire', 'Scarlet DLC', 'Shining Pearl', 'SoulSilver', 'Violet', 'White2', 'X', 'XD', 'Y']
+  ~ 317 Swalot: reference ['AlphaSapphire', 'Black2', 'Brilliant Diamond', 'Diamond', 'Emerald', 'OmegaRuby', 'Pearl', 'Platinum', 'Ruby', 'Sapphire', 'Scarlet⇄', 'Shining Pearl', 'SoulSilver', 'Violet', 'White2', 'X', 'XD', 'Y'] | other ['AlphaSapphire', 'Black2', 'Brilliant Diamond', 'Diamond', 'Emerald', 'OmegaRuby', 'Pearl', 'Platinum', 'Ruby', 'Sapphire', 'Scarlet DLC', 'Shining Pearl', 'SoulSilver', 'Violet', 'White2', 'X', 'XD', 'Y']
+  ~ 503 Samurott (Hisuian Form): reference ['Legends: Arceus'] | other ['Legends: Arceus', 'Scarlet DLC', 'Violet DLC']
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  ~ 724 Decidueye (Hisuian Form): reference ['Legends: Arceus'] | other ['Legends: Arceus', 'Scarlet DLC', 'Violet DLC']
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P03: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P04: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P05: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P06: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P07: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P08: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P09: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P10: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P11: 27 difference(s)
+  ~ 52 Meowth (Alolan Form): reference ['Shield DLC', 'Sword DLC'] | other ['Scarlet DLC', 'Shield DLC', 'Sword DLC', 'Violet DLC']
+  ~ 53 Persian (Alolan Form): reference ['Shield DLC', 'Sword DLC'] | other ['Scarlet DLC', 'Shield DLC', 'Sword DLC', 'Violet DLC']
+  ~ 157 Typhlosion (Hisuian Form): reference unavailable | other ['Scarlet DLC', 'Violet DLC']
+  ~ 316 Gulpin: reference ['Scarlet⇄', 'Violet'] | other ['Scarlet DLC', 'Violet']
+  ~ 317 Swalot: reference ['Scarlet⇄', 'Violet'] | other ['Scarlet DLC', 'Violet']
+  ~ 503 Samurott (Hisuian Form): reference unavailable | other ['Scarlet DLC', 'Violet DLC']
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  ~ 724 Decidueye (Hisuian Form): reference unavailable | other ['Scarlet DLC', 'Violet DLC']
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P12: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P13: 27 difference(s)
+  ~ 52 Meowth (Alolan Form): reference unavailable | other ['Scarlet DLC']
+  ~ 53 Persian (Alolan Form): reference unavailable | other ['Scarlet DLC']
+  ~ 157 Typhlosion (Hisuian Form): reference unavailable | other ['Scarlet DLC']
+  ~ 316 Gulpin: reference unavailable | other ['Scarlet DLC']
+  ~ 317 Swalot: reference unavailable | other ['Scarlet DLC']
+  ~ 503 Samurott (Hisuian Form): reference unavailable | other ['Scarlet DLC']
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  ~ 724 Decidueye (Hisuian Form): reference unavailable | other ['Scarlet DLC']
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P14: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P15: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P16: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P17: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P18: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other
+P19: 20 difference(s)
+  + 585 Deerling (Autumn): only in other
+  + 585 Deerling (Summer): only in other
+  + 585 Deerling (Winter): only in other
+  + 586 Sawsbuck (Autumn): only in other
+  + 586 Sawsbuck (Summer): only in other
+  + 586 Sawsbuck (Winter): only in other
+  + 670 Floette (Eternal): only in other
+  - 678 Meowstic: only in reference
+  + 678 Meowstic (Female): only in other
+  + 678 Meowstic (Male): only in other
+  + 745 Lycanroc (Dusk): only in other
+  + 745 Lycanroc (Midnight): only in other
+  + 801 Magearna (Original): only in other
+  - 849 Toxtricity: only in reference
+  + 849 Toxtricity (Amped): only in other
+  + 849 Toxtricity (Low Key): only in other
+  - 876 Indeedee: only in reference
+  + 876 Indeedee (Female): only in other
+  + 876 Indeedee (Male): only in other
+  + 999 Gimmighoul (Roaming): only in other

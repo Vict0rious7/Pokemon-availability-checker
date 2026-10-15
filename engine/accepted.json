@@ -1,0 +1,919 @@
+[
+ {
+  "profile": "P01",
+  "row": "137 Porygon",
+  "old": [
+   "Diamond",
+   "HeartGold",
+   "Pearl",
+   "SoulSilver"
+  ],
+  "new": [
+   "Diamond",
+   "HeartGold",
+   "Pearl",
+   "Platinum",
+   "SoulSilver"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P01",
+  "row": "138 Omanyte",
+  "old": [
+   "HeartGold"
+  ],
+  "new": [
+   "Diamond",
+   "HeartGold",
+   "Pearl",
+   "Platinum"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P01",
+  "row": "140 Kabuto",
+  "old": [
+   "SoulSilver"
+  ],
+  "new": [
+   "Diamond",
+   "Pearl",
+   "Platinum",
+   "SoulSilver"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P01",
+  "row": "142 Aerodactyl",
+  "old": [
+   "HeartGold",
+   "SoulSilver"
+  ],
+  "new": [
+   "Diamond",
+   "HeartGold",
+   "Pearl",
+   "Platinum",
+   "SoulSilver"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P01",
+  "row": "384 Rayquaza",
+  "old": [
+   "HeartGold"
+  ],
+  "new": [
+   "HeartGold",
+   "SoulSilver"
+  ],
+  "reason": "C2"
+ },
+ {
+  "profile": "P01",
+  "row": "465 Tangrowth",
+  "old": [
+   "HeartGold",
+   "Platinum",
+   "SoulSilver"
+  ],
+  "new": [
+   "Diamond",
+   "HeartGold",
+   "Pearl",
+   "Platinum",
+   "SoulSilver"
+  ],
+  "reason": "H11 (U15)"
+ },
+ {
+  "profile": "P02",
+  "row": "52 Meowth (Galarian Form)",
+  "old": [
+   "Shield",
+   "Sword"
+  ],
+  "new": [
+   "Scarlet",
+   "Shield",
+   "Sword",
+   "Violet"
+  ],
+  "reason": "C5"
+ },
+ {
+  "profile": "P02",
+  "row": "110 Weezing (Galarian Form)",
+  "old": [
+   "Scarlet",
+   "Shield",
+   "Sword",
+   "Violet"
+  ],
+  "new": [
+   "Shield",
+   "Sword"
+  ],
+  "reason": "C6"
+ },
+ {
+  "profile": "P02",
+  "row": "137 Porygon",
+  "old": [
+   "AlphaSapphire",
+   "Black2",
+   "Blue",
+   "BrilliantDiamond",
+   "Crystal",
+   "Diamond",
+   "FireRed",
+   "Gold",
+   "Green",
+   "HeartGold",
+   "LeafGreen",
+   "LegendsArceus",
+   "LetsGoEevee",
+   "LetsGoPikachu",
+   "Moon",
+   "OmegaRuby",
+   "Pearl",
+   "Red",
+   "Scarlet",
+   "Shield",
+   "ShiningPearl",
+   "Silver",
+   "SoulSilver",
+   "Sun",
+   "Sword",
+   "UltraMoon",
+   "UltraSun",
+   "Violet",
+   "White",
+   "White2",
+   "Yellow"
+  ],
+  "new": [
+   "AlphaSapphire",
+   "Black2",
+   "Blue",
+   "BrilliantDiamond",
+   "Crystal",
+   "Diamond",
+   "FireRed",
+   "Gold",
+   "Green",
+   "HeartGold",
+   "LeafGreen",
+   "LegendsArceus",
+   "LetsGoEevee",
+   "LetsGoPikachu",
+   "Moon",
+   "OmegaRuby",
+   "Pearl",
+   "Platinum",
+   "Red",
+   "Scarlet",
+   "Shield",
+   "ShiningPearl",
+   "Silver",
+   "SoulSilver",
+   "Sun",
+   "Sword",
+   "UltraMoon",
+   "UltraSun",
+   "Violet",
+   "White",
+   "White2",
+   "Yellow"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P02",
+  "row": "138 Omanyte",
+  "old": [
+   "AlphaSapphire",
+   "Black",
+   "Black2",
+   "Blue",
+   "BrilliantDiamond",
+   "FireRed",
+   "Green",
+   "HeartGold",
+   "LeafGreen",
+   "LetsGoEevee",
+   "LetsGoPikachu",
+   "Red",
+   "ShiningPearl",
+   "Sword",
+   "UltraMoon",
+   "UltraSun",
+   "White",
+   "White2",
+   "Y",
+   "Yellow"
+  ],
+  "new": [
+   "AlphaSapphire",
+   "Black",
+   "Black2",
+   "Blue",
+   "BrilliantDiamond",
+   "Diamond",
+   "FireRed",
+   "Green",
+   "HeartGold",
+   "LeafGreen",
+   "LetsGoEevee",
+   "LetsGoPikachu",
+   "Pearl",
+   "Platinum",
+   "Red",
+   "ShiningPearl",
+   "Sword",
+   "UltraMoon",
+   "UltraSun",
+   "White",
+   "White2",
+   "Y",
+   "Yellow"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P02",
+  "row": "140 Kabuto",
+  "old": [
+   "Black",
+   "Black2",
+   "Blue",
+   "BrilliantDiamond",
+   "FireRed",
+   "Green",
+   "LeafGreen",
+   "LetsGoEevee",
+   "LetsGoPikachu",
+   "OmegaRuby",
+   "Red",
+   "Shield",
+   "ShiningPearl",
+   "SoulSilver",
+   "UltraMoon",
+   "UltraSun",
+   "White",
+   "White2",
+   "Y",
+   "Yellow"
+  ],
+  "new": [
+   "Black",
+   "Black2",
+   "Blue",
+   "BrilliantDiamond",
+   "Diamond",
+   "FireRed",
+   "Green",
+   "LeafGreen",
+   "LetsGoEevee",
+   "LetsGoPikachu",
+   "OmegaRuby",
+   "Pearl",
+   "Platinum",
+   "Red",
+   "Shield",
+   "ShiningPearl",
+   "SoulSilver",
+   "UltraMoon",
+   "UltraSun",
+   "White",
+   "White2",
+   "Y",
+   "Yellow"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P02",
+  "row": "212 Scizor",
+  "old": [
+   "BrilliantDiamond",
+   "Crystal",
+   "Diamond",
+   "FireRed",
+   "Gold",
+   "HeartGold",
+   "LegendsArceus",
+   "Moon",
+   "Platinum",
+   "Scarlet",
+   "Shield",
+   "Silver",
+   "SoulSilver",
+   "Sun",
+   "Sword",
+   "UltraMoon",
+   "UltraSun",
+   "Violet",
+   "X",
+   "Y"
+  ],
+  "new": [
+   "BrilliantDiamond",
+   "Crystal",
+   "Diamond",
+   "FireRed",
+   "Gold",
+   "HeartGold",
+   "LegendsArceus",
+   "Moon",
+   "Platinum",
+   "Scarlet",
+   "Shield",
+   "Silver",
+   "SoulSilver",
+   "Sun",
+   "Sword",
+   "UltraMoon",
+   "UltraSun",
+   "Violet",
+   "X",
+   "XD",
+   "Y"
+  ],
+  "reason": "C27"
+ },
+ {
+  "profile": "P02",
+  "row": "384 Rayquaza",
+  "old": [
+   "AlphaSapphire",
+   "BrilliantDiamond",
+   "Emerald",
+   "HeartGold",
+   "OmegaRuby",
+   "Ruby",
+   "Sapphire",
+   "Scarlet",
+   "Shield",
+   "ShiningPearl",
+   "Sword",
+   "UltraMoon",
+   "UltraSun",
+   "Violet"
+  ],
+  "new": [
+   "AlphaSapphire",
+   "BrilliantDiamond",
+   "Emerald",
+   "HeartGold",
+   "OmegaRuby",
+   "Ruby",
+   "Sapphire",
+   "Scarlet",
+   "Shield",
+   "ShiningPearl",
+   "SoulSilver",
+   "Sword",
+   "UltraMoon",
+   "UltraSun",
+   "Violet"
+  ],
+  "reason": "C2"
+ },
+ {
+  "profile": "P02",
+  "row": "385 Jirachi",
+  "old": [
+   "BrilliantDiamond",
+   "Emerald",
+   "FireRed",
+   "LeafGreen",
+   "Ruby",
+   "Sapphire",
+   "ShiningPearl"
+  ],
+  "new": [
+   "BrilliantDiamond",
+   "Ruby",
+   "Sapphire",
+   "ShiningPearl"
+  ],
+  "reason": "U8 (RT4)"
+ },
+ {
+  "profile": "P02",
+  "row": "442 Spiritomb",
+  "old": [
+   "AlphaSapphire",
+   "Black2",
+   "BrilliantDiamond",
+   "Diamond",
+   "HeartGold",
+   "LegendsArceus",
+   "OmegaRuby",
+   "Pearl",
+   "Platinum",
+   "Scarlet",
+   "Shield",
+   "ShiningPearl",
+   "SoulSilver",
+   "Sword",
+   "Violet",
+   "White2"
+  ],
+  "new": [
+   "AlphaSapphire",
+   "Black2",
+   "BrilliantDiamond",
+   "Diamond",
+   "HeartGold",
+   "LegendsArceus",
+   "OmegaRuby",
+   "Pearl",
+   "Platinum",
+   "Scarlet",
+   "ShiningPearl",
+   "SoulSilver",
+   "Violet",
+   "White2"
+  ],
+  "reason": "C22"
+ },
+ {
+  "profile": "P02",
+  "row": "465 Tangrowth",
+  "old": [
+   "AlphaSapphire",
+   "Black",
+   "Black2",
+   "BrilliantDiamond",
+   "HeartGold",
+   "LegendsArceus",
+   "OmegaRuby",
+   "Platinum",
+   "Shield",
+   "ShiningPearl",
+   "SoulSilver",
+   "Sword",
+   "White",
+   "White2"
+  ],
+  "new": [
+   "AlphaSapphire",
+   "Black",
+   "Black2",
+   "BrilliantDiamond",
+   "Diamond",
+   "HeartGold",
+   "LegendsArceus",
+   "OmegaRuby",
+   "Pearl",
+   "Platinum",
+   "Shield",
+   "ShiningPearl",
+   "SoulSilver",
+   "Sword",
+   "White",
+   "White2"
+  ],
+  "reason": "H11 (U15)"
+ },
+ {
+  "profile": "P02",
+  "row": "1025 Pecharunt",
+  "old": [],
+  "new": [
+   "Scarlet",
+   "Violet"
+  ],
+  "reason": "C12"
+ },
+ {
+  "profile": "P04",
+  "row": "245 Suicune",
+  "old": [],
+  "new": [
+   "UltraMoon",
+   "UltraSun"
+  ],
+  "reason": "C7"
+ },
+ {
+  "profile": "P04",
+  "row": "384 Rayquaza",
+  "old": [],
+  "new": [
+   "UltraMoon",
+   "UltraSun"
+  ],
+  "reason": "C7"
+ },
+ {
+  "profile": "P04",
+  "row": "487 Giratina",
+  "old": [],
+  "new": [
+   "UltraMoon",
+   "UltraSun"
+  ],
+  "reason": "C7"
+ },
+ {
+  "profile": "P04",
+  "row": "645 Landorus",
+  "old": [],
+  "new": [
+   "UltraMoon",
+   "UltraSun"
+  ],
+  "reason": "C7"
+ },
+ {
+  "profile": "P04",
+  "row": "646 Kyurem",
+  "old": [],
+  "new": [
+   "UltraMoon",
+   "UltraSun"
+  ],
+  "reason": "C7"
+ },
+ {
+  "profile": "P05",
+  "row": "138 Omanyte",
+  "old": [
+   "Black",
+   "HeartGold",
+   "UltraSun"
+  ],
+  "new": [
+   "Black",
+   "HeartGold",
+   "Pearl",
+   "UltraSun"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P05",
+  "row": "140 Kabuto",
+  "old": [
+   "Black",
+   "UltraSun"
+  ],
+  "new": [
+   "Black",
+   "Pearl",
+   "UltraSun"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P05",
+  "row": "142 Aerodactyl",
+  "old": [
+   "Black",
+   "HeartGold",
+   "UltraSun"
+  ],
+  "new": [
+   "Black",
+   "HeartGold",
+   "Pearl",
+   "UltraSun"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P05",
+  "row": "465 Tangrowth",
+  "old": [
+   "Black",
+   "HeartGold"
+  ],
+  "new": [
+   "Black",
+   "HeartGold",
+   "Pearl"
+  ],
+  "reason": "H11 (U15)"
+ },
+ {
+  "profile": "P06",
+  "row": "138 Omanyte",
+  "old": [
+   "UltraMoon",
+   "White"
+  ],
+  "new": [
+   "Diamond",
+   "UltraMoon",
+   "White"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P06",
+  "row": "140 Kabuto",
+  "old": [
+   "UltraMoon",
+   "White"
+  ],
+  "new": [
+   "Diamond",
+   "UltraMoon",
+   "White"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P06",
+  "row": "142 Aerodactyl",
+  "old": [
+   "UltraMoon",
+   "White"
+  ],
+  "new": [
+   "Diamond",
+   "UltraMoon",
+   "White"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P07",
+  "row": "138 Omanyte",
+  "old": [
+   "FireRed",
+   "LeafGreen"
+  ],
+  "new": [
+   "Diamond",
+   "FireRed",
+   "LeafGreen",
+   "Pearl"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P07",
+  "row": "140 Kabuto",
+  "old": [
+   "FireRed",
+   "LeafGreen"
+  ],
+  "new": [
+   "Diamond",
+   "FireRed",
+   "LeafGreen",
+   "Pearl"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P07",
+  "row": "142 Aerodactyl",
+  "old": [
+   "FireRed",
+   "LeafGreen"
+  ],
+  "new": [
+   "Diamond",
+   "FireRed",
+   "LeafGreen",
+   "Pearl"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P07",
+  "row": "465 Tangrowth",
+  "old": [],
+  "new": [
+   "Diamond",
+   "Pearl"
+  ],
+  "reason": "H11 (U15)"
+ },
+ {
+  "profile": "P10",
+  "row": "151 Mew",
+  "old": [
+   "BrilliantDiamond",
+   "ShiningPearl"
+  ],
+  "new": [
+   "BrilliantDiamond"
+  ],
+  "reason": "C1"
+ },
+ {
+  "profile": "P11",
+  "row": "52 Meowth (Galarian Form)",
+  "old": [
+   "Shield",
+   "Sword"
+  ],
+  "new": [
+   "Scarlet",
+   "Shield",
+   "Sword",
+   "Violet"
+  ],
+  "reason": "C5"
+ },
+ {
+  "profile": "P11",
+  "row": "110 Weezing (Galarian Form)",
+  "old": [
+   "Scarlet",
+   "Shield",
+   "Sword",
+   "Violet"
+  ],
+  "new": [
+   "Shield",
+   "Sword"
+  ],
+  "reason": "C6"
+ },
+ {
+  "profile": "P11",
+  "row": "442 Spiritomb",
+  "old": [
+   "Scarlet",
+   "Shield",
+   "Sword",
+   "Violet"
+  ],
+  "new": [
+   "Scarlet",
+   "Violet"
+  ],
+  "reason": "C22"
+ },
+ {
+  "profile": "P11",
+  "row": "1025 Pecharunt",
+  "old": [],
+  "new": [
+   "Scarlet",
+   "Violet"
+  ],
+  "reason": "C12"
+ },
+ {
+  "profile": "P13",
+  "row": "52 Meowth (Galarian Form)",
+  "old": [],
+  "new": [
+   "Scarlet"
+  ],
+  "reason": "C5"
+ },
+ {
+  "profile": "P13",
+  "row": "110 Weezing (Galarian Form)",
+  "old": [
+   "Scarlet"
+  ],
+  "new": [],
+  "reason": "C6"
+ },
+ {
+  "profile": "P13",
+  "row": "1025 Pecharunt",
+  "old": [],
+  "new": [
+   "Scarlet"
+  ],
+  "reason": "C12"
+ },
+ {
+  "profile": "P15",
+  "row": "212 Scizor",
+  "old": [],
+  "new": [
+   "XD"
+  ],
+  "reason": "C27"
+ },
+ {
+  "profile": "P16",
+  "row": "137 Porygon",
+  "old": [
+   "Diamond"
+  ],
+  "new": [
+   "Diamond",
+   "Platinum"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P16",
+  "row": "138 Omanyte",
+  "old": [],
+  "new": [
+   "Diamond",
+   "Platinum"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P16",
+  "row": "140 Kabuto",
+  "old": [],
+  "new": [
+   "Diamond",
+   "Platinum"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P16",
+  "row": "142 Aerodactyl",
+  "old": [
+   "Diamond"
+  ],
+  "new": [
+   "Diamond",
+   "Platinum"
+  ],
+  "reason": "C4"
+ },
+ {
+  "profile": "P16",
+  "row": "465 Tangrowth",
+  "old": [
+   "Platinum"
+  ],
+  "new": [
+   "Diamond",
+   "Platinum"
+  ],
+  "reason": "H11 (U15)"
+ },
+ {
+  "profile": "P17",
+  "row": "384 Rayquaza",
+  "old": [
+   "HeartGold"
+  ],
+  "new": [
+   "HeartGold",
+   "SoulSilver"
+  ],
+  "reason": "C2"
+ },
+ {
+  "profile": "P02",
+  "row": "37 Vulpix (Alolan Form)",
+  "old": [
+   "Diamond",
+   "LegendsArceus",
+   "LetsGoEevee",
+   "Pearl",
+   "Platinum",
+   "Scarlet",
+   "Shield",
+   "Sun",
+   "Sword",
+   "UltraSun",
+   "Violet"
+  ],
+  "new": [
+   "LegendsArceus",
+   "LetsGoEevee",
+   "Scarlet",
+   "Shield",
+   "Sun",
+   "Sword",
+   "UltraSun",
+   "Violet"
+  ],
+  "reason": "D1 (Ranch gives Kanto Vulpix, not Alolan)"
+ },
+ {
+  "profile": "P16",
+  "row": "37 Vulpix",
+  "old": [],
+  "new": [
+   "Diamond"
+  ],
+  "reason": "D1 (Ranch gives Kanto Vulpix, not Alolan)"
+ },
+ {
+  "profile": "P16",
+  "row": "37 Vulpix (Alolan Form)",
+  "old": [
+   "Diamond"
+  ],
+  "new": [],
+  "reason": "D1 (Ranch gives Kanto Vulpix, not Alolan)"
+ }
+]

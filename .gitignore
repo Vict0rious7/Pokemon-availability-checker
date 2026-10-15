@@ -5,3 +5,5 @@ __pycache__/
 Roadmap.txt
 poke_venv/
 *.DS_Store
+engine/node_modules/
+engine/out*/

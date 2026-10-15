@@ -1,0 +1,6586 @@
+{
+ "engine": {
+  "repo": "Vict0rious7/Pokemon-availability-checker",
+  "commit": "4f93c6a97cd356a8e19dbdca301985791d843bf9"
+ },
+ "profile": {
+  "id": "P04",
+  "kind": "edge",
+  "description": "Ultra Sun + Ultra Moon + Bank on one 3DS",
+  "exercises": [
+   "R36-R51 pairs",
+   "Q7"
+  ],
+  "probes": [
+   "Suicune",
+   "Rayquaza",
+   "Giratina",
+   "Landorus",
+   "Kyurem"
+  ],
+  "known_wrong": [],
+  "inputs": {
+   "red": false,
+   "green": false,
+   "blue": false,
+   "yellow": false,
+   "gold": false,
+   "silver": false,
+   "crystal": false,
+   "ruby": false,
+   "sapphire": false,
+   "firered": false,
+   "leafgreen": false,
+   "emerald": false,
+   "colo": false,
+   "bonus_disc": false,
+   "bonus_disc_language": null,
+   "xd": false,
+   "channel": false,
+   "diamond": false,
+   "pearl": false,
+   "platinum": false,
+   "heartgold": false,
+   "soulsilver": false,
+   "pokewalker": false,
+   "ranch": false,
+   "ranch_language": null,
+   "ranger": false,
+   "battle_rev": false,
+   "battle_rev_language": null,
+   "black": false,
+   "white": false,
+   "black2": false,
+   "white2": false,
+   "dream_radar": false,
+   "x": false,
+   "y": false,
+   "omega_ruby": false,
+   "aplha_sapphire": false,
+   "sun": false,
+   "moon": false,
+   "ultrasun": true,
+   "ultramoon": true,
+   "lg_pikachu": false,
+   "lg_eevee": false,
+   "sword": false,
+   "sword_dlc": false,
+   "shield": false,
+   "shield_dlc": false,
+   "brilliant_diamond": false,
+   "shining_pearl": false,
+   "legends_arceus": false,
+   "scarlet": false,
+   "scarlet_dlc": false,
+   "violet": false,
+   "violet_dlc": false,
+   "legends_za": false,
+   "legends_za_dlc": false,
+   "og_ds": false,
+   "transporter": false,
+   "bank": true,
+   "home": false,
+   "gb_gbc_number": "0",
+   "gba_number": "0",
+   "ds_number": "0",
+   "three_ds_number": "1",
+   "switch_number": "0"
+  }
+ },
+ "counts": {
+  "available": 549,
+  "unavailable": 538
+ },
+ "available": [
+  {
+   "number": "1",
+   "name": "Bulbasaur",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "2",
+   "name": "Ivysaur",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "3",
+   "name": "Venusaur",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "4",
+   "name": "Charmander",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "5",
+   "name": "Charmeleon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "6",
+   "name": "Charizard",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "7",
+   "name": "Squirtle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "8",
+   "name": "Wartortle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "9",
+   "name": "Blastoise",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "10",
+   "name": "Caterpie",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "11",
+   "name": "Metapod",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "12",
+   "name": "Butterfree",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "13",
+   "name": "Weedle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "14",
+   "name": "Kakuna",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "15",
+   "name": "Beedrill",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "16",
+   "name": "Pidgey",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "17",
+   "name": "Pidgeotto",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "18",
+   "name": "Pidgeot",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "19",
+   "name": "Rattata (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "20",
+   "name": "Raticate (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "21",
+   "name": "Spearow",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "22",
+   "name": "Fearow",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "23",
+   "name": "Ekans",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "24",
+   "name": "Arbok",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "25",
+   "name": "Pikachu",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "26",
+   "name": "Raichu",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "26",
+   "name": "Raichu (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "27",
+   "name": "Sandshrew (Alolan Form)",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "28",
+   "name": "Sandslash (Alolan Form)",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "35",
+   "name": "Clefairy",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "36",
+   "name": "Clefable",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "37",
+   "name": "Vulpix (Alolan Form)",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "38",
+   "name": "Ninetales (Alolan Form)",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "39",
+   "name": "Jigglypuff",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "40",
+   "name": "Wigglytuff",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "41",
+   "name": "Zubat",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "42",
+   "name": "Golbat",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "46",
+   "name": "Paras",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "47",
+   "name": "Parasect",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "50",
+   "name": "Diglett (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "51",
+   "name": "Dugtrio (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "52",
+   "name": "Meowth (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "53",
+   "name": "Persian (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "54",
+   "name": "Psyduck",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "55",
+   "name": "Golduck",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "56",
+   "name": "Mankey",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "57",
+   "name": "Primeape",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "58",
+   "name": "Growlithe",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "59",
+   "name": "Arcanine",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "60",
+   "name": "Poliwag",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "61",
+   "name": "Poliwhirl",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "62",
+   "name": "Poliwrath",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "63",
+   "name": "Abra",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "64",
+   "name": "Kadabra",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "66",
+   "name": "Machop",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "67",
+   "name": "Machoke",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "72",
+   "name": "Tentacool",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "73",
+   "name": "Tentacruel",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "74",
+   "name": "Geodude (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "75",
+   "name": "Graveler (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "79",
+   "name": "Slowpoke",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "80",
+   "name": "Slowbro",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "81",
+   "name": "Magnemite",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "82",
+   "name": "Magneton",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "86",
+   "name": "Seel",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "87",
+   "name": "Dewgong",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "88",
+   "name": "Grimer (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "89",
+   "name": "Muk (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "90",
+   "name": "Shellder",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "91",
+   "name": "Cloyster",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "92",
+   "name": "Gastly",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "93",
+   "name": "Haunter",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "94",
+   "name": "Gengar",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "95",
+   "name": "Onix",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "96",
+   "name": "Drowzee",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "97",
+   "name": "Hypno",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "100",
+   "name": "Voltorb",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "101",
+   "name": "Electrode",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "102",
+   "name": "Exeggcute",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "103",
+   "name": "Exeggutor",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "103",
+   "name": "Exeggutor (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "104",
+   "name": "Cubone",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "105",
+   "name": "Marowak",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "105",
+   "name": "Marowak (Alolan Form)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "108",
+   "name": "Lickitung",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "111",
+   "name": "Rhyhorn",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "112",
+   "name": "Rhydon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "113",
+   "name": "Chansey",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "115",
+   "name": "Kangaskhan",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "116",
+   "name": "Horsea",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "117",
+   "name": "Seadra",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "118",
+   "name": "Goldeen",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "119",
+   "name": "Seaking",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "120",
+   "name": "Staryu",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "121",
+   "name": "Starmie",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "122",
+   "name": "Mr. Mime",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "123",
+   "name": "Scyther",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "124",
+   "name": "Jynx",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "125",
+   "name": "Electabuzz",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "126",
+   "name": "Magmar",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "127",
+   "name": "Pinsir",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "128",
+   "name": "Tauros",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "129",
+   "name": "Magikarp",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "130",
+   "name": "Gyarados",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "131",
+   "name": "Lapras",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "132",
+   "name": "Ditto",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "133",
+   "name": "Eevee",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "134",
+   "name": "Vaporeon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "135",
+   "name": "Jolteon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "136",
+   "name": "Flareon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "137",
+   "name": "Porygon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "138",
+   "name": "Omanyte",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "139",
+   "name": "Omastar",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "140",
+   "name": "Kabuto",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "141",
+   "name": "Kabutops",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "142",
+   "name": "Aerodactyl",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "143",
+   "name": "Snorlax",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "144",
+   "name": "Articuno",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "145",
+   "name": "Zapdos",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "146",
+   "name": "Moltres",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "147",
+   "name": "Dratini",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "148",
+   "name": "Dragonair",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "149",
+   "name": "Dragonite",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "150",
+   "name": "Mewtwo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "163",
+   "name": "Hoothoot",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "164",
+   "name": "Noctowl",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "165",
+   "name": "Ledyba",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "166",
+   "name": "Ledian",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "167",
+   "name": "Spinarak",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "168",
+   "name": "Ariados",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "169",
+   "name": "Crobat",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "170",
+   "name": "Chinchou",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "171",
+   "name": "Lanturn",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "172",
+   "name": "Pichu",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "173",
+   "name": "Cleffa",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "174",
+   "name": "Igglybuff",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "177",
+   "name": "Natu",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "178",
+   "name": "Xatu",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "179",
+   "name": "Mareep",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "180",
+   "name": "Flaaffy",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "181",
+   "name": "Ampharos",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "185",
+   "name": "Sudowoodo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "186",
+   "name": "Politoed",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "190",
+   "name": "Aipom",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "193",
+   "name": "Yanma",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "194",
+   "name": "Wooper",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "195",
+   "name": "Quagsire",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "196",
+   "name": "Espeon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "197",
+   "name": "Umbreon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "198",
+   "name": "Murkrow",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "199",
+   "name": "Slowking",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "200",
+   "name": "Misdreavus",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "204",
+   "name": "Pineco",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "205",
+   "name": "Forretress",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "206",
+   "name": "Dunsparce",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "209",
+   "name": "Snubbull",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "210",
+   "name": "Granbull",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "214",
+   "name": "Heracross",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "215",
+   "name": "Sneasel",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "218",
+   "name": "Slugma",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "219",
+   "name": "Magcargo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "220",
+   "name": "Swinub",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "221",
+   "name": "Piloswine",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "222",
+   "name": "Corsola",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "223",
+   "name": "Remoraid",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "224",
+   "name": "Octillery",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "225",
+   "name": "Delibird",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "226",
+   "name": "Mantine",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "227",
+   "name": "Skarmory",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "228",
+   "name": "Houndour",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "229",
+   "name": "Houndoom",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "235",
+   "name": "Smeargle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "238",
+   "name": "Smoochum",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "239",
+   "name": "Elekid",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "240",
+   "name": "Magby",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "241",
+   "name": "Miltank",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "242",
+   "name": "Blissey",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "243",
+   "name": "Raikou",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "244",
+   "name": "Entei",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "246",
+   "name": "Larvitar",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "247",
+   "name": "Pupitar",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "248",
+   "name": "Tyranitar",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "249",
+   "name": "Lugia",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "250",
+   "name": "Ho-Oh",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "252",
+   "name": "Treecko",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "253",
+   "name": "Grovyle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "254",
+   "name": "Sceptile",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "255",
+   "name": "Torchic",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "256",
+   "name": "Combusken",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "257",
+   "name": "Blaziken",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "258",
+   "name": "Mudkip",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "259",
+   "name": "Marshtomp",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "260",
+   "name": "Swampert",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "270",
+   "name": "Lotad",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "271",
+   "name": "Lombre",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "272",
+   "name": "Ludicolo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "273",
+   "name": "Seedot",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "274",
+   "name": "Nuzleaf",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "275",
+   "name": "Shiftry",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "276",
+   "name": "Taillow",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "277",
+   "name": "Swellow",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "278",
+   "name": "Wingull",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "279",
+   "name": "Pelipper",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "280",
+   "name": "Ralts",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "281",
+   "name": "Kirlia",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "282",
+   "name": "Gardevoir",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "283",
+   "name": "Surskit",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "284",
+   "name": "Masquerain",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "296",
+   "name": "Makuhita",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "297",
+   "name": "Hariyama",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "299",
+   "name": "Nosepass",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "302",
+   "name": "Sableye",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "303",
+   "name": "Mawile",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "304",
+   "name": "Aron",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "305",
+   "name": "Lairon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "306",
+   "name": "Aggron",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "307",
+   "name": "Meditite",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "308",
+   "name": "Medicham",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "309",
+   "name": "Electrike",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "310",
+   "name": "Manectric",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "318",
+   "name": "Carvanha",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "319",
+   "name": "Sharpedo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "320",
+   "name": "Wailmer",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "321",
+   "name": "Wailord",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "324",
+   "name": "Torkoal",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "325",
+   "name": "Spoink",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "326",
+   "name": "Grumpig",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "327",
+   "name": "Spinda",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "328",
+   "name": "Trapinch",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "329",
+   "name": "Vibrava",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "330",
+   "name": "Flygon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "333",
+   "name": "Swablu",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "334",
+   "name": "Altaria",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "339",
+   "name": "Barboach",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "340",
+   "name": "Whiscash",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "341",
+   "name": "Corphish",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "342",
+   "name": "Crawdaunt",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "343",
+   "name": "Baltoy",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "344",
+   "name": "Claydol",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "345",
+   "name": "Lileep",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "346",
+   "name": "Cradily",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "347",
+   "name": "Anorith",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "348",
+   "name": "Armaldo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "349",
+   "name": "Feebas",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "351",
+   "name": "Castform",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "352",
+   "name": "Kecleon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "353",
+   "name": "Shuppet",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "354",
+   "name": "Banette",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "357",
+   "name": "Tropius",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "359",
+   "name": "Absol",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "361",
+   "name": "Snorunt",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "362",
+   "name": "Glalie",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "363",
+   "name": "Spheal",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "364",
+   "name": "Sealeo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "365",
+   "name": "Walrein",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "366",
+   "name": "Clamperl",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "367",
+   "name": "Huntail",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "368",
+   "name": "Gorebyss",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "369",
+   "name": "Relicanth",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "370",
+   "name": "Luvdisc",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "371",
+   "name": "Bagon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "372",
+   "name": "Shelgon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "373",
+   "name": "Salamence",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "374",
+   "name": "Beldum",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "375",
+   "name": "Metang",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "376",
+   "name": "Metagross",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "377",
+   "name": "Regirock",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "378",
+   "name": "Regice",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "379",
+   "name": "Registeel",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "380",
+   "name": "Latias",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "381",
+   "name": "Latios",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "382",
+   "name": "Kyogre",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "383",
+   "name": "Groudon",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "387",
+   "name": "Turtwig",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "388",
+   "name": "Grotle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "389",
+   "name": "Torterra",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "390",
+   "name": "Chimchar",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "391",
+   "name": "Monferno",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "392",
+   "name": "Infernape",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "393",
+   "name": "Piplup",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "394",
+   "name": "Prinplup",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "395",
+   "name": "Empoleon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "408",
+   "name": "Cranidos",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "409",
+   "name": "Rampardos",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "410",
+   "name": "Shieldon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "411",
+   "name": "Bastiodon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "418",
+   "name": "Buizel",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "419",
+   "name": "Floatzel",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "422",
+   "name": "Shellos (West)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "422",
+   "name": "Shellos (East)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "423",
+   "name": "Gastrodon (West)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "423",
+   "name": "Gastrodon (East)",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "424",
+   "name": "Ambipom",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "425",
+   "name": "Drifloon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "426",
+   "name": "Drifblim",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "427",
+   "name": "Buneary",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "428",
+   "name": "Lopunny",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "429",
+   "name": "Mismagius",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "430",
+   "name": "Honchkrow",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "438",
+   "name": "Bonsly",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "439",
+   "name": "Mime Jr.",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "440",
+   "name": "Happiny",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "443",
+   "name": "Gible",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "444",
+   "name": "Gabite",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "445",
+   "name": "Garchomp",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "446",
+   "name": "Munchlax",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "447",
+   "name": "Riolu",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "448",
+   "name": "Lucario",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "449",
+   "name": "Hippopotas",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "450",
+   "name": "Hippowdon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "451",
+   "name": "Skorupi",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "452",
+   "name": "Drapion",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "456",
+   "name": "Finneon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "457",
+   "name": "Lumineon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "458",
+   "name": "Mantyke",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "459",
+   "name": "Snover",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "460",
+   "name": "Abomasnow",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "461",
+   "name": "Weavile",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "462",
+   "name": "Magnezone",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "463",
+   "name": "Lickilicky",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "469",
+   "name": "Yanmega",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "470",
+   "name": "Leafeon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "471",
+   "name": "Glaceon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "473",
+   "name": "Mamoswine",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "475",
+   "name": "Gallade",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "476",
+   "name": "Probopass",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "478",
+   "name": "Froslass",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "479",
+   "name": "Rotom",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "480",
+   "name": "Uxie",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "481",
+   "name": "Mesprit",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "482",
+   "name": "Azelf",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "483",
+   "name": "Dialga",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "484",
+   "name": "Palkia",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "485",
+   "name": "Heatran",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "486",
+   "name": "Regigigas",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "488",
+   "name": "Cresselia",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "506",
+   "name": "Lillipup",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "507",
+   "name": "Herdier",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "508",
+   "name": "Stoutland",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "524",
+   "name": "Roggenrola",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "525",
+   "name": "Boldore",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "531",
+   "name": "Audino",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "540",
+   "name": "Sewaddle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "541",
+   "name": "Swadloon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "542",
+   "name": "Leavanny",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "546",
+   "name": "Cottonee",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "547",
+   "name": "Whimsicott",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "548",
+   "name": "Petilil",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "549",
+   "name": "Lilligant",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "550",
+   "name": "Basculin (Red)",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "550",
+   "name": "Basculin (Blue)",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "551",
+   "name": "Sandile",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "552",
+   "name": "Krokorok",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "553",
+   "name": "Krookodile",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "557",
+   "name": "Dwebble",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "558",
+   "name": "Crustle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "559",
+   "name": "Scraggy",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "560",
+   "name": "Scrafty",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "561",
+   "name": "Sigilyph",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "564",
+   "name": "Tirtouga",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "565",
+   "name": "Carracosta",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "566",
+   "name": "Archen",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "567",
+   "name": "Archeops",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "568",
+   "name": "Trubbish",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "569",
+   "name": "Garbodor",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "570",
+   "name": "Zorua",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "571",
+   "name": "Zoroark",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "572",
+   "name": "Minccino",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "573",
+   "name": "Cinccino",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "580",
+   "name": "Ducklett",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "581",
+   "name": "Swanna",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "582",
+   "name": "Vanillite",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "583",
+   "name": "Vanillish",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "584",
+   "name": "Vanilluxe",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "587",
+   "name": "Emolga",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "592",
+   "name": "Frillish",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "593",
+   "name": "Jellicent",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "594",
+   "name": "Alomomola",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "602",
+   "name": "Tynamo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "603",
+   "name": "Eelektrik",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "604",
+   "name": "Eelektross",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "605",
+   "name": "Elgyem",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "606",
+   "name": "Beheeyem",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "607",
+   "name": "Litwick",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "608",
+   "name": "Lampent",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "609",
+   "name": "Chandelure",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "610",
+   "name": "Axew",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "611",
+   "name": "Fraxure",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "612",
+   "name": "Haxorus",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "618",
+   "name": "Stunfisk",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "619",
+   "name": "Mienfoo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "620",
+   "name": "Mienshao",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "621",
+   "name": "Druddigon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "622",
+   "name": "Golett",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "623",
+   "name": "Golurk",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "624",
+   "name": "Pawniard",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "625",
+   "name": "Bisharp",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "627",
+   "name": "Rufflet",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "628",
+   "name": "Braviary",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "629",
+   "name": "Vullaby",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "630",
+   "name": "Mandibuzz",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "636",
+   "name": "Larvesta",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "637",
+   "name": "Volcarona",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "638",
+   "name": "Cobalion",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "639",
+   "name": "Terrakion",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "640",
+   "name": "Virizion",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "641",
+   "name": "Tornadus",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "642",
+   "name": "Thundurus",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "643",
+   "name": "Reshiram",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "644",
+   "name": "Zekrom",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "650",
+   "name": "Chespin",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "651",
+   "name": "Quilladin",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "652",
+   "name": "Chesnaught",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "653",
+   "name": "Fennekin",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "654",
+   "name": "Braixen",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "655",
+   "name": "Delphox",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "656",
+   "name": "Froakie",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "657",
+   "name": "Frogadier",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "658",
+   "name": "Greninja",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "661",
+   "name": "Fletchling",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "662",
+   "name": "Fletchinder",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "663",
+   "name": "Talonflame",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "664",
+   "name": "Scatterbug",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "665",
+   "name": "Spewpa",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "666",
+   "name": "Vivillon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "667",
+   "name": "Litleo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "668",
+   "name": "Pyroar",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "669",
+   "name": "Flabébé",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "670",
+   "name": "Floette",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "671",
+   "name": "Florges",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "674",
+   "name": "Pancham",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "675",
+   "name": "Pangoro",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "676",
+   "name": "Furfrou",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "679",
+   "name": "Honedge",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "680",
+   "name": "Doublade",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "681",
+   "name": "Aegislash",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "686",
+   "name": "Inkay",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "687",
+   "name": "Malamar",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "688",
+   "name": "Binacle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "689",
+   "name": "Barbaracle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "690",
+   "name": "Skrelp",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "691",
+   "name": "Dragalge",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "692",
+   "name": "Clauncher",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "693",
+   "name": "Clawitzer",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "694",
+   "name": "Helioptile",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "695",
+   "name": "Heliolisk",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "696",
+   "name": "Tyrunt",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "697",
+   "name": "Tyrantrum",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "698",
+   "name": "Amaura",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "699",
+   "name": "Aurorus",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "700",
+   "name": "Sylveon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "701",
+   "name": "Hawlucha",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "702",
+   "name": "Dedenne",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "703",
+   "name": "Carbink",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "704",
+   "name": "Goomy",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "705",
+   "name": "Sliggoo",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "706",
+   "name": "Goodra",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "707",
+   "name": "Klefki",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "708",
+   "name": "Phantump",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "709",
+   "name": "Trevenant",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "714",
+   "name": "Noibat",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "715",
+   "name": "Noivern",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "716",
+   "name": "Xerneas",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "717",
+   "name": "Yveltal",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "718",
+   "name": "Zygarde",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "722",
+   "name": "Rowlet",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "723",
+   "name": "Dartrix",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "724",
+   "name": "Decidueye",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "725",
+   "name": "Litten",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "726",
+   "name": "Torracat",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "727",
+   "name": "Incineroar",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "728",
+   "name": "Popplio",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "729",
+   "name": "Brionne",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "730",
+   "name": "Primarina",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "731",
+   "name": "Pikipek",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "732",
+   "name": "Trumbeak",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "733",
+   "name": "Toucannon",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "734",
+   "name": "Yungoos",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "735",
+   "name": "Gumshoos",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "736",
+   "name": "Grubbin",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "737",
+   "name": "Charjabug",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "738",
+   "name": "Vikavolt",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "739",
+   "name": "Crabrawler",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "740",
+   "name": "Crabominable",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "741",
+   "name": "Oricorio",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "742",
+   "name": "Cutiefly",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "743",
+   "name": "Ribombee",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "744",
+   "name": "Rockruff",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "745",
+   "name": "Lycanroc",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "746",
+   "name": "Wishiwashi",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "747",
+   "name": "Mareanie",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "748",
+   "name": "Toxapex",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "749",
+   "name": "Mudbray",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "750",
+   "name": "Mudsdale",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "751",
+   "name": "Dewpider",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "752",
+   "name": "Araquanid",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "753",
+   "name": "Fomantis",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "754",
+   "name": "Lurantis",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "755",
+   "name": "Morelull",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "756",
+   "name": "Shiinotic",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "757",
+   "name": "Salandit",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "758",
+   "name": "Salazzle",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "759",
+   "name": "Stufful",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "760",
+   "name": "Bewear",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "761",
+   "name": "Bounsweet",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "762",
+   "name": "Steenee",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "763",
+   "name": "Tsareena",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "764",
+   "name": "Comfey",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "765",
+   "name": "Oranguru",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "766",
+   "name": "Passimian",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "767",
+   "name": "Wimpod",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "768",
+   "name": "Golisopod",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "769",
+   "name": "Sandygast",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "770",
+   "name": "Palossand",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "771",
+   "name": "Pyukumuku",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "772",
+   "name": "Type: Null",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "773",
+   "name": "Silvally",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "774",
+   "name": "Minior",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "775",
+   "name": "Komala",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "776",
+   "name": "Turtonator",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "777",
+   "name": "Togedemaru",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "778",
+   "name": "Mimikyu",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "779",
+   "name": "Bruxish",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "780",
+   "name": "Drampa",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "781",
+   "name": "Dhelmise",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "782",
+   "name": "Jangmo-o",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "783",
+   "name": "Hakamo-o",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "784",
+   "name": "Kommo-o",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "785",
+   "name": "Tapu Koko",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "786",
+   "name": "Tapu Lele",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "787",
+   "name": "Tapu Bulu",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "788",
+   "name": "Tapu Fini",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "789",
+   "name": "Cosmog",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "790",
+   "name": "Cosmoem",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "791",
+   "name": "Solgaleo",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "792",
+   "name": "Lunala",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "793",
+   "name": "Nihilego",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "794",
+   "name": "Buzzwole",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "795",
+   "name": "Pheromosa",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "796",
+   "name": "Xurkitree",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "797",
+   "name": "Celesteela",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "798",
+   "name": "Kartana",
+   "games": [
+    "UltraSun"
+   ]
+  },
+  {
+   "number": "799",
+   "name": "Guzzlord",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "800",
+   "name": "Necrozma",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "801",
+   "name": "Magearna",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "803",
+   "name": "Poipole",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "804",
+   "name": "Naganadel",
+   "games": [
+    "UltraSun",
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "805",
+   "name": "Stakataka",
+   "games": [
+    "UltraMoon"
+   ]
+  },
+  {
+   "number": "806",
+   "name": "Blacephalon",
+   "games": [
+    "UltraSun"
+   ]
+  }
+ ],
+ "unavailable": [
+  {
+   "number": "19",
+   "name": "Rattata"
+  },
+  {
+   "number": "20",
+   "name": "Raticate"
+  },
+  {
+   "number": "27",
+   "name": "Sandshrew"
+  },
+  {
+   "number": "28",
+   "name": "Sandslash"
+  },
+  {
+   "number": "29",
+   "name": "Nidoran♀"
+  },
+  {
+   "number": "30",
+   "name": "Nidorina"
+  },
+  {
+   "number": "31",
+   "name": "Nidoqueen"
+  },
+  {
+   "number": "32",
+   "name": "Nidoran♂"
+  },
+  {
+   "number": "33",
+   "name": "Nidorino"
+  },
+  {
+   "number": "34",
+   "name": "Nidoking"
+  },
+  {
+   "number": "37",
+   "name": "Vulpix"
+  },
+  {
+   "number": "38",
+   "name": "Ninetales"
+  },
+  {
+   "number": "43",
+   "name": "Oddish"
+  },
+  {
+   "number": "44",
+   "name": "Gloom"
+  },
+  {
+   "number": "45",
+   "name": "Vileplume"
+  },
+  {
+   "number": "48",
+   "name": "Venonat"
+  },
+  {
+   "number": "49",
+   "name": "Venomoth"
+  },
+  {
+   "number": "50",
+   "name": "Diglett"
+  },
+  {
+   "number": "51",
+   "name": "Dugtrio"
+  },
+  {
+   "number": "52",
+   "name": "Meowth"
+  },
+  {
+   "number": "52",
+   "name": "Meowth (Galarian Form)"
+  },
+  {
+   "number": "53",
+   "name": "Persian"
+  },
+  {
+   "number": "58",
+   "name": "Growlithe (Hisuian Form)"
+  },
+  {
+   "number": "59",
+   "name": "Arcanine (Hisuian Form)"
+  },
+  {
+   "number": "65",
+   "name": "Alakazam"
+  },
+  {
+   "number": "68",
+   "name": "Machamp"
+  },
+  {
+   "number": "69",
+   "name": "Bellsprout"
+  },
+  {
+   "number": "70",
+   "name": "Weepinbell"
+  },
+  {
+   "number": "71",
+   "name": "Victreebel"
+  },
+  {
+   "number": "74",
+   "name": "Geodude"
+  },
+  {
+   "number": "75",
+   "name": "Graveler"
+  },
+  {
+   "number": "76",
+   "name": "Golem"
+  },
+  {
+   "number": "76",
+   "name": "Golem (Alolan Form)"
+  },
+  {
+   "number": "77",
+   "name": "Ponyta"
+  },
+  {
+   "number": "77",
+   "name": "Ponyta (Galarian Form)"
+  },
+  {
+   "number": "78",
+   "name": "Rapidash"
+  },
+  {
+   "number": "78",
+   "name": "Rapidash (Galarian Form)"
+  },
+  {
+   "number": "79",
+   "name": "Slowpoke (Galarian Form)"
+  },
+  {
+   "number": "80",
+   "name": "Slowbro (Galarian Form)"
+  },
+  {
+   "number": "83",
+   "name": "Farfetch'd"
+  },
+  {
+   "number": "83",
+   "name": "Farfetch'd (Galarian Form)"
+  },
+  {
+   "number": "84",
+   "name": "Doduo"
+  },
+  {
+   "number": "85",
+   "name": "Dodrio"
+  },
+  {
+   "number": "88",
+   "name": "Grimer"
+  },
+  {
+   "number": "89",
+   "name": "Muk"
+  },
+  {
+   "number": "98",
+   "name": "Krabby"
+  },
+  {
+   "number": "99",
+   "name": "Kingler"
+  },
+  {
+   "number": "100",
+   "name": "Voltorb (Hisuian Form)"
+  },
+  {
+   "number": "101",
+   "name": "Electrode (Hisuian Form)"
+  },
+  {
+   "number": "106",
+   "name": "Hitmonlee"
+  },
+  {
+   "number": "107",
+   "name": "Hitmonchan"
+  },
+  {
+   "number": "109",
+   "name": "Koffing"
+  },
+  {
+   "number": "110",
+   "name": "Weezing"
+  },
+  {
+   "number": "110",
+   "name": "Weezing (Galarian Form)"
+  },
+  {
+   "number": "114",
+   "name": "Tangela"
+  },
+  {
+   "number": "122",
+   "name": "Mr. Mime (Galarian Form)"
+  },
+  {
+   "number": "128",
+   "name": "Tauros (Paldean Combat Form)"
+  },
+  {
+   "number": "128",
+   "name": "Tauros (Paldean Blaze Form)"
+  },
+  {
+   "number": "128",
+   "name": "Tauros (Paldean Aqua Form)"
+  },
+  {
+   "number": "144",
+   "name": "Articuno (Galarian Form)"
+  },
+  {
+   "number": "145",
+   "name": "Zapdos (Galarian Form)"
+  },
+  {
+   "number": "146",
+   "name": "Moltres (Galarian Form)"
+  },
+  {
+   "number": "151",
+   "name": "Mew"
+  },
+  {
+   "number": "152",
+   "name": "Chikorita"
+  },
+  {
+   "number": "153",
+   "name": "Bayleef"
+  },
+  {
+   "number": "154",
+   "name": "Meganium"
+  },
+  {
+   "number": "155",
+   "name": "Cyndaquil"
+  },
+  {
+   "number": "156",
+   "name": "Quilava"
+  },
+  {
+   "number": "157",
+   "name": "Typhlosion"
+  },
+  {
+   "number": "157",
+   "name": "Typhlosion (Hisuian Form)"
+  },
+  {
+   "number": "158",
+   "name": "Totodile"
+  },
+  {
+   "number": "159",
+   "name": "Croconaw"
+  },
+  {
+   "number": "160",
+   "name": "Feraligatr"
+  },
+  {
+   "number": "161",
+   "name": "Sentret"
+  },
+  {
+   "number": "162",
+   "name": "Furret"
+  },
+  {
+   "number": "175",
+   "name": "Togepi"
+  },
+  {
+   "number": "176",
+   "name": "Togetic"
+  },
+  {
+   "number": "182",
+   "name": "Bellossom"
+  },
+  {
+   "number": "183",
+   "name": "Marill"
+  },
+  {
+   "number": "184",
+   "name": "Azumarill"
+  },
+  {
+   "number": "187",
+   "name": "Hoppip"
+  },
+  {
+   "number": "188",
+   "name": "Skiploom"
+  },
+  {
+   "number": "189",
+   "name": "Jumpluff"
+  },
+  {
+   "number": "191",
+   "name": "Sunkern"
+  },
+  {
+   "number": "192",
+   "name": "Sunflora"
+  },
+  {
+   "number": "194",
+   "name": "Wooper (Paldean Form)"
+  },
+  {
+   "number": "199",
+   "name": "Slowking (Galarian Form)"
+  },
+  {
+   "number": "201",
+   "name": "Unown"
+  },
+  {
+   "number": "202",
+   "name": "Wobbuffet"
+  },
+  {
+   "number": "203",
+   "name": "Girafarig"
+  },
+  {
+   "number": "207",
+   "name": "Gligar"
+  },
+  {
+   "number": "208",
+   "name": "Steelix"
+  },
+  {
+   "number": "211",
+   "name": "Qwilfish"
+  },
+  {
+   "number": "211",
+   "name": "Qwilfish (Hisuian Form)"
+  },
+  {
+   "number": "212",
+   "name": "Scizor"
+  },
+  {
+   "number": "213",
+   "name": "Shuckle"
+  },
+  {
+   "number": "215",
+   "name": "Sneasel (Hisuian Form)"
+  },
+  {
+   "number": "216",
+   "name": "Teddiursa"
+  },
+  {
+   "number": "217",
+   "name": "Ursaring"
+  },
+  {
+   "number": "222",
+   "name": "Corsola (Galarian Form)"
+  },
+  {
+   "number": "230",
+   "name": "Kingdra"
+  },
+  {
+   "number": "231",
+   "name": "Phanpy"
+  },
+  {
+   "number": "232",
+   "name": "Donphan"
+  },
+  {
+   "number": "233",
+   "name": "Porygon2"
+  },
+  {
+   "number": "234",
+   "name": "Stantler"
+  },
+  {
+   "number": "236",
+   "name": "Tyrogue"
+  },
+  {
+   "number": "237",
+   "name": "Hitmontop"
+  },
+  {
+   "number": "245",
+   "name": "Suicune"
+  },
+  {
+   "number": "251",
+   "name": "Celebi"
+  },
+  {
+   "number": "261",
+   "name": "Poochyena"
+  },
+  {
+   "number": "262",
+   "name": "Mightyena"
+  },
+  {
+   "number": "263",
+   "name": "Zigzagoon"
+  },
+  {
+   "number": "263",
+   "name": "Zigzagoon (Galarian Form)"
+  },
+  {
+   "number": "264",
+   "name": "Linoone"
+  },
+  {
+   "number": "264",
+   "name": "Linoone (Galarian Form)"
+  },
+  {
+   "number": "265",
+   "name": "Wurmple"
+  },
+  {
+   "number": "266",
+   "name": "Silcoon"
+  },
+  {
+   "number": "267",
+   "name": "Beautifly"
+  },
+  {
+   "number": "268",
+   "name": "Cascoon"
+  },
+  {
+   "number": "269",
+   "name": "Dustox"
+  },
+  {
+   "number": "285",
+   "name": "Shroomish"
+  },
+  {
+   "number": "286",
+   "name": "Breloom"
+  },
+  {
+   "number": "287",
+   "name": "Slakoth"
+  },
+  {
+   "number": "288",
+   "name": "Vigoroth"
+  },
+  {
+   "number": "289",
+   "name": "Slaking"
+  },
+  {
+   "number": "290",
+   "name": "Nincada"
+  },
+  {
+   "number": "291",
+   "name": "Ninjask"
+  },
+  {
+   "number": "292",
+   "name": "Shedinja"
+  },
+  {
+   "number": "293",
+   "name": "Whismur"
+  },
+  {
+   "number": "294",
+   "name": "Loudred"
+  },
+  {
+   "number": "295",
+   "name": "Exploud"
+  },
+  {
+   "number": "298",
+   "name": "Azurill"
+  },
+  {
+   "number": "300",
+   "name": "Skitty"
+  },
+  {
+   "number": "301",
+   "name": "Delcatty"
+  },
+  {
+   "number": "311",
+   "name": "Plusle"
+  },
+  {
+   "number": "312",
+   "name": "Minun"
+  },
+  {
+   "number": "313",
+   "name": "Volbeat"
+  },
+  {
+   "number": "314",
+   "name": "Illumise"
+  },
+  {
+   "number": "315",
+   "name": "Roselia"
+  },
+  {
+   "number": "316",
+   "name": "Gulpin"
+  },
+  {
+   "number": "317",
+   "name": "Swalot"
+  },
+  {
+   "number": "322",
+   "name": "Numel"
+  },
+  {
+   "number": "323",
+   "name": "Camerupt"
+  },
+  {
+   "number": "331",
+   "name": "Cacnea"
+  },
+  {
+   "number": "332",
+   "name": "Cacturne"
+  },
+  {
+   "number": "335",
+   "name": "Zangoose"
+  },
+  {
+   "number": "336",
+   "name": "Seviper"
+  },
+  {
+   "number": "337",
+   "name": "Lunatone"
+  },
+  {
+   "number": "338",
+   "name": "Solrock"
+  },
+  {
+   "number": "350",
+   "name": "Milotic"
+  },
+  {
+   "number": "355",
+   "name": "Duskull"
+  },
+  {
+   "number": "356",
+   "name": "Dusclops"
+  },
+  {
+   "number": "358",
+   "name": "Chimecho"
+  },
+  {
+   "number": "360",
+   "name": "Wynaut"
+  },
+  {
+   "number": "384",
+   "name": "Rayquaza"
+  },
+  {
+   "number": "385",
+   "name": "Jirachi"
+  },
+  {
+   "number": "386",
+   "name": "Deoxys"
+  },
+  {
+   "number": "396",
+   "name": "Starly"
+  },
+  {
+   "number": "397",
+   "name": "Staravia"
+  },
+  {
+   "number": "398",
+   "name": "Staraptor"
+  },
+  {
+   "number": "399",
+   "name": "Bidoof"
+  },
+  {
+   "number": "400",
+   "name": "Bibarel"
+  },
+  {
+   "number": "401",
+   "name": "Kricketot"
+  },
+  {
+   "number": "402",
+   "name": "Kricketune"
+  },
+  {
+   "number": "403",
+   "name": "Shinx"
+  },
+  {
+   "number": "404",
+   "name": "Luxio"
+  },
+  {
+   "number": "405",
+   "name": "Luxray"
+  },
+  {
+   "number": "406",
+   "name": "Budew"
+  },
+  {
+   "number": "407",
+   "name": "Roserade"
+  },
+  {
+   "number": "412",
+   "name": "Burmy"
+  },
+  {
+   "number": "413",
+   "name": "Wormadam"
+  },
+  {
+   "number": "414",
+   "name": "Mothim"
+  },
+  {
+   "number": "415",
+   "name": "Combee"
+  },
+  {
+   "number": "416",
+   "name": "Vespiquen"
+  },
+  {
+   "number": "417",
+   "name": "Pachirisu"
+  },
+  {
+   "number": "420",
+   "name": "Cherubi"
+  },
+  {
+   "number": "421",
+   "name": "Cherrim"
+  },
+  {
+   "number": "431",
+   "name": "Glameow"
+  },
+  {
+   "number": "432",
+   "name": "Purugly"
+  },
+  {
+   "number": "433",
+   "name": "Chingling"
+  },
+  {
+   "number": "434",
+   "name": "Stunky"
+  },
+  {
+   "number": "435",
+   "name": "Skuntank"
+  },
+  {
+   "number": "436",
+   "name": "Bronzor"
+  },
+  {
+   "number": "437",
+   "name": "Bronzong"
+  },
+  {
+   "number": "441",
+   "name": "Chatot"
+  },
+  {
+   "number": "442",
+   "name": "Spiritomb"
+  },
+  {
+   "number": "453",
+   "name": "Croagunk"
+  },
+  {
+   "number": "454",
+   "name": "Toxicroak"
+  },
+  {
+   "number": "455",
+   "name": "Carnivine"
+  },
+  {
+   "number": "464",
+   "name": "Rhyperior"
+  },
+  {
+   "number": "465",
+   "name": "Tangrowth"
+  },
+  {
+   "number": "466",
+   "name": "Electivire"
+  },
+  {
+   "number": "467",
+   "name": "Magmortar"
+  },
+  {
+   "number": "468",
+   "name": "Togekiss"
+  },
+  {
+   "number": "472",
+   "name": "Gliscor"
+  },
+  {
+   "number": "474",
+   "name": "Porygon-Z"
+  },
+  {
+   "number": "477",
+   "name": "Dusknoir"
+  },
+  {
+   "number": "487",
+   "name": "Giratina"
+  },
+  {
+   "number": "489",
+   "name": "Phione"
+  },
+  {
+   "number": "490",
+   "name": "Manaphy"
+  },
+  {
+   "number": "491",
+   "name": "Darkrai"
+  },
+  {
+   "number": "492",
+   "name": "Shaymin"
+  },
+  {
+   "number": "493",
+   "name": "Arceus"
+  },
+  {
+   "number": "494",
+   "name": "Victini"
+  },
+  {
+   "number": "495",
+   "name": "Snivy"
+  },
+  {
+   "number": "496",
+   "name": "Servine"
+  },
+  {
+   "number": "497",
+   "name": "Serperior"
+  },
+  {
+   "number": "498",
+   "name": "Tepig"
+  },
+  {
+   "number": "499",
+   "name": "Pignite"
+  },
+  {
+   "number": "500",
+   "name": "Emboar"
+  },
+  {
+   "number": "501",
+   "name": "Oshawott"
+  },
+  {
+   "number": "502",
+   "name": "Dewott"
+  },
+  {
+   "number": "503",
+   "name": "Samurott"
+  },
+  {
+   "number": "503",
+   "name": "Samurott (Hisuian Form)"
+  },
+  {
+   "number": "504",
+   "name": "Patrat"
+  },
+  {
+   "number": "505",
+   "name": "Watchog"
+  },
+  {
+   "number": "509",
+   "name": "Purrloin"
+  },
+  {
+   "number": "510",
+   "name": "Liepard"
+  },
+  {
+   "number": "511",
+   "name": "Pansage"
+  },
+  {
+   "number": "512",
+   "name": "Simisage"
+  },
+  {
+   "number": "513",
+   "name": "Pansear"
+  },
+  {
+   "number": "514",
+   "name": "Simisear"
+  },
+  {
+   "number": "515",
+   "name": "Panpour"
+  },
+  {
+   "number": "516",
+   "name": "Simipour"
+  },
+  {
+   "number": "517",
+   "name": "Munna"
+  },
+  {
+   "number": "518",
+   "name": "Musharna"
+  },
+  {
+   "number": "519",
+   "name": "Pidove"
+  },
+  {
+   "number": "520",
+   "name": "Tranquill"
+  },
+  {
+   "number": "521",
+   "name": "Unfezant"
+  },
+  {
+   "number": "522",
+   "name": "Blitzle"
+  },
+  {
+   "number": "523",
+   "name": "Zebstrika"
+  },
+  {
+   "number": "526",
+   "name": "Gigalith"
+  },
+  {
+   "number": "527",
+   "name": "Woobat"
+  },
+  {
+   "number": "528",
+   "name": "Swoobat"
+  },
+  {
+   "number": "529",
+   "name": "Drilbur"
+  },
+  {
+   "number": "530",
+   "name": "Excadrill"
+  },
+  {
+   "number": "532",
+   "name": "Timburr"
+  },
+  {
+   "number": "533",
+   "name": "Gurdurr"
+  },
+  {
+   "number": "534",
+   "name": "Conkeldurr"
+  },
+  {
+   "number": "535",
+   "name": "Tympole"
+  },
+  {
+   "number": "536",
+   "name": "Palpitoad"
+  },
+  {
+   "number": "537",
+   "name": "Seismitoad"
+  },
+  {
+   "number": "538",
+   "name": "Throh"
+  },
+  {
+   "number": "539",
+   "name": "Sawk"
+  },
+  {
+   "number": "543",
+   "name": "Venipede"
+  },
+  {
+   "number": "544",
+   "name": "Whirlipede"
+  },
+  {
+   "number": "545",
+   "name": "Scolipede"
+  },
+  {
+   "number": "549",
+   "name": "Lilligant (Hisuian Form)"
+  },
+  {
+   "number": "550",
+   "name": "Basculin (White)"
+  },
+  {
+   "number": "554",
+   "name": "Darumaka"
+  },
+  {
+   "number": "554",
+   "name": "Darumaka (Galarian Form)"
+  },
+  {
+   "number": "555",
+   "name": "Darmanitan"
+  },
+  {
+   "number": "555",
+   "name": "Darmanitan (Galarian Form)"
+  },
+  {
+   "number": "556",
+   "name": "Maractus"
+  },
+  {
+   "number": "562",
+   "name": "Yamask"
+  },
+  {
+   "number": "562",
+   "name": "Yamask (Galarian Form)"
+  },
+  {
+   "number": "563",
+   "name": "Cofagrigus"
+  },
+  {
+   "number": "570",
+   "name": "Zorua (Hisuian Form)"
+  },
+  {
+   "number": "571",
+   "name": "Zoroark (Hisuian Form)"
+  },
+  {
+   "number": "574",
+   "name": "Gothita"
+  },
+  {
+   "number": "575",
+   "name": "Gothorita"
+  },
+  {
+   "number": "576",
+   "name": "Gothitelle"
+  },
+  {
+   "number": "577",
+   "name": "Solosis"
+  },
+  {
+   "number": "578",
+   "name": "Duosion"
+  },
+  {
+   "number": "579",
+   "name": "Reuniclus"
+  },
+  {
+   "number": "585",
+   "name": "Deerling"
+  },
+  {
+   "number": "586",
+   "name": "Sawsbuck"
+  },
+  {
+   "number": "588",
+   "name": "Karrablast"
+  },
+  {
+   "number": "589",
+   "name": "Escavalier"
+  },
+  {
+   "number": "590",
+   "name": "Foongus"
+  },
+  {
+   "number": "591",
+   "name": "Amoonguss"
+  },
+  {
+   "number": "595",
+   "name": "Joltik"
+  },
+  {
+   "number": "596",
+   "name": "Galvantula"
+  },
+  {
+   "number": "597",
+   "name": "Ferroseed"
+  },
+  {
+   "number": "598",
+   "name": "Ferrothorn"
+  },
+  {
+   "number": "599",
+   "name": "Klink"
+  },
+  {
+   "number": "600",
+   "name": "Klang"
+  },
+  {
+   "number": "601",
+   "name": "Klinklang"
+  },
+  {
+   "number": "613",
+   "name": "Cubchoo"
+  },
+  {
+   "number": "614",
+   "name": "Beartic"
+  },
+  {
+   "number": "615",
+   "name": "Cryogonal"
+  },
+  {
+   "number": "616",
+   "name": "Shelmet"
+  },
+  {
+   "number": "617",
+   "name": "Accelgor"
+  },
+  {
+   "number": "618",
+   "name": "Stunfisk (Galarian Form)"
+  },
+  {
+   "number": "626",
+   "name": "Bouffalant"
+  },
+  {
+   "number": "628",
+   "name": "Braviary (Hisuian Form)"
+  },
+  {
+   "number": "631",
+   "name": "Heatmor"
+  },
+  {
+   "number": "632",
+   "name": "Durant"
+  },
+  {
+   "number": "633",
+   "name": "Deino"
+  },
+  {
+   "number": "634",
+   "name": "Zweilous"
+  },
+  {
+   "number": "635",
+   "name": "Hydreigon"
+  },
+  {
+   "number": "645",
+   "name": "Landorus"
+  },
+  {
+   "number": "646",
+   "name": "Kyurem"
+  },
+  {
+   "number": "647",
+   "name": "Keldeo"
+  },
+  {
+   "number": "648",
+   "name": "Meloetta"
+  },
+  {
+   "number": "649",
+   "name": "Genesect"
+  },
+  {
+   "number": "659",
+   "name": "Bunnelby"
+  },
+  {
+   "number": "660",
+   "name": "Diggersby"
+  },
+  {
+   "number": "672",
+   "name": "Skiddo"
+  },
+  {
+   "number": "673",
+   "name": "Gogoat"
+  },
+  {
+   "number": "677",
+   "name": "Espurr"
+  },
+  {
+   "number": "678",
+   "name": "Meowstic"
+  },
+  {
+   "number": "682",
+   "name": "Spritzee"
+  },
+  {
+   "number": "683",
+   "name": "Aromatisse"
+  },
+  {
+   "number": "684",
+   "name": "Swirlix"
+  },
+  {
+   "number": "685",
+   "name": "Slurpuff"
+  },
+  {
+   "number": "705",
+   "name": "Sliggoo (Hisuian Form)"
+  },
+  {
+   "number": "706",
+   "name": "Goodra (Hisuian Form)"
+  },
+  {
+   "number": "710",
+   "name": "Pumpkaboo"
+  },
+  {
+   "number": "711",
+   "name": "Gourgeist"
+  },
+  {
+   "number": "712",
+   "name": "Bergmite"
+  },
+  {
+   "number": "713",
+   "name": "Avalugg"
+  },
+  {
+   "number": "713",
+   "name": "Avalugg (Hisuian Form)"
+  },
+  {
+   "number": "719",
+   "name": "Diancie"
+  },
+  {
+   "number": "720",
+   "name": "Hoopa"
+  },
+  {
+   "number": "721",
+   "name": "Volcanion"
+  },
+  {
+   "number": "724",
+   "name": "Decidueye (Hisuian Form)"
+  },
+  {
+   "number": "802",
+   "name": "Marshadow"
+  },
+  {
+   "number": "807",
+   "name": "Zeraora"
+  },
+  {
+   "number": "808",
+   "name": "Meltan"
+  },
+  {
+   "number": "809",
+   "name": "Melmetal"
+  },
+  {
+   "number": "810",
+   "name": "Grookey"
+  },
+  {
+   "number": "811",
+   "name": "Thwackey"
+  },
+  {
+   "number": "812",
+   "name": "Rillaboom"
+  },
+  {
+   "number": "813",
+   "name": "Scorbunny"
+  },
+  {
+   "number": "814",
+   "name": "Raboot"
+  },
+  {
+   "number": "815",
+   "name": "Cinderace"
+  },
+  {
+   "number": "816",
+   "name": "Sobble"
+  },
+  {
+   "number": "817",
+   "name": "Drizzile"
+  },
+  {
+   "number": "818",
+   "name": "Inteleon"
+  },
+  {
+   "number": "819",
+   "name": "Skwovet"
+  },
+  {
+   "number": "820",
+   "name": "Greedent"
+  },
+  {
+   "number": "821",
+   "name": "Rookidee"
+  },
+  {
+   "number": "822",
+   "name": "Corvisquire"
+  },
+  {
+   "number": "823",
+   "name": "Corviknight"
+  },
+  {
+   "number": "824",
+   "name": "Blipbug"
+  },
+  {
+   "number": "825",
+   "name": "Dottler"
+  },
+  {
+   "number": "826",
+   "name": "Orbeetle"
+  },
+  {
+   "number": "827",
+   "name": "Nickit"
+  },
+  {
+   "number": "828",
+   "name": "Thievul"
+  },
+  {
+   "number": "829",
+   "name": "Gossifleur"
+  },
+  {
+   "number": "830",
+   "name": "Eldegoss"
+  },
+  {
+   "number": "831",
+   "name": "Wooloo"
+  },
+  {
+   "number": "832",
+   "name": "Dubwool"
+  },
+  {
+   "number": "833",
+   "name": "Chewtle"
+  },
+  {
+   "number": "834",
+   "name": "Drednaw"
+  },
+  {
+   "number": "835",
+   "name": "Yamper"
+  },
+  {
+   "number": "836",
+   "name": "Boltund"
+  },
+  {
+   "number": "837",
+   "name": "Rolycoly"
+  },
+  {
+   "number": "838",
+   "name": "Carkol"
+  },
+  {
+   "number": "839",
+   "name": "Coalossal"
+  },
+  {
+   "number": "840",
+   "name": "Applin"
+  },
+  {
+   "number": "841",
+   "name": "Flapple"
+  },
+  {
+   "number": "842",
+   "name": "Appletun"
+  },
+  {
+   "number": "843",
+   "name": "Silicobra"
+  },
+  {
+   "number": "844",
+   "name": "Sandaconda"
+  },
+  {
+   "number": "845",
+   "name": "Cramorant"
+  },
+  {
+   "number": "846",
+   "name": "Arrokuda"
+  },
+  {
+   "number": "847",
+   "name": "Barraskewda"
+  },
+  {
+   "number": "848",
+   "name": "Toxel"
+  },
+  {
+   "number": "849",
+   "name": "Toxtricity"
+  },
+  {
+   "number": "850",
+   "name": "Sizzlipede"
+  },
+  {
+   "number": "851",
+   "name": "Centiskorch"
+  },
+  {
+   "number": "852",
+   "name": "Clobbopus"
+  },
+  {
+   "number": "853",
+   "name": "Grapploct"
+  },
+  {
+   "number": "854",
+   "name": "Sinistea"
+  },
+  {
+   "number": "855",
+   "name": "Polteageist"
+  },
+  {
+   "number": "856",
+   "name": "Hatenna"
+  },
+  {
+   "number": "857",
+   "name": "Hattrem"
+  },
+  {
+   "number": "858",
+   "name": "Hatterene"
+  },
+  {
+   "number": "859",
+   "name": "Impidimp"
+  },
+  {
+   "number": "860",
+   "name": "Morgrem"
+  },
+  {
+   "number": "861",
+   "name": "Grimmsnarl"
+  },
+  {
+   "number": "862",
+   "name": "Obstagoon"
+  },
+  {
+   "number": "863",
+   "name": "Perrserker"
+  },
+  {
+   "number": "864",
+   "name": "Cursola"
+  },
+  {
+   "number": "865",
+   "name": "Sirfetch'd"
+  },
+  {
+   "number": "866",
+   "name": "Mr. Rime"
+  },
+  {
+   "number": "867",
+   "name": "Runerigus"
+  },
+  {
+   "number": "868",
+   "name": "Milcery"
+  },
+  {
+   "number": "869",
+   "name": "Alcremie"
+  },
+  {
+   "number": "870",
+   "name": "Falinks"
+  },
+  {
+   "number": "871",
+   "name": "Pincurchin"
+  },
+  {
+   "number": "872",
+   "name": "Snom"
+  },
+  {
+   "number": "873",
+   "name": "Frosmoth"
+  },
+  {
+   "number": "874",
+   "name": "Stonjourner"
+  },
+  {
+   "number": "875",
+   "name": "Eiscue"
+  },
+  {
+   "number": "876",
+   "name": "Indeedee"
+  },
+  {
+   "number": "877",
+   "name": "Morpeko"
+  },
+  {
+   "number": "878",
+   "name": "Cufant"
+  },
+  {
+   "number": "879",
+   "name": "Copperajah"
+  },
+  {
+   "number": "880",
+   "name": "Dracozolt"
+  },
+  {
+   "number": "881",
+   "name": "Arctozolt"
+  },
+  {
+   "number": "882",
+   "name": "Dracovish"
+  },
+  {
+   "number": "883",
+   "name": "Arctovish"
+  },
+  {
+   "number": "884",
+   "name": "Duraludon"
+  },
+  {
+   "number": "885",
+   "name": "Dreepy"
+  },
+  {
+   "number": "886",
+   "name": "Drakloak"
+  },
+  {
+   "number": "887",
+   "name": "Dragapult"
+  },
+  {
+   "number": "888",
+   "name": "Zacian"
+  },
+  {
+   "number": "889",
+   "name": "Zamazenta"
+  },
+  {
+   "number": "890",
+   "name": "Eternatus"
+  },
+  {
+   "number": "891",
+   "name": "Kubfu"
+  },
+  {
+   "number": "892",
+   "name": "Urshifu"
+  },
+  {
+   "number": "893",
+   "name": "Zarude"
+  },
+  {
+   "number": "894",
+   "name": "Regieleki"
+  },
+  {
+   "number": "895",
+   "name": "Regidrago"
+  },
+  {
+   "number": "896",
+   "name": "Glastrier"
+  },
+  {
+   "number": "897",
+   "name": "Spectrier"
+  },
+  {
+   "number": "898",
+   "name": "Calyrex"
+  },
+  {
+   "number": "899",
+   "name": "Wyrdeer"
+  },
+  {
+   "number": "900",
+   "name": "Kleavor"
+  },
+  {
+   "number": "901",
+   "name": "Ursaluna"
+  },
+  {
+   "number": "901",
+   "name": "Ursaluna (Bloodmoon)"
+  },
+  {
+   "number": "902",
+   "name": "Basculegion"
+  },
+  {
+   "number": "903",
+   "name": "Sneasler"
+  },
+  {
+   "number": "904",
+   "name": "Overqwil"
+  },
+  {
+   "number": "905",
+   "name": "Enamorus"
+  },
+  {
+   "number": "906",
+   "name": "Sprigatito"
+  },
+  {
+   "number": "907",
+   "name": "Floragato"
+  },
+  {
+   "number": "908",
+   "name": "Meowscarada"
+  },
+  {
+   "number": "909",
+   "name": "Fuecoco"
+  },
+  {
+   "number": "910",
+   "name": "Crocalor"
+  },
+  {
+   "number": "911",
+   "name": "Skeledirge"
+  },
+  {
+   "number": "912",
+   "name": "Quaxly"
+  },
+  {
+   "number": "913",
+   "name": "Quaxwell"
+  },
+  {
+   "number": "914",
+   "name": "Quaquaval"
+  },
+  {
+   "number": "915",
+   "name": "Lechonk"
+  },
+  {
+   "number": "916",
+   "name": "Oinkologne"
+  },
+  {
+   "number": "917",
+   "name": "Tarountula"
+  },
+  {
+   "number": "918",
+   "name": "Spidops"
+  },
+  {
+   "number": "919",
+   "name": "Nymble"
+  },
+  {
+   "number": "920",
+   "name": "Lokix"
+  },
+  {
+   "number": "921",
+   "name": "Pawmi"
+  },
+  {
+   "number": "922",
+   "name": "Pawmo"
+  },
+  {
+   "number": "923",
+   "name": "Pawmot"
+  },
+  {
+   "number": "924",
+   "name": "Tandemaus"
+  },
+  {
+   "number": "925",
+   "name": "Maushold"
+  },
+  {
+   "number": "926",
+   "name": "Fidough"
+  },
+  {
+   "number": "927",
+   "name": "Dachsbun"
+  },
+  {
+   "number": "928",
+   "name": "Smoliv"
+  },
+  {
+   "number": "929",
+   "name": "Dolliv"
+  },
+  {
+   "number": "930",
+   "name": "Arboliva"
+  },
+  {
+   "number": "931",
+   "name": "Squawkabilly"
+  },
+  {
+   "number": "932",
+   "name": "Nacli"
+  },
+  {
+   "number": "933",
+   "name": "Naclstack"
+  },
+  {
+   "number": "934",
+   "name": "Garganacl"
+  },
+  {
+   "number": "935",
+   "name": "Charcadet"
+  },
+  {
+   "number": "936",
+   "name": "Armarouge"
+  },
+  {
+   "number": "937",
+   "name": "Ceruledge"
+  },
+  {
+   "number": "938",
+   "name": "Tadbulb"
+  },
+  {
+   "number": "939",
+   "name": "Bellibolt"
+  },
+  {
+   "number": "940",
+   "name": "Wattrel"
+  },
+  {
+   "number": "941",
+   "name": "Kilowattrel"
+  },
+  {
+   "number": "942",
+   "name": "Maschiff"
+  },
+  {
+   "number": "943",
+   "name": "Mabosstiff"
+  },
+  {
+   "number": "944",
+   "name": "Shroodle"
+  },
+  {
+   "number": "945",
+   "name": "Grafaiai"
+  },
+  {
+   "number": "946",
+   "name": "Bramblin"
+  },
+  {
+   "number": "947",
+   "name": "Brambleghast"
+  },
+  {
+   "number": "948",
+   "name": "Toedscool"
+  },
+  {
+   "number": "949",
+   "name": "Toedscruel"
+  },
+  {
+   "number": "950",
+   "name": "Klawf"
+  },
+  {
+   "number": "951",
+   "name": "Capsakid"
+  },
+  {
+   "number": "952",
+   "name": "Scovillain"
+  },
+  {
+   "number": "953",
+   "name": "Rellor"
+  },
+  {
+   "number": "954",
+   "name": "Rabsca"
+  },
+  {
+   "number": "955",
+   "name": "Flittle"
+  },
+  {
+   "number": "956",
+   "name": "Espathra"
+  },
+  {
+   "number": "957",
+   "name": "Tinkatink"
+  },
+  {
+   "number": "958",
+   "name": "Tinkatuff"
+  },
+  {
+   "number": "959",
+   "name": "Tinkaton"
+  },
+  {
+   "number": "960",
+   "name": "Wiglett"
+  },
+  {
+   "number": "961",
+   "name": "Wugtrio"
+  },
+  {
+   "number": "962",
+   "name": "Bombirdier"
+  },
+  {
+   "number": "963",
+   "name": "Finizen"
+  },
+  {
+   "number": "964",
+   "name": "Palafin"
+  },
+  {
+   "number": "965",
+   "name": "Varoom"
+  },
+  {
+   "number": "966",
+   "name": "Revavroom"
+  },
+  {
+   "number": "967",
+   "name": "Cyclizar"
+  },
+  {
+   "number": "968",
+   "name": "Orthworm"
+  },
+  {
+   "number": "969",
+   "name": "Glimmet"
+  },
+  {
+   "number": "970",
+   "name": "Glimmora"
+  },
+  {
+   "number": "971",
+   "name": "Greavard"
+  },
+  {
+   "number": "972",
+   "name": "Houndstone"
+  },
+  {
+   "number": "973",
+   "name": "Flamigo"
+  },
+  {
+   "number": "974",
+   "name": "Cetoddle"
+  },
+  {
+   "number": "975",
+   "name": "Cetitan"
+  },
+  {
+   "number": "976",
+   "name": "Veluza"
+  },
+  {
+   "number": "977",
+   "name": "Dondozo"
+  },
+  {
+   "number": "978",
+   "name": "Tatsugiri"
+  },
+  {
+   "number": "979",
+   "name": "Annihilape"
+  },
+  {
+   "number": "980",
+   "name": "Clodsire"
+  },
+  {
+   "number": "981",
+   "name": "Farigiraf"
+  },
+  {
+   "number": "982",
+   "name": "Dudunsparce"
+  },
+  {
+   "number": "983",
+   "name": "Kingambit"
+  },
+  {
+   "number": "984",
+   "name": "Great Tusk"
+  },
+  {
+   "number": "985",
+   "name": "Scream Tail"
+  },
+  {
+   "number": "986",
+   "name": "Brute Bonnet"
+  },
+  {
+   "number": "987",
+   "name": "Flutter Mane"
+  },
+  {
+   "number": "988",
+   "name": "Slither Wing"
+  },
+  {
+   "number": "989",
+   "name": "Sandy Shocks"
+  },
+  {
+   "number": "990",
+   "name": "Iron Treads"
+  },
+  {
+   "number": "991",
+   "name": "Iron Bundle"
+  },
+  {
+   "number": "992",
+   "name": "Iron Hands"
+  },
+  {
+   "number": "993",
+   "name": "Iron Jugulis"
+  },
+  {
+   "number": "994",
+   "name": "Iron Moth"
+  },
+  {
+   "number": "995",
+   "name": "Iron Thorns"
+  },
+  {
+   "number": "996",
+   "name": "Frigibax"
+  },
+  {
+   "number": "997",
+   "name": "Arctibax"
+  },
+  {
+   "number": "998",
+   "name": "Baxcalibur"
+  },
+  {
+   "number": "999",
+   "name": "Gimmighoul"
+  },
+  {
+   "number": "1000",
+   "name": "Gholdengo"
+  },
+  {
+   "number": "1001",
+   "name": "Wo-Chien"
+  },
+  {
+   "number": "1002",
+   "name": "Chien-Pao"
+  },
+  {
+   "number": "1003",
+   "name": "Ting-Lu"
+  },
+  {
+   "number": "1004",
+   "name": "Chi-Yu"
+  },
+  {
+   "number": "1005",
+   "name": "Roaring Moon"
+  },
+  {
+   "number": "1006",
+   "name": "Iron Valiant"
+  },
+  {
+   "number": "1007",
+   "name": "Koraidon"
+  },
+  {
+   "number": "1008",
+   "name": "Miraidon"
+  },
+  {
+   "number": "1009",
+   "name": "Walking Wake"
+  },
+  {
+   "number": "1010",
+   "name": "Iron Leaves"
+  },
+  {
+   "number": "1011",
+   "name": "Dipplin"
+  },
+  {
+   "number": "1012",
+   "name": "Poltchageist"
+  },
+  {
+   "number": "1013",
+   "name": "Sinistcha"
+  },
+  {
+   "number": "1014",
+   "name": "Okidogi"
+  },
+  {
+   "number": "1015",
+   "name": "Munkidori"
+  },
+  {
+   "number": "1016",
+   "name": "Fezandipiti"
+  },
+  {
+   "number": "1017",
+   "name": "Ogerpon"
+  },
+  {
+   "number": "1018",
+   "name": "Archaludon"
+  },
+  {
+   "number": "1019",
+   "name": "Hydrapple"
+  },
+  {
+   "number": "1020",
+   "name": "Gouging Fire"
+  },
+  {
+   "number": "1021",
+   "name": "Raging Bolt"
+  },
+  {
+   "number": "1022",
+   "name": "Iron Boulder"
+  },
+  {
+   "number": "1023",
+   "name": "Iron Crown"
+  },
+  {
+   "number": "1024",
+   "name": "Terapagos"
+  },
+  {
+   "number": "1025",
+   "name": "Pecharunt"
+  }
+ ]
+}
