@@ -314,7 +314,7 @@ def gen_1_dex(red, green, blue, yellow, gold, silver, crystal,
             # Available: B, C, E, R, S.  Also ET if player has 2+ Switches and Brilliant Diamond.
             if (shining_pearl and row['ShiningPearl'] in ('B', 'C', 'E', 'R', 'S')) or (shining_pearl and row['ShiningPearl'] == 'ET' and switch_number == '2+' and brilliant_diamond):
                 games.append('Shining Pearl')
-            elif (brilliant_diamond and row['ShiningPearl'] == 'CCR' and any([lg_pikachu, lg_eevee])):
+            elif (shining_pearl and row['ShiningPearl'] == 'CCR' and any([lg_pikachu, lg_eevee])):
                 games.append('Shining Pearl⤓')
 
             # Available: C, E, R
