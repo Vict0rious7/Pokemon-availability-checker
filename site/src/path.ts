@@ -9,10 +9,12 @@ const TRADE = new Set(["RT25", "RT26", "RT27", "RT28", "RT29", "RT30", "RT31"]);
 /** Turns the engine's route ids into places. The engine records routes, not the games in between, so
  *  intermediate games are generic ("a Gen 6 game"); the last move is the destination, and the move before a
  *  breed is the game where the egg hatched (the path's origin). */
-export function describe(s: { origin: string; from?: string; via: string[] }, dest: string): Described {
+export function describe(s: { origin: string; from?: string; source?: string; via: string[] }, dest: string): Described {
   const steps: Step[] = [];
   let cur = s.from ?? s.origin;
   const move = (place: string, method?: string) => { steps.push({ kind: "move", place, method }); cur = place; };
+  const fromSide = !s.from && !!s.source;          // delivered by a side game or disc into its origin game
+  if (fromSide) move(gameName(s.origin));
   for (const v of s.via) {
     if (TRADE.has(v)) move("another game", "trade");
     else switch (v) {
@@ -42,5 +44,5 @@ export function describe(s: { origin: string; from?: string; via: string[] }, de
   const lastBreed = steps.map((x) => x.label).lastIndexOf("breed");
   for (let i = steps.length - 1; i > lastBreed; i--)
     if (steps[i].kind === "move") { steps[i].place = dest === "HOME" ? "HOME" : gameName(dest); break; }
-  return { start: originName(s.from ?? s.origin), steps };
+  return { start: originName(fromSide ? s.source! : s.from ?? s.origin), steps };
 }

@@ -2,14 +2,13 @@ import { render } from "preact";
 import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import "./styles.css";
 import { Profile, decode, encode, toOwned, starting, withDest, MAX_GEN } from "./state.js";
-import { PLATFORMS, HARDWARE, SERVICES, FLAG, gameName, originName, BANK_END_LABEL } from "./labels.js";
+import { PLATFORMS, GAMES, HARDWARE, SERVICES, FLAG, gameName, originName, BANK_END_LABEL, genRange } from "./labels.js";
 import { describe } from "./path.js";
 import type { Request, Response, Row, Status, PathOut } from "./worker.js";
 import { Finder } from "./finder.js";
 
 const BANK_END = Date.parse("2027-02-25T19:00-08:00");
-const GEN_LABEL = ["", "Gen 1 · Red, Blue", "Gen 2 · Gold, Silver", "Gen 3 · Ruby, Sapphire", "Gen 4 · Diamond, Pearl", "Gen 5 · Black, White",
-  "Gen 6 · X, Y", "Gen 7 · Sun, Moon", "Gen 8 · Sword, Shield", "Gen 9 · Scarlet, Violet"];
+
 const STATUS: Record<Status, string> = { ok: "Can reach", until: `Move before ${BANK_END_LABEL}`, no: "Missing", cant: "Can't live there" };
 
 // ---------------------------------------------------------------- engine worker
@@ -58,6 +57,26 @@ function Seg({ value, max, onChange, label }: { value: number; max: number; onCh
   );
 }
 
+/** "All / None" for a group of inputs. */
+function Bulk({ label, all, none, small }: { label: string; all: () => void; none: () => void; small?: boolean }) {
+  return (
+    <span class={`bulk ${small ? "small" : ""}`}>
+      <button type="button" onClick={all} aria-label={`Select all ${label}`}>All</button>
+      <button type="button" onClick={none} aria-label={`Clear all ${label}`}>None</button>
+    </span>
+  );
+}
+const allGames = (x: Profile, keys: string[]): Profile => {
+  const copies = { ...x.copies }, dlc = { ...x.dlc };
+  for (const k of keys) { copies[k] = Math.max(1, copies[k] ?? 0); if (GAMES.find((g) => g.key === k)?.dlc) dlc[k] = copies[k]; }
+  return { ...x, copies, dlc };
+};
+const noGames = (x: Profile, keys: string[]): Profile => {
+  const copies = { ...x.copies }, dlc = { ...x.dlc };
+  for (const k of keys) { delete copies[k]; delete dlc[k]; }
+  return { ...x, copies, dlc };
+};
+
 function Inputs({ p, set }: { p: Profile; set: (f: (p: Profile) => Profile) => void }) {
   return (
     <div class="inputs">
@@ -74,7 +93,7 @@ function Inputs({ p, set }: { p: Profile; set: (f: (p: Profile) => Profile) => v
         <label class="field">
           <span>Which Pokémon count</span>
           <select value={p.maxGen} onChange={(e) => { const v = +(e.target as HTMLSelectElement).value; set((x) => ({ ...x, maxGen: v })); }}>
-            {Array.from({ length: MAX_GEN }, (_, i) => i + 1).map((g) => <option value={g}>{g === 1 ? "Gen 1 only" : `Gens 1 to ${g}`} ({GEN_LABEL[g].split(" · ")[1]})</option>)}
+            {Array.from({ length: MAX_GEN }, (_, i) => i + 1).map((g) => <option value={g}>{g === 1 ? "Gen 1 only" : `Gens 1 to ${g}`} (#0001–{genRange(g).split("–")[1]})</option>)}
           </select>
         </label>
         {p.dest === "HOME" && !p.services.home && <p class="warn">Tick Pokémon HOME below: without it nothing can be stored there.</p>}
@@ -83,12 +102,14 @@ function Inputs({ p, set }: { p: Profile; set: (f: (p: Profile) => Profile) => v
 
       <section class="card">
         <h2>Games</h2>
-        <p class="hint">Copies: two copies of the same game count as two saves (for trades).</p>
+        <Bulk label="games" all={() => set((x) => allGames(x, GAMES.map((g) => g.key)))} none={() => set((x) => noGames(x, GAMES.map((g) => g.key)))} />
+        <p class="hint">Copies: two copies of the same game count as two saves (for trades). "All" also ticks the DLC.</p>
         {PLATFORMS.map((pl) => {
           const n = pl.games.filter((g) => (p.copies[g.key] ?? 0) > 0).length;
           return (
             <details open={n > 0}>
               <summary>{pl.name}{n > 0 && <span class="count">{n}</span>}</summary>
+              <Bulk label={pl.name} small all={() => set((x) => allGames(x, pl.games.map((g) => g.key)))} none={() => set((x) => noGames(x, pl.games.map((g) => g.key)))} />
               {pl.note && <p class="hint">{pl.note}</p>}
               <ul class="games">
                 {pl.games.map((g) => {
@@ -115,6 +136,7 @@ function Inputs({ p, set }: { p: Profile; set: (f: (p: Profile) => Profile) => v
 
       <section class="card">
         <h2>Consoles</h2>
+        <Bulk label="consoles" all={() => set((x) => ({ ...x, hw: Object.fromEntries(HARDWARE.map((h) => [h.key, h.max])) }))} none={() => set((x) => ({ ...x, hw: {} }))} />
         <ul class="hw">
           {HARDWARE.map((h) => (
             <li>
@@ -127,6 +149,8 @@ function Inputs({ p, set }: { p: Profile; set: (f: (p: Profile) => Profile) => v
 
       <section class="card">
         <h2>Services and side games</h2>
+        <Bulk label="services and side games" all={() => set((x) => ({ ...x, services: Object.fromEntries(SERVICES.map((s) => [s.key, true])) }))}
+          none={() => set((x) => ({ ...x, services: (x.dest === "HOME" ? { home: true } : {}) as Record<string, boolean> }))} />
         <ul class="svc">
           {SERVICES.map((s) => (
             <li>
@@ -161,7 +185,7 @@ function PathLine({ s, dest }: { s: PathOut; dest: string }) {
 }
 
 function ResultRow({ r, dest }: { r: Row; dest: string }) {
-  const origins = r.paths.map((x) => (x.from ? `${originName(x.origin)} (bred)` : originName(x.origin)));
+  const origins = r.paths.map((x) => (x.from ? `${originName(x.origin)} (bred)` : originName(x.source ?? x.origin)));
   const summary = r.status === "cant" ? `${gameName(dest)} cannot hold it`
     : r.status === "no" ? (r.refused[0] ? `Blocked: ${r.refused[0]}` : "No way with what you own")
     : `from ${origins.slice(0, 3).join(", ")}${origins.length + r.more > 3 ? ` +${origins.length + r.more - 3}` : ""}`;
@@ -214,7 +238,7 @@ function Results({ p, res, busy, error }: { p: Profile; res: Response | null; bu
         const gr = shown.filter((r) => r.gen === g);
         return (
           <details class="gen" open>
-            <summary>{GEN_LABEL[g]} <small>{gr.length}</small></summary>
+            <summary>Generation {g} <small>{genRange(g)} · {gr.length} shown</small></summary>
             {gr.map((r) => <ResultRow key={r.n} r={r} dest={p.dest} />)}
           </details>
         );

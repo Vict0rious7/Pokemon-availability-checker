@@ -6,6 +6,7 @@ const BANK_ENDS = "2027-02-25T19:00-08:00";
 export interface Fact { form: Form; loc: string; tags: string[]; native: boolean; supports: Support[]; byOrigin: Map<string, Support[]>; }
 /** One way a fact holds: the flags it needs, when it stops working, where the Pokémon was obtained and the routes it took (Phase 2). */
 export interface Support { flags: string[]; until?: string; origin: string; via: string[]; /** bred: where the parent came from */ from?: string;
+  /** display only: the side game or disc that delivered the Pokémon into its origin game (Ranch, bonus disc…) */ source?: string;
   /** internal: the pass that created it (semi-naive evaluation) */ born?: number; }
 /** A move refused by an origin rule (Phase 2: "why not this path"). */
 export interface Refusal { number: string; from: string; to: string; route: string; reason: string; origins: string[]; }
@@ -102,6 +103,8 @@ export interface Seed {
   deps?: Dep[];
   /** Where the path starts when it is not the location itself (HOME rewards: the reward id). */
   origin?: string;
+  /** Display only: the side game or disc that delivers it (the origin stays the core game it lands in). */
+  source?: string;
 }
 export interface Dep { number: string; loc: string | string[]; tags?: string[]; origins?: string[]; notOrigin?: string; anyForm?: boolean; }
 
@@ -164,8 +167,8 @@ export function buildSeeds(forms: Form[], unhandled: Map<string, Unhandled>, hoe
   const full = (f: Form) => (f.form ? `${f.name} (${f.form})` : f.name);
   // ONCE_PER_SAVE (U9): a source in a game where the Pokémon belongs to a once-per-save group. Flags never hide (always shown).
   const ops = (f: Form, at: string) => (oncePerSave?.get(at)?.has(full(f)) ? ["ONCE_PER_SAVE"] : []);
-  const add = (form: Form, at: string, req: Seed["req"], why: string, flags: string[] = [], tags: string[] = [], deps?: Seed["deps"]) =>
-    seeds.push({ form, at, req, why, flags: [...new Set([...flags, ...ops(form, at)])], tags: [...tags, ...originTags(at)], deps });
+  const add = (form: Form, at: string, req: Seed["req"], why: string, flags: string[] = [], tags: string[] = [], deps?: Seed["deps"], source?: string) =>
+    seeds.push({ form, at, req, why, flags: [...new Set([...flags, ...ops(form, at)])], tags: [...tags, ...originTags(at)], deps, ...(source ? { source } : {}) });
   const miss = (game: string, code: string, f: Form) => {
     const k = `${game}|${code}`;
     const u = unhandled.get(k) ?? { game, code, forms: [] };
@@ -210,6 +213,12 @@ export function buildSeeds(forms: Form[], unhandled: Map<string, Unhandled>, hoe
         continue;
       }
 
+      // ZA1: Z-A side missions EX1/EX2 are unlocked by Mystery Gifts with no end date (Diancie, Mewtwo); EX3 (Zeraora,
+      // Mega Dimension) needs both. The only EV/EVD cells in the Z-A column.
+      if (game === "LegendsZA" && (code === "EV" || code === "EVD")) {
+        add(f, game, (o) => (code === "EVD" ? ownsDlc(o, game) : self(o)), "Z-A side mission unlocked by Mystery Gift (ZA1)", ["ONLINE_SERVICE"]);
+        continue;
+      }
       if (IGNORED.test(code)) continue;
       if (RECORD_MIXING.has(game) && (code === "CCS" || code === "CCE")) continue;   // record mixing, out of v1 (Q12)
 
@@ -240,10 +249,10 @@ export function buildSeeds(forms: Form[], unhandled: Map<string, Unhandled>, hoe
       if (c === "ET") { if (!addTradeEvolution(f, game, dlc, add)) miss(game, code, f); continue; }
       if (c === "DR" || c === "DRE" || c === "DRET") {
         const tags = ["641", "642", "645"].includes(f.number) ? ["dr_therian"] : [];
-        add(f, game, (o) => self(o) && has(o).dreamRadar && o.n3ds >= 1 && (c !== "DRET" || (partner(o, game, FAMILY.gen5) && dsFamily(o) >= 2)), "Dream Radar", [], tags);
+        add(f, game, (o) => self(o) && has(o).dreamRadar && o.n3ds >= 1 && (c !== "DRET" || (partner(o, game, FAMILY.gen5) && dsFamily(o) >= 2)), "Dream Radar", [], tags, undefined, "DreamRadar");
         continue;
       }
-      if (c === "PW" || c === "PWE") { add(f, game, (o) => self(o) && has(o).pokewalker, "Pokéwalker"); continue; }
+      if (c === "PW" || c === "PWE") { add(f, game, (o) => self(o) && has(o).pokewalker, "Pokéwalker", [], [], undefined, "Pokewalker"); continue; }
       if (c.startsWith("CC")) {
         if (fam === "gen5" && (game === "Black2" || game === "White2")) {
           add(f, game, (o) => self(o) && owns(o, OTHER_VERSION[game]) && dsFamily(o) >= 2, "B2W2 communication"); continue;
@@ -265,22 +274,22 @@ export function buildSeeds(forms: Form[], unhandled: Map<string, Unhandled>, hoe
   // ---- side games delivering into core games (Routes RT3–RT5, RT20–RT24)
   for (const f of forms) {
     const c = f.cells;
-    const deliver = (targets: readonly string[], req: (o: Owned) => boolean, why: string, flags: string[] = []) => {
-      for (const g of targets) if (canHold(f, g)) add(f, g, (o) => owns(o, g) && req(o), why, flags);
+    const deliver = (targets: readonly string[], req: (o: Owned) => boolean, why: string, flags: string[] = [], source?: string) => {
+      for (const g of targets) if (canHold(f, g)) add(f, g, (o) => owns(o, g) && req(o), why, flags, [], undefined, source);
     };
     const yes = (v?: string) => v !== undefined && v !== "" && !IGNORED.test(v);
     if (yes(c.Ranch)) {
-      deliver(["Diamond", "Pearl"], (o) => has(o).ranchWestern || has(o).ranchJapanese, "My Pokémon Ranch");
-      deliver(["Platinum"], (o) => has(o).ranchJapanese, "My Pokémon Ranch (Japanese)");
+      deliver(["Diamond", "Pearl"], (o) => has(o).ranchWestern || has(o).ranchJapanese, "My Pokémon Ranch", [], "Ranch");
+      deliver(["Platinum"], (o) => has(o).ranchJapanese, "My Pokémon Ranch (Japanese)", [], "Ranch");
     }
     if (yes(c.BattleRev)) {
       const western = f.gen === 4;   // Electivire, Magmortar: Western only; Pikachu: any language (Q16)
-      deliver(FAMILY.gen4, (o) => has(o).battleRevWestern || (!western && has(o).battleRevJapanese), "Battle Revolution");
+      deliver(FAMILY.gen4, (o) => has(o).battleRevWestern || (!western && has(o).battleRevJapanese), "Battle Revolution", [], "BattleRev");
     }
-    if (yes(c.Ranger)) deliver(FAMILY.gen4, (o) => has(o).ranger, "Pokémon Ranger", ["ONCE_PER_CARTRIDGE", "SAVE_WIPE"]);
-    if (yes(c.JapBonusDisc)) deliver(FAMILY.gba3, (o) => has(o).bonusDiscJP && owns(o, "Colosseum"), "Japanese bonus disc (C11)", ["CABLE_GC_GBA", "REGION_LOCK"]);
-    if (yes(c.USBonusDisc)) deliver(["Ruby", "Sapphire"], (o) => has(o).bonusDiscUS, "US bonus disc", ["CABLE_GC_GBA", "REGION_LOCK", "ONCE_PER_SAVE"]);
-    if (yes(c.PALChannel)) deliver(["Ruby", "Sapphire"], (o) => has(o).palChannel, "PAL Pokémon Channel", ["CABLE_GC_GBA", "ONCE_PER_SAVE"]);
+    if (yes(c.Ranger)) deliver(FAMILY.gen4, (o) => has(o).ranger, "Pokémon Ranger", ["ONCE_PER_CARTRIDGE", "SAVE_WIPE"], "Ranger");
+    if (yes(c.JapBonusDisc)) deliver(FAMILY.gba3, (o) => has(o).bonusDiscJP && owns(o, "Colosseum"), "Japanese bonus disc (C11)", ["CABLE_GC_GBA", "REGION_LOCK"], "JapBonusDisc");
+    if (yes(c.USBonusDisc)) deliver(["Ruby", "Sapphire"], (o) => has(o).bonusDiscUS, "US bonus disc", ["CABLE_GC_GBA", "REGION_LOCK", "ONCE_PER_SAVE"], "USBonusDisc");
+    if (yes(c.PALChannel)) deliver(["Ruby", "Sapphire"], (o) => has(o).palChannel, "PAL Pokémon Channel", ["CABLE_GC_GBA", "ONCE_PER_SAVE"], "PALChannel");
   }
 
   // ---- Pokémon GO as a source (RT14, RT15). v1: Meltan and Melmetal only (C18). The Mystery Box opens
@@ -565,7 +574,7 @@ function arrivalStep(o: Owned, store: Store, forms: Form[], evo: EvoData, fresh:
     for (const sup of parents.values()) for (const d of mates) {
       if (!fresh(sup) && !fresh(d)) continue;
       const s: Support = { flags: [...new Set([...sup.flags, ...d.flags])].sort(), until: minUntil(sup.until, d.until),
-                           origin: g, from: sup.origin, via: [...sup.via, "BREED"] };
+                           origin: g, from: sup.source ?? sup.origin, via: [...sup.via, "BREED"] };
       if (store.add(egg, g, originTags(g), false, s)) changed = true;
     }
   }
@@ -586,7 +595,7 @@ export function run(forms: Form[], o: Owned, seeds: Seed[], evo?: EvoData): Resu
     const fresh = (s: Support) => (s.born ?? 0) >= passes - 1;   // only paths new since the last pass can lead anywhere new
     for (const s of seeds) {
       if (!locOwned(s.at) || !s.req(o, store)) continue;
-      const base: Support = { flags: [...s.flags].sort(), origin: s.origin ?? s.at, via: [] };
+      const base: Support = { flags: [...s.flags].sort(), origin: s.origin ?? s.at, via: [], ...(s.source ? { source: s.source } : {}) };
       const sups = s.deps ? combine(base, s.deps.map((d) => store.supportsOf(d.number, d.loc, d.tags, d.origins, d.notOrigin, d.anyForm))) : [base];
       for (const sup of sups) if (store.add(s.form, s.at, s.tags, true, sup)) changed = true;
     }
@@ -610,7 +619,7 @@ export function run(forms: Form[], o: Owned, seeds: Seed[], evo?: EvoData): Resu
               if (!fresh(sup)) continue;
               const once = r.legendsOnce?.(from) && legends.has(fact.form.number) ? ["ONCE_PER_SAVE"] : [];
               const s: Support = { flags: [...new Set([...sup.flags, ...(r.flags ?? []), ...once])].sort(), until: minUntil(sup.until, r.until),
-                                   origin: sup.origin, from: sup.from, via: [...sup.via, r.id] };   // `from`: a bred Pokémon keeps its parent's origin when it moves on
+                                   origin: sup.origin, from: sup.from, via: [...sup.via, r.id], ...(sup.source ? { source: sup.source } : {}) };   // `from`: a bred Pokémon keeps its parent's origin when it moves on
               if (store.add(fact.form, to, tags, false, s)) changed = true;
             }
           }

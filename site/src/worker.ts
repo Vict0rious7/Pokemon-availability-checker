@@ -13,7 +13,7 @@ const formsOf = new Map<string, typeof p.forms>();
 for (const f of p.forms) (formsOf.get(f.number) ?? formsOf.set(f.number, []).get(f.number)!).push(f);
 
 export type Status = "ok" | "until" | "no" | "cant";
-export interface PathOut { origin: string; from?: string; via: string[]; flags: string[]; until?: string; }
+export interface PathOut { origin: string; from?: string; source?: string; via: string[]; flags: string[]; until?: string; }
 export interface Row { n: number; name: string; gen: number; status: Status; until?: string; paths: PathOut[]; more: number; refused: string[]; }
 export interface Request { id: number; owned: Owned; dest: string; maxGen: number; date: string; }
 export interface Response { id: number; rows: Row[]; ms: number; cached: boolean; }
@@ -34,9 +34,12 @@ self.onmessage = (e: MessageEvent<Request>) => {
     const base: Omit<Row, "status" | "paths" | "more" | "refused"> = { n: +f.number, name: f.name, gen: f.gen };
     if (dest !== "HOME" && !all.some((x) => canHold(x, dest))) { rows.push({ ...base, status: "cant", paths: [], more: 0, refused: [] }); continue; }
     const a = reachableAt(store, f.number, dest, date);
-    // one path per origin (the best one), best first
+    // one path per starting point (the best one), best first; side games and discs count as one starting point
     const byOrigin = new Map<string, PathOut>();
-    for (const s of a.paths) if (!byOrigin.has(s.origin)) byOrigin.set(s.origin, { origin: s.origin, from: s.from, via: s.via, flags: s.flags, until: s.until });
+    for (const s of a.paths) {
+      const k = !s.from && s.source ? `src:${s.source}` : s.origin;
+      if (!byOrigin.has(k)) byOrigin.set(k, { origin: s.origin, from: s.from, source: s.source, via: s.via, flags: s.flags, until: s.until });
+    }
     const paths = [...byOrigin.values()];
     rows.push({ ...base, status: !a.reachable ? "no" : a.onlyBefore ? "until" : "ok", until: a.onlyBefore ?? undefined,
       paths: paths.slice(0, 6), more: Math.max(0, paths.length - 6), refused: [...new Set(a.refused.map((r) => r.reason))].slice(0, 3) });

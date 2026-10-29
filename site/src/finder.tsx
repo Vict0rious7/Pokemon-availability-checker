@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "preact/hooks";
-import { GAMES, gameName } from "./labels.js";
+import { GAMES, gameName, originName } from "./labels.js";
 
-interface FRow { n: number; name: string; form: string; gen: number; games: string[]; }
+interface FRow { n: number; name: string; form: string; gen: number; games: string[]; sources: { id: string; into: string[] }[]; }
 const ORDER = Object.fromEntries(GAMES.map((g, i) => [g.key, i]));
 
 /** Where each Pokémon (and form) can be obtained in-game, if you owned everything. Computed at build time. */
@@ -16,12 +16,12 @@ export function Finder() {
     if (!qq) return rows;
     const num = qq.replace(/^#?0*/, "");
     return rows.filter((r) => r.name.toLowerCase().includes(qq) || r.form.toLowerCase().includes(qq) || String(r.n) === num ||
-      r.games.some((g) => gameName(g).toLowerCase() === qq));
+      r.games.some((g) => gameName(g).toLowerCase() === qq) || r.sources.some((s) => originName(s.id).toLowerCase().includes(qq)));
   }, [rows, q]);
   return (
     <section class="card finder">
       <h2>Finder</h2>
-      <p class="hint">Where each Pokémon can be caught, received, evolved or bred, game by game, before any trade or transfer. Search by name, number or game.</p>
+      <p class="hint">Where each Pokémon can be caught, received, evolved or bred, game by game, before any trade or transfer. Side games and discs are shown with the games they send it to. Search by name, number, game or side game.</p>
       <input class="search" type="search" placeholder="Pikachu, 25, Emerald…" value={q} onInput={(e) => { setQ((e.target as HTMLInputElement).value); setLimit(100); }} />
       {!rows ? <p class="hint">Loading…</p> : <p class="hint">{shown.length} of {rows.length} Pokémon and forms</p>}
       <table>
@@ -31,7 +31,11 @@ export function Finder() {
             <tr>
               <td class="num">{String(r.n).padStart(4, "0")}</td>
               <td>{r.name}{r.form && <small> {r.form}</small>}</td>
-              <td>{r.games.length ? [...r.games].sort((a, b) => ORDER[a] - ORDER[b]).map((g) => <span class="tag">{gameName(g)}</span>) : <span class="hint">Not obtainable in any core game (events only)</span>}</td>
+              <td>
+                {[...r.games].sort((a, b) => ORDER[a] - ORDER[b]).map((g) => <span class="tag">{gameName(g)}</span>)}
+                {r.sources.map((s) => <span class="tag side" title={`Sent into ${s.into.map(gameName).join(", ")}`}>{originName(s.id)} <small>→ {s.into.sort((a, b) => ORDER[a] - ORDER[b]).map(gameName).join(", ")}</small></span>)}
+                {!r.games.length && !r.sources.length && <span class="hint">Not obtainable in any core game (events only)</span>}
+              </td>
             </tr>
           ))}
         </tbody>

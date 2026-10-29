@@ -73,7 +73,7 @@ export const FLAG: Record<string, [string, string]> = {
   CABLE_GBA_LINK: ["GBA link cable", "Needs a Game Boy Advance link cable."],
   HOME_PREMIUM: ["HOME Premium", "Moving from Bank to HOME needs a HOME Premium plan."],
   REGION_LOCK: ["region-specific", "Needs a disc from a specific region."],
-  ONLINE_SERVICE: ["online", "Needs an online event or service."],
+  ONLINE_SERVICE: ["online", "Needs an internet connection: a Mystery Gift or online service with no end date."],
 };
 /** Where a path starts: a game, or a HOME reward or gift. */
 export const ORIGIN: Record<string, string> = {
@@ -82,7 +82,16 @@ export const ORIGIN: Record<string, string> = {
   HG1: "HOME gift (Legends: Arceus deposit)", HG2: "HOME gift (BDSP deposit)", HG3: "HOME gift (Sword/Shield deposit)", HG4: "HOME gift (Scarlet/Violet deposit)",
   HG5: "HOME gift (Legends: Z-A deposit)", HG6: "HOME gift (first GO transfer)", HG7: "HOME gift (first start)", HG8: "HOME gift (mobile app, choose one)", HG9: "HOME gift (first challenge)",
   HOME: "Pokémon HOME", GO: "Pokémon GO",
+  // side games and discs that deliver into a core game (engine `source`)
+  Ranch: "My Pokémon Ranch", BattleRev: "Pokémon Battle Revolution", Ranger: "Pokémon Ranger", Pokewalker: "Pokéwalker",
+  DreamRadar: "Pokémon Dream Radar", JapBonusDisc: "Colosseum bonus disc (Japanese)", USBonusDisc: "Colosseum bonus disc (US)",
+  PALChannel: "Pokémon Channel (PAL)",
 };
 export const originName = (o: string) => ORIGIN[o] ?? gameName(o);
 
 export const BANK_END_LABEL = "25 Feb 2027";
+
+/** Last National Pokédex number of each generation (index = generation). */
+export const GEN_END = [0, 151, 251, 386, 493, 649, 721, 809, 905, 1025];
+const pad = (n: number) => `#${String(n).padStart(4, "0")}`;
+export const genRange = (g: number) => `${pad(GEN_END[g - 1] + 1)}–${pad(GEN_END[g])}`;
