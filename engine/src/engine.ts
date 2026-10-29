@@ -162,11 +162,12 @@ export interface Unhandled { game: string; code: string; forms: string[]; }
 
 /** `hoennDex`: Emerald's Hoenn Pokédex (national numbers, Jirachi and Deoxys excluded) for the Johto first-partner prize (Q1).
  *  Without it the Phase 1 shortcut is used. */
-export function buildSeeds(forms: Form[], unhandled: Map<string, Unhandled>, hoennDex?: number[], oncePerSave?: Map<string, Set<string>>): Seed[] {
+export function buildSeeds(forms: Form[], unhandled: Map<string, Unhandled>, hoennDex?: number[], oncePerSave?: Map<string, Map<string, string[]>>): Seed[] {
   const seeds: Seed[] = [];
   const full = (f: Form) => (f.form ? `${f.name} (${f.form})` : f.name);
-  // ONCE_PER_SAVE (U9): a source in a game where the Pokémon belongs to a once-per-save group. Flags never hide (always shown).
-  const ops = (f: Form, at: string) => (oncePerSave?.get(at)?.has(full(f)) ? ["ONCE_PER_SAVE"] : []);
+  // Scarcity (U9, split 29 Oct): CHOOSE_ONE / ONLY_ONE for a source in a game where the Pokémon is in a group (rewards.ts).
+  // ONCE_PER_SAVE now only marks one-time deliveries (US bonus disc, PAL Channel). Flags never hide (always shown).
+  const ops = (f: Form, at: string) => oncePerSave?.get(at)?.get(full(f)) ?? [];
   const add = (form: Form, at: string, req: Seed["req"], why: string, flags: string[] = [], tags: string[] = [], deps?: Seed["deps"], source?: string) =>
     seeds.push({ form, at, req, why, flags: [...new Set([...flags, ...ops(form, at)])], tags: [...tags, ...originTags(at)], deps, ...(source ? { source } : {}) });
   const miss = (game: string, code: string, f: Form) => {
@@ -337,7 +338,6 @@ interface Route {
   /** Tags the Pokémon carries after the move, or the reason the move is refused (origin locks, Phase 2). */
   retag?: (from: string, to: string, tags: string[], f: Form) => string[] | string;
   /** Legendaries and Mythicals move only once per save on this route (U4: BDSP into HOME; RT19). */
-  legendsOnce?: (from: string) => boolean;
 }
 const STORAGE = new Set(["bank_g6", "bank_g7"]);
 /** Non-game locations: Bank's two sides, HOME, GO. Any species can be stored; none is "native" in the Phase 1 sense. */
@@ -397,7 +397,7 @@ export const ROUTES: Route[] = [
   { id: "RT16", from: FAMILY.lgpe, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1 },
   { id: "RT16", from: ["HOME"], to: FAMILY.lgpe, req: (o) => homeOn(o) && o.sw >= 1,
     retag: (_f, _t, tags) => (tags.includes("lgpe_pure") ? tags : "has left Let's Go (lgpe_pure)") },
-  { id: "RT17", from: SWITCH_HOME_GAMES, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1, legendsOnce: (from) => FAMILY_OF[from] === "bdsp",
+  { id: "RT17", from: SWITCH_HOME_GAMES, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1,
     retag: (from, _t, tags, f) => (FAMILY_OF[from] === "bdsp" && BDSP_LOCKED.has(f.number) ? "cannot leave BDSP (U4)" : tags) },
   { id: "RT17", from: ["HOME"], to: SWITCH_HOME_GAMES, req: (o) => homeOn(o) && o.sw >= 1,
     retag: (_f, to, tags, f) =>
@@ -406,7 +406,7 @@ export const ROUTES: Route[] = [
   { id: "RT18", from: FAMILY.za, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1 },
   { id: "RT18", from: ["HOME"], to: FAMILY.za, req: (o) => homeOn(o) && o.sw >= 1,
     retag: (_f, _t, tags) => [...without(tags, "lgpe_pure"), "za_touched"] },
-  { id: "RT19", from: FAMILY.frlgSwitch, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1, legendsOnce: () => true },   // one-way; nothing enters Switch FRLG
+  { id: "RT19", from: FAMILY.frlgSwitch, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1 },   // one-way; nothing enters Switch FRLG
 ];
 
 // ---------------------------------------------------------------- run
@@ -577,6 +577,7 @@ function arrivalStep(o: Owned, store: Store, forms: Form[], evo: EvoData, fresh:
     if (!egg || !canHold(egg, g)) continue;
     const mates = partners(g, String(n));
     if (!mates.length) continue;
+    const dittoKeys = new Set(poolOf(g).ditto.map(key));   // a mate path as good as a Ditto path: no mother needed
     // The egg's origin is this game whatever the parents' path, so only distinct (flags, end date) pairs matter.
     const parents = new Map<string, Support>();
     for (const sup of fact.supports) {
@@ -585,7 +586,10 @@ function arrivalStep(o: Owned, store: Store, forms: Form[], evo: EvoData, fresh:
     }
     for (const sup of parents.values()) for (const d of mates) {
       if (!fresh(sup) && !fresh(d)) continue;
-      const s: Support = { flags: [...new Set([...sup.flags, ...d.flags])].sort(), until: minUntil(sup.until, d.until),
+      // Eggs are not scarce: ONLY_ONE stops here. Without a Ditto the egg is the mother's species, so a single
+      // one-time parent has to be female (NEEDS_FEMALE, Victor 29 Oct).
+      const female = sup.flags.includes("ONLY_ONE") && !dittoKeys.has(key(d)) ? ["NEEDS_FEMALE"] : [];
+      const s: Support = { flags: [...new Set([...sup.flags, ...d.flags, ...female].filter((x) => x !== "ONLY_ONE"))].sort(), until: minUntil(sup.until, d.until),
                            origin: g, from: sup.source ?? sup.origin, via: [...sup.via, "BREED"] };
       if (store.add(egg, g, originTags(g), false, s)) changed = true;
     }
@@ -598,7 +602,6 @@ export interface Result { store: Store; unhandled: Map<string, Unhandled>; passe
 /** `evo`: Phase 2 arrival rules (evolve and breed after arrival). Without it, Phase 1 behaviour. */
 export function run(forms: Form[], o: Owned, seeds: Seed[], evo?: EvoData): Result {
   const store = new Store();
-  const legends = evo ? legendsOf(evo, forms) : new Set<string>();
   const locOwned = (l: string) =>
     STORAGE.has(l) ? o.has.bank : l === "HOME" ? o.has.home : l === "GO" ? goOn(o) : owns(o, l);
   let passes = 0, changed = true;
@@ -636,8 +639,7 @@ export function run(forms: Form[], o: Owned, seeds: Seed[], evo?: EvoData): Resu
             for (const sup of fact.supports) {
               for (const g of reg ?? [null]) {
                 if (!fresh(sup) && !(g && fresh(g))) continue;
-                const once = r.legendsOnce?.(from) && legends.has(fact.form.number) ? ["ONCE_PER_SAVE"] : [];
-                const s: Support = { flags: [...new Set([...sup.flags, ...(r.flags ?? []), ...once, ...(g ? [...g.flags, "AFTER_REGISTERED"] : [])])].sort(),
+                const s: Support = { flags: [...new Set([...sup.flags, ...(r.flags ?? []), ...(g ? [...g.flags, "AFTER_REGISTERED"] : [])])].sort(),
                                      until: minUntil(minUntil(sup.until, r.until), g?.until),
                                      origin: sup.origin, from: sup.from, via: [...sup.via, r.id], ...(sup.source ? { source: sup.source } : {}) };   // `from`: a bred Pokémon keeps its parent's origin when it moves on
                 if (store.add(fact.form, to, tags, false, s)) changed = true;

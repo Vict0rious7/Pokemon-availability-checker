@@ -38,20 +38,30 @@ export function rewardSeeds(forms: Form[], dex: DexFile): Seed[] {
 /** Emerald's Hoenn Pokédex for the Johto first-partner prize: Jirachi and Deoxys are not required. */
 export const emeraldHoenn = (dex: DexFile) => dex.dexes.hoenn_rse.species.filter((n) => n !== 385 && n !== 386);
 
-/** ONCE_PER_SAVE (U9): mutually exclusive groups (data/once_per_save.csv) and one-time Pokémon that can evolve (data/one_time_evolving.csv); for each game, the Pokémon (full CSV names) whose own source in that game is once per save. */
-export function loadOncePerSave(read: Reader): Map<string, Set<string>> | undefined {
+/** Scarcity flags (U9, split by Victor on 29 Oct 2026), per game and Pokémon (full CSV names), for the Pokémon's own source there:
+ *  CHOOSE_ONE = one of a set per save (data/once_per_save.csv kinds choice, determined, single_item);
+ *  ONLY_ONE = a single one that cannot be bred there (kind stages, and data/one_time_evolving.csv). choice+stages gets both. */
+export function loadOncePerSave(read: Reader): Map<string, Map<string, string[]>> | undefined {
   const t = read("once_per_save.csv");
   if (t === undefined) return undefined;
   const [head, ...rows] = t.trim().split(/\r?\n/).map((l) => l.split(";"));
-  const gi = head.indexOf("games"), mi = head.indexOf("members"), out = new Map<string, Set<string>>();
-  for (const r of rows) for (const g of r[gi].split("|")) for (const m of r[mi].split("|"))
-    (out.get(g) ?? out.set(g, new Set()).get(g)!).add(m);
+  const gi = head.indexOf("games"), mi = head.indexOf("members"), ki = head.indexOf("kind"), out = new Map<string, Map<string, string[]>>();
+  const put = (g: string, m: string, flag: string) => {
+    const byGame = out.get(g) ?? out.set(g, new Map()).get(g)!;
+    const fl = byGame.get(m) ?? byGame.set(m, []).get(m)!;
+    if (!fl.includes(flag)) fl.push(flag);
+  };
+  for (const r of rows) for (const g of r[gi].split("|")) for (const m of r[mi].split("|")) {
+    const kind = r[ki];
+    if (kind !== "stages") put(g, m, "CHOOSE_ONE");
+    if (kind === "stages" || kind === "choice+stages") put(g, m, "ONLY_ONE");
+  }
   // second half (Victor, 15 Oct): one-time Pokémon that can evolve, derived by data/tools/build_one_time.py
   const t2 = read("one_time_evolving.csv");
   if (t2 !== undefined) {
     const [h2, ...r2] = t2.trim().split(/\r?\n/).map((l) => l.split(";"));
     const g2 = h2.indexOf("game"), m2 = h2.indexOf("members");
-    for (const r of r2) for (const m of r[m2].split("|")) (out.get(r[g2]) ?? out.set(r[g2], new Set()).get(r[g2])!).add(m);
+    for (const r of r2) for (const m of r[m2].split("|")) put(r[g2], m, "ONLY_ONE");
   }
   return out;
 }
@@ -70,7 +80,7 @@ export function homeGiftSeeds(forms: Form[], read: Reader): Seed[] {
       : cond === "go_transfer" ? (o) => o.has.home && o.has.go && o.phone >= 1
       : cond === "home_start" ? (o) => o.has.home && (o.sw >= 1 || o.phone >= 1)
       : (o) => o.has.home && o.phone >= 1;                   // home_mobile_choice, challenge
-    const flags = cond === "home_mobile_choice" ? ["ONCE_PER_SAVE"] : [];
+    const flags = cond === "home_mobile_choice" ? ["CHOOSE_ONE"] : [];
     for (const name of col(r, "species").split("|")) {
       const form = forms.find((f) => f.name === name && f.form === "");
       if (!form) throw new Error(`${id}: ${name} not in the CSVs`);

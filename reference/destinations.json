@@ -360,7 +360,7 @@
     },
     {
       "id": "D11",
-      "description": "A Brilliant Diamond legendary moves to HOME only once per save (U4): flagged",
+      "description": "A Brilliant Diamond legendary reaches HOME. Was flagged once per save (U4); Victor dropped that blanket flag on 29 Oct (non-evolving one-time Pokémon stay unflagged)",
       "owned": {
         "copies": {
           "BrilliantDiamond": 1
@@ -380,10 +380,7 @@
       "probe": "Dialga",
       "expect": {
         "reachable": true,
-        "only_before": null,
-        "best_path_flags_include": [
-          "ONCE_PER_SAVE"
-        ]
+        "only_before": null
       },
       "notes": "Added by Claude on 15 Oct (approximation fix). Flags never hide; this checks the flag is shown."
     },
@@ -470,7 +467,7 @@
         "reachable": true,
         "only_before": null,
         "best_path_flags_include": [
-          "ONCE_PER_SAVE"
+          "ONLY_ONE"
         ],
         "no_path_uses": [
           "EVO(trade)"
@@ -625,6 +622,77 @@
             "RT15",
             "RT17"
           ]
+        ]
+      }
+    },
+    {
+      "id": "D15",
+      "description": "Claude, from Victor (29 Oct): XD's single Eevee (choose one, only one) traded into Ruby, which has no Ditto: breeding more needs that Eevee to be female",
+      "owned": {
+        "copies": {
+          "XD": 1,
+          "Ruby": 1
+        },
+        "dlc": {},
+        "gba": 2,
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false
+        }
+      },
+      "destination": "Ruby",
+      "date": "2027-06-01",
+      "probe": "Eevee",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_flags_include": [
+          "ONLY_ONE",
+          "CHOOSE_ONE"
+        ],
+        "any_path_flags_include": [
+          "NEEDS_FEMALE"
+        ],
+        "paths_include": [
+          [
+            "RT2",
+            "BREED"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "D15b",
+      "description": "Claude, from Victor (29 Oct): same with Emerald, whose Ditto can be traded to Ruby: no female needed",
+      "owned": {
+        "copies": {
+          "XD": 1,
+          "Ruby": 1,
+          "Emerald": 1
+        },
+        "dlc": {},
+        "gba": 2,
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false
+        }
+      },
+      "destination": "Ruby",
+      "date": "2027-06-01",
+      "probe": "Eevee",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "no_path_flags_include": [
+          "NEEDS_FEMALE"
         ]
       }
     }

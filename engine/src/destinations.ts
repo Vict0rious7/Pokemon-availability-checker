@@ -45,6 +45,10 @@ for (const c of cases) {
     if (got.paths.some((p) => p.via.includes(id))) problems.push(`a path uses ${id}`);
   for (const fl of e.best_path_flags_include ?? [])
     if (!got.paths[0]?.flags.includes(fl)) problems.push(`best path lacks flag ${fl}`);
+  for (const fl of e.any_path_flags_include ?? [])
+    if (!got.paths.some((p) => p.flags.includes(fl))) problems.push(`no path has flag ${fl}`);
+  for (const fl of e.no_path_flags_include ?? [])
+    if (got.paths.some((p) => p.flags.includes(fl))) problems.push(`a path has flag ${fl}`);
   for (const seq of e.paths_include ?? [])
     if (!got.paths.some((p) => p.via.join(">") === seq.join(">"))) problems.push(`no path ${seq.join(" > ")}`);
   for (const id of e.rewards_not_offered ?? []) {
