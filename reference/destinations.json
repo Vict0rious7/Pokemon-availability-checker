@@ -695,6 +695,66 @@
           "NEEDS_FEMALE"
         ]
       }
+    },
+    {
+      "id": "D16",
+      "description": "Claude, from Victor (29 Oct, C32): the Japanese bonus disc Celebi is a one-time delivery: one per save",
+      "owned": {
+        "copies": {
+          "Ruby": 1,
+          "Colosseum": 1
+        },
+        "dlc": {},
+        "gba": 1,
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false,
+          "bonusDiscJP": true
+        }
+      },
+      "destination": "Ruby",
+      "date": "2027-06-01",
+      "probe": "Celebi",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_flags_include": [
+          "ONCE_PER_SAVE"
+        ]
+      }
+    },
+    {
+      "id": "D16b",
+      "description": "Claude, from Victor (29 Oct, C32): My Pokémon Ranch's Mew is a one-time delivery: one per save",
+      "owned": {
+        "copies": {
+          "Diamond": 1
+        },
+        "dlc": {},
+        "ds": 1,
+        "n3ds": 0,
+        "sw": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false,
+          "ranchWestern": true
+        }
+      },
+      "destination": "Diamond",
+      "date": "2027-06-01",
+      "probe": "Mew",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_flags_include": [
+          "ONCE_PER_SAVE"
+        ]
+      }
     }
   ]
 }

@@ -67,7 +67,7 @@ export const SERVICES = [
 export const FLAG: Record<string, [string, string]> = {
   CHOOSE_ONE: ["choose one", "One of a set per save (starters, fossils, gifts decided by an earlier choice): one save gets only one of them."],
   ONLY_ONE: ["only one", "A single one per save, and it can't be bred here: plan which evolution it becomes."],
-  ONCE_PER_SAVE: ["one per save", "A one-time delivery: it can be received once per save file."],
+  ONCE_PER_SAVE: ["one per save", "A one-time delivery (a disc, My Pokémon Ranch, Pokémon Ranger, Dream Radar): it can be received once per save file."],
   NEEDS_FEMALE: ["needs a female", "No Ditto here: only a female lays eggs of her own species, so the single one you receive must be female."],
   ONCE_PER_CARTRIDGE: ["once per cartridge", "Can only be done once per cartridge."],
   SAVE_WIPE: ["erases a save", "Doing it again means starting a new save."],
