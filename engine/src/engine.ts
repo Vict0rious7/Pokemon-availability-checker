@@ -347,9 +347,10 @@ const GO_SPECIES = new Set(["808", "809"]);   // C18
  *  Pokémon GO section). Mew at Trainer level 15 → Celebi "A Ripple in Time" → Jirachi "A Thousand-Year Slumber" →
  *  Victini "Investigate a Mysterious Energy"; Shaymin, Keldeo, Meloetta, Diancie, Volcanion (after Diancie), Marshadow. */
 const GO_MYTHICALS = new Set(["151", "251", "385", "492", "494", "647", "648", "719", "721", "802"]);
-/** GO Transporter: a Legendary/Mythical sent from GO (except Meltan, Melmetal) can only enter a game where it is already
- *  registered, so for reachability it stays in HOME. GO Park refuses Mew. */
-const GO_LOCK = "has come from Pokémon GO: a Mythical only enters a game where it is already registered (go_locked, C30)";
+/** GO Transporter: a Legendary/Mythical sent from GO (except Meltan, Melmetal) can only enter a game where that species is
+ *  already registered. Registered = the same species reached that game by a path that does not start in GO (Victor,
+ *  29 Oct): the GO copy then follows, carrying that path's flags and end date and the AFTER_REGISTERED flag. GO Park refuses Mew. */
+const GO_LOCK = "has come from Pokémon GO: a Mythical only enters a game where one is already registered, and none reaches it another way (go_locked, C30)";
 const goOn = (o: Owned) => o.has.go && o.phone >= 1;
 const homeOn = (o: Owned) => o.has.home && (o.sw >= 1 || o.phone >= 1);   // HOME on Switch or on a phone (RT13)
 /** Origin tags set where a Pokémon is caught (data model: lgpe_pure, za_touched). */
@@ -400,12 +401,11 @@ export const ROUTES: Route[] = [
     retag: (from, _t, tags, f) => (FAMILY_OF[from] === "bdsp" && BDSP_LOCKED.has(f.number) ? "cannot leave BDSP (U4)" : tags) },
   { id: "RT17", from: ["HOME"], to: SWITCH_HOME_GAMES, req: (o) => homeOn(o) && o.sw >= 1,
     retag: (_f, to, tags, f) =>
-      tags.includes("go_locked") ? GO_LOCK
-      : tags.includes("za_touched") ? "has been in Z-A: never to an older game (za_touched, RT18)"
+      tags.includes("za_touched") ? "has been in Z-A: never to an older game (za_touched, RT18)"
       : FAMILY_OF[to] === "bdsp" && BDSP_LOCKED.has(f.number) ? "cannot enter BDSP (U4)" : without(tags, "lgpe_pure") },
   { id: "RT18", from: FAMILY.za, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1 },
   { id: "RT18", from: ["HOME"], to: FAMILY.za, req: (o) => homeOn(o) && o.sw >= 1,
-    retag: (_f, _t, tags) => (tags.includes("go_locked") ? GO_LOCK : [...without(tags, "lgpe_pure"), "za_touched"]) },
+    retag: (_f, _t, tags) => [...without(tags, "lgpe_pure"), "za_touched"] },
   { id: "RT19", from: FAMILY.frlgSwitch, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1, legendsOnce: () => true },   // one-way; nothing enters Switch FRLG
 ];
 
@@ -627,12 +627,21 @@ export function run(forms: Form[], o: Owned, seeds: Seed[], evo?: EvoData): Resu
               store.refuse({ number: fact.form.number, from, to, route: r.id, reason: tags }, fact.supports.map((x) => x.origin));
               continue;
             }
+            // C30: a GO Mythical enters a game only after one of its species was registered there by a path not from GO
+            let reg: Support[] | null = null;
+            if (fact.tags.includes("go_locked") && !NOT_GAMES.has(to)) {
+              reg = store.supportsOf(fact.form.number, to).filter((x) => x.origin !== "GO");
+              if (!reg.length) { store.refuse({ number: fact.form.number, from, to, route: r.id, reason: GO_LOCK }, fact.supports.map((x) => x.origin)); continue; }
+            }
             for (const sup of fact.supports) {
-              if (!fresh(sup)) continue;
-              const once = r.legendsOnce?.(from) && legends.has(fact.form.number) ? ["ONCE_PER_SAVE"] : [];
-              const s: Support = { flags: [...new Set([...sup.flags, ...(r.flags ?? []), ...once])].sort(), until: minUntil(sup.until, r.until),
-                                   origin: sup.origin, from: sup.from, via: [...sup.via, r.id], ...(sup.source ? { source: sup.source } : {}) };   // `from`: a bred Pokémon keeps its parent's origin when it moves on
-              if (store.add(fact.form, to, tags, false, s)) changed = true;
+              for (const g of reg ?? [null]) {
+                if (!fresh(sup) && !(g && fresh(g))) continue;
+                const once = r.legendsOnce?.(from) && legends.has(fact.form.number) ? ["ONCE_PER_SAVE"] : [];
+                const s: Support = { flags: [...new Set([...sup.flags, ...(r.flags ?? []), ...once, ...(g ? [...g.flags, "AFTER_REGISTERED"] : [])])].sort(),
+                                     until: minUntil(minUntil(sup.until, r.until), g?.until),
+                                     origin: sup.origin, from: sup.from, via: [...sup.via, r.id], ...(sup.source ? { source: sup.source } : {}) };   // `from`: a bred Pokémon keeps its parent's origin when it moves on
+                if (store.add(fact.form, to, tags, false, s)) changed = true;
+              }
             }
           }
         }

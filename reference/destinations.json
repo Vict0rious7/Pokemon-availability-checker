@@ -592,6 +592,41 @@
           }
         ]
       }
+    },
+    {
+      "id": "D14d",
+      "description": "Claude, from Victor (29 Oct): a Keldeo obtained in Sword registers it there, so the GO Keldeo can follow (C30)",
+      "owned": {
+        "copies": {
+          "Sword": 1,
+          "Shield": 1
+        },
+        "dlc": {
+          "Sword": 1,
+          "Shield": 1
+        },
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 2,
+        "phone": true,
+        "has": {
+          "home": true,
+          "go": true
+        }
+      },
+      "destination": "Sword",
+      "date": "2027-06-01",
+      "probe": "Keldeo",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "paths_include": [
+          [
+            "RT15",
+            "RT17"
+          ]
+        ]
+      }
     }
   ]
 }

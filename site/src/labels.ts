@@ -72,6 +72,7 @@ export const FLAG: Record<string, [string, string]> = {
   CABLE_GC_GBA: ["GBA–GameCube cable", "Needs the GameCube Game Boy Advance cable."],
   CABLE_GBA_LINK: ["GBA link cable", "Needs a Game Boy Advance link cable."],
   HOME_PREMIUM: ["HOME Premium", "Moving from Bank to HOME needs a HOME Premium plan."],
+  AFTER_REGISTERED: ["after one is registered", "A Mythical from Pokémon GO only enters a game where one is already registered: move a non-GO one there first."],
   REGION_LOCK: ["region-specific", "Needs a disc from a specific region."],
   ONLINE_SERVICE: ["online", "Needs an internet connection: a Mystery Gift or online service with no end date."],
 };
