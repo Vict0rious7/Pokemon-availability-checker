@@ -2,7 +2,7 @@ import { render } from "preact";
 import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import "./styles.css";
 import "./themes.css";
-import { THEMES, ThemeId, loadTheme, applyTheme, biomeFor, biomeName } from "./themes.js";
+import { THEMES, ThemeId, loadTheme, applyTheme } from "./themes.js";
 import { Profile, decode, encode, toOwned, starting, withDest, MAX_GEN } from "./state.js";
 import { PLATFORMS, GAMES, HARDWARE, SERVICES, FLAG, gameName, originName, BANK_END_LABEL, genRange } from "./labels.js";
 import { describe, names } from "./path.js";
@@ -212,7 +212,7 @@ function ResultRow({ r, dest }: { r: Row; dest: string }) {
   );
 }
 
-function Results({ p, res, busy, error, theme }: { p: Profile; res: Response | null; busy: boolean; error: string | null; theme: ThemeId }) {
+function Results({ p, res, busy, error }: { p: Profile; res: Response | null; busy: boolean; error: string | null }) {
   const [filter, setFilter] = useState<Status | "all">("all");
   const [q, setQ] = useState("");
   const rows = res?.rows ?? [];
@@ -241,8 +241,8 @@ function Results({ p, res, busy, error, theme }: { p: Profile; res: Response | n
       {gens.map((g) => {
         const gr = shown.filter((r) => r.gen === g);
         return (
-          <details class="gen" open data-biome={biomeFor(theme, g)}>
-            <summary>Generation {g}{theme === "boxes" && <span class="biome-name">· {biomeName(biomeFor(theme, g))}</span>} <small>{genRange(g)} · {gr.length} shown</small></summary>
+          <details class="gen" open>
+            <summary><span class="gen-title">Generation {g}</span> <small>{genRange(g)} · {gr.length} shown</small></summary>
             {gr.map((r) => <ResultRow key={r.n} r={r} dest={p.dest} />)}
           </details>
         );
@@ -295,7 +295,7 @@ function App() {
         <nav>
           {([["check", "Checker"], ["finder", "Finder"], ["about", "About & credits"]] as const).map(([k, l]) =>
             <button type="button" class={tab === k ? "on" : ""} aria-current={tab === k} onClick={() => setTab(k)}>{l}</button>)}
-          <label class="theme-pick">Theme
+          <label class="theme-pick">Wallpaper
             <select value={theme} onChange={(e) => setTheme((e.target as HTMLSelectElement).value as ThemeId)}>
               {THEMES.map((t) => <option value={t.id}>{t.name}</option>)}
             </select>
@@ -303,7 +303,7 @@ function App() {
         </nav>
       </header>
       <main>
-        {tab === "check" && <div class="layout"><Inputs p={p} set={set} /><Results p={p} res={res} busy={busy} error={error} theme={theme} /></div>}
+        {tab === "check" && <div class="layout"><Inputs p={p} set={set} /><Results p={p} res={res} busy={busy} error={error} /></div>}
         {tab === "check" && res && <JumpBar res={res} busy={busy} />}
         {tab === "finder" && <Finder />}
         {tab === "about" && <Credits />}
