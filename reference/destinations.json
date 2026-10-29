@@ -1,0 +1,760 @@
+{
+  "_about": "Phase 2 destination tests, written by Victor on 15 Oct 2026 and corrected in review; D7 added from a bug found in step 1. 'owned' follows engine/src/games.ts Owned; has.home, has.go and phone are new Phase 2 inputs. Bank closes 2027-02-25T19:00-08:00.",
+  "cases": [
+    {
+      "id": "D1",
+      "description": "Rayquaza into HOME while Bank is open",
+      "owned": {
+        "copies": {
+          "UltraMoon": 1,
+          "Black": 1,
+          "SoulSilver": 1
+        },
+        "dlc": {},
+        "ds": 1,
+        "n3ds": 1,
+        "sw": 1,
+        "phone": false,
+        "has": {
+          "transporter": true,
+          "bank": true,
+          "home": true,
+          "go": false
+        }
+      },
+      "destination": "HOME",
+      "date": "2026-12-20",
+      "probe": "Rayquaza",
+      "expect": {
+        "reachable": true,
+        "only_before": "2027-02-25T19:00-08:00",
+        "every_path_uses": [
+          "RT13"
+        ]
+      },
+      "notes": "Ultra Moon's Rayquaza is CC; SoulSilver's needs Kyogre (Embedded Tower). Every path ends in Bank -> HOME."
+    },
+    {
+      "id": "D1b",
+      "description": "D1 after Bank closes",
+      "owned": "D1",
+      "destination": "HOME",
+      "date": "2027-03-01",
+      "probe": "Rayquaza",
+      "expect": {
+        "reachable": false
+      }
+    },
+    {
+      "id": "D2",
+      "description": "Ponyta into Sword from Let's Go",
+      "owned": {
+        "copies": {
+          "Sword": 1,
+          "LetsGoPikachu": 1
+        },
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 1,
+        "phone": false,
+        "has": {
+          "transporter": false,
+          "bank": false,
+          "home": true,
+          "go": false
+        }
+      },
+      "destination": "Sword",
+      "date": "2028-01-01",
+      "probe": "Ponyta",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_from": "LetsGoPikachu",
+        "every_path_uses": [
+          "RT16",
+          "RT17"
+        ]
+      },
+      "notes": "Sword has Ponyta only as T. The Let's Go Ponyta stops being lgpe_pure once it moves on."
+    },
+    {
+      "id": "D2b",
+      "description": "D2 without HOME",
+      "owned": {
+        "copies": {
+          "Sword": 1,
+          "LetsGoPikachu": 1
+        },
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 1,
+        "phone": false,
+        "has": {
+          "transporter": false,
+          "bank": false,
+          "home": false,
+          "go": false
+        }
+      },
+      "destination": "Sword",
+      "date": "2028-01-01",
+      "probe": "Ponyta",
+      "expect": {
+        "reachable": false
+      }
+    },
+    {
+      "id": "D3",
+      "description": "Heatran into Violet: Black 2 yes, Z-A no",
+      "owned": {
+        "copies": {
+          "LegendsZA": 1,
+          "Violet": 1,
+          "X": 1,
+          "Black2": 1
+        },
+        "dlc": {
+          "LegendsZA": 1
+        },
+        "ds": 0,
+        "n3ds": 1,
+        "sw": 1,
+        "phone": false,
+        "has": {
+          "transporter": true,
+          "bank": true,
+          "home": true,
+          "go": false
+        }
+      },
+      "destination": "Violet",
+      "date": "2026-12-20",
+      "probe": "Heatran",
+      "expect": {
+        "reachable": true,
+        "only_before": "2027-02-25T19:00-08:00",
+        "best_path_from": "Black2",
+        "rejected_paths": [
+          {
+            "from": "LegendsZA",
+            "reason": "za_touched (RT18): never to an older game"
+          }
+        ]
+      },
+      "notes": "Black has Heatran only as T; Black 2 has it as C. Z-A Heatran is CD (Mega Dimension)."
+    },
+    {
+      "id": "D4",
+      "description": "Meltan into HOME from GO; the Shiny Meltan reward is out of reach",
+      "owned": {
+        "copies": {
+          "LetsGoPikachu": 1
+        },
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 1,
+        "phone": true,
+        "has": {
+          "transporter": false,
+          "bank": false,
+          "home": true,
+          "go": true
+        }
+      },
+      "destination": "HOME",
+      "date": "2027-06-01",
+      "probe": "Meltan",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_from": "GO",
+        "paths_include": [
+          [
+            "RT15"
+          ],
+          [
+            "RT14",
+            "RT16"
+          ]
+        ],
+        "rewards_not_offered": [
+          "HR4"
+        ]
+      },
+      "notes": "HR4 needs the full Let's Go Kanto dex: Let's Go Eevee exclusives and trade evolutions, impossible alone (C22)."
+    },
+    {
+      "id": "D5",
+      "description": "Spinda into HOME after Bank closes",
+      "owned": {
+        "copies": {
+          "Black": 1,
+          "X": 1,
+          "UltraSun": 1,
+          "BrilliantDiamond": 1
+        },
+        "dlc": {},
+        "ds": 1,
+        "n3ds": 1,
+        "sw": 1,
+        "phone": false,
+        "has": {
+          "transporter": true,
+          "bank": true,
+          "home": true,
+          "go": false
+        }
+      },
+      "destination": "HOME",
+      "date": "2028-01-01",
+      "probe": "Spinda",
+      "expect": {
+        "reachable": false
+      },
+      "notes": "BDSP Spinda cannot leave BDSP (origin lock). X and Ultra Sun Spinda need Bank. Black's is Dream World only."
+    },
+    {
+      "id": "D5b",
+      "description": "D5 while Bank is open",
+      "owned": "D5",
+      "destination": "HOME",
+      "date": "2026-12-20",
+      "probe": "Spinda",
+      "expect": {
+        "reachable": true,
+        "only_before": "2027-02-25T19:00-08:00",
+        "every_path_uses": [
+          "RT13"
+        ]
+      }
+    },
+    {
+      "id": "D6",
+      "description": "Unown can never enter Sword",
+      "owned": "ALL",
+      "destination": "Sword",
+      "date": "2026-12-20",
+      "probe": "Unown",
+      "expect": {
+        "reachable": false
+      },
+      "notes": "Sword's Unown cell is '-': the game cannot hold it (RT17)."
+    },
+    {
+      "id": "D7",
+      "description": "Ultra Moon Rayquaza after Bank closes: its unlock needs Groudon, which only arrives through Bank",
+      "owned": "D1",
+      "destination": "UltraMoon",
+      "date": "2027-03-01",
+      "probe": "Rayquaza",
+      "expect": {
+        "reachable": false
+      },
+      "notes": "Added 15 Oct at Victor's request. Ultra Moon's Rayquaza needs Kyogre and Groudon in the party; Groudon comes from SoulSilver through Black and Bank. Failed before the step 2 fix (end dates of unlock prerequisites were lost)."
+    },
+    {
+      "id": "D8",
+      "description": "Positive control for HOME rewards: both Let's Go games complete the Kanto dex, so Shiny Meltan is offered",
+      "owned": {
+        "copies": {
+          "LetsGoPikachu": 1,
+          "LetsGoEevee": 1
+        },
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 2,
+        "phone": true,
+        "has": {
+          "transporter": false,
+          "bank": false,
+          "home": true,
+          "go": false
+        }
+      },
+      "destination": "HOME",
+      "date": "2027-06-01",
+      "probe": "Meltan",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_from": "HR4",
+        "rewards_offered": [
+          "HR4"
+        ]
+      },
+      "notes": "Added by Claude on 15 Oct as the counterpart of D4 (Victor to confirm). Two Switches for trades and trade evolutions; Mew is not required."
+    },
+    {
+      "id": "D9",
+      "description": "Z-A Milotic needs a trade between two Z-A copies (Victor, 15 Oct)",
+      "owned": {
+        "copies": {
+          "LegendsZA": 2
+        },
+        "dlc": {
+          "LegendsZA": 2
+        },
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 2,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false
+        }
+      },
+      "destination": "LegendsZA",
+      "date": "2027-06-01",
+      "probe": "Milotic",
+      "expect": {
+        "reachable": true,
+        "only_before": null
+      },
+      "notes": "Feebas is in the Mega Dimension DLC; Milotic evolves only by trade in Z-A, and Z-A trades only with Z-A."
+    },
+    {
+      "id": "D9b",
+      "description": "D9 with one copy",
+      "owned": {
+        "copies": {
+          "LegendsZA": 1
+        },
+        "dlc": {
+          "LegendsZA": 1
+        },
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 2,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false
+        }
+      },
+      "destination": "LegendsZA",
+      "date": "2027-06-01",
+      "probe": "Milotic",
+      "expect": {
+        "reachable": false
+      }
+    },
+    {
+      "id": "D10",
+      "description": "Shiny Keldeo with everything owned: Spiritomb from another game, bred in Sword with a Ditto (Victor, 15 Oct)",
+      "owned": "ALL",
+      "destination": "HOME",
+      "date": "2026-12-20",
+      "probe": "Keldeo",
+      "expect": {
+        "reachable": true,
+        "rewards_offered": [
+          "HR5"
+        ]
+      },
+      "notes": "HOME counts the hatched Spiritomb as Galar-origin. Before the arrival rules, HR5 was never offered."
+    },
+    {
+      "id": "D11",
+      "description": "A Brilliant Diamond legendary reaches HOME. Was flagged once per save (U4); Victor dropped that blanket flag on 29 Oct (non-evolving one-time Pokémon stay unflagged)",
+      "owned": {
+        "copies": {
+          "BrilliantDiamond": 1
+        },
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 1,
+        "phone": false,
+        "has": {
+          "home": true,
+          "go": false
+        }
+      },
+      "destination": "HOME",
+      "date": "2027-06-01",
+      "probe": "Dialga",
+      "expect": {
+        "reachable": true,
+        "only_before": null
+      },
+      "notes": "Added by Claude on 15 Oct (approximation fix). Flags never hide; this checks the flag is shown."
+    },
+    {
+      "id": "D12",
+      "description": "HOME gift: depositing from Scarlet gives the Hidden Ability Paldea starters, so Fuecoco reaches Scarlet without a second copy",
+      "owned": {
+        "copies": {
+          "Scarlet": 1
+        },
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 1,
+        "phone": true,
+        "has": {
+          "home": true,
+          "go": false
+        }
+      },
+      "destination": "Scarlet",
+      "date": "2027-06-01",
+      "probe": "Fuecoco",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "paths_include": [
+          [
+            "RT17"
+          ]
+        ]
+      },
+      "notes": "Added by Claude on 15 Oct (U12 rest). Scarlet's own Fuecoco is a once-per-save choice; the HG4 gift is another path."
+    },
+    {
+      "id": "D13",
+      "description": "Z-A with Mega Dimension: trade-evolved Pokémon are caught directly (Victor, 15 Oct)",
+      "owned": {
+        "dlc": {
+          "LegendsZA": 1
+        },
+        "ds": 0,
+        "n3ds": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false
+        },
+        "copies": {
+          "LegendsZA": 1
+        },
+        "sw": 1
+      },
+      "destination": "LegendsZA",
+      "date": "2027-06-01",
+      "probe": "Slowking",
+      "expect": {
+        "reachable": true,
+        "only_before": null
+      },
+      "notes": "Bulbapedia codes Slowking, Porygon2, Porygon-Z CD in Z-A."
+    },
+    {
+      "id": "D13b",
+      "description": "Z-A base game, one copy: no Slowking by trade, only the once-per-save Galarian Slowking (Side Mission 39 Slowpoke)",
+      "owned": {
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false
+        },
+        "copies": {
+          "LegendsZA": 1
+        },
+        "sw": 1
+      },
+      "destination": "LegendsZA",
+      "date": "2027-06-01",
+      "probe": "Slowking",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_flags_include": [
+          "ONLY_ONE"
+        ],
+        "no_path_uses": [
+          "EVO(trade)"
+        ]
+      },
+      "notes": "Kantonian Slowking would need a trade between two Z-A copies; the species-level answer is the Galarian one, flagged (OPS49)."
+    },
+    {
+      "id": "D13c",
+      "description": "Z-A base game, two copies and two Switches: Slowking by trade",
+      "owned": {
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false
+        },
+        "copies": {
+          "LegendsZA": 2
+        },
+        "sw": 2
+      },
+      "destination": "LegendsZA",
+      "date": "2027-06-01",
+      "probe": "Slowking",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "paths_include": [
+          [
+            "EVO(trade)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "D14",
+      "description": "Claude, from Victor's decision C30 (29 Oct): Victini from GO's permanent Special Research reaches HOME, no end date",
+      "owned": {
+        "copies": {},
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 0,
+        "phone": true,
+        "has": {
+          "home": true,
+          "go": true
+        }
+      },
+      "destination": "HOME",
+      "date": "2027-06-01",
+      "probe": "Victini",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_from": "GO",
+        "every_path_uses": [
+          "RT15"
+        ]
+      }
+    },
+    {
+      "id": "D14b",
+      "description": "Claude, from C30: a GO Mythical cannot enter Sword unless already registered there (GO Transporter)",
+      "owned": {
+        "copies": {
+          "Sword": 1
+        },
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 1,
+        "phone": true,
+        "has": {
+          "home": true,
+          "go": true
+        }
+      },
+      "destination": "Sword",
+      "date": "2027-06-01",
+      "probe": "Victini",
+      "expect": {
+        "reachable": false,
+        "rejected_paths": [
+          {
+            "from": "GO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D14c",
+      "description": "Claude, from C30: GO Park refuses Mew, so a GO Mew never reaches Let's Go",
+      "owned": {
+        "copies": {
+          "LetsGoPikachu": 1
+        },
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 1,
+        "phone": true,
+        "has": {
+          "home": false,
+          "go": true
+        }
+      },
+      "destination": "LetsGoPikachu",
+      "date": "2027-06-01",
+      "probe": "Mew",
+      "expect": {
+        "reachable": false,
+        "rejected_paths": [
+          {
+            "from": "GO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D14d",
+      "description": "Claude, from Victor (29 Oct): a Keldeo obtained in Sword registers it there, so the GO Keldeo can follow (C30)",
+      "owned": {
+        "copies": {
+          "Sword": 1,
+          "Shield": 1
+        },
+        "dlc": {
+          "Sword": 1,
+          "Shield": 1
+        },
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 2,
+        "phone": true,
+        "has": {
+          "home": true,
+          "go": true
+        }
+      },
+      "destination": "Sword",
+      "date": "2027-06-01",
+      "probe": "Keldeo",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "paths_include": [
+          [
+            "RT15",
+            "RT17"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "D15",
+      "description": "Claude, from Victor (29 Oct): XD's single Eevee (choose one, only one) traded into Ruby, which has no Ditto: breeding more needs that Eevee to be female",
+      "owned": {
+        "copies": {
+          "XD": 1,
+          "Ruby": 1
+        },
+        "dlc": {},
+        "gba": 2,
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false
+        }
+      },
+      "destination": "Ruby",
+      "date": "2027-06-01",
+      "probe": "Eevee",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_flags_include": [
+          "ONLY_ONE",
+          "CHOOSE_ONE"
+        ],
+        "any_path_flags_include": [
+          "NEEDS_FEMALE"
+        ],
+        "paths_include": [
+          [
+            "RT2",
+            "BREED"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "D15b",
+      "description": "Claude, from Victor (29 Oct): same with Emerald, whose Ditto can be traded to Ruby: no female needed",
+      "owned": {
+        "copies": {
+          "XD": 1,
+          "Ruby": 1,
+          "Emerald": 1
+        },
+        "dlc": {},
+        "gba": 2,
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false
+        }
+      },
+      "destination": "Ruby",
+      "date": "2027-06-01",
+      "probe": "Eevee",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "no_path_flags_include": [
+          "NEEDS_FEMALE"
+        ]
+      }
+    },
+    {
+      "id": "D16",
+      "description": "Claude, from Victor (29 Oct, C32): the Japanese bonus disc Celebi is a one-time delivery: one per save",
+      "owned": {
+        "copies": {
+          "Ruby": 1,
+          "Colosseum": 1
+        },
+        "dlc": {},
+        "gba": 1,
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false,
+          "bonusDiscJP": true
+        }
+      },
+      "destination": "Ruby",
+      "date": "2027-06-01",
+      "probe": "Celebi",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_flags_include": [
+          "ONCE_PER_SAVE"
+        ]
+      }
+    },
+    {
+      "id": "D16b",
+      "description": "Claude, from Victor (29 Oct, C32): My Pokémon Ranch's Mew is a one-time delivery: one per save",
+      "owned": {
+        "copies": {
+          "Diamond": 1
+        },
+        "dlc": {},
+        "ds": 1,
+        "n3ds": 0,
+        "sw": 0,
+        "phone": false,
+        "has": {
+          "home": false,
+          "go": false,
+          "ranchWestern": true
+        }
+      },
+      "destination": "Diamond",
+      "date": "2027-06-01",
+      "probe": "Mew",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_flags_include": [
+          "ONCE_PER_SAVE"
+        ]
+      }
+    }
+  ]
+}

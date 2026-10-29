@@ -1,0 +1,54 @@
+id;games;group;members;kind;determined_by;notes
+OPS01;Red|Green|Blue;Kanto starters;Bulbasaur|Ivysaur|Venusaur|Charmander|Charmeleon|Charizard|Squirtle|Wartortle|Blastoise;choice+stages;;One starter line per save; no breeding, so one stage of the line at a time.
+OPS02;Yellow;Kanto starter stages;Bulbasaur|Ivysaur|Venusaur|Charmander|Charmeleon|Charizard|Squirtle|Wartortle|Blastoise;stages;;All three lines obtainable, but one stage per line at a time (no breeding). Three separate groups of three.
+OPS03;Red|Green|Blue|Yellow;Hitmonlee or Hitmonchan;Hitmonlee|Hitmonchan;choice;;Fighting Dojo gift.
+OPS04;Red|Green|Blue|Yellow;Eevee and Eeveelutions;Eevee|Vaporeon|Jolteon|Flareon;choice+stages;;Single Eevee per save.
+OPS05;Red|Green|Blue|Yellow;Helix or Dome fossil;Omanyte|Omastar|Kabuto|Kabutops;choice+stages;;Mt. Moon choice; one stage per line at a time (no breeding).
+OPS06;Gold|Silver|Crystal;Johto starters;Chikorita|Bayleef|Meganium|Cyndaquil|Quilava|Typhlosion|Totodile|Croconaw|Feraligatr;choice;;
+OPS07;Gold|Silver;Fire Stone evolutions;Ninetales|Arcanine|Flareon;single_item;;One Fire Stone (Bill's grandfather). Vulpix and Growlithe are version-exclusive, so each version has two of the three. Not in Crystal. Mystery Gift stones ignored (C22).
+OPS08;Gold|Silver;Water Stone evolutions;Poliwrath|Cloyster|Starmie|Vaporeon;single_item;;One Water Stone. Not in Crystal.
+OPS09;Gold|Silver;Thunderstone evolutions;Raichu|Jolteon;single_item;;One Thunderstone. Not in Crystal.
+OPS10;Gold|Silver;Leaf Stone evolutions;Vileplume|Victreebel|Exeggutor;single_item;;One Leaf Stone. Not in Crystal.
+OPS11;Ruby|Sapphire|Emerald;Hoenn starters;Treecko|Grovyle|Sceptile|Torchic|Combusken|Blaziken|Mudkip|Marshtomp|Swampert;choice;;
+OPS12;Ruby|Sapphire|Emerald;Clamperl evolutions;Huntail|Gorebyss;choice;;Deep Sea Tooth or Scale in Slateport. Trade evolution, so also needs a second game.
+OPS13;Ruby|Sapphire;Root or Claw fossil;Lileep|Cradily|Anorith|Armaldo;choice;;Emerald: both fossils (second after Champion), not exclusive.
+OPS14;Ruby|Emerald;Moon Stone evolutions;Wigglytuff|Delcatty;single_item;;One Moon Stone (Meteor Falls). Not Sapphire (wild Lunatone hold Moon Stones). Emerald cloning glitch ignored.
+OPS15;Emerald;Johto starters (Hoenn dex prize);Chikorita|Bayleef|Meganium|Cyndaquil|Quilava|Typhlosion|Totodile|Croconaw|Feraligatr;choice;Emerald Hoenn dex complete;Prize from Birch after completing the Hoenn Pokédex.
+OPS16;Emerald;Eon duo;Latias|Latios;determined;TV colour answer;Red → Latias roams, blue → Latios. The other needs the event Eon Ticket (out of scope).
+OPS17;FireRed|LeafGreen|FireRedSwitch|LeafGreenSwitch;Kanto starters;Bulbasaur|Ivysaur|Venusaur|Charmander|Charmeleon|Charizard|Squirtle|Wartortle|Blastoise;choice;;Switch versions not on the page: assumed identical (C21, unverified).
+OPS18;FireRed|LeafGreen|FireRedSwitch|LeafGreenSwitch;Helix or Dome fossil;Omanyte|Omastar|Kabuto|Kabutops;choice;;Switch versions assumed identical (C21, unverified).
+OPS19;FireRed|LeafGreen|FireRedSwitch|LeafGreenSwitch;Roaming beast;Raikou|Entei|Suicune;determined;starter;Squirtle → Raikou, Bulbasaur → Entei, Charmander → Suicune. Switch versions assumed identical (C21, unverified).
+OPS20;Diamond|Pearl|Platinum;Sinnoh starters;Turtwig|Grotle|Torterra|Chimchar|Monferno|Infernape|Piplup|Prinplup|Empoleon;choice;;
+OPS21;Platinum;Skull or Armor fossil;Cranidos|Rampardos|Shieldon|Bastiodon;determined;Trainer ID parity;Odd ID → Skull (Cranidos), even → Armor (Shieldon).
+OPS22;HeartGold|SoulSilver;Johto starters;Chikorita|Bayleef|Meganium|Cyndaquil|Quilava|Typhlosion|Totodile|Croconaw|Feraligatr;choice;;
+OPS23;HeartGold|SoulSilver;Kanto starters (Oak);Bulbasaur|Ivysaur|Venusaur|Charmander|Charmeleon|Charizard|Squirtle|Wartortle|Blastoise;choice;;After defeating Red.
+OPS24;HeartGold|SoulSilver;Hoenn starters (Steven);Treecko|Grovyle|Sceptile|Torchic|Combusken|Blaziken|Mudkip|Marshtomp|Swampert;choice;;After defeating Red and picking a Kanto starter.
+OPS25;HeartGold|SoulSilver;Sinjoh Ruins;Dialga|Palkia|Giratina;choice;;Needs an event Arceus (out of scope in v1 unless already modelled). One egg per Arceus, never all three in one save.
+OPS26;Black|White|Black2|White2;Unova starters;Snivy|Servine|Serperior|Tepig|Pignite|Emboar|Oshawott|Dewott|Samurott;choice;;
+OPS27;Black|White;Cover or Plume fossil;Tirtouga|Carracosta|Archen|Archeops;choice;;B2W2: both available (Join Avenue), not exclusive.
+OPS28;Black2|White2;Yancy or Curtis trades;Meowth|Mankey;determined;player gender;Yancy trades the first, Curtis the second; which NPC appears depends on player gender (mapping not stated on the page). Same for OPS29–31.
+OPS29;Black2|White2;Yancy or Curtis trades;Teddiursa|Phanpy;determined;player gender;
+OPS30;Black2|White2;Yancy or Curtis trades;Mawile|Sableye;determined;player gender;
+OPS31;Black2|White2;Yancy or Curtis trades;Shellos (West)|Shellos (East);determined;player gender;Form-level only.
+OPS32;X|Y;Kalos starters;Chespin|Quilladin|Chesnaught|Fennekin|Braixen|Delphox|Froakie|Frogadier|Greninja;choice;;Shauna later trades the starter weak to yours (Chespin → Froakie, Fennekin → Chespin, Froakie → Fennekin), so two of three are obtainable. Middle stages in Friend Safari (out of v1).
+OPS33;X|Y;Kanto starters (Sycamore);Bulbasaur|Ivysaur|Venusaur|Charmander|Charmeleon|Charizard|Squirtle|Wartortle|Blastoise;choice;;Middle stages in Friend Safari (out of v1).
+OPS34;X|Y;Jaw or Sail fossil;Tyrunt|Tyrantrum|Amaura|Aurorus;choice;;Only source of either line in X/Y.
+OPS35;X|Y;Legendary bird;Articuno|Zapdos|Moltres;determined;starter;Chespin → Articuno, Fennekin → Zapdos, Froakie → Moltres.
+OPS36;OmegaRuby|AlphaSapphire;Hoenn starters;Treecko|Grovyle|Sceptile|Torchic|Combusken|Blaziken|Mudkip|Marshtomp|Swampert;choice;;
+OPS37;OmegaRuby|AlphaSapphire;Root or Claw fossil;Lileep|Cradily|Anorith|Armaldo;choice;;
+OPS38;OmegaRuby|AlphaSapphire;Johto starters (Birch);Chikorita|Bayleef|Meganium|Cyndaquil|Quilava|Typhlosion|Totodile|Croconaw|Feraligatr;choice;;After Hall of Fame.
+OPS39;OmegaRuby|AlphaSapphire;Unova starters (Birch);Snivy|Servine|Serperior|Tepig|Pignite|Emboar|Oshawott|Dewott|Samurott;choice;;After the Delta Episode.
+OPS40;OmegaRuby|AlphaSapphire;Sinnoh starters (Birch);Turtwig|Grotle|Torterra|Chimchar|Monferno|Infernape|Piplup|Prinplup|Empoleon;choice;;After the second Hall of Fame.
+OPS41;Sun|Moon|UltraSun|UltraMoon;Alola starters;Rowlet|Dartrix|Decidueye|Litten|Torracat|Incineroar|Popplio|Brionne|Primarina;choice;;
+OPS42;Sword|Shield;Galar starters;Grookey|Thwackey|Rillaboom|Scorbunny|Raboot|Cinderace|Sobble|Drizzile|Inteleon;choice;;
+OPS43;Sword|Shield;Urshifu style (Isle of Armor);Urshifu;choice;;Single Strike or Rapid Strike: form-level, but the CSVs have one Urshifu row, so the group reads "one Urshifu per save". Single Kubfu.
+OPS44;Sword|Shield;Alola starters (Isle of Armor);Rowlet|Dartrix|Decidueye|Litten|Torracat|Incineroar|Popplio|Brionne|Primarina;determined;starter;Matches the type of the Galar starter. 100 Diglett reward.
+OPS45;Sword|Shield;Calyrex steed (Crown Tundra);Glastrier|Spectrier;choice;;Carrot choice; Calyrex form follows the steed.
+OPS46;Sword|Shield;Regieleki or Regidrago (Crown Tundra);Regieleki|Regidrago;choice;;Regigigas needs both, so it needs a second save or a trade.
+OPS47;HOME;Kanto starter (Grand Oak, mobile);Bulbasaur|Charmander|Squirtle;choice;;Once per HOME account. Hidden Ability.
+OPS48;Scarlet|Violet;Paldea starters;Sprigatito|Floragato|Meowscarada|Fuecoco|Crocalor|Skeledirge|Quaxly|Quaxwell|Quaquaval;choice;;
+OPS49;LegendsZA;Galarian Slowpoke line;Slowpoke (Galarian Form)|Slowbro (Galarian Form)|Slowking (Galarian Form);stages;;Single Galarian Slowpoke (Side Mission 39); one of Slowbro/Slowking. Not exclusive with the Mega Dimension DLC (Hyperspace Lumiose).
+OPS50;XD;Eevee and Eeveelutions;Eevee|Vaporeon|Jolteon|Flareon|Espeon|Umbreon;choice+stages;;Single Eevee, no breeding.
+OPS51;XD;Fire Stone evolutions;Ninetales|Arcanine|Flareon;single_item;;At most two Fire Stones, so at most two of three. Gateon Port item choice also competes with Water/Thunder Stone and Sun/Moon Shard.
+OPS52;XD;Leaf Stone evolutions;Victreebel|Shiftry;single_item;;One Leaf Stone (Cipher Lab).
+OPS53;Ranger;Partner;Plusle|Minun;determined;player gender;Male → Minun, female → Plusle. Not available elsewhere in Ranger.

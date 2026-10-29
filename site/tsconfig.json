@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable", "WebWorker"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["vite/client"],
+    "noEmit": true
+  },
+  "include": ["src", "../engine/src/data.ts", "../engine/src/engine.ts", "../engine/src/games.ts", "../engine/src/rewards.ts", "../engine/src/prepare.ts"]
+}

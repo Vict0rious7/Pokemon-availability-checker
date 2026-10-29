@@ -1,17 +1,35 @@
 # Pokémon availability checker
 
-This app aims to help collectors find out which Pokémon they are able to collect. 
+Pokémon Bank and Poké Transporter close on **25 February 2027**. After that, Pokémon from the DS and 3DS games can no longer reach Pokémon HOME.
 
-By selecting the games and consoles that you own, the app gives you the list of Pokémon that you can obtain, along with the games they can be obtained in. 
+Enter the games, consoles and services you own, where your collection will live (Pokémon HOME or one game) and which generations count. The checker shows which Pokémon you can bring there, and which ones you can bring only if you move them before Bank closes.
 
-Link: https://pokemon-availability-checker.streamlit.app 
+**Open the checker: https://vict0rious7.github.io/Pokemon-availability-checker/**
 
-# Features
+## Features
 
-- Checker: Input your games and consoles and the Pokémon you can obtain will appear in the Results tab. Also includes a list of unobtainable Pokémon.
+- **Every game from Red to Legends: Z-A** (including the Mega Dimension DLC and FireRed/LeafGreen on Switch), with copies, DLC, consoles, Pokémon HOME, Bank, GO and side games such as My Pokémon Ranch, Pokéwalker and Dream Radar.
+- **Paths, not just answers**: for each Pokémon, how it gets there (catch, trade, breed, evolve, Pal Park, Poké Transfer, Bank, HOME…), grouped by game family.
+- **"Move before 25 Feb 2027"** marks what depends on Bank and Transporter; "can't live there" sets apart Pokémon the chosen game cannot hold.
+- **Flags for what needs planning**: choose one (starters, fossils…), only one, one per save, needs a female, cables, region-specific discs.
+- **Shareable**: your selections live in the page address. Bookmark it, or send it to show someone the same results.
+- **Finder**: where each Pokémon and form can be obtained, game by game, including side games and Pokémon GO.
 
-- Finder: Lists all the Pokémon and their forms, along with all the possible ways of obtaining them. Useful when trying to complete your collection !
+## How it works
 
-- Roadmap: Current and future features being worked on. Don't hesitate to submit your ideas !
+`engine/` (TypeScript) turns the availability data into facts ("this Pokémon can be in this game") and applies transfer routes until nothing new appears. It runs in the browser, in a Web Worker. `site/` is the static site (Vite, Preact). `data/` holds the availability tables and the extra rules data.
 
-- Credits: Remember to credit this app when sharing it online
+Every push to `rebuild` runs two test suites before anything is published: the new engine against 19 reference profiles from the previous version, and the destination tests in `reference/destinations.json`. A failing test blocks the deploy.
+
+    cd site && npm ci && npm run dev    # run the site locally
+    cd engine && npm ci                 # tests: see engine/README.md
+
+## Credits
+
+Availability data adapted from [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_availability) (CC BY-NC-SA 2.5; the data in `data/` stays under that licence). Evolution, Egg Group and species data from [PokéAPI](https://pokeapi.co/). Code under the MIT licence.
+
+Pokémon and Pokémon character names are trademarks of Nintendo, Creatures and Game Freak. This is an unofficial fan project.
+
+Found a wrong result? [Open an issue](https://github.com/Vict0rious7/Pokemon-availability-checker/issues) with the page link, the Pokémon and where you saw the right answer.
+
+The previous Streamlit version lives on the `legacy` branch.

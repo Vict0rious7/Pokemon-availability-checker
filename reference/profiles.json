@@ -1,0 +1,508 @@
+{
+  "engine_commit": "4f93c6a97cd356a8e19dbdca301985791d843bf9",
+  "profiles": [
+    {
+      "id": "P01",
+      "kind": "realistic",
+      "description": "All five Gen 4 core games, two DS",
+      "exercises": [
+        "R3 Gen 4 trades",
+        "R23 HGSS Rayquaza",
+        "R25 Spiritomb"
+      ],
+      "inputs": {
+        "diamond": true,
+        "pearl": true,
+        "platinum": true,
+        "heartgold": true,
+        "soulsilver": true,
+        "ds_number": "2+"
+      },
+      "probes": [
+        "Rayquaza",
+        "Spiritomb",
+        "Electivire",
+        "Gengar",
+        "Kabuto",
+        "Kabutops"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P02",
+      "kind": "realistic",
+      "description": "Everything owned, every count 2+ (the Finder configuration)",
+      "exercises": [
+        "R8 ignored codes",
+        "never-obtainable list"
+      ],
+      "inputs": "ALL",
+      "probes": [
+        "Victini",
+        "Pecharunt",
+        "Magearna"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P03",
+      "kind": "realistic",
+      "description": "All eight 3DS core games, two 3DS, no Bank",
+      "exercises": [
+        "R3 Gen 6-7 trades",
+        "R36-R51 pairs",
+        "R7 Magearna"
+      ],
+      "inputs": {
+        "x": true,
+        "y": true,
+        "omega_ruby": true,
+        "aplha_sapphire": true,
+        "sun": true,
+        "moon": true,
+        "ultrasun": true,
+        "ultramoon": true,
+        "three_ds_number": "2+"
+      },
+      "probes": [
+        "Suicune",
+        "Rayquaza",
+        "Giratina",
+        "Landorus",
+        "Kyurem",
+        "Magearna"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P04",
+      "kind": "edge",
+      "description": "Ultra Sun + Ultra Moon + Bank on one 3DS",
+      "exercises": [
+        "R36-R51 pairs",
+        "Q7"
+      ],
+      "inputs": {
+        "ultrasun": true,
+        "ultramoon": true,
+        "bank": true,
+        "three_ds_number": "1"
+      },
+      "probes": [
+        "Suicune",
+        "Rayquaza",
+        "Giratina",
+        "Landorus",
+        "Kyurem"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P05",
+      "kind": "edge",
+      "description": "Ultra Sun + Pearl + HeartGold + Black, one DS + one 3DS, Transporter and Bank",
+      "exercises": [
+        "R36 Suicune via HG",
+        "R38 Rayquaza via HG",
+        "R42 Giratina via Pearl",
+        "R46/R50 negatives"
+      ],
+      "inputs": {
+        "ultrasun": true,
+        "pearl": true,
+        "heartgold": true,
+        "black": true,
+        "ds_number": "1",
+        "three_ds_number": "1",
+        "transporter": true,
+        "bank": true
+      },
+      "probes": [
+        "Suicune",
+        "Rayquaza",
+        "Giratina",
+        "Landorus",
+        "Kyurem"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P06",
+      "kind": "edge",
+      "description": "Ultra Moon + Ruby + Diamond + White, DS Lite + one 3DS, one GBA, Transporter and Bank",
+      "exercises": [
+        "R39 Rayquaza via Gen 3 chain",
+        "R37 negative",
+        "R26 Regigigas",
+        "R21 Ruby dual-slot"
+      ],
+      "inputs": {
+        "ultramoon": true,
+        "ruby": true,
+        "diamond": true,
+        "white": true,
+        "og_ds": true,
+        "ds_number": "1",
+        "three_ds_number": "1",
+        "gba_number": "1",
+        "transporter": true,
+        "bank": true
+      },
+      "probes": [
+        "Rayquaza",
+        "Suicune",
+        "Regigigas",
+        "Seedot",
+        "Lotad",
+        "Zangoose"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P07",
+      "kind": "edge",
+      "description": "Diamond + Pearl + FireRed + LeafGreen + Emerald, DS Lite, two DS, two GBA",
+      "exercises": [
+        "R9/R19 dual-slot",
+        "R27/R28 Electivire, Magmortar",
+        "R29 Gliscor",
+        "R18 negative",
+        "R3 Gen 3 trades"
+      ],
+      "inputs": {
+        "diamond": true,
+        "pearl": true,
+        "firered": true,
+        "leafgreen": true,
+        "emerald": true,
+        "og_ds": true,
+        "ds_number": "2+",
+        "gba_number": "2+"
+      },
+      "probes": [
+        "Caterpie",
+        "Weedle",
+        "Gengar",
+        "Electivire",
+        "Magmortar",
+        "Gliscor",
+        "Shuckle",
+        "Elekid",
+        "Chikorita",
+        "Tangela",
+        "Tangrowth"
+      ],
+      "known_wrong": [
+        {
+          "pokemon": "Tangrowth",
+          "note": "Old engine: not obtainable. Expected: Diamond, Pearl, from a Pal Park Tangela (FireRed/LeafGreen) evolved there. Bulbapedia codes D/P as Ev. Pending U15"
+        }
+      ]
+    },
+    {
+      "id": "P08",
+      "kind": "edge",
+      "description": "Black alone, one DS",
+      "exercises": [
+        "R3 negative",
+        "R34 negative"
+      ],
+      "inputs": {
+        "black": true,
+        "ds_number": "1"
+      },
+      "probes": [
+        "Karrablast",
+        "Shelmet",
+        "Escavalier",
+        "Accelgor",
+        "Landorus"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P09",
+      "kind": "edge",
+      "description": "Black + White, two DS",
+      "exercises": [
+        "R3 Gen 5 trades",
+        "R34 Landorus"
+      ],
+      "inputs": {
+        "black": true,
+        "white": true,
+        "ds_number": "2+"
+      },
+      "probes": [
+        "Karrablast",
+        "Shelmet",
+        "Escavalier",
+        "Accelgor",
+        "Landorus"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P10",
+      "kind": "edge",
+      "description": "Brilliant Diamond + Let's Go Pikachu + Sword + Legends: Arceus, one Switch",
+      "exercises": [
+        "R17 Mew (Q1)",
+        "R24 Jirachi",
+        "R31 Arceus",
+        "R32 Darkrai, Shaymin"
+      ],
+      "inputs": {
+        "brilliant_diamond": true,
+        "lg_pikachu": true,
+        "sword": true,
+        "legends_arceus": true,
+        "switch_number": "1"
+      },
+      "probes": [
+        "Mew",
+        "Jirachi",
+        "Arceus",
+        "Darkrai",
+        "Shaymin"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P11",
+      "kind": "realistic",
+      "description": "Sword, Shield, Scarlet, Violet, all with DLC, two Switches",
+      "exercises": [
+        "R2 DLC",
+        "R4 CC in DLC",
+        "R3 ETD",
+        "R33 Spiritomb (Q3)"
+      ],
+      "inputs": {
+        "sword": true,
+        "sword_dlc": true,
+        "shield": true,
+        "shield_dlc": true,
+        "scarlet": true,
+        "scarlet_dlc": true,
+        "violet": true,
+        "violet_dlc": true,
+        "switch_number": "2+"
+      },
+      "probes": [
+        "Spiritomb",
+        "Porygon2",
+        "Porygon-Z",
+        "Lugia",
+        "Ho-Oh",
+        "Regigigas",
+        "Great Tusk",
+        "Iron Treads"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P12",
+      "kind": "edge",
+      "description": "Sword + DLC alone, one Switch",
+      "exercises": [
+        "R33 Spiritomb (Q3)",
+        "R3 ETD negative",
+        "R4 negative"
+      ],
+      "inputs": {
+        "sword": true,
+        "sword_dlc": true,
+        "switch_number": "1"
+      },
+      "probes": [
+        "Spiritomb",
+        "Porygon2",
+        "Lugia",
+        "Ho-Oh"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P13",
+      "kind": "edge",
+      "description": "Scarlet + DLC alone, one Switch",
+      "exercises": [
+        "R35 Galarian Weezing (Q6)",
+        "Q5 Galarian Meowth",
+        "R4 negative",
+        "Q28 Pecharunt"
+      ],
+      "inputs": {
+        "scarlet": true,
+        "scarlet_dlc": true,
+        "switch_number": "1"
+      },
+      "probes": [
+        "Weezing",
+        "Meowth",
+        "Great Tusk",
+        "Pecharunt",
+        "Lilligant"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P14",
+      "kind": "realistic",
+      "description": "Virtual Console Red, Blue, Gold, Crystal, two 3DS",
+      "exercises": [
+        "R3 Gen 1-2 trades",
+        "R16 Celebi"
+      ],
+      "inputs": {
+        "red": true,
+        "blue": true,
+        "gold": true,
+        "crystal": true,
+        "three_ds_number": "2+"
+      },
+      "probes": [
+        "Alakazam",
+        "Machamp",
+        "Steelix",
+        "Celebi",
+        "Mew"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P15",
+      "kind": "edge",
+      "description": "Ruby + Sapphire + Colosseum (both bonus discs) + XD + PAL Channel, two GBA",
+      "exercises": [
+        "R12-R15 GameCube side",
+        "R3 Gen 3 trades",
+        "Q13 XD Scizor"
+      ],
+      "inputs": {
+        "ruby": true,
+        "sapphire": true,
+        "colo": true,
+        "bonus_disc": true,
+        "bonus_disc_language": "Both",
+        "xd": true,
+        "channel": true,
+        "gba_number": "2+"
+      },
+      "probes": [
+        "Jirachi",
+        "Celebi",
+        "Pikachu",
+        "Entei",
+        "Scizor",
+        "Chikorita"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P16",
+      "kind": "edge",
+      "description": "Diamond + Platinum + Western Ranch + Western Battle Revolution + Ranger, one DS",
+      "exercises": [
+        "R10 Ranch",
+        "R11 BR Pikachu",
+        "R27/R28 BR fallback",
+        "R30 Ranger",
+        "R25 Spiritomb negative"
+      ],
+      "inputs": {
+        "diamond": true,
+        "platinum": true,
+        "ranch": true,
+        "ranch_language": "Western",
+        "battle_rev": true,
+        "battle_rev_language": "Western",
+        "ranger": true,
+        "ds_number": "1"
+      },
+      "probes": [
+        "Mew",
+        "Pikachu",
+        "Electivire",
+        "Magmortar",
+        "Manaphy",
+        "Phione",
+        "Spiritomb"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P17",
+      "kind": "realistic",
+      "description": "HeartGold + SoulSilver + Pokéwalker, two DS",
+      "exercises": [
+        "R6 Pokéwalker",
+        "R23 Rayquaza (Q2)"
+      ],
+      "inputs": {
+        "heartgold": true,
+        "soulsilver": true,
+        "pokewalker": true,
+        "ds_number": "2+"
+      },
+      "probes": [
+        "Rayquaza",
+        "Skitty",
+        "Feebas",
+        "Spiritomb"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P18",
+      "kind": "realistic",
+      "description": "Black 2 + White 2 + Dream Radar, one DS + one 3DS",
+      "exercises": [
+        "R4 B2W2 CC",
+        "R5 Dream Radar incl. DRET"
+      ],
+      "inputs": {
+        "black2": true,
+        "white2": true,
+        "dream_radar": true,
+        "ds_number": "1",
+        "three_ds_number": "1"
+      },
+      "probes": [
+        "Porygon2",
+        "Porygon-Z",
+        "Regice",
+        "Registeel",
+        "Regigigas",
+        "Dialga",
+        "Landorus"
+      ],
+      "known_wrong": []
+    },
+    {
+      "id": "P19",
+      "kind": "edge",
+      "description": "Omega Ruby + White, one DS + one 3DS, Transporter and Bank",
+      "exercises": [
+        "R44 Landorus via White",
+        "R48 Kyurem via White",
+        "R40 negative"
+      ],
+      "inputs": {
+        "omega_ruby": true,
+        "white": true,
+        "ds_number": "1",
+        "three_ds_number": "1",
+        "transporter": true,
+        "bank": true
+      },
+      "probes": [
+        "Landorus",
+        "Kyurem",
+        "Giratina"
+      ],
+      "known_wrong": []
+    }
+  ]
+}

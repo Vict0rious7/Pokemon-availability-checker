@@ -1,0 +1,9155 @@
+{
+ "engine": {
+  "repo": "Vict0rious7/Pokemon-availability-checker",
+  "commit": "4f93c6a97cd356a8e19dbdca301985791d843bf9"
+ },
+ "profile": {
+  "id": "P11",
+  "kind": "realistic",
+  "description": "Sword, Shield, Scarlet, Violet, all with DLC, two Switches",
+  "exercises": [
+   "R2 DLC",
+   "R4 CC in DLC",
+   "R3 ETD",
+   "R33 Spiritomb (Q3)"
+  ],
+  "probes": [
+   "Spiritomb",
+   "Porygon2",
+   "Porygon-Z",
+   "Lugia",
+   "Ho-Oh",
+   "Regigigas",
+   "Great Tusk",
+   "Iron Treads"
+  ],
+  "known_wrong": [],
+  "inputs": {
+   "red": false,
+   "green": false,
+   "blue": false,
+   "yellow": false,
+   "gold": false,
+   "silver": false,
+   "crystal": false,
+   "ruby": false,
+   "sapphire": false,
+   "firered": false,
+   "leafgreen": false,
+   "emerald": false,
+   "colo": false,
+   "bonus_disc": false,
+   "bonus_disc_language": null,
+   "xd": false,
+   "channel": false,
+   "diamond": false,
+   "pearl": false,
+   "platinum": false,
+   "heartgold": false,
+   "soulsilver": false,
+   "pokewalker": false,
+   "ranch": false,
+   "ranch_language": null,
+   "ranger": false,
+   "battle_rev": false,
+   "battle_rev_language": null,
+   "black": false,
+   "white": false,
+   "black2": false,
+   "white2": false,
+   "dream_radar": false,
+   "x": false,
+   "y": false,
+   "omega_ruby": false,
+   "aplha_sapphire": false,
+   "sun": false,
+   "moon": false,
+   "ultrasun": false,
+   "ultramoon": false,
+   "lg_pikachu": false,
+   "lg_eevee": false,
+   "sword": true,
+   "sword_dlc": true,
+   "shield": true,
+   "shield_dlc": true,
+   "brilliant_diamond": false,
+   "shining_pearl": false,
+   "legends_arceus": false,
+   "scarlet": true,
+   "scarlet_dlc": true,
+   "violet": true,
+   "violet_dlc": true,
+   "legends_za": false,
+   "legends_za_dlc": false,
+   "og_ds": false,
+   "transporter": false,
+   "bank": false,
+   "home": false,
+   "gb_gbc_number": "0",
+   "gba_number": "0",
+   "ds_number": "0",
+   "three_ds_number": "0",
+   "switch_number": "2+"
+  }
+ },
+ "counts": {
+  "available": 997,
+  "unavailable": 90
+ },
+ "available": [
+  {
+   "number": "1",
+   "name": "Bulbasaur",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "2",
+   "name": "Ivysaur",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "3",
+   "name": "Venusaur",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "4",
+   "name": "Charmander",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "5",
+   "name": "Charmeleon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "6",
+   "name": "Charizard",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "7",
+   "name": "Squirtle",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "8",
+   "name": "Wartortle",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "9",
+   "name": "Blastoise",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "10",
+   "name": "Caterpie",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "11",
+   "name": "Metapod",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "12",
+   "name": "Butterfree",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "23",
+   "name": "Ekans",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "24",
+   "name": "Arbok",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "25",
+   "name": "Pikachu",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "26",
+   "name": "Raichu",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "26",
+   "name": "Raichu (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "27",
+   "name": "Sandshrew",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "27",
+   "name": "Sandshrew (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "28",
+   "name": "Sandslash",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "28",
+   "name": "Sandslash (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "29",
+   "name": "Nidoran♀",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "30",
+   "name": "Nidorina",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "31",
+   "name": "Nidoqueen",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "32",
+   "name": "Nidoran♂",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "33",
+   "name": "Nidorino",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "34",
+   "name": "Nidoking",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "35",
+   "name": "Clefairy",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "36",
+   "name": "Clefable",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "37",
+   "name": "Vulpix",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "37",
+   "name": "Vulpix (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "38",
+   "name": "Ninetales",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "38",
+   "name": "Ninetales (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "39",
+   "name": "Jigglypuff",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "40",
+   "name": "Wigglytuff",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "41",
+   "name": "Zubat",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "42",
+   "name": "Golbat",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "43",
+   "name": "Oddish",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "44",
+   "name": "Gloom",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "45",
+   "name": "Vileplume",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "48",
+   "name": "Venonat",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "49",
+   "name": "Venomoth",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "50",
+   "name": "Diglett",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "50",
+   "name": "Diglett (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "51",
+   "name": "Dugtrio",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "51",
+   "name": "Dugtrio (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "52",
+   "name": "Meowth",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "52",
+   "name": "Meowth (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "52",
+   "name": "Meowth (Galarian Form)",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "53",
+   "name": "Persian",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "53",
+   "name": "Persian (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "54",
+   "name": "Psyduck",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "55",
+   "name": "Golduck",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "56",
+   "name": "Mankey",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "57",
+   "name": "Primeape",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "58",
+   "name": "Growlithe",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "58",
+   "name": "Growlithe (Hisuian Form)",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "59",
+   "name": "Arcanine",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "59",
+   "name": "Arcanine (Hisuian Form)",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "60",
+   "name": "Poliwag",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "61",
+   "name": "Poliwhirl",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "62",
+   "name": "Poliwrath",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "63",
+   "name": "Abra",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "64",
+   "name": "Kadabra",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "65",
+   "name": "Alakazam",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "66",
+   "name": "Machop",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "67",
+   "name": "Machoke",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "68",
+   "name": "Machamp",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "69",
+   "name": "Bellsprout",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "70",
+   "name": "Weepinbell",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "71",
+   "name": "Victreebel",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "72",
+   "name": "Tentacool",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "73",
+   "name": "Tentacruel",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "74",
+   "name": "Geodude",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "74",
+   "name": "Geodude (Alolan Form)",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "75",
+   "name": "Graveler",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "75",
+   "name": "Graveler (Alolan Form)",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "76",
+   "name": "Golem",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "76",
+   "name": "Golem (Alolan Form)",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "77",
+   "name": "Ponyta",
+   "games": [
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "77",
+   "name": "Ponyta (Galarian Form)",
+   "games": [
+    "Shield"
+   ]
+  },
+  {
+   "number": "78",
+   "name": "Rapidash",
+   "games": [
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "78",
+   "name": "Rapidash (Galarian Form)",
+   "games": [
+    "Shield"
+   ]
+  },
+  {
+   "number": "79",
+   "name": "Slowpoke",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "79",
+   "name": "Slowpoke (Galarian Form)",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "80",
+   "name": "Slowbro",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "80",
+   "name": "Slowbro (Galarian Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "81",
+   "name": "Magnemite",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "82",
+   "name": "Magneton",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "83",
+   "name": "Farfetch'd",
+   "games": [
+    "Sword DLC"
+   ]
+  },
+  {
+   "number": "83",
+   "name": "Farfetch'd (Galarian Form)",
+   "games": [
+    "Sword"
+   ]
+  },
+  {
+   "number": "84",
+   "name": "Doduo",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "85",
+   "name": "Dodrio",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "86",
+   "name": "Seel",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "87",
+   "name": "Dewgong",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "88",
+   "name": "Grimer",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "88",
+   "name": "Grimer (Alolan Form)",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "89",
+   "name": "Muk",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "89",
+   "name": "Muk (Alolan Form)",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "90",
+   "name": "Shellder",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "91",
+   "name": "Cloyster",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "92",
+   "name": "Gastly",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "93",
+   "name": "Haunter",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "94",
+   "name": "Gengar",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "95",
+   "name": "Onix",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "96",
+   "name": "Drowzee",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "97",
+   "name": "Hypno",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "98",
+   "name": "Krabby",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "99",
+   "name": "Kingler",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "100",
+   "name": "Voltorb",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "101",
+   "name": "Electrode",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "102",
+   "name": "Exeggcute",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "103",
+   "name": "Exeggutor",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "103",
+   "name": "Exeggutor (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "104",
+   "name": "Cubone",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "105",
+   "name": "Marowak",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "105",
+   "name": "Marowak (Alolan Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "106",
+   "name": "Hitmonlee",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "107",
+   "name": "Hitmonchan",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "108",
+   "name": "Lickitung",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "109",
+   "name": "Koffing",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "110",
+   "name": "Weezing",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "110",
+   "name": "Weezing (Galarian Form)",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "111",
+   "name": "Rhyhorn",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "112",
+   "name": "Rhydon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "113",
+   "name": "Chansey",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "114",
+   "name": "Tangela",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "115",
+   "name": "Kangaskhan",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "116",
+   "name": "Horsea",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "117",
+   "name": "Seadra",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "118",
+   "name": "Goldeen",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "119",
+   "name": "Seaking",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "120",
+   "name": "Staryu",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "121",
+   "name": "Starmie",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "122",
+   "name": "Mr. Mime",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "122",
+   "name": "Mr. Mime (Galarian Form)",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "123",
+   "name": "Scyther",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "124",
+   "name": "Jynx",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "125",
+   "name": "Electabuzz",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "126",
+   "name": "Magmar",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "127",
+   "name": "Pinsir",
+   "games": [
+    "Sword DLC"
+   ]
+  },
+  {
+   "number": "128",
+   "name": "Tauros",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "128",
+   "name": "Tauros (Paldean Combat Form)",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "128",
+   "name": "Tauros (Paldean Blaze Form)",
+   "games": [
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "128",
+   "name": "Tauros (Paldean Aqua Form)",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "129",
+   "name": "Magikarp",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "130",
+   "name": "Gyarados",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "131",
+   "name": "Lapras",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "132",
+   "name": "Ditto",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "133",
+   "name": "Eevee",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "134",
+   "name": "Vaporeon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "135",
+   "name": "Jolteon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "136",
+   "name": "Flareon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "137",
+   "name": "Porygon",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "138",
+   "name": "Omanyte",
+   "games": [
+    "Sword DLC"
+   ]
+  },
+  {
+   "number": "139",
+   "name": "Omastar",
+   "games": [
+    "Sword DLC"
+   ]
+  },
+  {
+   "number": "140",
+   "name": "Kabuto",
+   "games": [
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "141",
+   "name": "Kabutops",
+   "games": [
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "142",
+   "name": "Aerodactyl",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "143",
+   "name": "Snorlax",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "144",
+   "name": "Articuno",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "144",
+   "name": "Articuno (Galarian Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "145",
+   "name": "Zapdos",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "145",
+   "name": "Zapdos (Galarian Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "146",
+   "name": "Moltres",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "146",
+   "name": "Moltres (Galarian Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "147",
+   "name": "Dratini",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "148",
+   "name": "Dragonair",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "149",
+   "name": "Dragonite",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "150",
+   "name": "Mewtwo",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "152",
+   "name": "Chikorita",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "153",
+   "name": "Bayleef",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "154",
+   "name": "Meganium",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "155",
+   "name": "Cyndaquil",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "156",
+   "name": "Quilava",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "157",
+   "name": "Typhlosion",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "158",
+   "name": "Totodile",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "159",
+   "name": "Croconaw",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "160",
+   "name": "Feraligatr",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "161",
+   "name": "Sentret",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "162",
+   "name": "Furret",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "163",
+   "name": "Hoothoot",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "164",
+   "name": "Noctowl",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "167",
+   "name": "Spinarak",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "168",
+   "name": "Ariados",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "169",
+   "name": "Crobat",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "170",
+   "name": "Chinchou",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "171",
+   "name": "Lanturn",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "172",
+   "name": "Pichu",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "173",
+   "name": "Cleffa",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "174",
+   "name": "Igglybuff",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "175",
+   "name": "Togepi",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "176",
+   "name": "Togetic",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "177",
+   "name": "Natu",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "178",
+   "name": "Xatu",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "179",
+   "name": "Mareep",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "180",
+   "name": "Flaaffy",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "181",
+   "name": "Ampharos",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "182",
+   "name": "Bellossom",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "183",
+   "name": "Marill",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "184",
+   "name": "Azumarill",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "185",
+   "name": "Sudowoodo",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "186",
+   "name": "Politoed",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "187",
+   "name": "Hoppip",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "188",
+   "name": "Skiploom",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "189",
+   "name": "Jumpluff",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "190",
+   "name": "Aipom",
+   "games": [
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "191",
+   "name": "Sunkern",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "192",
+   "name": "Sunflora",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "193",
+   "name": "Yanma",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "194",
+   "name": "Wooper",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "194",
+   "name": "Wooper (Paldean Form)",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "195",
+   "name": "Quagsire",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "196",
+   "name": "Espeon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "197",
+   "name": "Umbreon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "198",
+   "name": "Murkrow",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "199",
+   "name": "Slowking",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "199",
+   "name": "Slowking (Galarian Form)",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "200",
+   "name": "Misdreavus",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "202",
+   "name": "Wobbuffet",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "203",
+   "name": "Girafarig",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "204",
+   "name": "Pineco",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "205",
+   "name": "Forretress",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "206",
+   "name": "Dunsparce",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "207",
+   "name": "Gligar",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "208",
+   "name": "Steelix",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "209",
+   "name": "Snubbull",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "210",
+   "name": "Granbull",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "211",
+   "name": "Qwilfish",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "211",
+   "name": "Qwilfish (Hisuian Form)",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "212",
+   "name": "Scizor",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "213",
+   "name": "Shuckle",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "214",
+   "name": "Heracross",
+   "games": [
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "215",
+   "name": "Sneasel",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "216",
+   "name": "Teddiursa",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "217",
+   "name": "Ursaring",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "218",
+   "name": "Slugma",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "219",
+   "name": "Magcargo",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "220",
+   "name": "Swinub",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "221",
+   "name": "Piloswine",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "222",
+   "name": "Corsola",
+   "games": [
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "222",
+   "name": "Corsola (Galarian Form)",
+   "games": [
+    "Shield"
+   ]
+  },
+  {
+   "number": "223",
+   "name": "Remoraid",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "224",
+   "name": "Octillery",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "225",
+   "name": "Delibird",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "226",
+   "name": "Mantine",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "227",
+   "name": "Skarmory",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "228",
+   "name": "Houndour",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "229",
+   "name": "Houndoom",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "230",
+   "name": "Kingdra",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "231",
+   "name": "Phanpy",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "232",
+   "name": "Donphan",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "233",
+   "name": "Porygon2",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "234",
+   "name": "Stantler",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "235",
+   "name": "Smeargle",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "236",
+   "name": "Tyrogue",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "237",
+   "name": "Hitmontop",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "238",
+   "name": "Smoochum",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "239",
+   "name": "Elekid",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "240",
+   "name": "Magby",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "241",
+   "name": "Miltank",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "242",
+   "name": "Blissey",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "243",
+   "name": "Raikou",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "244",
+   "name": "Entei",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "245",
+   "name": "Suicune",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "246",
+   "name": "Larvitar",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "247",
+   "name": "Pupitar",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "248",
+   "name": "Tyranitar",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "249",
+   "name": "Lugia",
+   "games": [
+    "Sword DLC⇄",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "250",
+   "name": "Ho-Oh",
+   "games": [
+    "Sword DLC",
+    "Shield DLC⇄",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "252",
+   "name": "Treecko",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "253",
+   "name": "Grovyle",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "254",
+   "name": "Sceptile",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "255",
+   "name": "Torchic",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "256",
+   "name": "Combusken",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "257",
+   "name": "Blaziken",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "258",
+   "name": "Mudkip",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "259",
+   "name": "Marshtomp",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "260",
+   "name": "Swampert",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "261",
+   "name": "Poochyena",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "262",
+   "name": "Mightyena",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "263",
+   "name": "Zigzagoon",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "263",
+   "name": "Zigzagoon (Galarian Form)",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "264",
+   "name": "Linoone",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "264",
+   "name": "Linoone (Galarian Form)",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "270",
+   "name": "Lotad",
+   "games": [
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "271",
+   "name": "Lombre",
+   "games": [
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "272",
+   "name": "Ludicolo",
+   "games": [
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "273",
+   "name": "Seedot",
+   "games": [
+    "Sword",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "274",
+   "name": "Nuzleaf",
+   "games": [
+    "Sword",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "275",
+   "name": "Shiftry",
+   "games": [
+    "Sword",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "278",
+   "name": "Wingull",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "279",
+   "name": "Pelipper",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "280",
+   "name": "Ralts",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "281",
+   "name": "Kirlia",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "282",
+   "name": "Gardevoir",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "283",
+   "name": "Surskit",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "284",
+   "name": "Masquerain",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "285",
+   "name": "Shroomish",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "286",
+   "name": "Breloom",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "287",
+   "name": "Slakoth",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "288",
+   "name": "Vigoroth",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "289",
+   "name": "Slaking",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "290",
+   "name": "Nincada",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "291",
+   "name": "Ninjask",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "292",
+   "name": "Shedinja",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "293",
+   "name": "Whismur",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "294",
+   "name": "Loudred",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "295",
+   "name": "Exploud",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "296",
+   "name": "Makuhita",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "297",
+   "name": "Hariyama",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "298",
+   "name": "Azurill",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "299",
+   "name": "Nosepass",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "302",
+   "name": "Sableye",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "303",
+   "name": "Mawile",
+   "games": [
+    "Sword"
+   ]
+  },
+  {
+   "number": "304",
+   "name": "Aron",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "305",
+   "name": "Lairon",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "306",
+   "name": "Aggron",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "307",
+   "name": "Meditite",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "308",
+   "name": "Medicham",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "309",
+   "name": "Electrike",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "310",
+   "name": "Manectric",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "311",
+   "name": "Plusle",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "312",
+   "name": "Minun",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "313",
+   "name": "Volbeat",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "314",
+   "name": "Illumise",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "315",
+   "name": "Roselia",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "316",
+   "name": "Gulpin",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "317",
+   "name": "Swalot",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "318",
+   "name": "Carvanha",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "319",
+   "name": "Sharpedo",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "320",
+   "name": "Wailmer",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "321",
+   "name": "Wailord",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "322",
+   "name": "Numel",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "323",
+   "name": "Camerupt",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "324",
+   "name": "Torkoal",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "325",
+   "name": "Spoink",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "326",
+   "name": "Grumpig",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "328",
+   "name": "Trapinch",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "329",
+   "name": "Vibrava",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "330",
+   "name": "Flygon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "331",
+   "name": "Cacnea",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "332",
+   "name": "Cacturne",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "333",
+   "name": "Swablu",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "334",
+   "name": "Altaria",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "335",
+   "name": "Zangoose",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "336",
+   "name": "Seviper",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "337",
+   "name": "Lunatone",
+   "games": [
+    "Shield"
+   ]
+  },
+  {
+   "number": "338",
+   "name": "Solrock",
+   "games": [
+    "Sword"
+   ]
+  },
+  {
+   "number": "339",
+   "name": "Barboach",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "340",
+   "name": "Whiscash",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "341",
+   "name": "Corphish",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "342",
+   "name": "Crawdaunt",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "343",
+   "name": "Baltoy",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "344",
+   "name": "Claydol",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "345",
+   "name": "Lileep",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "346",
+   "name": "Cradily",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "347",
+   "name": "Anorith",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "348",
+   "name": "Armaldo",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "349",
+   "name": "Feebas",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "350",
+   "name": "Milotic",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "353",
+   "name": "Shuppet",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "354",
+   "name": "Banette",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "355",
+   "name": "Duskull",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "356",
+   "name": "Dusclops",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "357",
+   "name": "Tropius",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "358",
+   "name": "Chimecho",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "359",
+   "name": "Absol",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "360",
+   "name": "Wynaut",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "361",
+   "name": "Snorunt",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "362",
+   "name": "Glalie",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "363",
+   "name": "Spheal",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "364",
+   "name": "Sealeo",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "365",
+   "name": "Walrein",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "369",
+   "name": "Relicanth",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "370",
+   "name": "Luvdisc",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "371",
+   "name": "Bagon",
+   "games": [
+    "Sword DLC",
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "372",
+   "name": "Shelgon",
+   "games": [
+    "Sword DLC",
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "373",
+   "name": "Salamence",
+   "games": [
+    "Sword DLC",
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "374",
+   "name": "Beldum",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "375",
+   "name": "Metang",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "376",
+   "name": "Metagross",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "377",
+   "name": "Regirock",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "378",
+   "name": "Regice",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "379",
+   "name": "Registeel",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "380",
+   "name": "Latias",
+   "games": [
+    "Sword DLC⇄",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "381",
+   "name": "Latios",
+   "games": [
+    "Sword DLC",
+    "Shield DLC⇄",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "382",
+   "name": "Kyogre",
+   "games": [
+    "Sword DLC⇄",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "383",
+   "name": "Groudon",
+   "games": [
+    "Sword DLC",
+    "Shield DLC⇄",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "384",
+   "name": "Rayquaza",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "387",
+   "name": "Turtwig",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "388",
+   "name": "Grotle",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "389",
+   "name": "Torterra",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "390",
+   "name": "Chimchar",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "391",
+   "name": "Monferno",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "392",
+   "name": "Infernape",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "393",
+   "name": "Piplup",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "394",
+   "name": "Prinplup",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "395",
+   "name": "Empoleon",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "396",
+   "name": "Starly",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "397",
+   "name": "Staravia",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "398",
+   "name": "Staraptor",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "401",
+   "name": "Kricketot",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "402",
+   "name": "Kricketune",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "403",
+   "name": "Shinx",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "404",
+   "name": "Luxio",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "405",
+   "name": "Luxray",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "406",
+   "name": "Budew",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "407",
+   "name": "Roserade",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "408",
+   "name": "Cranidos",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "409",
+   "name": "Rampardos",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "410",
+   "name": "Shieldon",
+   "games": [
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "411",
+   "name": "Bastiodon",
+   "games": [
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "415",
+   "name": "Combee",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "416",
+   "name": "Vespiquen",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "417",
+   "name": "Pachirisu",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "418",
+   "name": "Buizel",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "419",
+   "name": "Floatzel",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "420",
+   "name": "Cherubi",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "421",
+   "name": "Cherrim",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "422",
+   "name": "Shellos (West)",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "422",
+   "name": "Shellos (East)",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "423",
+   "name": "Gastrodon (West)",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "423",
+   "name": "Gastrodon (East)",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "424",
+   "name": "Ambipom",
+   "games": [
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "425",
+   "name": "Drifloon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "426",
+   "name": "Drifblim",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "427",
+   "name": "Buneary",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "428",
+   "name": "Lopunny",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "429",
+   "name": "Mismagius",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "430",
+   "name": "Honchkrow",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "433",
+   "name": "Chingling",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "434",
+   "name": "Stunky",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "435",
+   "name": "Skuntank",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "436",
+   "name": "Bronzor",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "437",
+   "name": "Bronzong",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "438",
+   "name": "Bonsly",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "439",
+   "name": "Mime Jr.",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "440",
+   "name": "Happiny",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "442",
+   "name": "Spiritomb",
+   "games": [
+    "Sword DLC⇄",
+    "Shield DLC⇄",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "443",
+   "name": "Gible",
+   "games": [
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "444",
+   "name": "Gabite",
+   "games": [
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "445",
+   "name": "Garchomp",
+   "games": [
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "446",
+   "name": "Munchlax",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "447",
+   "name": "Riolu",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "448",
+   "name": "Lucario",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "449",
+   "name": "Hippopotas",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "450",
+   "name": "Hippowdon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "451",
+   "name": "Skorupi",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "452",
+   "name": "Drapion",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "453",
+   "name": "Croagunk",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "454",
+   "name": "Toxicroak",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "456",
+   "name": "Finneon",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "457",
+   "name": "Lumineon",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "458",
+   "name": "Mantyke",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "459",
+   "name": "Snover",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "460",
+   "name": "Abomasnow",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "461",
+   "name": "Weavile",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "462",
+   "name": "Magnezone",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "463",
+   "name": "Lickilicky",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "464",
+   "name": "Rhyperior",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "465",
+   "name": "Tangrowth",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "466",
+   "name": "Electivire",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "467",
+   "name": "Magmortar",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "468",
+   "name": "Togekiss",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "469",
+   "name": "Yanmega",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "470",
+   "name": "Leafeon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "471",
+   "name": "Glaceon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "472",
+   "name": "Gliscor",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "473",
+   "name": "Mamoswine",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "474",
+   "name": "Porygon-Z",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "475",
+   "name": "Gallade",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "476",
+   "name": "Probopass",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "477",
+   "name": "Dusknoir",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "478",
+   "name": "Froslass",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "479",
+   "name": "Rotom",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "480",
+   "name": "Uxie",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "481",
+   "name": "Mesprit",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "482",
+   "name": "Azelf",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "483",
+   "name": "Dialga",
+   "games": [
+    "Sword DLC",
+    "Shield DLC⇄"
+   ]
+  },
+  {
+   "number": "484",
+   "name": "Palkia",
+   "games": [
+    "Sword DLC⇄",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "485",
+   "name": "Heatran",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "486",
+   "name": "Regigigas",
+   "games": [
+    "Sword DLC⇄",
+    "Shield DLC⇄"
+   ]
+  },
+  {
+   "number": "487",
+   "name": "Giratina",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "488",
+   "name": "Cresselia",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "495",
+   "name": "Snivy",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "496",
+   "name": "Servine",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "497",
+   "name": "Serperior",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "498",
+   "name": "Tepig",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "499",
+   "name": "Pignite",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "500",
+   "name": "Emboar",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "501",
+   "name": "Oshawott",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "502",
+   "name": "Dewott",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "503",
+   "name": "Samurott",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "506",
+   "name": "Lillipup",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "507",
+   "name": "Herdier",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "508",
+   "name": "Stoutland",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "509",
+   "name": "Purrloin",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "510",
+   "name": "Liepard",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "517",
+   "name": "Munna",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "518",
+   "name": "Musharna",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "519",
+   "name": "Pidove",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "520",
+   "name": "Tranquill",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "521",
+   "name": "Unfezant",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "522",
+   "name": "Blitzle",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "523",
+   "name": "Zebstrika",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "524",
+   "name": "Roggenrola",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "525",
+   "name": "Boldore",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "526",
+   "name": "Gigalith",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "527",
+   "name": "Woobat",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "528",
+   "name": "Swoobat",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "529",
+   "name": "Drilbur",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "530",
+   "name": "Excadrill",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "531",
+   "name": "Audino",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "532",
+   "name": "Timburr",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "533",
+   "name": "Gurdurr",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "534",
+   "name": "Conkeldurr",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "535",
+   "name": "Tympole",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "536",
+   "name": "Palpitoad",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "537",
+   "name": "Seismitoad",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "538",
+   "name": "Throh",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "539",
+   "name": "Sawk",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "540",
+   "name": "Sewaddle",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "541",
+   "name": "Swadloon",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "542",
+   "name": "Leavanny",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "543",
+   "name": "Venipede",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "544",
+   "name": "Whirlipede",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "545",
+   "name": "Scolipede",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "546",
+   "name": "Cottonee",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "547",
+   "name": "Whimsicott",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "548",
+   "name": "Petilil",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "549",
+   "name": "Lilligant",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "550",
+   "name": "Basculin (Red)",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "550",
+   "name": "Basculin (Blue)",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "550",
+   "name": "Basculin (White)",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "551",
+   "name": "Sandile",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "552",
+   "name": "Krokorok",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "553",
+   "name": "Krookodile",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "554",
+   "name": "Darumaka",
+   "games": [
+    "Sword DLC"
+   ]
+  },
+  {
+   "number": "554",
+   "name": "Darumaka (Galarian Form)",
+   "games": [
+    "Sword"
+   ]
+  },
+  {
+   "number": "555",
+   "name": "Darmanitan",
+   "games": [
+    "Sword DLC"
+   ]
+  },
+  {
+   "number": "555",
+   "name": "Darmanitan (Galarian Form)",
+   "games": [
+    "Sword"
+   ]
+  },
+  {
+   "number": "556",
+   "name": "Maractus",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "557",
+   "name": "Dwebble",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "558",
+   "name": "Crustle",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "559",
+   "name": "Scraggy",
+   "games": [
+    "Sword",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "560",
+   "name": "Scrafty",
+   "games": [
+    "Sword",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "561",
+   "name": "Sigilyph",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "562",
+   "name": "Yamask",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "562",
+   "name": "Yamask (Galarian Form)",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "563",
+   "name": "Cofagrigus",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "564",
+   "name": "Tirtouga",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "565",
+   "name": "Carracosta",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "566",
+   "name": "Archen",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "567",
+   "name": "Archeops",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "568",
+   "name": "Trubbish",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "569",
+   "name": "Garbodor",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "570",
+   "name": "Zorua",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "571",
+   "name": "Zoroark",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "572",
+   "name": "Minccino",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "573",
+   "name": "Cinccino",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "574",
+   "name": "Gothita",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "575",
+   "name": "Gothorita",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "576",
+   "name": "Gothitelle",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "577",
+   "name": "Solosis",
+   "games": [
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "578",
+   "name": "Duosion",
+   "games": [
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "579",
+   "name": "Reuniclus",
+   "games": [
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "580",
+   "name": "Ducklett",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "581",
+   "name": "Swanna",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "582",
+   "name": "Vanillite",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "583",
+   "name": "Vanillish",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "584",
+   "name": "Vanilluxe",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "585",
+   "name": "Deerling",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "586",
+   "name": "Sawsbuck",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "587",
+   "name": "Emolga",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "588",
+   "name": "Karrablast",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "589",
+   "name": "Escavalier",
+   "games": [
+    "Sword",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "590",
+   "name": "Foongus",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "591",
+   "name": "Amoonguss",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "592",
+   "name": "Frillish",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "593",
+   "name": "Jellicent",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "594",
+   "name": "Alomomola",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "595",
+   "name": "Joltik",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "596",
+   "name": "Galvantula",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "597",
+   "name": "Ferroseed",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "598",
+   "name": "Ferrothorn",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "599",
+   "name": "Klink",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "600",
+   "name": "Klang",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "601",
+   "name": "Klinklang",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "602",
+   "name": "Tynamo",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "603",
+   "name": "Eelektrik",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "604",
+   "name": "Eelektross",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "605",
+   "name": "Elgyem",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "606",
+   "name": "Beheeyem",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "607",
+   "name": "Litwick",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "608",
+   "name": "Lampent",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "609",
+   "name": "Chandelure",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "610",
+   "name": "Axew",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "611",
+   "name": "Fraxure",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "612",
+   "name": "Haxorus",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "613",
+   "name": "Cubchoo",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "614",
+   "name": "Beartic",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "615",
+   "name": "Cryogonal",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "616",
+   "name": "Shelmet",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "617",
+   "name": "Accelgor",
+   "games": [
+    "Sword DLC",
+    "Shield"
+   ]
+  },
+  {
+   "number": "618",
+   "name": "Stunfisk",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "618",
+   "name": "Stunfisk (Galarian Form)",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "619",
+   "name": "Mienfoo",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "620",
+   "name": "Mienshao",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "621",
+   "name": "Druddigon",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "622",
+   "name": "Golett",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "623",
+   "name": "Golurk",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "624",
+   "name": "Pawniard",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "625",
+   "name": "Bisharp",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "626",
+   "name": "Bouffalant",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "627",
+   "name": "Rufflet",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "628",
+   "name": "Braviary",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "629",
+   "name": "Vullaby",
+   "games": [
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "630",
+   "name": "Mandibuzz",
+   "games": [
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "631",
+   "name": "Heatmor",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "632",
+   "name": "Durant",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "633",
+   "name": "Deino",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "634",
+   "name": "Zweilous",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "635",
+   "name": "Hydreigon",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "636",
+   "name": "Larvesta",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "637",
+   "name": "Volcarona",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "638",
+   "name": "Cobalion",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "639",
+   "name": "Terrakion",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "640",
+   "name": "Virizion",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "641",
+   "name": "Tornadus",
+   "games": [
+    "Sword DLC",
+    "Shield DLC⇄"
+   ]
+  },
+  {
+   "number": "642",
+   "name": "Thundurus",
+   "games": [
+    "Sword DLC⇄",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "643",
+   "name": "Reshiram",
+   "games": [
+    "Sword DLC",
+    "Shield DLC⇄",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "644",
+   "name": "Zekrom",
+   "games": [
+    "Sword DLC⇄",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "645",
+   "name": "Landorus",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "646",
+   "name": "Kyurem",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "647",
+   "name": "Keldeo",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "648",
+   "name": "Meloetta",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "650",
+   "name": "Chespin",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "651",
+   "name": "Quilladin",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "652",
+   "name": "Chesnaught",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "653",
+   "name": "Fennekin",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "654",
+   "name": "Braixen",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "655",
+   "name": "Delphox",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "656",
+   "name": "Froakie",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "657",
+   "name": "Frogadier",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "658",
+   "name": "Greninja",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "659",
+   "name": "Bunnelby",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "660",
+   "name": "Diggersby",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "661",
+   "name": "Fletchling",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "662",
+   "name": "Fletchinder",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "663",
+   "name": "Talonflame",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "664",
+   "name": "Scatterbug",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "665",
+   "name": "Spewpa",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "666",
+   "name": "Vivillon",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "667",
+   "name": "Litleo",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "668",
+   "name": "Pyroar",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "669",
+   "name": "Flabébé",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "670",
+   "name": "Floette",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "671",
+   "name": "Florges",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "672",
+   "name": "Skiddo",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "673",
+   "name": "Gogoat",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "674",
+   "name": "Pancham",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "675",
+   "name": "Pangoro",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "677",
+   "name": "Espurr",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "678",
+   "name": "Meowstic",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "679",
+   "name": "Honedge",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "680",
+   "name": "Doublade",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "681",
+   "name": "Aegislash",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "682",
+   "name": "Spritzee",
+   "games": [
+    "Shield"
+   ]
+  },
+  {
+   "number": "683",
+   "name": "Aromatisse",
+   "games": [
+    "Shield"
+   ]
+  },
+  {
+   "number": "684",
+   "name": "Swirlix",
+   "games": [
+    "Sword"
+   ]
+  },
+  {
+   "number": "685",
+   "name": "Slurpuff",
+   "games": [
+    "Sword"
+   ]
+  },
+  {
+   "number": "686",
+   "name": "Inkay",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "687",
+   "name": "Malamar",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "688",
+   "name": "Binacle",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "689",
+   "name": "Barbaracle",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "690",
+   "name": "Skrelp",
+   "games": [
+    "Shield DLC",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "691",
+   "name": "Dragalge",
+   "games": [
+    "Shield DLC",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "692",
+   "name": "Clauncher",
+   "games": [
+    "Sword DLC",
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "693",
+   "name": "Clawitzer",
+   "games": [
+    "Sword DLC",
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "694",
+   "name": "Helioptile",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "695",
+   "name": "Heliolisk",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "696",
+   "name": "Tyrunt",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "697",
+   "name": "Tyrantrum",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "698",
+   "name": "Amaura",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "699",
+   "name": "Aurorus",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "700",
+   "name": "Sylveon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "701",
+   "name": "Hawlucha",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "702",
+   "name": "Dedenne",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "703",
+   "name": "Carbink",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "704",
+   "name": "Goomy",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "705",
+   "name": "Sliggoo",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "706",
+   "name": "Goodra",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "707",
+   "name": "Klefki",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "708",
+   "name": "Phantump",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "709",
+   "name": "Trevenant",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "710",
+   "name": "Pumpkaboo",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "711",
+   "name": "Gourgeist",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "712",
+   "name": "Bergmite",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "713",
+   "name": "Avalugg",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "714",
+   "name": "Noibat",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "715",
+   "name": "Noivern",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "716",
+   "name": "Xerneas",
+   "games": [
+    "Sword DLC",
+    "Shield DLC⇄"
+   ]
+  },
+  {
+   "number": "717",
+   "name": "Yveltal",
+   "games": [
+    "Sword DLC⇄",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "718",
+   "name": "Zygarde",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "722",
+   "name": "Rowlet",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "723",
+   "name": "Dartrix",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "724",
+   "name": "Decidueye",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "725",
+   "name": "Litten",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "726",
+   "name": "Torracat",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "727",
+   "name": "Incineroar",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "728",
+   "name": "Popplio",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "729",
+   "name": "Brionne",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "730",
+   "name": "Primarina",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "731",
+   "name": "Pikipek",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "732",
+   "name": "Trumbeak",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "733",
+   "name": "Toucannon",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "734",
+   "name": "Yungoos",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "735",
+   "name": "Gumshoos",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "736",
+   "name": "Grubbin",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "737",
+   "name": "Charjabug",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "738",
+   "name": "Vikavolt",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "739",
+   "name": "Crabrawler",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "740",
+   "name": "Crabominable",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "741",
+   "name": "Oricorio",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "742",
+   "name": "Cutiefly",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "743",
+   "name": "Ribombee",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "744",
+   "name": "Rockruff",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "745",
+   "name": "Lycanroc",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "746",
+   "name": "Wishiwashi",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "747",
+   "name": "Mareanie",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "748",
+   "name": "Toxapex",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "749",
+   "name": "Mudbray",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "750",
+   "name": "Mudsdale",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "751",
+   "name": "Dewpider",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "752",
+   "name": "Araquanid",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "753",
+   "name": "Fomantis",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "754",
+   "name": "Lurantis",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "755",
+   "name": "Morelull",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "756",
+   "name": "Shiinotic",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "757",
+   "name": "Salandit",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "758",
+   "name": "Salazzle",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "759",
+   "name": "Stufful",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "760",
+   "name": "Bewear",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "761",
+   "name": "Bounsweet",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "762",
+   "name": "Steenee",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "763",
+   "name": "Tsareena",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "764",
+   "name": "Comfey",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "765",
+   "name": "Oranguru",
+   "games": [
+    "Sword DLC",
+    "Shield",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "766",
+   "name": "Passimian",
+   "games": [
+    "Sword",
+    "Shield DLC",
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "767",
+   "name": "Wimpod",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "768",
+   "name": "Golisopod",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "769",
+   "name": "Sandygast",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "770",
+   "name": "Palossand",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "771",
+   "name": "Pyukumuku",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "772",
+   "name": "Type: Null",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "773",
+   "name": "Silvally",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "774",
+   "name": "Minior",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "775",
+   "name": "Komala",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "776",
+   "name": "Turtonator",
+   "games": [
+    "Sword"
+   ]
+  },
+  {
+   "number": "777",
+   "name": "Togedemaru",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "778",
+   "name": "Mimikyu",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "779",
+   "name": "Bruxish",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "780",
+   "name": "Drampa",
+   "games": [
+    "Shield"
+   ]
+  },
+  {
+   "number": "781",
+   "name": "Dhelmise",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "782",
+   "name": "Jangmo-o",
+   "games": [
+    "Sword",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "783",
+   "name": "Hakamo-o",
+   "games": [
+    "Sword",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "784",
+   "name": "Kommo-o",
+   "games": [
+    "Sword",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "785",
+   "name": "Tapu Koko",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "786",
+   "name": "Tapu Lele",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "787",
+   "name": "Tapu Bulu",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "788",
+   "name": "Tapu Fini",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "789",
+   "name": "Cosmog",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "790",
+   "name": "Cosmoem",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "791",
+   "name": "Solgaleo",
+   "games": [
+    "Sword DLC",
+    "Shield DLC⇄",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "792",
+   "name": "Lunala",
+   "games": [
+    "Sword DLC⇄",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "793",
+   "name": "Nihilego",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "794",
+   "name": "Buzzwole",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "795",
+   "name": "Pheromosa",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "796",
+   "name": "Xurkitree",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "797",
+   "name": "Celesteela",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "798",
+   "name": "Kartana",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "799",
+   "name": "Guzzlord",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "800",
+   "name": "Necrozma",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "803",
+   "name": "Poipole",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "804",
+   "name": "Naganadel",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "805",
+   "name": "Stakataka",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "806",
+   "name": "Blacephalon",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "810",
+   "name": "Grookey",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "811",
+   "name": "Thwackey",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "812",
+   "name": "Rillaboom",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "813",
+   "name": "Scorbunny",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "814",
+   "name": "Raboot",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "815",
+   "name": "Cinderace",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "816",
+   "name": "Sobble",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "817",
+   "name": "Drizzile",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "818",
+   "name": "Inteleon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "819",
+   "name": "Skwovet",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "820",
+   "name": "Greedent",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "821",
+   "name": "Rookidee",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "822",
+   "name": "Corvisquire",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "823",
+   "name": "Corviknight",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "824",
+   "name": "Blipbug",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "825",
+   "name": "Dottler",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "826",
+   "name": "Orbeetle",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "827",
+   "name": "Nickit",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "828",
+   "name": "Thievul",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "829",
+   "name": "Gossifleur",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "830",
+   "name": "Eldegoss",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "831",
+   "name": "Wooloo",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "832",
+   "name": "Dubwool",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "833",
+   "name": "Chewtle",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "834",
+   "name": "Drednaw",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "835",
+   "name": "Yamper",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "836",
+   "name": "Boltund",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "837",
+   "name": "Rolycoly",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "838",
+   "name": "Carkol",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "839",
+   "name": "Coalossal",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "840",
+   "name": "Applin",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "841",
+   "name": "Flapple",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "842",
+   "name": "Appletun",
+   "games": [
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "843",
+   "name": "Silicobra",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "844",
+   "name": "Sandaconda",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "845",
+   "name": "Cramorant",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "846",
+   "name": "Arrokuda",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "847",
+   "name": "Barraskewda",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "848",
+   "name": "Toxel",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "849",
+   "name": "Toxtricity",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "850",
+   "name": "Sizzlipede",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "851",
+   "name": "Centiskorch",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "852",
+   "name": "Clobbopus",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "853",
+   "name": "Grapploct",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "854",
+   "name": "Sinistea",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "855",
+   "name": "Polteageist",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "856",
+   "name": "Hatenna",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "857",
+   "name": "Hattrem",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "858",
+   "name": "Hatterene",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "859",
+   "name": "Impidimp",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "860",
+   "name": "Morgrem",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "861",
+   "name": "Grimmsnarl",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "862",
+   "name": "Obstagoon",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "863",
+   "name": "Perrserker",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "864",
+   "name": "Cursola",
+   "games": [
+    "Shield"
+   ]
+  },
+  {
+   "number": "865",
+   "name": "Sirfetch'd",
+   "games": [
+    "Sword"
+   ]
+  },
+  {
+   "number": "866",
+   "name": "Mr. Rime",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "867",
+   "name": "Runerigus",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "868",
+   "name": "Milcery",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "869",
+   "name": "Alcremie",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "870",
+   "name": "Falinks",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "871",
+   "name": "Pincurchin",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "872",
+   "name": "Snom",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "873",
+   "name": "Frosmoth",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "874",
+   "name": "Stonjourner",
+   "games": [
+    "Sword",
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "875",
+   "name": "Eiscue",
+   "games": [
+    "Shield",
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "876",
+   "name": "Indeedee",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "877",
+   "name": "Morpeko",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "878",
+   "name": "Cufant",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "879",
+   "name": "Copperajah",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "880",
+   "name": "Dracozolt",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "881",
+   "name": "Arctozolt",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "882",
+   "name": "Dracovish",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "883",
+   "name": "Arctovish",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "884",
+   "name": "Duraludon",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "885",
+   "name": "Dreepy",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "886",
+   "name": "Drakloak",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "887",
+   "name": "Dragapult",
+   "games": [
+    "Sword",
+    "Shield",
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "888",
+   "name": "Zacian",
+   "games": [
+    "Sword"
+   ]
+  },
+  {
+   "number": "889",
+   "name": "Zamazenta",
+   "games": [
+    "Shield"
+   ]
+  },
+  {
+   "number": "890",
+   "name": "Eternatus",
+   "games": [
+    "Sword",
+    "Shield"
+   ]
+  },
+  {
+   "number": "891",
+   "name": "Kubfu",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "892",
+   "name": "Urshifu",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "894",
+   "name": "Regieleki",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "895",
+   "name": "Regidrago",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "896",
+   "name": "Glastrier",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC",
+    "Violet DLC⇄"
+   ]
+  },
+  {
+   "number": "897",
+   "name": "Spectrier",
+   "games": [
+    "Sword DLC",
+    "Shield DLC",
+    "Scarlet DLC⇄",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "898",
+   "name": "Calyrex",
+   "games": [
+    "Sword DLC",
+    "Shield DLC"
+   ]
+  },
+  {
+   "number": "900",
+   "name": "Kleavor",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "901",
+   "name": "Ursaluna (Bloodmoon)",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "902",
+   "name": "Basculegion",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "904",
+   "name": "Overqwil",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "906",
+   "name": "Sprigatito",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "907",
+   "name": "Floragato",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "908",
+   "name": "Meowscarada",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "909",
+   "name": "Fuecoco",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "910",
+   "name": "Crocalor",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "911",
+   "name": "Skeledirge",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "912",
+   "name": "Quaxly",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "913",
+   "name": "Quaxwell",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "914",
+   "name": "Quaquaval",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "915",
+   "name": "Lechonk",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "916",
+   "name": "Oinkologne",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "917",
+   "name": "Tarountula",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "918",
+   "name": "Spidops",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "919",
+   "name": "Nymble",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "920",
+   "name": "Lokix",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "921",
+   "name": "Pawmi",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "922",
+   "name": "Pawmo",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "923",
+   "name": "Pawmot",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "924",
+   "name": "Tandemaus",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "925",
+   "name": "Maushold",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "926",
+   "name": "Fidough",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "927",
+   "name": "Dachsbun",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "928",
+   "name": "Smoliv",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "929",
+   "name": "Dolliv",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "930",
+   "name": "Arboliva",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "931",
+   "name": "Squawkabilly",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "932",
+   "name": "Nacli",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "933",
+   "name": "Naclstack",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "934",
+   "name": "Garganacl",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "935",
+   "name": "Charcadet",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "936",
+   "name": "Armarouge",
+   "games": [
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "937",
+   "name": "Ceruledge",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "938",
+   "name": "Tadbulb",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "939",
+   "name": "Bellibolt",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "940",
+   "name": "Wattrel",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "941",
+   "name": "Kilowattrel",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "942",
+   "name": "Maschiff",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "943",
+   "name": "Mabosstiff",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "944",
+   "name": "Shroodle",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "945",
+   "name": "Grafaiai",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "946",
+   "name": "Bramblin",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "947",
+   "name": "Brambleghast",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "948",
+   "name": "Toedscool",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "949",
+   "name": "Toedscruel",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "950",
+   "name": "Klawf",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "951",
+   "name": "Capsakid",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "952",
+   "name": "Scovillain",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "953",
+   "name": "Rellor",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "954",
+   "name": "Rabsca",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "955",
+   "name": "Flittle",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "956",
+   "name": "Espathra",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "957",
+   "name": "Tinkatink",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "958",
+   "name": "Tinkatuff",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "959",
+   "name": "Tinkaton",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "960",
+   "name": "Wiglett",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "961",
+   "name": "Wugtrio",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "962",
+   "name": "Bombirdier",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "963",
+   "name": "Finizen",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "964",
+   "name": "Palafin",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "965",
+   "name": "Varoom",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "966",
+   "name": "Revavroom",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "967",
+   "name": "Cyclizar",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "968",
+   "name": "Orthworm",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "969",
+   "name": "Glimmet",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "970",
+   "name": "Glimmora",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "971",
+   "name": "Greavard",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "972",
+   "name": "Houndstone",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "973",
+   "name": "Flamigo",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "974",
+   "name": "Cetoddle",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "975",
+   "name": "Cetitan",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "976",
+   "name": "Veluza",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "977",
+   "name": "Dondozo",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "978",
+   "name": "Tatsugiri",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "979",
+   "name": "Annihilape",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "980",
+   "name": "Clodsire",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "981",
+   "name": "Farigiraf",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "982",
+   "name": "Dudunsparce",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "983",
+   "name": "Kingambit",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "984",
+   "name": "Great Tusk",
+   "games": [
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "985",
+   "name": "Scream Tail",
+   "games": [
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "986",
+   "name": "Brute Bonnet",
+   "games": [
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "987",
+   "name": "Flutter Mane",
+   "games": [
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "988",
+   "name": "Slither Wing",
+   "games": [
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "989",
+   "name": "Sandy Shocks",
+   "games": [
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "990",
+   "name": "Iron Treads",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "991",
+   "name": "Iron Bundle",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "992",
+   "name": "Iron Hands",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "993",
+   "name": "Iron Jugulis",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "994",
+   "name": "Iron Moth",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "995",
+   "name": "Iron Thorns",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "996",
+   "name": "Frigibax",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "997",
+   "name": "Arctibax",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "998",
+   "name": "Baxcalibur",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "999",
+   "name": "Gimmighoul",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "1000",
+   "name": "Gholdengo",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "1001",
+   "name": "Wo-Chien",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "1002",
+   "name": "Chien-Pao",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "1003",
+   "name": "Ting-Lu",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "1004",
+   "name": "Chi-Yu",
+   "games": [
+    "Scarlet",
+    "Violet"
+   ]
+  },
+  {
+   "number": "1005",
+   "name": "Roaring Moon",
+   "games": [
+    "Scarlet",
+    "Violet⇄"
+   ]
+  },
+  {
+   "number": "1006",
+   "name": "Iron Valiant",
+   "games": [
+    "Scarlet⇄",
+    "Violet"
+   ]
+  },
+  {
+   "number": "1007",
+   "name": "Koraidon",
+   "games": [
+    "Scarlet"
+   ]
+  },
+  {
+   "number": "1008",
+   "name": "Miraidon",
+   "games": [
+    "Violet"
+   ]
+  },
+  {
+   "number": "1011",
+   "name": "Dipplin",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1012",
+   "name": "Poltchageist",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1013",
+   "name": "Sinistcha",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1014",
+   "name": "Okidogi",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1015",
+   "name": "Munkidori",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1016",
+   "name": "Fezandipiti",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1017",
+   "name": "Ogerpon",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1018",
+   "name": "Archaludon",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1019",
+   "name": "Hydrapple",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1020",
+   "name": "Gouging Fire",
+   "games": [
+    "Scarlet DLC"
+   ]
+  },
+  {
+   "number": "1021",
+   "name": "Raging Bolt",
+   "games": [
+    "Scarlet DLC"
+   ]
+  },
+  {
+   "number": "1022",
+   "name": "Iron Boulder",
+   "games": [
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1023",
+   "name": "Iron Crown",
+   "games": [
+    "Violet DLC"
+   ]
+  },
+  {
+   "number": "1024",
+   "name": "Terapagos",
+   "games": [
+    "Scarlet DLC",
+    "Violet DLC"
+   ]
+  }
+ ],
+ "unavailable": [
+  {
+   "number": "13",
+   "name": "Weedle"
+  },
+  {
+   "number": "14",
+   "name": "Kakuna"
+  },
+  {
+   "number": "15",
+   "name": "Beedrill"
+  },
+  {
+   "number": "16",
+   "name": "Pidgey"
+  },
+  {
+   "number": "17",
+   "name": "Pidgeotto"
+  },
+  {
+   "number": "18",
+   "name": "Pidgeot"
+  },
+  {
+   "number": "19",
+   "name": "Rattata"
+  },
+  {
+   "number": "19",
+   "name": "Rattata (Alolan Form)"
+  },
+  {
+   "number": "20",
+   "name": "Raticate"
+  },
+  {
+   "number": "20",
+   "name": "Raticate (Alolan Form)"
+  },
+  {
+   "number": "21",
+   "name": "Spearow"
+  },
+  {
+   "number": "22",
+   "name": "Fearow"
+  },
+  {
+   "number": "46",
+   "name": "Paras"
+  },
+  {
+   "number": "47",
+   "name": "Parasect"
+  },
+  {
+   "number": "100",
+   "name": "Voltorb (Hisuian Form)"
+  },
+  {
+   "number": "101",
+   "name": "Electrode (Hisuian Form)"
+  },
+  {
+   "number": "151",
+   "name": "Mew"
+  },
+  {
+   "number": "157",
+   "name": "Typhlosion (Hisuian Form)"
+  },
+  {
+   "number": "165",
+   "name": "Ledyba"
+  },
+  {
+   "number": "166",
+   "name": "Ledian"
+  },
+  {
+   "number": "201",
+   "name": "Unown"
+  },
+  {
+   "number": "215",
+   "name": "Sneasel (Hisuian Form)"
+  },
+  {
+   "number": "251",
+   "name": "Celebi"
+  },
+  {
+   "number": "265",
+   "name": "Wurmple"
+  },
+  {
+   "number": "266",
+   "name": "Silcoon"
+  },
+  {
+   "number": "267",
+   "name": "Beautifly"
+  },
+  {
+   "number": "268",
+   "name": "Cascoon"
+  },
+  {
+   "number": "269",
+   "name": "Dustox"
+  },
+  {
+   "number": "276",
+   "name": "Taillow"
+  },
+  {
+   "number": "277",
+   "name": "Swellow"
+  },
+  {
+   "number": "300",
+   "name": "Skitty"
+  },
+  {
+   "number": "301",
+   "name": "Delcatty"
+  },
+  {
+   "number": "327",
+   "name": "Spinda"
+  },
+  {
+   "number": "351",
+   "name": "Castform"
+  },
+  {
+   "number": "352",
+   "name": "Kecleon"
+  },
+  {
+   "number": "366",
+   "name": "Clamperl"
+  },
+  {
+   "number": "367",
+   "name": "Huntail"
+  },
+  {
+   "number": "368",
+   "name": "Gorebyss"
+  },
+  {
+   "number": "385",
+   "name": "Jirachi"
+  },
+  {
+   "number": "386",
+   "name": "Deoxys"
+  },
+  {
+   "number": "399",
+   "name": "Bidoof"
+  },
+  {
+   "number": "400",
+   "name": "Bibarel"
+  },
+  {
+   "number": "412",
+   "name": "Burmy"
+  },
+  {
+   "number": "413",
+   "name": "Wormadam"
+  },
+  {
+   "number": "414",
+   "name": "Mothim"
+  },
+  {
+   "number": "431",
+   "name": "Glameow"
+  },
+  {
+   "number": "432",
+   "name": "Purugly"
+  },
+  {
+   "number": "441",
+   "name": "Chatot"
+  },
+  {
+   "number": "455",
+   "name": "Carnivine"
+  },
+  {
+   "number": "489",
+   "name": "Phione"
+  },
+  {
+   "number": "490",
+   "name": "Manaphy"
+  },
+  {
+   "number": "491",
+   "name": "Darkrai"
+  },
+  {
+   "number": "492",
+   "name": "Shaymin"
+  },
+  {
+   "number": "493",
+   "name": "Arceus"
+  },
+  {
+   "number": "494",
+   "name": "Victini"
+  },
+  {
+   "number": "503",
+   "name": "Samurott (Hisuian Form)"
+  },
+  {
+   "number": "504",
+   "name": "Patrat"
+  },
+  {
+   "number": "505",
+   "name": "Watchog"
+  },
+  {
+   "number": "511",
+   "name": "Pansage"
+  },
+  {
+   "number": "512",
+   "name": "Simisage"
+  },
+  {
+   "number": "513",
+   "name": "Pansear"
+  },
+  {
+   "number": "514",
+   "name": "Simisear"
+  },
+  {
+   "number": "515",
+   "name": "Panpour"
+  },
+  {
+   "number": "516",
+   "name": "Simipour"
+  },
+  {
+   "number": "549",
+   "name": "Lilligant (Hisuian Form)"
+  },
+  {
+   "number": "570",
+   "name": "Zorua (Hisuian Form)"
+  },
+  {
+   "number": "571",
+   "name": "Zoroark (Hisuian Form)"
+  },
+  {
+   "number": "628",
+   "name": "Braviary (Hisuian Form)"
+  },
+  {
+   "number": "649",
+   "name": "Genesect"
+  },
+  {
+   "number": "676",
+   "name": "Furfrou"
+  },
+  {
+   "number": "705",
+   "name": "Sliggoo (Hisuian Form)"
+  },
+  {
+   "number": "706",
+   "name": "Goodra (Hisuian Form)"
+  },
+  {
+   "number": "713",
+   "name": "Avalugg (Hisuian Form)"
+  },
+  {
+   "number": "719",
+   "name": "Diancie"
+  },
+  {
+   "number": "720",
+   "name": "Hoopa"
+  },
+  {
+   "number": "721",
+   "name": "Volcanion"
+  },
+  {
+   "number": "724",
+   "name": "Decidueye (Hisuian Form)"
+  },
+  {
+   "number": "801",
+   "name": "Magearna"
+  },
+  {
+   "number": "802",
+   "name": "Marshadow"
+  },
+  {
+   "number": "807",
+   "name": "Zeraora"
+  },
+  {
+   "number": "808",
+   "name": "Meltan"
+  },
+  {
+   "number": "809",
+   "name": "Melmetal"
+  },
+  {
+   "number": "893",
+   "name": "Zarude"
+  },
+  {
+   "number": "899",
+   "name": "Wyrdeer"
+  },
+  {
+   "number": "901",
+   "name": "Ursaluna"
+  },
+  {
+   "number": "903",
+   "name": "Sneasler"
+  },
+  {
+   "number": "905",
+   "name": "Enamorus"
+  },
+  {
+   "number": "1009",
+   "name": "Walking Wake"
+  },
+  {
+   "number": "1010",
+   "name": "Iron Leaves"
+  },
+  {
+   "number": "1025",
+   "name": "Pecharunt"
+  }
+ ]
+}

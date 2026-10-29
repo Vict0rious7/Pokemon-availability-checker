@@ -1,0 +1,72 @@
+# Tests, build and (once switched on) deploy of the static site to GitHub Pages.
+# A failing engine check stops the job chain, so nothing is published.
+name: Site
+
+on:
+  push:
+    branches: [rebuild]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: engine
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+      - run: npm ci
+      - name: Phase 1 - reproduces the old engine (0 unexplained differences)
+        run: |
+          npx tsx src/cli.ts ../reference/old-csv ../reference/results out
+          python3 compare.py ../reference/results out --accepted accepted.json
+          npx tsx src/cli.ts ../reference/old-csv ../reference/results out ../data
+          python3 compare.py ../reference/results out --accepted accepted.json
+      - name: Phase 2 - destination tests (all must pass)
+        run: npx tsx src/destinations.ts ../data ../reference/destinations.json
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site/dist
+
+  deploy:
+    needs: build
+    # Acceptance criteria and liveness check written 16 Oct 2026 (plan, Decisions).
+    if: github.ref == 'refs/heads/rebuild'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

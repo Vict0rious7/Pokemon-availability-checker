@@ -1,0 +1,54 @@
+game;number;received;members
+Red;1;Bulbasaur;Bulbasaur|Ivysaur|Venusaur
+Green;1;Bulbasaur;Bulbasaur|Ivysaur|Venusaur
+Blue;1;Bulbasaur;Bulbasaur|Ivysaur|Venusaur
+Yellow;1;Bulbasaur;Bulbasaur|Ivysaur|Venusaur
+Red;4;Charmander;Charmander|Charmeleon|Charizard
+Green;4;Charmander;Charmander|Charmeleon|Charizard
+Blue;4;Charmander;Charmander|Charmeleon|Charizard
+Yellow;4;Charmander;Charmander|Charmeleon|Charizard
+Red;7;Squirtle;Squirtle|Wartortle|Blastoise
+Green;7;Squirtle;Squirtle|Wartortle|Blastoise
+Blue;7;Squirtle;Squirtle|Wartortle|Blastoise
+Yellow;7;Squirtle;Squirtle|Wartortle|Blastoise
+Red;133;Eevee;Eevee|Vaporeon|Jolteon|Flareon
+Green;133;Eevee;Eevee|Vaporeon|Jolteon|Flareon
+Blue;133;Eevee;Eevee|Vaporeon|Jolteon|Flareon
+Yellow;133;Eevee;Eevee|Vaporeon|Jolteon|Flareon
+XD;133;Eevee;Eevee|Vaporeon|Jolteon|Flareon|Espeon|Umbreon
+Red;138;Omanyte;Omanyte|Omastar
+Green;138;Omanyte;Omanyte|Omastar
+Blue;138;Omanyte;Omanyte|Omastar
+Yellow;138;Omanyte;Omanyte|Omastar
+LetsGoPikachu;138;Omanyte;Omanyte|Omastar
+LetsGoEevee;138;Omanyte;Omanyte|Omastar
+Red;140;Kabuto;Kabuto|Kabutops
+Green;140;Kabuto;Kabuto|Kabutops
+Blue;140;Kabuto;Kabuto|Kabutops
+Yellow;140;Kabuto;Kabuto|Kabutops
+LetsGoPikachu;140;Kabuto;Kabuto|Kabutops
+LetsGoEevee;140;Kabuto;Kabuto|Kabutops
+XD;152;Chikorita;Chikorita|Bayleef|Meganium
+XD;155;Cyndaquil;Cyndaquil|Quilava|Typhlosion
+XD;158;Totodile;Totodile|Croconaw|Feraligatr
+XD;175;Togepi;Togepi|Togetic
+XD;246;Larvitar;Larvitar|Pupitar|Tyranitar
+XD;307;Meditite;Meditite|Medicham
+Sun;772;Type: Null;Type: Null|Silvally
+Moon;772;Type: Null;Type: Null|Silvally
+UltraSun;772;Type: Null;Type: Null|Silvally
+UltraMoon;772;Type: Null;Type: Null|Silvally
+Sword;772;Type: Null;Type: Null|Silvally
+Shield;772;Type: Null;Type: Null|Silvally
+Sun;789;Cosmog;Cosmog|Cosmoem
+Moon;789;Cosmog;Cosmog|Cosmoem
+UltraSun;789;Cosmog;Cosmog|Cosmoem
+UltraMoon;789;Cosmog;Cosmog|Cosmoem
+Sword;789;Cosmog;Cosmog|Cosmoem
+Shield;789;Cosmog;Cosmog|Cosmoem
+UltraSun;803;Poipole;Poipole|Naganadel
+UltraMoon;803;Poipole;Poipole|Naganadel
+Sword;803;Poipole;Poipole|Naganadel
+Shield;803;Poipole;Poipole|Naganadel
+Sword;891;Kubfu;Kubfu|Urshifu
+Shield;891;Kubfu;Kubfu|Urshifu
