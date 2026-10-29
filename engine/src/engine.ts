@@ -213,10 +213,10 @@ export function buildSeeds(forms: Form[], unhandled: Map<string, Unhandled>, hoe
         continue;
       }
 
-      // ZA1: Z-A side missions EX1/EX2 are unlocked by Mystery Gifts with no end date (Diancie, Mewtwo); EX3 (Zeraora,
+      // C29 (rules catalogue): Z-A side missions EX1/EX2 are unlocked by Mystery Gifts with no end date (Diancie, Mewtwo); EX3 (Zeraora,
       // Mega Dimension) needs both. The only EV/EVD cells in the Z-A column.
       if (game === "LegendsZA" && (code === "EV" || code === "EVD")) {
-        add(f, game, (o) => (code === "EVD" ? ownsDlc(o, game) : self(o)), "Z-A side mission unlocked by Mystery Gift (ZA1)", ["ONLINE_SERVICE"]);
+        add(f, game, (o) => (code === "EVD" ? ownsDlc(o, game) : self(o)), "Z-A side mission unlocked by Mystery Gift (C29)", ["ONLINE_SERVICE"]);
         continue;
       }
       if (IGNORED.test(code)) continue;
@@ -300,7 +300,7 @@ export function buildSeeds(forms: Form[], unhandled: Map<string, Unhandled>, hoe
   }
   for (const f of forms) {
     if (f.form !== "" || !GO_MYTHICALS.has(f.number)) continue;
-    add(f, "GO", goOn, "GO permanent Special Research (C18b)", [], ["go_locked"]);
+    add(f, "GO", goOn, "GO permanent Special Research (C30)", [], ["go_locked"]);
   }
   return seeds;
 }
@@ -343,13 +343,13 @@ const STORAGE = new Set(["bank_g6", "bank_g7"]);
 /** Non-game locations: Bank's two sides, HOME, GO. Any species can be stored; none is "native" in the Phase 1 sense. */
 const NOT_GAMES = new Set([...STORAGE, "HOME", "GO"]);
 const GO_SPECIES = new Set(["808", "809"]);   // C18
-/** C18b (Victor, 29 Oct 2026): Mythicals with free Special Research permanently available in GO (Bulbapedia, "Mythical Pokémon",
+/** C30 (Victor, 29 Oct 2026): Mythicals with free Special Research permanently available in GO (Bulbapedia, "Mythical Pokémon",
  *  Pokémon GO section). Mew at Trainer level 15 → Celebi "A Ripple in Time" → Jirachi "A Thousand-Year Slumber" →
  *  Victini "Investigate a Mysterious Energy"; Shaymin, Keldeo, Meloetta, Diancie, Volcanion (after Diancie), Marshadow. */
 const GO_MYTHICALS = new Set(["151", "251", "385", "492", "494", "647", "648", "719", "721", "802"]);
 /** GO Transporter: a Legendary/Mythical sent from GO (except Meltan, Melmetal) can only enter a game where it is already
  *  registered, so for reachability it stays in HOME. GO Park refuses Mew. */
-const GO_LOCK = "has come from Pokémon GO: a Mythical only enters a game where it is already registered (go_locked, C18b)";
+const GO_LOCK = "has come from Pokémon GO: a Mythical only enters a game where it is already registered (go_locked, C30)";
 const goOn = (o: Owned) => o.has.go && o.phone >= 1;
 const homeOn = (o: Owned) => o.has.home && (o.sw >= 1 || o.phone >= 1);   // HOME on Switch or on a phone (RT13)
 /** Origin tags set where a Pokémon is caught (data model: lgpe_pure, za_touched). */
@@ -391,7 +391,7 @@ export const ROUTES: Route[] = [
   // ---- Phase 2: HOME (Routes tab RT13–RT19)
   { id: "RT13", from: ["bank_g6", "bank_g7"], to: ["HOME"], req: (o) => o.has.bank && o.n3ds >= 1 && homeOn(o), flags: ["HOME_PREMIUM"], until: BANK_ENDS },
   { id: "RT14", from: ["GO"], to: FAMILY.lgpe, req: (o) => goOn(o) && o.sw >= 1,
-    retag: (_f, _t, tags) => (tags.includes("go_locked") ? "GO Park does not accept Mythicals from GO (C18b)" : [...tags, "lgpe_pure"]) },                       // GO Park arrivals count as Let's Go-only
+    retag: (_f, _t, tags) => (tags.includes("go_locked") ? "GO Park does not accept Mythicals from GO (C30)" : [...tags, "lgpe_pure"]) },                       // GO Park arrivals count as Let's Go-only
   { id: "RT15", from: ["GO"], to: ["HOME"], req: (o) => goOn(o) && o.has.home },
   { id: "RT16", from: FAMILY.lgpe, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1 },
   { id: "RT16", from: ["HOME"], to: FAMILY.lgpe, req: (o) => homeOn(o) && o.sw >= 1,
