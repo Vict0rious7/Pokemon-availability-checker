@@ -1,0 +1,31 @@
+/* Site themes ("PC box" looks). Original patterns drawn for this site. A theme sets the box variables below;
+   "plain" keeps the default look. Add a theme: a block like "forest" here + an entry in themes.ts. */
+:root {
+  --page-bg: var(--bg); --box-bg: transparent; --box-pattern: none; --box-edge: var(--line);
+  --box-head: transparent; --box-head-img: none; --box-head-ink: var(--ink); --row-bg: transparent; --row-gap: 0px; --header-band: transparent;
+}
+:root[data-theme="forest"] {
+  --page-bg: linear-gradient(180deg, #e3f1d9 0, var(--bg) 320px);
+  --box-bg: #d7eccb; --box-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23d7eccb'/%3E%3Cg fill='%23c7b38f'%3E%3Crect x='21' y='34' width='5' height='12' rx='1'/%3E%3Crect x='80' y='88' width='5' height='13' rx='1'/%3E%3C/g%3E%3Cg fill='%23b9dca6'%3E%3Cpath d='M23.5 8 L38 36 H9 Z'/%3E%3Cpath d='M23.5 18 L36 40 H11 Z'/%3E%3Ccircle cx='82.5' cy='76' r='15'/%3E%3C/g%3E%3Cg fill='%23a9d397'%3E%3Cpath d='M54 50 l3-8 3 8z M60 50 l3-6 3 6z M48 50 l3-5 3 5z'/%3E%3Cpath d='M10 104 l3-8 3 8z M16 104 l3-6 3 6z'/%3E%3Cpath d='M100 30 l3-7 3 7z M106 30 l3-5 3 5z'/%3E%3C/g%3E%3Cg fill='%23f2f7d4'%3E%3Ccircle cx='62' cy='14' r='2.2'/%3E%3Ccircle cx='38' cy='80' r='1.8'/%3E%3Ccircle cx='108' cy='60' r='2'/%3E%3Ccircle cx='50' cy='110' r='1.6'/%3E%3C/g%3E%3C/svg%3E");
+  --box-edge: #6fa35a; --box-head: #7dbb63; --box-head-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%237dbb63'/%3E%3Cpath d='M-4 4 L4 -4 M0 16 L16 0 M12 20 L20 12' stroke='%2386c46c' stroke-width='4'/%3E%3C/svg%3E"); --box-head-ink: #ffffff;
+  --row-bg: rgba(255, 255, 255, 0.86); --row-gap: 8px; --header-band: #7dbb63; --accent: #2f7d32; --accent-ink: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="forest"] {
+    --page-bg: linear-gradient(180deg, #16241a 0, var(--bg) 320px);
+    --box-bg: #17281c; --box-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%2317281c'/%3E%3Cg fill='%232c2a20'%3E%3Crect x='21' y='34' width='5' height='12' rx='1'/%3E%3Crect x='80' y='88' width='5' height='13' rx='1'/%3E%3C/g%3E%3Cg fill='%23254a2e'%3E%3Cpath d='M23.5 8 L38 36 H9 Z'/%3E%3Cpath d='M23.5 18 L36 40 H11 Z'/%3E%3Ccircle cx='82.5' cy='76' r='15'/%3E%3C/g%3E%3Cg fill='%23285034'%3E%3Cpath d='M54 50 l3-8 3 8z M60 50 l3-6 3 6z M48 50 l3-5 3 5z'/%3E%3Cpath d='M10 104 l3-8 3 8z M16 104 l3-6 3 6z'/%3E%3Cpath d='M100 30 l3-7 3 7z M106 30 l3-5 3 5z'/%3E%3C/g%3E%3Cg fill='%23395c39'%3E%3Ccircle cx='62' cy='14' r='2.2'/%3E%3Ccircle cx='38' cy='80' r='1.8'/%3E%3Ccircle cx='108' cy='60' r='2'/%3E%3Ccircle cx='50' cy='110' r='1.6'/%3E%3C/g%3E%3C/svg%3E");
+    --box-edge: #3d6b3a; --box-head: #2e5a30; --box-head-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232e5a30'/%3E%3Cpath d='M-4 4 L4 -4 M0 16 L16 0 M12 20 L20 12' stroke='%23336334' stroke-width='4'/%3E%3C/svg%3E"); --box-head-ink: #e8f5e2;
+    --row-bg: rgba(27, 31, 39, 0.86); --header-band: #3d6b3a; --accent: #8fd18a; --accent-ink: #0f1a10;
+  }
+}
+body { background: var(--page-bg); background-color: var(--bg); }
+header { border-top: 6px solid var(--header-band); }
+.gen { border: 2px solid var(--box-edge); border-radius: 12px; overflow: hidden; margin: 0 0 14px; background-color: var(--box-bg); background-image: var(--box-pattern); padding-bottom: var(--row-gap); }
+.gen > summary { background-color: var(--box-head); background-image: var(--box-head-img); color: var(--box-head-ink); padding: 8px 12px; border-bottom: 2px solid var(--box-edge); }
+.gen > summary small { color: inherit; opacity: 0.85; }
+:root[data-theme]:not([data-theme="plain"]) .gen > summary { text-align: center; font-size: 1rem; letter-spacing: 0.02em; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.18); }
+.gen > .row { background: var(--row-bg); margin: var(--row-gap) var(--row-gap) 0; border-radius: 8px; padding: 0 8px; }
+:root[data-theme]:not([data-theme="plain"]) .gen > .row > summary { border-bottom: 0; }
+:root[data-theme]:not([data-theme="plain"]) .results .gen { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08); }
+.theme-pick { margin-left: auto; display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 0.85rem; padding: 0 4px; white-space: nowrap; }
+.theme-pick select { width: auto; padding: 4px 8px; font-size: 0.85rem; }

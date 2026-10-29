@@ -15,6 +15,7 @@ Static site: Vite + Preact + TypeScript. The engine (`../engine/src`) runs in th
 - `src/worker.ts`: runs the fixed point once per set of owned games and hardware (cached), then answers destination and scope from it. Changing only the destination or the generations takes milliseconds.
 - `src/main.tsx`: inputs, results (grouped by generation; "move before 25 Feb 2027", missing, can reach, can't live there), credits. `src/finder.tsx`: the Finder. `src/path.ts`: turns a path's route ids into places.
 - `src/labels.ts`: game names and URL codes, hardware, services, flags, HOME rewards and gifts.
+- `src/themes.ts` + `src/themes.css`: site themes ("PC box" looks, original patterns), picked in the header and remembered in the browser. Add a theme: one CSS block of box variables + one entry in `THEMES`.
 
 ## Speed (measured 15 Oct 2026)
 

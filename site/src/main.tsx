@@ -1,6 +1,8 @@
 import { render } from "preact";
 import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import "./styles.css";
+import "./themes.css";
+import { THEMES, ThemeId, loadTheme, applyTheme } from "./themes.js";
 import { Profile, decode, encode, toOwned, starting, withDest, MAX_GEN } from "./state.js";
 import { PLATFORMS, GAMES, HARDWARE, SERVICES, FLAG, gameName, originName, BANK_END_LABEL, genRange } from "./labels.js";
 import { describe, names } from "./path.js";
@@ -278,6 +280,8 @@ function Credits() {
 function App() {
   const [p, setP] = useState<Profile>(() => (location.hash.length > 1 ? decode(location.hash) : starting()));
   const [tab, setTab] = useState<"check" | "finder" | "about">("check");
+  const [theme, setTheme] = useState<ThemeId>(loadTheme);
+  useEffect(() => applyTheme(theme), [theme]);
   const set = (f: (p: Profile) => Profile) => setP((x) => f(x));
   useEffect(() => { history.replaceState(null, "", `#${encode(p)}`); }, [encode(p)]);
   useEffect(() => { const h = () => setP(decode(location.hash)); addEventListener("hashchange", h); return () => removeEventListener("hashchange", h); }, []);
@@ -291,6 +295,11 @@ function App() {
         <nav>
           {([["check", "Checker"], ["finder", "Finder"], ["about", "About & credits"]] as const).map(([k, l]) =>
             <button type="button" class={tab === k ? "on" : ""} aria-current={tab === k} onClick={() => setTab(k)}>{l}</button>)}
+          <label class="theme-pick">Theme
+            <select value={theme} onChange={(e) => setTheme((e.target as HTMLSelectElement).value as ThemeId)}>
+              {THEMES.map((t) => <option value={t.id}>{t.name}</option>)}
+            </select>
+          </label>
         </nav>
       </header>
       <main>
