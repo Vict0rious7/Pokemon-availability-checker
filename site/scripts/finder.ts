@@ -20,12 +20,12 @@ const { store } = run(p.forms, ALL, p.seeds, p.evo);
 // A side game or disc (Ranch, bonus disc…) is listed as itself, with the games it delivers into.
 const games = new Map<string, Set<string>>(), sources = new Map<string, Map<string, Set<string>>>();
 for (const s of p.seeds) {
-  if (!CORE_GAMES.includes(s.at) || !s.req(ALL, store)) continue;
+  if (!(CORE_GAMES.includes(s.at) || s.at === "GO") || !s.req(ALL, store)) continue;
   if (s.deps?.some((d) => !store.supportsOf(d.number, d.loc, d.tags, d.origins, d.notOrigin, d.anyForm).length)) continue;
   const id = s.form.id;
-  if (s.source) {
-    const m = sources.get(id) ?? sources.set(id, new Map()).get(id)!;
-    (m.get(s.source) ?? m.set(s.source, new Set()).get(s.source)!).add(s.at);
+  if (s.source || s.at === "GO") {                  // Pokémon GO is shown like a side game: it sends into HOME
+    const src = s.source ?? "GO", m = sources.get(id) ?? sources.set(id, new Map()).get(id)!;
+    (m.get(src) ?? m.set(src, new Set()).get(src)!).add(s.at === "GO" ? "HOME" : s.at);
   } else (games.get(id) ?? games.set(id, new Set()).get(id)!).add(s.at);
 }
 const rows = p.forms.map((f) => ({ n: +f.number, name: f.name, form: f.form, gen: f.gen, games: [...(games.get(f.id) ?? [])],

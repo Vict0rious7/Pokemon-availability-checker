@@ -4,7 +4,7 @@
 import { prepare } from "../../engine/src/prepare.js";
 import { run, reachableAt, Store } from "../../engine/src/engine.js";
 import { canHold } from "../../engine/src/data.js";
-import type { Owned } from "../../engine/src/games.js";
+import { FAMILY_OF, type Owned } from "../../engine/src/games.js";
 
 const files = import.meta.glob("../../data/*.{csv,json}", { query: "?raw", import: "default", eager: true }) as Record<string, string>;
 const byName = Object.fromEntries(Object.entries(files).map(([k, v]) => [k.split("/").pop()!, v]));
@@ -13,7 +13,8 @@ const formsOf = new Map<string, typeof p.forms>();
 for (const f of p.forms) (formsOf.get(f.number) ?? formsOf.set(f.number, []).get(f.number)!).push(f);
 
 export type Status = "ok" | "until" | "no" | "cant";
-export interface PathOut { origin: string; from?: string; source?: string; via: string[]; flags: string[]; until?: string; }
+/** A group of equivalent paths: same route, flags and end date, from games of the same family (Black / White → …). */
+export interface PathOut { origins: string[]; froms: string[]; source?: string; via: string[]; flags: string[]; until?: string; }
 export interface Row { n: number; name: string; gen: number; status: Status; until?: string; paths: PathOut[]; more: number; refused: string[]; }
 export interface Request { id: number; owned: Owned; dest: string; maxGen: number; date: string; }
 export interface Response { id: number; rows: Row[]; ms: number; cached: boolean; }
@@ -34,15 +35,23 @@ self.onmessage = (e: MessageEvent<Request>) => {
     const base: Omit<Row, "status" | "paths" | "more" | "refused"> = { n: +f.number, name: f.name, gen: f.gen };
     if (dest !== "HOME" && !all.some((x) => canHold(x, dest))) { rows.push({ ...base, status: "cant", paths: [], more: 0, refused: [] }); continue; }
     const a = reachableAt(store, f.number, dest, date);
-    // one path per starting point (the best one), best first; side games and discs count as one starting point
+    // the best path per starting point, best first; then paths that differ only by a game of the same family are merged
+    const best = new Map<string, (typeof a.paths)[number]>();
+    for (const s of a.paths) { const k = `${s.source ?? ""}@${s.origin}@${s.from ?? ""}`; if (!best.has(k)) best.set(k, s); }
+    const fam = (g: string) => FAMILY_OF[g] ?? g;
     const byOrigin = new Map<string, PathOut>();
-    for (const s of a.paths) {
-      const k = !s.from && s.source ? `src:${s.source}` : s.origin;
-      if (!byOrigin.has(k)) byOrigin.set(k, { origin: s.origin, from: s.from, source: s.source, via: s.via, flags: s.flags, until: s.until });
+    for (const s of best.values()) {
+      const k = [s.source ?? "", fam(s.origin), s.from ? fam(s.from) : "", s.via.join(">"), s.flags.join(","), s.until ?? ""].join("|");
+      const g = byOrigin.get(k);
+      if (!g) byOrigin.set(k, { origins: [s.origin], froms: s.from ? [s.from] : [], source: s.source, via: s.via, flags: s.flags, until: s.until });
+      else {
+        if (!g.origins.includes(s.origin)) g.origins.push(s.origin);
+        if (s.from && !g.froms.includes(s.from)) g.froms.push(s.from);
+      }
     }
     const paths = [...byOrigin.values()];
     rows.push({ ...base, status: !a.reachable ? "no" : a.onlyBefore ? "until" : "ok", until: a.onlyBefore ?? undefined,
-      paths: paths.slice(0, 6), more: Math.max(0, paths.length - 6), refused: [...new Set(a.refused.map((r) => r.reason))].slice(0, 3) });
+      paths, more: 0, refused: [...new Set(a.refused.map((r) => r.reason))].slice(0, 3) });
   }
   (self as unknown as Worker).postMessage({ id, rows, ms: Math.round(performance.now() - t), cached } satisfies Response);
 };

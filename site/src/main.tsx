@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import "./styles.css";
 import { Profile, decode, encode, toOwned, starting, withDest, MAX_GEN } from "./state.js";
 import { PLATFORMS, GAMES, HARDWARE, SERVICES, FLAG, gameName, originName, BANK_END_LABEL, genRange } from "./labels.js";
-import { describe } from "./path.js";
+import { describe, names } from "./path.js";
 import type { Request, Response, Row, Status, PathOut } from "./worker.js";
 import { Finder } from "./finder.js";
 
@@ -185,10 +185,12 @@ function PathLine({ s, dest }: { s: PathOut; dest: string }) {
 }
 
 function ResultRow({ r, dest }: { r: Row; dest: string }) {
-  const origins = r.paths.map((x) => (x.from ? `${originName(x.origin)} (bred)` : originName(x.source ?? x.origin)));
+  const [all, setAll] = useState(false);
+  const origins = [...new Set(r.paths.map((x) => (x.froms.length ? `${names(x.origins)} (bred)` : x.source ? originName(x.source) : names(x.origins))))];
   const summary = r.status === "cant" ? `${gameName(dest)} cannot hold it`
     : r.status === "no" ? (r.refused[0] ? `Blocked: ${r.refused[0]}` : "No way with what you own")
-    : `from ${origins.slice(0, 3).join(", ")}${origins.length + r.more > 3 ? ` +${origins.length + r.more - 3}` : ""}`;
+    : `from ${origins.slice(0, 3).join(", ")}${origins.length > 3 ? ` +${origins.length - 3}` : ""}`;
+  const SHOW = 6, shownPaths = all ? r.paths : r.paths.slice(0, SHOW);
   return (
     <details class={`row ${r.status}`}>
       <summary>
@@ -199,8 +201,8 @@ function ResultRow({ r, dest }: { r: Row; dest: string }) {
       </summary>
       {r.paths.length > 0 && (
         <ul class="paths">
-          {r.paths.map((s) => <PathLine s={s} dest={dest} />)}
-          {r.more > 0 && <li class="hint">…and {r.more} more starting points</li>}
+          {shownPaths.map((s) => <PathLine s={s} dest={dest} />)}
+          {r.paths.length > SHOW && <li><button type="button" class="more" onClick={() => setAll(!all)}>{all ? "Show fewer" : `Show ${r.paths.length - SHOW} more`}</button></li>}
         </ul>
       )}
       {r.status === "no" && r.refused.length > 0 && <ul class="paths">{r.refused.map((x) => <li class="hint">Refused: {x}</li>)}</ul>}

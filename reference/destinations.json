@@ -507,6 +507,91 @@
           ]
         ]
       }
+    },
+    {
+      "id": "D14",
+      "description": "Claude, from Victor's decision C18b (29 Oct): Victini from GO's permanent Special Research reaches HOME, no end date",
+      "owned": {
+        "copies": {},
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 0,
+        "phone": true,
+        "has": {
+          "home": true,
+          "go": true
+        }
+      },
+      "destination": "HOME",
+      "date": "2027-06-01",
+      "probe": "Victini",
+      "expect": {
+        "reachable": true,
+        "only_before": null,
+        "best_path_from": "GO",
+        "every_path_uses": [
+          "RT15"
+        ]
+      }
+    },
+    {
+      "id": "D14b",
+      "description": "Claude, from C18b: a GO Mythical cannot enter Sword unless already registered there (GO Transporter)",
+      "owned": {
+        "copies": {
+          "Sword": 1
+        },
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 1,
+        "phone": true,
+        "has": {
+          "home": true,
+          "go": true
+        }
+      },
+      "destination": "Sword",
+      "date": "2027-06-01",
+      "probe": "Victini",
+      "expect": {
+        "reachable": false,
+        "rejected_paths": [
+          {
+            "from": "GO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "D14c",
+      "description": "Claude, from C18b: GO Park refuses Mew, so a GO Mew never reaches Let's Go",
+      "owned": {
+        "copies": {
+          "LetsGoPikachu": 1
+        },
+        "dlc": {},
+        "ds": 0,
+        "n3ds": 0,
+        "sw": 1,
+        "phone": true,
+        "has": {
+          "home": false,
+          "go": true
+        }
+      },
+      "destination": "LetsGoPikachu",
+      "date": "2027-06-01",
+      "probe": "Mew",
+      "expect": {
+        "reachable": false,
+        "rejected_paths": [
+          {
+            "from": "GO"
+          }
+        ]
+      }
     }
   ]
 }

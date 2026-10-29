@@ -298,6 +298,10 @@ export function buildSeeds(forms: Form[], unhandled: Map<string, Unhandled>, hoe
     if (f.form !== "" || !GO_SPECIES.has(f.number)) continue;
     add(f, "GO", (o) => goOn(o) && (o.has.home || ownsAny(o, FAMILY.lgpe)), "GO Mystery Box (C18)");
   }
+  for (const f of forms) {
+    if (f.form !== "" || !GO_MYTHICALS.has(f.number)) continue;
+    add(f, "GO", goOn, "GO permanent Special Research (C18b)", [], ["go_locked"]);
+  }
   return seeds;
 }
 
@@ -339,6 +343,13 @@ const STORAGE = new Set(["bank_g6", "bank_g7"]);
 /** Non-game locations: Bank's two sides, HOME, GO. Any species can be stored; none is "native" in the Phase 1 sense. */
 const NOT_GAMES = new Set([...STORAGE, "HOME", "GO"]);
 const GO_SPECIES = new Set(["808", "809"]);   // C18
+/** C18b (Victor, 29 Oct 2026): Mythicals with free Special Research permanently available in GO (Bulbapedia, "Mythical Pokémon",
+ *  Pokémon GO section). Mew at Trainer level 15 → Celebi "A Ripple in Time" → Jirachi "A Thousand-Year Slumber" →
+ *  Victini "Investigate a Mysterious Energy"; Shaymin, Keldeo, Meloetta, Diancie, Volcanion (after Diancie), Marshadow. */
+const GO_MYTHICALS = new Set(["151", "251", "385", "492", "494", "647", "648", "719", "721", "802"]);
+/** GO Transporter: a Legendary/Mythical sent from GO (except Meltan, Melmetal) can only enter a game where it is already
+ *  registered, so for reachability it stays in HOME. GO Park refuses Mew. */
+const GO_LOCK = "has come from Pokémon GO: a Mythical only enters a game where it is already registered (go_locked, C18b)";
 const goOn = (o: Owned) => o.has.go && o.phone >= 1;
 const homeOn = (o: Owned) => o.has.home && (o.sw >= 1 || o.phone >= 1);   // HOME on Switch or on a phone (RT13)
 /** Origin tags set where a Pokémon is caught (data model: lgpe_pure, za_touched). */
@@ -380,7 +391,7 @@ export const ROUTES: Route[] = [
   // ---- Phase 2: HOME (Routes tab RT13–RT19)
   { id: "RT13", from: ["bank_g6", "bank_g7"], to: ["HOME"], req: (o) => o.has.bank && o.n3ds >= 1 && homeOn(o), flags: ["HOME_PREMIUM"], until: BANK_ENDS },
   { id: "RT14", from: ["GO"], to: FAMILY.lgpe, req: (o) => goOn(o) && o.sw >= 1,
-    retag: (_f, _t, tags) => [...tags, "lgpe_pure"] },                       // GO Park arrivals count as Let's Go-only
+    retag: (_f, _t, tags) => (tags.includes("go_locked") ? "GO Park does not accept Mythicals from GO (C18b)" : [...tags, "lgpe_pure"]) },                       // GO Park arrivals count as Let's Go-only
   { id: "RT15", from: ["GO"], to: ["HOME"], req: (o) => goOn(o) && o.has.home },
   { id: "RT16", from: FAMILY.lgpe, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1 },
   { id: "RT16", from: ["HOME"], to: FAMILY.lgpe, req: (o) => homeOn(o) && o.sw >= 1,
@@ -389,11 +400,12 @@ export const ROUTES: Route[] = [
     retag: (from, _t, tags, f) => (FAMILY_OF[from] === "bdsp" && BDSP_LOCKED.has(f.number) ? "cannot leave BDSP (U4)" : tags) },
   { id: "RT17", from: ["HOME"], to: SWITCH_HOME_GAMES, req: (o) => homeOn(o) && o.sw >= 1,
     retag: (_f, to, tags, f) =>
-      tags.includes("za_touched") ? "has been in Z-A: never to an older game (za_touched, RT18)"
+      tags.includes("go_locked") ? GO_LOCK
+      : tags.includes("za_touched") ? "has been in Z-A: never to an older game (za_touched, RT18)"
       : FAMILY_OF[to] === "bdsp" && BDSP_LOCKED.has(f.number) ? "cannot enter BDSP (U4)" : without(tags, "lgpe_pure") },
   { id: "RT18", from: FAMILY.za, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1 },
   { id: "RT18", from: ["HOME"], to: FAMILY.za, req: (o) => homeOn(o) && o.sw >= 1,
-    retag: (_f, _t, tags) => [...without(tags, "lgpe_pure"), "za_touched"] },
+    retag: (_f, _t, tags) => (tags.includes("go_locked") ? GO_LOCK : [...without(tags, "lgpe_pure"), "za_touched"]) },
   { id: "RT19", from: FAMILY.frlgSwitch, to: ["HOME"], req: (o) => homeOn(o) && o.sw >= 1, legendsOnce: () => true },   // one-way; nothing enters Switch FRLG
 ];
 
