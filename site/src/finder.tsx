@@ -22,6 +22,7 @@ export function Finder() {
     <section class="card finder">
       <h2>Finder</h2>
       <p class="hint">Where each Pokémon can be caught, received, evolved or bred, game by game, before any trade or transfer. Side games and discs are shown with the games they send it to. Search by name, number, game or side game.</p>
+      <p class="hint">Forms that change with an item or in battle (Therian Forces of Nature, Rotom's appliance forms, Giratina's Origin Forme, Shaymin's Sky Forme, Kyurem's fusions…) aren't listed separately: they count with their species.</p>
       <input class="search" type="search" placeholder="Pikachu, 25, Emerald…" value={q} onInput={(e) => { setQ((e.target as HTMLInputElement).value); setLimit(100); }} />
       {!rows ? <p class="hint">Loading…</p> : <p class="hint">{shown.length} of {rows.length} Pokémon and forms</p>}
       <table>
