@@ -277,7 +277,8 @@ export function buildSeeds(forms: Form[], unhandled: Map<string, Unhandled>, hoe
   for (const f of forms) {
     const c = f.cells;
     const deliver = (targets: readonly string[], req: (o: Owned) => boolean, why: string, flags: string[] = [], source?: string) => {
-      const once = source && ONE_TIME_DELIVERY[source]?.includes(f.number) ? ["ONCE_PER_SAVE"] : [];
+      const list = source ? ONE_TIME_DELIVERY[source] : undefined;
+      const once = list && (list.includes("*") || list.includes(f.number)) ? ["ONCE_PER_SAVE"] : [];
       for (const g of targets) if (canHold(f, g)) add(f, g, (o) => owns(o, g) && req(o), why, [...flags, ...once], [], undefined, source);
     };
     const yes = (v?: string) => v !== undefined && v !== "" && !IGNORED.test(v);
@@ -345,9 +346,10 @@ const STORAGE = new Set(["bank_g6", "bank_g7"]);
 /** Non-game locations: Bank's two sides, HOME, GO. Any species can be stored; none is "native" in the Phase 1 sense. */
 const NOT_GAMES = new Set([...STORAGE, "HOME", "GO"]);
 const GO_SPECIES = new Set(["808", "809"]);   // C18
-/** C32 (Victor, 29 Oct 2026): one-time deliveries, received once per save (flag ONCE_PER_SAVE), by side game or disc.
- *  The US bonus disc and PAL Channel Jirachi carried it already; Dream Radar's Therian forms are flagged at their seed. */
-const ONE_TIME_DELIVERY: Record<string, string[]> = { JapBonusDisc: ["251"], Ranch: ["151", "489"], Ranger: ["490"] };
+/** C32 (Victor, 29 Oct 2026): one-time deliveries, received once per save (flag ONCE_PER_SAVE), by side game or disc:
+ *  everything from My Pokémon Ranch, the Japanese bonus disc and Battle Revolution ("*"), Ranger's Manaphy (its Phione is
+ *  bred). The US bonus disc and PAL Channel Jirachi carried it already; Dream Radar's Therian forms are flagged at their seed. */
+const ONE_TIME_DELIVERY: Record<string, string[]> = { JapBonusDisc: ["*"], Ranch: ["*"], BattleRev: ["*"], Ranger: ["490"] };
 /** C30 (Victor, 29 Oct 2026): Mythicals with free Special Research permanently available in GO (Bulbapedia, "Mythical Pokémon",
  *  Pokémon GO section). Mew at Trainer level 15 → Celebi "A Ripple in Time" → Jirachi "A Thousand-Year Slumber" →
  *  Victini "Investigate a Mysterious Energy"; Shaymin, Keldeo, Meloetta, Diancie, Volcanion (after Diancie), Marshadow. */
