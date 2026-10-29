@@ -50,6 +50,13 @@ self.onmessage = (e: MessageEvent<Request>) => {
       }
     }
     const paths = [...byOrigin.values()];
+    // A bred path names one parent game: the engine keeps one representative parent per (flags, end date). When that game
+    // shares a row with games of its family (same route out, no extra flags), name them all as the parent's games.
+    for (const p of paths) {
+      if (p.froms.length !== 1) continue;
+      const peer = paths.find((q) => !q.froms.length && !q.source && q.origins.includes(p.froms[0]) && q.flags.every((f) => p.flags.includes(f)));
+      if (peer) p.froms = [...peer.origins];
+    }
     rows.push({ ...base, status: !a.reachable ? "no" : a.onlyBefore ? "until" : "ok", until: a.onlyBefore ?? undefined,
       paths, more: 0, refused: [...new Set(a.refused.map((r) => r.reason))].slice(0, 3) });
   }
