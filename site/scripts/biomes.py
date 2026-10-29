@@ -97,7 +97,6 @@ header { border-top: 6px solid var(--theme-edge, transparent); }
 .gen > summary { padding: 7px 12px; border-bottom: 1px solid var(--line); }
 .gen > .row { padding: 0 12px; }
 .gen > .row:last-child > summary { border-bottom: 0; }
-.gen > summary .gen-title { font-family: "Pixelify Sans", ui-monospace, "SF Mono", Menlo, monospace; letter-spacing: 0.04em; }
 :root[data-theme]:not([data-theme="plain"]) .gen { border-color: color-mix(in srgb, var(--theme-edge) 40%, var(--line)); }
 :root[data-theme]:not([data-theme="plain"]) .gen > summary { background: color-mix(in srgb, var(--theme-head) 13%, var(--card)); border-bottom-color: color-mix(in srgb, var(--theme-edge) 30%, var(--line)); }
 .theme-pick { margin-left: auto; display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 0.85rem; padding: 0 4px; white-space: nowrap; }
