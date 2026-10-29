@@ -1,0 +1,46 @@
+name: Report a wrong result
+description: The checker says a Pokémon can (or can't) reach your destination, and you know otherwise.
+title: "Wrong result: "
+labels: ["wrong result"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for checking. The fastest fix comes from a profile link and a source.
+        Links from the checker fill in the first fields for you.
+  - type: input
+    id: profile
+    attributes:
+      label: Profile link
+      description: The checker's page address with your games selected (it holds your whole profile).
+      placeholder: https://vict0rious7.github.io/Pokemon-availability-checker/#...
+    validations:
+      required: true
+  - type: input
+    id: pokemon
+    attributes:
+      label: Pokémon
+      placeholder: "#0151 Mew"
+    validations:
+      required: true
+  - type: textarea
+    id: checker_said
+    attributes:
+      label: What the checker says
+      description: The status and the paths it shows, if any.
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: What the right answer is
+      description: For example "reachable from Ultra Sun via Poké Transporter", or "not reachable without an event".
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A Bulbapedia or Serebii page, or what you did in your own games.
+    validations:
+      required: true

@@ -1,4 +1,5 @@
 import { render } from "preact";
+import type { ComponentChildren } from "preact";
 import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import "./styles.css";
 import "./themes.css";
@@ -10,6 +11,22 @@ import type { Request, Response, Row, Status, PathOut } from "./worker.js";
 import { Finder } from "./finder.js";
 
 const BANK_END = Date.parse("2027-02-25T19:00-08:00");
+
+const ISSUE_NEW = "https://github.com/Vict0rious7/Pokemon-availability-checker/issues/new";
+
+/** Link to the "Report a wrong result" issue form, pre-filled with this page's address (the whole profile) and, from a row, the Pokémon. */
+function reportUrl(pokemon?: string, said?: string) {
+  const q = new URLSearchParams({ template: "wrong-result.yml", profile: location.href });
+  if (pokemon) { q.set("title", `Wrong result: ${pokemon}`); q.set("pokemon", pokemon); }
+  if (said) q.set("checker_said", said);
+  return `${ISSUE_NEW}?${q}`;
+}
+
+/** The page address changes after each render, so the link is built when it is clicked. */
+function ReportLink({ pokemon, said, children }: { pokemon?: string; said?: string; children: ComponentChildren }) {
+  return <a href={`${ISSUE_NEW}?template=wrong-result.yml`} target="_blank" rel="noopener"
+    onClick={(e) => { (e.currentTarget as HTMLAnchorElement).href = reportUrl(pokemon, said); }}>{children}</a>;
+}
 
 const STATUS: Record<Status, string> = { ok: "Can reach", until: `Move before ${BANK_END_LABEL}`, no: "Missing", cant: "Can't live there" };
 
@@ -208,6 +225,7 @@ function ResultRow({ r, dest }: { r: Row; dest: string }) {
         </ul>
       )}
       {r.status === "no" && r.refused.length > 0 && <ul class="paths">{r.refused.map((x) => <li class="hint">Refused: {x}</li>)}</ul>}
+      <p class="report hint"><ReportLink pokemon={`#${String(r.n).padStart(4, "0")} ${r.name}`} said={`${STATUS[r.status]}: ${summary}`}>Wrong? Report it</ReportLink></p>
     </details>
   );
 }
@@ -272,7 +290,7 @@ function Credits() {
       <h2>Credits</h2>
       <p>Availability data adapted from <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_availability">Bulbapedia</a> and the pages cited in the project's data folder, under <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/">CC BY-NC-SA 2.5</a>. Evolution, Egg Group and species data from <a href="https://pokeapi.co/">PokéAPI</a>.</p>
       <p>Pokémon and Pokémon character names are trademarks of Nintendo, Creatures and Game Freak. This is an unofficial fan project.</p>
-      <p><a href="https://github.com/Vict0rious7/Pokemon-availability-checker/issues">Report a wrong result</a> (include the page link, the Pokémon and where you saw the right answer).</p>
+      <p><ReportLink>Report a wrong result</ReportLink>: the form opens with this page's link filled in; add the Pokémon, the right answer and where you saw it. Each result also has a "Wrong? Report it" link that fills in the Pokémon.</p>
     </section>
   );
 }

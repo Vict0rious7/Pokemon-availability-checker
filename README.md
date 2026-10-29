@@ -30,6 +30,6 @@ Availability data adapted from [Bulbapedia](https://bulbapedia.bulbagarden.net/w
 
 Pokémon and Pokémon character names are trademarks of Nintendo, Creatures and Game Freak. This is an unofficial fan project.
 
-Found a wrong result? [Open an issue](https://github.com/Vict0rious7/Pokemon-availability-checker/issues) with the page link, the Pokémon and where you saw the right answer.
+Found a wrong result? Use the "Wrong? Report it" link under that Pokémon in the checker, or [open a report](https://github.com/Vict0rious7/Pokemon-availability-checker/issues/new?template=wrong-result.yml) with the page link, the Pokémon and where you saw the right answer.
 
 The previous Streamlit version lives on the `legacy` branch.

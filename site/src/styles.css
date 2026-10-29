@@ -75,6 +75,7 @@ input.search { margin-bottom: 10px; }
 .badge.cant { color: var(--cant); background: var(--cant-bg); }
 ul.paths { padding: 6px 0 10px 4.6em; font-size: 0.88rem; }
 ul.paths li { padding: 2px 0; }
+.row .report { margin: 0 0 8px; padding-left: 5.4em; font-size: 0.8rem; }
 .start { font-weight: 600; }
 .step { color: var(--muted); margin-left: 4px; }
 .flag { display: inline-block; margin-left: 6px; font-size: 0.75rem; border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; color: var(--muted); }

@@ -4,7 +4,7 @@ name: Site
 
 on:
   push:
-    branches: [rebuild]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -59,7 +59,8 @@ jobs:
   deploy:
     needs: build
     # Acceptance criteria and liveness check written 16 Oct 2026 (plan, Decisions).
-    if: github.ref == 'refs/heads/rebuild'
+    # Publishes from main since 29 Oct 2026 (rebuild merged).
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
       pages: write
