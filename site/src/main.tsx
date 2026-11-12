@@ -301,7 +301,7 @@ function Credits() {
     <section class="card prose">
       <h2>About</h2>
       <p>Enter the Pokémon games, consoles and services you own, where your collection will live, and which generations count. The checker lists which Pokémon you can bring there, and which ones you can only bring there if you move them before Pokémon Bank and Poké Transporter close on {BANK_END_LABEL}.</p>
-      <p><b>What to get next</b> (above the results) lists what to get, best value first, to bring the missing Pokémon to where your collection lives. Each step comes with its rough second-hand price and the Pokémon it brings. Tick "I don't play Pokémon GO" to leave GO out.</p>
+      <p><b>What to get next</b> (above the results) lists what to get, step by step, to bring the missing Pokémon to where your collection lives, with the least extra hardware first. Each step lists the Pokémon it brings. Tick "I don't play Pokémon GO" to leave GO out.</p>
       <p>Your selections are saved in the page address: bookmark it, or share it to show someone the same results.</p>
       <h2>Credits</h2>
       <p>Availability data adapted from <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_availability">Bulbapedia</a> and the pages cited in the project's data folder, under <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/">CC BY-NC-SA 2.5</a>. Evolution, Egg Group and species data from <a href="https://pokeapi.co/">PokéAPI</a>.</p>

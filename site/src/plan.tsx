@@ -5,7 +5,6 @@ import { itemNames, gameName, BANK_END_LABEL } from "./labels.js";
 import type { Response } from "./worker.js";
 import type { PlanRequest, PlanResponse, StepOut } from "./planner.js";
 
-const euro = (n: number) => `€${n}`;
 
 function usePlanner(p: Profile, res: Response | null, busy: boolean, open: boolean, noGo: boolean) {
   const [plan, setPlan] = useState<PlanResponse | null>(null);
@@ -38,7 +37,6 @@ function StepItem({ s, i, nameOf, set }: { s: StepOut; i: number; nameOf: Map<st
       <div class="step-head">
         <span class="step-n">{i + 1}</span>
         <span class="step-what"><b>{itemNames(s.add).join(" + ")}</b>{alt.length > 0 && <small> or {alt.join("; or ")}</small>}</span>
-        <span class="step-cost">{s.cost ? euro(s.cost) : "free"}</span>
         <span class="step-gain">+{s.gain.length}</span>
       </div>
       <div class="step-tags">
@@ -72,14 +70,14 @@ export function NextSteps({ p, res, busy, set }: { p: Profile; res: Response | n
           <>
             <p class="status" role="status">
               {plan.planned.length > 0
-                ? <>{plan.planned.length} of the {missing} missing Pokémon can still reach {dest}: {plan.steps.length} {plan.steps.length === 1 ? "step" : "steps"}, about <b>{euro(plan.total)}</b> in all.</>
+                ? <>{plan.planned.length} of the {missing} missing Pokémon can still reach {dest}: <b>{plan.steps.length} {plan.steps.length === 1 ? "step" : "steps"}</b>.</>
                 : <>None of the {missing} missing Pokémon can be brought to {dest}.</>}
               {working && <small> · updating…</small>}
             </p>
             {plan.steps.length > 0 && <ol class="steps">{plan.steps.map((s, i) => <StepItem s={s} i={i} nameOf={nameOf} set={set} />)}</ol>}
             {plan.excluded.length > 0 && <p class="hint"><b>Only with Pokémon GO</b> ({plan.excluded.length}): {plan.excluded.map((n) => nameOf.get(n)).join(", ")}.</p>}
             {plan.never.length > 0 && <p class="hint"><b>No one can get these any more</b> ({plan.never.length}): {plan.never.map((n) => nameOf.get(n)).join(", ")}.</p>}
-            <p class="hint">Each step is what to get together (a game comes with the system it plays on), best value first. Prices are rough guides for second-hand items. The plan is a good one, not guaranteed to be the cheapest.</p>
+            <p class="hint">Each step is what to get together (a game comes with the system it plays on), the one that brings the most Pokémon for the least extra hardware first. The plan is a good one, not guaranteed to be the smallest.</p>
           </>
         )}
     </details>

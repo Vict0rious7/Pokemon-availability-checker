@@ -6,7 +6,7 @@ export const ITEMS: Item[] = [];
 const IDX = new Map<string, number>();
 const reg = (id: string, cost: number) => { IDX.set(id, ITEMS.length); ITEMS.push({ id, cost }); };
 
-// Victor, 12 Nov 2026
+// Victor, 12 Nov 2026: estimate weights so that, of two ways to bring the same Pokémon, the lighter is suggested. Never shown.
 const GAME_COST = (g: string): number => {
   const f = FAMILY_OF[g];
   if (f === "vc1" || f === "vc2") return 0;

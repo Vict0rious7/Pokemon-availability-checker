@@ -46,7 +46,7 @@ export const HARDWARE = [
   // 12 Nov 2026: used by "What to get next" (the checker itself assumes the system each game needs)
   { key: "gc", name: "GameCube", max: 1, code: "gc", help: "Plays Colosseum, XD and the bonus discs, and links to a GBA." },
   { key: "wiiGC", name: "Wii, first model (GameCube ports)", max: 1, code: "wgc", help: "Plays GameCube discs and links to a GBA like a GameCube." },
-  { key: "wii", name: "Other Wii (Family Edition, Mini) or Wii U", max: 1, code: "wii", help: "Can't play GameCube games or link to a GBA." },
+  { key: "wii", name: "Other Wii (Family Edition) or Wii U", max: 1, code: "wii", help: "Can't play GameCube games or link to a GBA. A Wii Mini doesn't count: it can't connect to the main games." },
   { key: "linkCable", name: "GBA link cable", max: 1, code: "lc", help: "Trades between two Game Boy Advance systems." },
   { key: "gcCable", name: "GBA–GameCube cable", max: 1, code: "gcc", help: "Links a GBA to Colosseum, XD, the bonus discs or Pokémon Channel." },
 ] as const;

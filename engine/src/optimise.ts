@@ -7,7 +7,8 @@ import { ITEMS, bit, bits, subset } from "./items.js";
 export type ListRow = [number[], string | null, string[]];
 export interface ListsFile { items: string[]; beam: number; lists: Record<string, Record<string, ListRow[]>>; }
 
-// ---- cost model: what each item needs to be used (alternatives), and flags that are items (Victor, 12 Nov 2026)
+// ---- cost model: what each item needs to be used (alternatives), and flags that are items (Victor, 12 Nov 2026).
+// Costs (items.ts) are weights for choosing between plans, not prices: they are never shown (Victor, 12 Nov 2026).
 const PREREQ = new Map<number, bigint[]>();
 const idx = (id: string) => bits(bit(id))[0];
 const req = (id: string, alts: string[][]) => PREREQ.set(idx(id), alts.map((a) => a.reduce((m, x) => m | bit(x), 0n)));

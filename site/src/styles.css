@@ -115,10 +115,9 @@ ul.sug li { border-top-color: var(--accent); }
 .plan .nogo { display: flex; gap: 8px; align-items: baseline; margin: 10px 0; font-size: 0.9rem; }
 ol.steps { list-style: none; margin: 0 0 10px; padding: 0; }
 ol.steps li.step { border-top: 1px solid var(--line); padding: 8px 0; }
-.step-head { display: grid; grid-template-columns: 1.6em 1fr auto auto; gap: 8px; align-items: baseline; }
+.step-head { display: grid; grid-template-columns: 1.6em 1fr auto; gap: 8px; align-items: baseline; }
 .step-n { font-weight: 700; color: var(--muted); }
 .step-what small { display: inline; }
-.step-cost { font-variant-numeric: tabular-nums; }
 .step-gain { font-weight: 700; color: var(--ok, var(--accent)); font-variant-numeric: tabular-nums; }
 .step-tags { padding-left: 2.1em; }
 .step-tags .flag { margin: 4px 6px 0 0; }
