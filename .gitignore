@@ -11,3 +11,4 @@ site/node_modules/
 site/dist/
 site/src/generated/
 Claude outputs/
+engine/spike-out/
