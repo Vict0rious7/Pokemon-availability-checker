@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "finder": "tsx scripts/finder.ts ../data src/generated/finder.json",
-    "lists": "NODE_OPTIONS=--max-old-space-size=4096 tsx ../engine/src/lists.ts ../data public/generated/lists.json",
+    "lists": "NODE_OPTIONS=--max-old-space-size=6144 tsx ../engine/src/lists.ts ../data public/generated/lists.json 16",
     "listcheck": "tsx ../engine/src/listcheck.ts ../data public/generated/lists.json 12",
     "dev": "npm run finder && vite",
     "build": "npm run finder && npm run lists && npm run listcheck && tsc --noEmit && vite build",

@@ -21,7 +21,7 @@ export function minimal(xs: Support[]): Support[] {
   return out;
 }
 
-export function buildLists(read: Reader, beam = 8): ListsFile {
+export function buildLists(read: Reader, beam = 16): ListsFile {
   const p = prepare(read);
   const { store } = run(p.forms, ownedPlain(FULL), p.seeds, p.evo, { lists: true, beam });
   const lists: ListsFile["lists"] = {};
@@ -37,7 +37,7 @@ export function buildLists(read: Reader, beam = 8): ListsFile {
 if (process.argv[1]?.match(/lists\.(ts|js)$/)) {
   const [dataDir, out, beam] = process.argv.slice(2);
   const t = Date.now();
-  const f = buildLists(dirReader(dataDir), beam ? Number(beam) : 8);
+  const f = buildLists(dirReader(dataDir), beam ? Number(beam) : 16);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, JSON.stringify(f));
   const n = Object.values(f.lists.HOME).reduce((a, l) => a + l.length, 0);

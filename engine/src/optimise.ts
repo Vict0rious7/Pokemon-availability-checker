@@ -84,10 +84,15 @@ export interface Step {
 export interface Plan {
   steps: Step[]; total: number;
   /** in scope and missing, but no one can get them any more (no list at all) */ never: string[];
-  /** missing and obtainable, but only with something excluded (Pokémon GO) */ excluded: string[];
+  /** missing and obtainable, but only with something left out. Key: the groups (PlanRequest.exclude) that would each bring
+   *  them, joined by "|" (either one), or by "+" when it takes all of them together. */ excluded: Record<string, string[]>;
   /** missing species the plan brings */ planned: string[];
 }
-export interface PlanRequest { owned: bigint; dest: string; date: string; missing: string[]; exclude: bigint; }
+/** `exclude`: groups of items the user leaves out (e.g. go, preinstalled); items already owned are never left out. */
+export interface PlanRequest { owned: bigint; dest: string; date: string; missing: string[]; exclude: Record<string, bigint>; }
+
+/** The digital-only items as one mask (the "already installed or modded" group). */
+export const PREINSTALLED_MASK = [...PREINSTALLED].reduce((m, id) => m | bit(id), 0n);
 
 export function optimise(file: ListsFile, q: PlanRequest): Plan {
   const lists = listsAt(file, q.dest), d = Date.parse(q.date);
@@ -95,12 +100,19 @@ export function optimise(file: ListsFile, q: PlanRequest): Plan {
   const costs = ITEMS.map((i) => i.cost);
   if ((q.owned & bit("ds1")) && !(q.owned & bit("slot"))) costs[idx("slot")] = ITEMS[idx("ds1")].cost;
   const cost = (m: bigint) => bits(m).reduce((n, i) => n + costs[i], 0);
-  const never: string[] = [], excluded: string[] = [], target = new Map<string, List[]>();
+  const never: string[] = [], excluded: Record<string, string[]> = {}, target = new Map<string, List[]>();
+  const groups = Object.entries(q.exclude).map(([k, m]) => [k, m & ~q.owned] as const).filter(([, m]) => m !== 0n);
+  const out = groups.reduce((a, [, m]) => a | m, 0n);
   for (const n of q.missing) {
     const all = (lists.get(n) ?? []).filter((l) => l.until === null || Date.parse(l.until) > d);
     if (!all.length) { never.push(n); continue; }
-    const ok = all.filter((l) => (l.need & q.exclude) === 0n);
-    if (!ok.length) { excluded.push(n); continue; }
+    const ok = all.filter((l) => (l.need & out) === 0n);
+    if (!ok.length) {
+      const either = groups.filter(([, m]) => all.some((l) => (l.need & (out & ~m)) === 0n)).map(([k]) => k);
+      const key = either.length ? either.join("|") : groups.map(([k]) => k).join("+");
+      (excluded[key] ??= []).push(n);
+      continue;
+    }
     target.set(n, ok);
   }
   const covered = (x: bigint) => [...target].filter(([, ls]) => ls.some((l) => subset(l.need, x))).map(([n]) => n);

@@ -50,14 +50,14 @@ for (const [label, o] of Object.entries(DEMO)) for (const noGo of [false, true])
   const R0 = run(P.forms, ownedPlain(o), P.seeds, P.evo);
   const missing = destinationReport(P.forms, R0.store, "HOME", DATE).filter((r) => !r.reachable).map((r) => r.number);
   const t = Date.now();
-  const plan = optimise(F, { owned: o, dest: "HOME", date: DATE, missing, exclude: noGo ? bit("go") : 0n });
+  const plan = optimise(F, { owned: o, dest: "HOME", date: DATE, missing, exclude: noGo ? { go: bit("go") } : {} });
   const ms = Date.now() - t;
   const final = plan.steps.reduce((m, s) => m | s.add, o);
   const R = run(P.forms, ownedPlain(final), P.seeds, P.evo);
   const reach = new Set(destinationReport(P.forms, R.store, "HOME", DATE).filter((r) => r.reachable).map((r) => r.number));
   const not = plan.planned.filter((n) => !reach.has(n));
   if (not.length) bad++;
-  console.log(`\n${label}${noGo ? ", no GO" : ""}: ${missing.length} missing, plan brings ${plan.planned.length} for ${plan.total} in ${plan.steps.length} steps (${ms} ms); never ${plan.never.map((n) => nameOf.get(n)).join(", ") || "-"}; GO only ${plan.excluded.map((n) => nameOf.get(n)).join(", ") || "-"}${not.length ? `; ENGINE DOES NOT REACH ${not.join(", ")}` : ""}`);
+  console.log(`\n${label}${noGo ? ", no GO" : ""}: ${missing.length} missing, plan brings ${plan.planned.length} for ${plan.total} in ${plan.steps.length} steps (${ms} ms); never ${plan.never.map((n) => nameOf.get(n)).join(", ") || "-"}; left out ${JSON.stringify(Object.fromEntries(Object.entries(plan.excluded).map(([k, v]) => [k, v.map((n) => nameOf.get(n))])))}${not.length ? `; ENGINE DOES NOT REACH ${not.join(", ")}` : ""}`);
   if (process.env.VERBOSE) for (const s of plan.steps) console.log(`   +${s.gain.length} for ${s.cost}: ${names(s.add).join(" ")}${s.alts.length ? `  (or ${s.alts.map((a) => names(a).join(" ")).join(" | ")})` : ""}${s.beforeEnd.length ? `  [${s.beforeEnd.length} before end]` : ""}`);
 }
 process.exit(unsound || bad ? 1 : 0);
