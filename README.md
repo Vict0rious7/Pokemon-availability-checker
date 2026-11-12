@@ -12,6 +12,8 @@ Enter the games, consoles and services you own, where your collection will live 
 - **Paths, not just answers**: for each Pokémon, how it gets there (catch, trade, breed, evolve, Pal Park, Poké Transfer, Bank, HOME…), grouped by game family.
 - **"Move before 25 Feb 2027"** marks what depends on Bank and Transporter; "can't live there" sets apart Pokémon the chosen game cannot hold.
 - **Flags for what needs planning**: choose one (starters, fossils…), only one, one per save, needs a female, cables, region-specific discs.
+- **What to get next**: for the Pokémon still missing, a step-by-step list of what to get (a game with the system it plays on, a cable, a service) that brings the most Pokémon for the least extra hardware first, with the Pokémon each step brings. Optional boxes leave out Pokémon GO, or allow software you can only get on a console that already has it installed (Bank, Transporter, Dream Radar, My Pokémon Ranch, Virtual Console games).
+- **Suggested for your games**: the consoles, cables, services and side games that work with the games you picked are listed first.
 - **Shareable**: your selections live in the page address. Bookmark it, or send it to show someone the same results.
 - **Finder**: where each Pokémon and form can be obtained, game by game, including side games and Pokémon GO.
 
@@ -19,9 +21,11 @@ Enter the games, consoles and services you own, where your collection will live 
 
 `engine/` (TypeScript) turns the availability data into facts ("this Pokémon can be in this game") and applies transfer routes until nothing new appears. It runs in the browser, in a Web Worker. `site/` is the static site (Vite, Preact). `data/` holds the availability tables and the extra rules data.
 
-Every push to `rebuild` runs two test suites before anything is published: the new engine against 19 reference profiles from the previous version, and the destination tests in `reference/destinations.json`. A failing test blocks the deploy.
+For "What to get next", the site build runs the engine once more with everything obtainable. Each path then records the items it needs, and the minimal shopping lists per Pokémon and destination are written to a file the planner loads (about 330 KB compressed). A check fails the build if a list promises a Pokémon the engine does not reach.
 
-    cd site && npm ci && npm run dev    # run the site locally
+Every push to `main` runs the checks before anything is published: the engine against 19 reference profiles from the previous version, the destination tests in `reference/destinations.json`, and the shopping-list check. A failing check blocks the deploy.
+
+    cd site && npm ci && npm run build && npm run preview   # run the site locally (the build takes about 4 min)
     cd engine && npm ci                 # tests: see engine/README.md
 
 ## Credits
