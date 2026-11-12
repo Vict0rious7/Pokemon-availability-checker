@@ -1,11 +1,17 @@
 import { Form, canHold } from "./data.js";
 import { FAMILY, FAMILY_OF, CORE_GAMES, OTHER_VERSION, Owned, owns, ownsAny, ownsDlc, dsFamily, partner } from "./games.js";
+import { dnf, subset, costOf, bit } from "./items.js";
+
+/** Shopping-list mode ("Complete my collection", 12 Nov 2026): the run assumes every item can be had, and each path carries
+ *  the minimal items it needs (`need`). Paths kept per (fact, origin) are capped at `beam`, cheapest first, so a list can be
+ *  missed but never invented. Off (the default), every `need` is empty and the run is the checker's. */
+let LISTS = false, BEAM = 8;
 
 const BANK_ENDS = "2027-02-25T19:00-08:00";
 
 export interface Fact { form: Form; loc: string; tags: string[]; native: boolean; supports: Support[]; byOrigin: Map<string, Support[]>; }
 /** One way a fact holds: the flags it needs, when it stops working, where the Pokémon was obtained and the routes it took (Phase 2). */
-export interface Support { flags: string[]; until?: string; origin: string; via: string[]; /** bred: where the parent came from */ from?: string;
+export interface Support { /** shopping-list mode: the items this path needs (bit mask, items.ts); 0n otherwise */ need: bigint; flags: string[]; until?: string; origin: string; via: string[]; /** bred: where the parent came from */ from?: string;
   /** display only: the side game or disc that delivered the Pokémon into its origin game (Ranch, bonus disc…) */ source?: string;
   /** internal: the pass that created it (semi-naive evaluation) */ born?: number; }
 /** A move refused by an origin rule (Phase 2: "why not this path"). */
@@ -36,6 +42,13 @@ export class Store {
       const gone = list.filter((x) => dominates(s, x));
       f.byOrigin.set(s.origin, list.filter((x) => !gone.includes(x)).concat([s]));
       f.supports = gone.length ? f.supports.filter((x) => !gone.includes(x)).concat([s]) : f.supports.concat([s]);
+      const kept = f.byOrigin.get(s.origin)!;
+      if (LISTS && kept.length > BEAM) {
+        kept.sort(cheapest);
+        const drop = kept.splice(BEAM);
+        f.supports = f.supports.filter((x) => !drop.includes(x));
+        if (drop.includes(s)) return false;
+      }
       changed = true;
     } else {
       // same flags and end date: keep the shorter path (Q3, best path first)
@@ -74,7 +87,7 @@ export class Store {
 const later = (a?: string, b?: string) => (a === undefined ? true : b === undefined ? false : a >= b);
 /** Paths are compared only with paths from the same origin, so every origin game keeps its best path (Q3 lists them best first). */
 function dominates(a: Support, b: Support): boolean {
-  return a.origin === b.origin && a.flags.every((x) => b.flags.includes(x)) && later(a.until, b.until);
+  return a.origin === b.origin && (a.need === b.need || subset(a.need, b.need)) && a.flags.every((x) => b.flags.includes(x)) && later(a.until, b.until);
 }
 const equivalent = (a: Support, b: Support) => dominates(a, b) && dominates(b, a);
 /** All combinations of one support per dependency: flags add up, the earliest end date wins. Dominated combinations are dropped. */
@@ -84,12 +97,26 @@ function combine(base: Support, deps: Support[][]): Support[] {
     if (!d.length) return [];
     const next: Support[] = [];
     for (const a of cur) for (const b of d) {
-      const c: Support = { ...a, flags: [...new Set([...a.flags, ...b.flags])].sort(), until: minUntil(a.until, b.until) };
+      const c: Support = { ...a, need: or(a.need, b.need), flags: [...new Set([...a.flags, ...b.flags])].sort(), until: minUntil(a.until, b.until) };
       if (!next.some((x) => dominates(x, c))) next.splice(0, next.length, ...next.filter((x) => !dominates(c, x)), c);
     }
-    cur = next;
+    cur = LISTS ? next.sort(cheapest).slice(0, BEAM) : next;
   }
   return cur;
+}
+const or = (a: bigint, b: bigint) => (a === 0n ? b : b === 0n ? a : a | b);
+const cheapest = (x: Support, y: Support) => costOf(x.need) - costOf(y.need) || x.flags.length - y.flags.length;
+/** Shopping-list mode: non-dominated paths ignoring origin (breeding: the egg's origin is the game), cheapest first, capped. */
+function front(xs: Support[]): Support[] {
+  if (!LISTS) return xs;
+  const out: Support[] = [];
+  const dom = (a: Support, b: Support) => subset(a.need, b.need) && a.flags.every((x) => b.flags.includes(x)) && later(a.until, b.until);
+  for (const s of [...xs].sort(cheapest)) {
+    if (out.some((x) => dom(x, s))) continue;
+    out.push(s);
+    if (out.length >= BEAM * 2) break;
+  }
+  return out;
 }
 const minUntil = (a?: string, b?: string) => (a === undefined ? b : b === undefined ? a : a < b ? a : b);
 
@@ -483,6 +510,29 @@ export function tradeFlags(o: Owned, game: string): string[] | null {
   return null;
 }
 
+/** Shopping-list mode: tradeFlags as alternatives, each with its flags and minimal item sets. */
+const TRADE_ALTS = new Map<string, { flags: string[]; need: bigint[] }[]>();
+function tradeAlts(game: string) {
+  let x = TRADE_ALTS.get(game);
+  if (!x) {
+    const fam = FAMILY_OF[game];
+    const alt = (flags: string[], p: (o: Owned) => boolean) => ({ flags, need: dnf(p) });
+    switch (fam) {
+      case "vc1": x = [alt(["DIFFERENT_NNID"], (o) => partner(o, game, [...FAMILY.vc1, ...FAMILY.vc2]) && o.n3ds >= 2)]; break;
+      case "vc2": x = [alt(["DIFFERENT_NNID"], (o) => partner(o, game, FAMILY.vc2) && o.n3ds >= 2)]; break;
+      case "gba3": x = [alt(["CABLE_GBA_LINK"], (o) => partner(o, game, FAMILY.gba3) && o.gba >= 2), alt(["CABLE_GC_GBA"], (o) => ownsAny(o, FAMILY.gc) && o.gba >= 1)]; break;
+      case "gc": x = [alt(["CABLE_GC_GBA"], (o) => ownsAny(o, FAMILY.gba3) && o.gba >= 1)]; break;
+      case "gen4": case "gen5": x = [alt([], (o) => partner(o, game, FAMILY[fam]) && dsFamily(o) >= 2)]; break;
+      case "gen6": case "gen7": x = [alt([], (o) => partner(o, game, FAMILY[fam]) && o.n3ds >= 2)]; break;
+      case "lgpe": case "swsh": case "bdsp": case "la": case "sv": case "za": case "frlgSwitch":
+        x = [alt([], (o) => partner(o, game, FAMILY[fam]) && o.sw >= 2)]; break;
+      default: x = [];
+    }
+    TRADE_ALTS.set(game, x);
+  }
+  return x;
+}
+
 interface Indexed { byFrom: Map<number, Map<number, EvoRow[]>>; rows: Map<string, Form>; firstChild: Map<number, number>; legends: Set<string>; }
 const evoIndex = new WeakMap<EvoData, Map<Form[], Indexed>>();
 function indexOf(evo: EvoData, forms: Form[]): Indexed {
@@ -514,8 +564,8 @@ function arrivalStep(o: Owned, store: Store, forms: Form[], evo: EvoData, fresh:
   let changed = false;
   const ix = indexOf(evo, forms);
   // Breeding partners per game, built once per pass: Dittos, and per Egg Group the male-capable Pokémon (by species).
-  const key = (s: Support) => `${s.flags.join(",")}|${s.until ?? ""}`;
-  const dedupe = (xs: Support[]) => { const m = new Map<string, Support>(); for (const s of xs) if (!m.has(key(s)) || fresh(s)) m.set(key(s), s); return [...m.values()]; };
+  const key = (s: Support) => `${s.flags.join(",")}|${s.until ?? ""}|${s.need}`;
+  const dedupe = (xs: Support[]) => { const m = new Map<string, Support>(); for (const s of front(xs)) if (!m.has(key(s)) || fresh(s)) m.set(key(s), s); return [...m.values()]; };
   const pool = new Map<string, { ditto: Support[]; groups: Map<number, Map<string, Support[]>> }>();
   const poolOf = (g: string) => {
     let p = pool.get(g);
@@ -534,9 +584,12 @@ function arrivalStep(o: Owned, store: Store, forms: Form[], evo: EvoData, fresh:
     return p;
   };
   /** Paths to a breeding partner in game g for species n: a Ditto, or a male-capable Pokémon of another species sharing an Egg Group. */
-  const partners = (g: string, n: string): Support[] => {
+  const pmemo = new Map<string, Support[]>();
+  const partners = (g: string, n: string): Support[] => { const k = `${g}|${n}`; let r = pmemo.get(k); if (!r) { r = partners0(g, n); pmemo.set(k, r); } return r; };
+  const partners0 = (g: string, n: string): Support[] => {
     const sp = evo.species[n], p = poolOf(g);
-    if (p.ditto.some((s) => !s.flags.length && s.until === undefined)) return p.ditto;   // nothing beats a free Ditto
+    const own = LISTS ? bit(`copy1:${g}`) : 0n;
+    if (p.ditto.some((s) => !s.flags.length && s.until === undefined && subset(s.need, own))) return p.ditto;   // nothing beats a free Ditto
     const out = [...p.ditto];
     if (sp.gender_rate > 0)                                // the egg is the mother's species: this one must be able to be female
       for (const e of sp.egg_groups) for (const [y, sups] of p.groups.get(e) ?? []) if (y !== n) out.push(...sups);
@@ -565,12 +618,15 @@ function arrivalStep(o: Owned, store: Store, forms: Form[], evo: EvoData, fresh:
         if (!canHold(target, g)) continue;
         const m = evoMethod(trows, g);
         if (!m) continue;
-        const extra = m === "trade" ? tradeFlags(o, g) : [];
-        if (extra === null) continue;
+        let alts: { flags: string[]; need: bigint[] }[];
+        if (LISTS) alts = m === "trade" ? tradeAlts(g) : [{ flags: [], need: [0n] }];
+        else { const extra = m === "trade" ? tradeFlags(o, g) : []; alts = extra === null ? [] : [{ flags: extra, need: [0n] }]; }
         for (const sup of fact.supports) {
           if (!fresh(sup)) continue;
-          const s: Support = { ...sup, flags: [...new Set([...sup.flags, ...extra])].sort(), via: [...sup.via, m === "trade" ? "EVO(trade)" : "EVO"] };
-          if (store.add(target, g, fact.tags, false, s)) changed = true;
+          for (const a of alts) for (const nd of a.need) {
+            const s: Support = { ...sup, need: or(sup.need, nd), flags: [...new Set([...sup.flags, ...a.flags])].sort(), via: [...sup.via, m === "trade" ? "EVO(trade)" : "EVO"] };
+            if (store.add(target, g, fact.tags, false, s)) changed = true;
+          }
         }
       }
     }
@@ -588,15 +644,15 @@ function arrivalStep(o: Owned, store: Store, forms: Form[], evo: EvoData, fresh:
     // The egg's origin is this game whatever the parents' path, so only distinct (flags, end date) pairs matter.
     const parents = new Map<string, Support>();
     for (const sup of fact.supports) {
-      const k = `${sup.flags.join(",")}|${sup.until ?? ""}`, x = parents.get(k);
+      const k = `${sup.flags.join(",")}|${sup.until ?? ""}|${sup.need}`, x = parents.get(k);
       if (!x || sup.via.length < x.via.length || (fresh(sup) && !fresh(x) && sup.via.length === x.via.length)) parents.set(k, sup);
     }
-    for (const sup of parents.values()) for (const d of mates) {
+    for (const sup of front([...parents.values()])) for (const d of mates) {
       if (!fresh(sup) && !fresh(d)) continue;
       // Eggs are not scarce: ONLY_ONE stops here. Without a Ditto the egg is the mother's species, so a single
       // one-time parent has to be female (NEEDS_FEMALE, Victor 29 Oct).
       const female = sup.flags.includes("ONLY_ONE") && !dittoKeys.has(key(d)) ? ["NEEDS_FEMALE"] : [];
-      const s: Support = { flags: [...new Set([...sup.flags, ...d.flags, ...female].filter((x) => x !== "ONLY_ONE"))].sort(), until: minUntil(sup.until, d.until),
+      const s: Support = { need: or(sup.need, d.need), flags: [...new Set([...sup.flags, ...d.flags, ...female].filter((x) => x !== "ONLY_ONE"))].sort(), until: minUntil(sup.until, d.until),
                            origin: g, from: sup.source ?? sup.origin, via: [...sup.via, "BREED"] };
       if (store.add(egg, g, originTags(g), false, s)) changed = true;
     }
@@ -606,29 +662,41 @@ function arrivalStep(o: Owned, store: Store, forms: Form[], evo: EvoData, fresh:
 
 export interface Result { store: Store; unhandled: Map<string, Unhandled>; passes: number; }
 
-/** `evo`: Phase 2 arrival rules (evolve and breed after arrival). Without it, Phase 1 behaviour. */
-export function run(forms: Form[], o: Owned, seeds: Seed[], evo?: EvoData): Result {
+/** `evo`: Phase 2 arrival rules (evolve and breed after arrival). Without it, Phase 1 behaviour.
+ *  `opts.lists`: shopping-list mode (see LISTS); `o` is then ignored: every item counts as obtainable. */
+export function run(forms: Form[], o: Owned, seeds: Seed[], evo?: EvoData, opts: { lists?: boolean; beam?: number } = {}): Result {
+  LISTS = !!opts.lists; BEAM = opts.beam ?? 8;
+  try { return runInner(forms, o, seeds, evo); } finally { LISTS = false; }
+}
+function runInner(forms: Form[], o: Owned, seeds: Seed[], evo?: EvoData): Result {
   const store = new Store();
-  const locOwned = (l: string) =>
-    STORAGE.has(l) ? o.has.bank : l === "HOME" ? o.has.home : l === "GO" ? goOn(o) : owns(o, l);
+  const locOwned = (x: Owned, l: string) =>
+    STORAGE.has(l) ? x.has.bank : l === "HOME" ? x.has.home : l === "GO" ? goOn(x) : owns(x, l);
+  // The item sets each seed and each (route, destination) needs: one empty set when it holds for `o`, none when it does not.
+  const holds = (p: (x: Owned) => boolean): bigint[] => (LISTS ? dnf(p) : p(o) ? [0n] : []);
+  const seedNeed = seeds.map((s) => holds((x) => locOwned(x, s.at) && s.req(x, store)));
+  const routeNeed = new Map<string, bigint[]>();
+  ROUTES.forEach((r, ri) => { for (const to of r.to) routeNeed.set(`${ri}|${to}`, holds((x) => r.req(x) && locOwned(x, to))); });
   let passes = 0, changed = true;
   while (changed) {
     changed = false; passes++; store.pass = passes;
     const fresh = (s: Support) => (s.born ?? 0) >= passes - 1;   // only paths new since the last pass can lead anywhere new
-    for (const s of seeds) {
-      if (!locOwned(s.at) || !s.req(o, store)) continue;
-      const base: Support = { flags: [...s.flags].sort(), origin: s.origin ?? s.at, via: [], ...(s.source ? { source: s.source } : {}) };
-      const sups = s.deps ? combine(base, s.deps.map((d) => store.supportsOf(d.number, d.loc, d.tags, d.origins, d.notOrigin, d.anyForm))) : [base];
-      for (const sup of sups) if (store.add(s.form, s.at, s.tags, true, sup)) changed = true;
-    }
-    for (const r of ROUTES) {
-      if (!r.req(o)) continue;
+    seeds.forEach((s, si) => {
+      for (const nd of seedNeed[si]) {
+        const base: Support = { need: nd, flags: [...s.flags].sort(), origin: s.origin ?? s.at, via: [], ...(s.source ? { source: s.source } : {}) };
+        const sups = s.deps ? combine(base, s.deps.map((d) => store.supportsOf(d.number, d.loc, d.tags, d.origins, d.notOrigin, d.anyForm))) : [base];
+        for (const sup of sups) if (store.add(s.form, s.at, s.tags, true, sup)) changed = true;
+      }
+    });
+    ROUTES.forEach((r, ri) => {
       for (const from of r.from) {
-        if (!locOwned(from)) continue;
+        if (!LISTS && !locOwned(o, from)) continue;
         for (const fact of [...store.at(from)]) {
           if (r.forms && !r.forms(fact.form)) continue;
           for (const to of r.to) {
-            if (to === from || !locOwned(to)) continue;
+            if (to === from) continue;
+            const rn = routeNeed.get(`${ri}|${to}`)!;
+            if (!rn.length) continue;
             if (!NOT_GAMES.has(to) && !canHold(fact.form, to)) continue;
             const blocked = r.forbids?.(from, to) ?? [];
             if (fact.tags.some((t) => blocked.includes(t))) continue;
@@ -646,16 +714,19 @@ export function run(forms: Form[], o: Owned, seeds: Seed[], evo?: EvoData): Resu
             for (const sup of fact.supports) {
               for (const g of reg ?? [null]) {
                 if (!fresh(sup) && !(g && fresh(g))) continue;
-                const s: Support = { flags: [...new Set([...sup.flags, ...(r.flags ?? []), ...(g ? [...g.flags, "AFTER_REGISTERED"] : [])])].sort(),
-                                     until: minUntil(minUntil(sup.until, r.until), g?.until),
-                                     origin: sup.origin, from: sup.from, via: [...sup.via, r.id], ...(sup.source ? { source: sup.source } : {}) };   // `from`: a bred Pokémon keeps its parent's origin when it moves on
-                if (store.add(fact.form, to, tags, false, s)) changed = true;
+                for (const nd of rn) {
+                  const s: Support = { need: or(or(sup.need, nd), g ? g.need : 0n),
+                                       flags: [...new Set([...sup.flags, ...(r.flags ?? []), ...(g ? [...g.flags, "AFTER_REGISTERED"] : [])])].sort(),
+                                       until: minUntil(minUntil(sup.until, r.until), g?.until),
+                                       origin: sup.origin, from: sup.from, via: [...sup.via, r.id], ...(sup.source ? { source: sup.source } : {}) };   // `from`: a bred Pokémon keeps its parent's origin when it moves on
+                  if (store.add(fact.form, to, tags, false, s)) changed = true;
+                }
               }
             }
           }
         }
       }
-    }
+    });
     if (evo && arrivalStep(o, store, forms, evo, fresh)) changed = true;
     if (passes > 50) throw new Error("no fixed point after 50 passes");
   }

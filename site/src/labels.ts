@@ -43,11 +43,20 @@ export const HARDWARE = [
   { key: "n3ds", name: "Nintendo 3DS / 2DS", max: 2, code: "3ds", help: "Runs Poké Transporter and Pokémon Bank; two are needed to trade between 3DS games." },
   { key: "sw", name: "Nintendo Switch", max: 2, code: "sw", help: "Two are needed to trade between Switch games." },
   { key: "phone", name: "Smartphone", max: 1, code: "ph", help: "For Pokémon HOME's mobile app (gifts, Pokédex rewards) and Pokémon GO." },
+  // 12 Nov 2026: used by "What to get next" (the checker itself assumes the system each game needs)
+  { key: "gc", name: "GameCube", max: 1, code: "gc", help: "Plays Colosseum, XD and the bonus discs, and links to a GBA." },
+  { key: "wiiGC", name: "Wii, first model (GameCube ports)", max: 1, code: "wgc", help: "Plays GameCube discs and links to a GBA like a GameCube." },
+  { key: "wii", name: "Other Wii (Family Edition, Mini) or Wii U", max: 1, code: "wii", help: "Can't play GameCube games or link to a GBA." },
+  { key: "linkCable", name: "GBA link cable", max: 1, code: "lc", help: "Trades between two Game Boy Advance systems." },
+  { key: "gcCable", name: "GBA–GameCube cable", max: 1, code: "gcc", help: "Links a GBA to Colosseum, XD, the bonus discs or Pokémon Channel." },
 ] as const;
+/** Hardware the engine reads (the rest is only used to plan purchases). */
+export const ENGINE_HW = new Set(["gba", "ds", "dsGbaSlot", "n3ds", "sw", "phone"]);
 
 /** Services and side software (engine `has` field, label, URL code). */
 export const SERVICES = [
   { key: "home", name: "Pokémon HOME", code: "home" },
+  { key: "homePremium", name: "Pokémon HOME Premium", code: "hp", help: "Needed to move Pokémon from Bank to HOME.", planOnly: true },
   { key: "bank", name: "Pokémon Bank", code: "bank", help: "Closes on 25 February 2027." },
   { key: "transporter", name: "Poké Transporter", code: "tp", help: "Closes with Pokémon Bank on 25 February 2027." },
   { key: "go", name: "Pokémon GO", code: "go" },
@@ -92,6 +101,47 @@ export const ORIGIN: Record<string, string> = {
   PALChannel: "Pokémon Channel (PAL)",
 };
 export const originName = (o: string) => ORIGIN[o] ?? gameName(o);
+
+/** Items of "What to get next" (engine/src/items.ts ids) as the profile stores them. */
+export const ITEM_HW: Record<string, [string, number]> = {
+  gba1: ["gba", 1], gba2: ["gba", 2], ds1: ["ds", 1], ds2: ["ds", 2], slot: ["dsGbaSlot", 1], n3ds1: ["n3ds", 1], n3ds2: ["n3ds", 2],
+  sw1: ["sw", 1], sw2: ["sw", 2], phone: ["phone", 1], gc: ["gc", 1], wiiGC: ["wiiGC", 1], wii: ["wii", 1], linkCable: ["linkCable", 1], gcCable: ["gcCable", 1],
+};
+export const ITEM_SERVICE: Record<string, string> = {
+  home: "home", homePremium: "homePremium", go: "go", bank: "bank", transporter: "transporter", pokewalker: "pokewalker", dreamRadar: "dreamRadar",
+  ranchW: "ranchWestern", ranchJ: "ranchJapanese", battleRevW: "battleRevWestern", battleRevJ: "battleRevJapanese", ranger: "ranger",
+  bonusUS: "bonusDiscUS", bonusJP: "bonusDiscJP", palChannel: "palChannel",
+};
+const HW_NAME: Record<string, string> = {
+  gba1: "a Game Boy Advance", gba2: "a second Game Boy Advance", ds1: "a DS, DS Lite or DSi", ds2: "a second DS-family system", slot: "a DS or DS Lite (GBA slot)",
+  n3ds1: "a 3DS", n3ds2: "a second 3DS", sw1: "a Switch", sw2: "a second Switch", phone: "a smartphone",
+  gc: "a GameCube", wiiGC: "a first-model Wii (GameCube ports)", wii: "a Wii", linkCable: "a GBA link cable", gcCable: "a GBA–GameCube cable",
+};
+/** One purchase as words. A DS bought together with its GBA slot is a DS Lite. */
+export function itemNames(ids: string[]): string[] {
+  const set = new Set(ids);
+  if (set.has("ds1") && set.has("slot")) { set.delete("ds1"); set.delete("slot"); set.add("dsLite"); }
+  for (const id of [...set]) {   // a game bought with its DLC: one line
+    const m = id.match(/^dlc([12]):(.*)$/);
+    if (m && set.has(`copy${m[1]}:${m[2]}`)) { set.delete(id); set.delete(`copy${m[1]}:${m[2]}`); set.add(`with:${m[1]}:${m[2]}`); }
+  }
+  return [...set].map((id) => {
+    if (id === "dsLite") return "a DS Lite (GBA slot)";
+    if (id === "go") return "Pokémon GO (free)";
+    if (id === "home") return "Pokémon HOME (free plan)";
+    const w = id.match(/^with:([12]):(.*)$/);
+    if (w) return `${w[1] === "2" ? "a second copy of " : ""}${GAME[w[2]]?.name ?? w[2]} with ${GAME[w[2]]?.dlc ?? "its DLC"}`;
+    const m = id.match(/^(copy|dlc)([12]):(.*)$/);
+    if (m) {
+      const g = GAME[m[3]], name = g?.name ?? m[3];
+      if (m[1] === "copy") return m[2] === "2" ? `a second copy of ${name}` : name;
+      return `${g?.dlc ?? "DLC"} (${name})${m[2] === "2" ? ", second copy" : ""}`;
+    }
+    if (HW_NAME[id]) return HW_NAME[id];
+    const svc = SERVICES.find((s) => s.key === ITEM_SERVICE[id]);
+    return svc?.name ?? id;
+  });
+}
 
 export const BANK_END_LABEL = "25 Feb 2027";
 

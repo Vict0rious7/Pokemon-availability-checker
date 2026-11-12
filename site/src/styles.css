@@ -102,3 +102,28 @@ button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-v
 .bulk.small button { font-size: 0.78rem; padding: 1px 8px; }
 .tag.side { border-style: dashed; }
 .tag small { display: inline; }
+
+/* 12 Nov 2026: suggested inputs and "What to get next" */
+h3.sub { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin: 12px 0 4px; }
+ul.sug li { border-top-color: var(--accent); }
+.right { display: grid; gap: 16px; min-width: 0; }
+.plan > summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; list-style: none; }
+.plan > summary::-webkit-details-marker { display: none; }
+.plan > summary h2 { margin: 0; }
+.plan > summary h2::before { content: "▸ "; color: var(--muted); }
+.plan[open] > summary h2::before { content: "▾ "; }
+.plan .nogo { display: flex; gap: 8px; align-items: baseline; margin: 10px 0; font-size: 0.9rem; }
+ol.steps { list-style: none; margin: 0 0 10px; padding: 0; }
+ol.steps li.step { border-top: 1px solid var(--line); padding: 8px 0; }
+.step-head { display: grid; grid-template-columns: 1.6em 1fr auto auto; gap: 8px; align-items: baseline; }
+.step-n { font-weight: 700; color: var(--muted); }
+.step-what small { display: inline; }
+.step-cost { font-variant-numeric: tabular-nums; }
+.step-gain { font-weight: 700; color: var(--ok, var(--accent)); font-variant-numeric: tabular-nums; }
+.step-tags { padding-left: 2.1em; }
+.step-tags .flag { margin: 4px 6px 0 0; }
+.step-mons { padding-left: 2.1em; font-size: 0.9rem; }
+.step-mons > summary { font-weight: 400; color: var(--muted); padding: 2px 0; }
+.step-mons p { margin: 2px 0 6px; max-height: 9em; overflow: auto; }
+button.add { margin-left: 2.1em; font: inherit; font-size: 0.85rem; background: none; border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; color: var(--ink, inherit); cursor: pointer; }
+button.add:hover { border-color: var(--accent); }

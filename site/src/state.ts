@@ -1,5 +1,6 @@
 import type { Owned } from "../../engine/src/games.js";
-import { GAMES, GAME, HARDWARE, SERVICES } from "./labels.js";
+import { GAMES, GAME, HARDWARE, SERVICES, ITEM_HW, ITEM_SERVICE } from "./labels.js";
+import { maskOf, bit, names as itemIds } from "../../engine/src/items.js";
 
 /** Everything the user picks. Saved in the URL hash so a profile can be bookmarked and shared. */
 export interface Profile {
@@ -31,7 +32,7 @@ export function toOwned(p: Profile): Owned {
     if (g.dlc && d > 0) dlc[g.key] = d;
   }
   const hw = (k: string) => p.hw[k] ?? 0;
-  const has = Object.fromEntries(SERVICES.map((s) => [s.key, !!p.services[s.key]])) as Owned["has"];
+  const has = Object.fromEntries(SERVICES.filter((s) => !("planOnly" in s)).map((s) => [s.key, !!p.services[s.key]])) as Owned["has"];
   return { copies, dlc, gba: hw("gba"), ds: hw("ds"), dsGbaSlot: Math.min(hw("dsGbaSlot"), hw("ds")), n3ds: hw("n3ds"), sw: hw("sw"), phone: hw("phone"), has };
 }
 
@@ -80,3 +81,28 @@ export function decode(hash: string): Profile {
   if (gen >= 1 && gen <= MAX_GEN) p.maxGen = Math.floor(gen);
   return p;
 }
+
+/** The profile as items of "What to get next" (engine/src/items.ts), including what only the planner reads. */
+export function toItems(p: Profile): bigint {
+  let m = maskOf(toOwned(p));
+  for (const [id, [k, n]] of Object.entries(ITEM_HW)) if ((p.hw[k] ?? 0) >= n) m |= bit(id);
+  if (!((p.hw.ds ?? 0) >= 1)) m &= ~bit("slot");
+  for (const [id, k] of Object.entries(ITEM_SERVICE)) if (p.services[k]) m |= bit(id);
+  return m;
+}
+
+/** Adds items (engine/src/items.ts ids) to the profile: "I have these now". */
+export function withItems(p: Profile, ids: string[]): Profile {
+  const copies = { ...p.copies }, dlc = { ...p.dlc }, hw = { ...p.hw }, services = { ...p.services };
+  for (const id of ids) {
+    const m = id.match(/^(copy|dlc)([12]):(.*)$/);
+    if (m) {
+      const n = Number(m[2]);
+      if (m[1] === "copy") copies[m[3]] = Math.max(copies[m[3]] ?? 0, n);
+      else { copies[m[3]] = Math.max(copies[m[3]] ?? 0, n); dlc[m[3]] = Math.max(dlc[m[3]] ?? 0, n); }
+    } else if (ITEM_HW[id]) { const [k, n] = ITEM_HW[id]; hw[k] = Math.max(hw[k] ?? 0, n); if (k === "dsGbaSlot") hw.ds = Math.max(hw.ds ?? 0, 1); }
+    else if (ITEM_SERVICE[id]) services[ITEM_SERVICE[id]] = true;
+  }
+  return { ...p, copies, dlc, hw, services };
+}
+export { itemIds };

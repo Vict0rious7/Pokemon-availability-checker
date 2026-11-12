@@ -9,6 +9,8 @@ import { PLATFORMS, GAMES, HARDWARE, SERVICES, FLAG, gameName, originName, BANK_
 import { describe, names } from "./path.js";
 import type { Request, Response, Row, Status, PathOut } from "./worker.js";
 import { Finder } from "./finder.js";
+import { NextSteps } from "./plan.js";
+import { suggestedHardware, suggestedServices } from "./suggest.js";
 
 const BANK_END = Date.parse("2027-02-25T19:00-08:00");
 
@@ -97,6 +99,28 @@ const noGames = (x: Profile, keys: string[]): Profile => {
 };
 
 function Inputs({ p, set }: { p: Profile; set: (f: (p: Profile) => Profile) => void }) {
+  const sugHw = suggestedHardware(p), sugSvc = suggestedServices(p);
+  const hwRow = (h: (typeof HARDWARE)[number]) => (
+    <li>
+      <span class="gname">{h.name}<small>{h.help}</small></span>
+      <Seg label={h.name} value={p.hw[h.key] ?? 0} max={h.max} onChange={(v) => set((x) => ({ ...x, hw: { ...x.hw, [h.key]: v } }))} />
+    </li>
+  );
+  const svcRow = (s: (typeof SERVICES)[number]) => (
+    <li>
+      <label>
+        <input type="checkbox" checked={!!p.services[s.key]} onChange={(e) => { const on = (e.target as HTMLInputElement).checked; set((x) => ({ ...x, services: { ...x.services, [s.key]: on } })); }} />
+        {s.name}{"help" in s && <small> — {s.help}</small>}
+      </label>
+    </li>
+  );
+  const gameRow = (key: string) => (
+    <li>
+      <span class="gname">{gameName(key)}<small>Also under Games.</small></span>
+      <Seg label={`${gameName(key)} copies`} value={p.copies[key] ?? 0} max={2} onChange={(v) => set((x) => ({ ...x, copies: { ...x.copies, [key]: v } }))} />
+    </li>
+  );
+  const hwSug = HARDWARE.filter((h) => sugHw.has(h.key)), svcSug = SERVICES.filter((s) => sugSvc.services.has(s.key));
   return (
     <div class="inputs">
       <section class="card">
@@ -154,32 +178,23 @@ function Inputs({ p, set }: { p: Profile; set: (f: (p: Profile) => Profile) => v
       </section>
 
       <section class="card">
-        <h2>Consoles</h2>
+        <h2>Consoles and cables</h2>
         <Bulk label="consoles" all={() => set((x) => ({ ...x, hw: Object.fromEntries(HARDWARE.map((h) => [h.key, h.max])) }))} none={() => set((x) => ({ ...x, hw: {} }))} />
-        <ul class="hw">
-          {HARDWARE.map((h) => (
-            <li>
-              <span class="gname">{h.name}<small>{h.help}</small></span>
-              <Seg label={h.name} value={p.hw[h.key] ?? 0} max={h.max} onChange={(v) => set((x) => ({ ...x, hw: { ...x.hw, [h.key]: v } }))} />
-            </li>
-          ))}
-        </ul>
+        {hwSug.length > 0 && <><h3 class="sub">Suggested for your games</h3><ul class="hw sug">{hwSug.map(hwRow)}</ul><h3 class="sub">Others</h3></>}
+        <ul class="hw">{HARDWARE.filter((h) => !sugHw.has(h.key)).map(hwRow)}</ul>
       </section>
 
       <section class="card">
         <h2>Services and side games</h2>
         <Bulk label="services and side games" all={() => set((x) => ({ ...x, services: Object.fromEntries(SERVICES.map((s) => [s.key, true])) }))}
           none={() => set((x) => ({ ...x, services: (x.dest === "HOME" ? { home: true } : {}) as Record<string, boolean> }))} />
-        <ul class="svc">
-          {SERVICES.map((s) => (
-            <li>
-              <label>
-                <input type="checkbox" checked={!!p.services[s.key]} onChange={(e) => { const on = (e.target as HTMLInputElement).checked; set((x) => ({ ...x, services: { ...x.services, [s.key]: on } })); }} />
-                {s.name}{"help" in s && <small> — {s.help}</small>}
-              </label>
-            </li>
-          ))}
-        </ul>
+        {(svcSug.length > 0 || sugSvc.games.size > 0) && <>
+          <h3 class="sub">Suggested for your games</h3>
+          {sugSvc.games.size > 0 && <ul class="games sug">{[...sugSvc.games].map(gameRow)}</ul>}
+          <ul class="svc sug">{svcSug.map(svcRow)}</ul>
+          <h3 class="sub">Others</h3>
+        </>}
+        <ul class="svc">{SERVICES.filter((s) => !sugSvc.services.has(s.key)).map(svcRow)}</ul>
       </section>
     </div>
   );
@@ -286,6 +301,7 @@ function Credits() {
     <section class="card prose">
       <h2>About</h2>
       <p>Enter the Pokémon games, consoles and services you own, where your collection will live, and which generations count. The checker lists which Pokémon you can bring there, and which ones you can only bring there if you move them before Pokémon Bank and Poké Transporter close on {BANK_END_LABEL}.</p>
+      <p><b>What to get next</b> (above the results) lists what to get, best value first, to bring the missing Pokémon to where your collection lives. Each step comes with its rough second-hand price and the Pokémon it brings. Tick "I don't play Pokémon GO" to leave GO out.</p>
       <p>Your selections are saved in the page address: bookmark it, or share it to show someone the same results.</p>
       <h2>Credits</h2>
       <p>Availability data adapted from <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_availability">Bulbapedia</a> and the pages cited in the project's data folder, under <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/">CC BY-NC-SA 2.5</a>. Evolution, Egg Group and species data from <a href="https://pokeapi.co/">PokéAPI</a>.</p>
@@ -321,7 +337,7 @@ function App() {
         </nav>
       </header>
       <main>
-        {tab === "check" && <div class="layout"><Inputs p={p} set={set} /><Results p={p} res={res} busy={busy} error={error} /></div>}
+        {tab === "check" && <div class="layout"><Inputs p={p} set={set} /><div class="right"><NextSteps p={p} res={res} busy={busy} set={set} /><Results p={p} res={res} busy={busy} error={error} /></div></div>}
         {tab === "check" && res && <JumpBar res={res} busy={busy} />}
         {tab === "finder" && <Finder />}
         {tab === "about" && <Credits />}
